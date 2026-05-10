@@ -1,0 +1,63 @@
+{
+  "player_weapon_damage": 25,
+  "player_health": 150,
+  "player_weapon": "Cursed Flame Staff",
+  "theme": "fantasy",
+  "setting": "The Whispering Ossuary",
+  "encounters": [
+    {
+      "enemy": {
+        "health": 60,
+        "damage": 15,
+        "name": "Bone Scavenger",
+        "weakness": "Cursed Flame Staff"
+      },
+      "pickup": {
+        "name": "Bottled Frostfire",
+        "effect": "Temporarily chills armor to negate heat-based traps"
+      },
+      "location": "The Entrance Crypt",
+      "hazard": "Searing floor tiles",
+      "trigger": "Defeating the scavenger opens the gate to the inner sanctum"
+    },
+    {
+      "enemy": {
+        "health": 80,
+        "damage": 20,
+        "name": "Frost-Wreathed Sentinel",
+        "weakness": "Bottled Frostfire"
+      },
+      "pickup": {
+        "name": "Essence of Void",
+        "effect": "Coats weapons in shadow to bypass magical resistances"
+      },
+      "location": "The Frozen Vault",
+      "hazard": "Crumbling stone pillars",
+      "trigger": "Passing the sentinel unlocks the ancient ritual chamber"
+    },
+    {
+      "enemy": {
+        "health": 100,
+        "damage": 25,
+        "name": "Spectral Guardian",
+        "weakness": "Essence of Void"
+      },
+      "pickup": {
+        "name": "Heart of the Sun",
+        "effect": "Enhances fire output significantly for one final burst"
+      },
+      "location": "The Altar of Echoes",
+      "hazard": "Sudden spectral winds",
+      "trigger": "Absorbing the heart initiates the boss fight sequence"
+    }
+  ],
+  "boss": {
+    "health": 300,
+    "damage": 40,
+    "name": "Lord of Eternal Decay",
+    "weakness": "Heart of the Sun",
+    "victory_condition": "Purify the throne with concentrated solar energy"
+  },
+  "objective": "Purify the Ossuary by destroying the Lord of Eternal Decay",
+  "reward": "The Pyromancer's Eternal Ember"
+}

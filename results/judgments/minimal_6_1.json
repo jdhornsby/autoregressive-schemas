@@ -1,0 +1,354 @@
+[
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The Victorian alchemy laboratory is well-constructed with perfect reference integrity and strong causal triggers. The stat progression inverts on enemy health between Enc1 and Enc2, and the Clockwork Construct is a minor thematic outlier in a fungus-overgrown alchemy lab. The victory condition is the highlight — naming the exact item.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Ancient Mercury Essence' is exact. Victory condition explicitly names 'Ancient Mercury Essence'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 triggers security lockdown revealing the atrium; Enc1 parts dropped by the Construct are used to repair the generator and unlock the catacombs — a specific and mechanically inventive trigger; Enc2 clearing shadows reveals the secret entrance. All three are specific consequences." },
+        "balance":             { "score": 3, "reason": "Enemy hp 30/50/40 inverts between Enc1 and Enc2 (40 < 50) — clear design flaw. Enemy damage 10/20/25 escalates correctly. Boss hp 200 and damage 40 are strictly greater. Total damage 55 vs 100 hp is survivable for hard." },
+        "thematic_coherence":  { "score": 4, "reason": "Victorian alchemy lab with bioluminescent fungus is evocative. Fungal Husk and Shadow Creeper fit well. The Clockwork Construct is more steampunk than fungal alchemy — slightly out of place." },
+        "mechanical_sense":    { "score": 5, "reason": "Silver Solvent increasing damage against metallic entities against the Clockwork Construct is direct. Crystallized Moonlight solidifying spectral forms against the Shadow Creeper is perfect. Ancient Mercury Essence causing instability in magical constructs against the Corrupted Grand Alchemist is thematic." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The Enc1 trigger using enemy-dropped parts to repair a generator is the most mechanically inventive trigger in the file." }
+      },
+      "best_element": "Enc1 trigger — 'Repairing the generator with parts dropped by the Construct unlocks the basement catacombs' — makes the enemy defeat mechanically meaningful in a way that goes beyond a simple door unlock.",
+      "worst_element": "Enemy health inversion between Enc1 (50) and Enc2 (40): the third encounter enemy is weaker than the second, undermining the expected difficulty escalation.",
+      "overall": "A strong hard level with excellent reference integrity and creative trigger design; the health inversion and minor thematic mismatch are the only meaningful issues."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The abandoned asylum is thematically excellent with strong causal triggers, but two enemy weaknesses drop words from the pickup names and the player at 50 hp faces enemies dealing 20-30 damage each — the total incoming damage of 75 makes survival statistically improbable. The boss at 45 damage would one-hit from full health if the player is below half.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc1 weakness 'high-pressure oxygen' drops 'canister of' from 'canister of high-pressure oxygen'. Enc2 weakness 'holy oil' drops 'canister' from 'holy oil canister'. Boss weakness and victory condition use 'sigil stone' vs 'ancient sigil stone' — minor shortening. Two references fail exact-string check." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 burst pipe reveals the boiler room staircase; Enc1 shatters the floor exposing the ritual chamber; Enc2 sentinel collapse illuminates the altar summoning the entity. All three are vivid, specific, physical consequences." },
+        "balance":             { "score": 2, "reason": "Player hp 50. Enemy damage 20/25/30. A single hit from Enc0 takes 40% hp. Total enemy damage 75 vs 50 hp — player cannot survive all three encounters taking even one hit each. This is labeled brutal but the numbers make normal play impossible." },
+        "thematic_coherence":  { "score": 5, "reason": "Abandoned rotting asylum in eternal fog, flesh-stitched ghoul, asbestos wraith, shadow sentinel, Architect of Decay — every element is coherent ominous horror. 'Asbestos wraith' is a particularly inventive enemy name." },
+        "mechanical_sense":    { "score": 3, "reason": "High-pressure oxygen increasing flamethrower range against the asbestos wraith — oxygen feeds fire, but the connection to hurting the wraith specifically is indirect. Holy oil coating fuel to burn supernatural entities against the shadow sentinel is clear. Ancient sigil stone piercing invulnerability is functional." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The setting description is evocative. No generic filler." }
+      },
+      "best_element": "'Asbestos wraith' in a boiler room — a horror enemy tied directly to the location's industrial material. This level of environmental specificity is rare.",
+      "worst_element": "Balance: 75 total enemy damage against 50 player hp. This is labeled brutal, but survival under these numbers requires taking zero hits across three encounters — impractical in any game design.",
+      "overall": "Strong atmosphere and triggers, but the math makes this level unplayable as designed; the reference naming issues also need correction before it could ship."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The Victorian asylum has perfect reference integrity and appropriate medium stats, but all three encounter triggers lack causal connection to defeating the enemy — they describe state changes without explaining how the enemy defeat causes them. The mechanical connections for silver locket and obsidian shard are also weak.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'obsidian shard' is exact. Victory condition names 'shard'. Zero mismatches." },
+        "causal_chain":        { "score": 2, "reason": "Enc0 trigger 'unlocks the heavy rusted gate to the infirmary' states an outcome with no stated cause. Enc1 'reveals a hidden key inside the creature's chest cavity' is item discovery, not area progression. Enc2 'opens the iron cellar doors where the master resides' again states outcome without causal mechanism. None clearly follow from defeating the enemy." },
+        "balance":             { "score": 5, "reason": "Enemy hp 50/75/100 and damage 10/15/20 escalate cleanly. Boss hp 250 and damage 35 are strictly greater. Total damage 45 vs 100 hp is survivable medium." },
+        "thematic_coherence":  { "score": 5, "reason": "Victorian asylum, spectral dagger, whispering poltergeist, flesh-stitched abomination, weeping surgeon, Void Matriarch — every element is coherent tense horror. The setting and enemies reinforce each other." },
+        "mechanical_sense":    { "score": 3, "reason": "Consecrated salt adding burning damage against the flesh-stitched abomination is logical. Silver locket attracting/confusing ethereal entities against the weeping surgeon — the surgeon isn't obviously ethereal, making this a stretch. Obsidian shard amplifying shadowblade criticals is a stat boost, not a thematic weakness of the Void Matriarch specifically." },
+        "completeness":        { "score": 5, "reason": "All locations, enemies, and hazards are distinct and specific. Every field adds unique information." }
+      },
+      "best_element": "Stat escalation — 50/75/100 enemy health with 10/15/20 damage produces a clean difficulty ramp that matches the medium label well.",
+      "worst_element": "All three triggers describe outcomes without causal mechanisms — they read as 'X happens after the encounter' rather than 'defeating the enemy causes X', making the level feel like a series of independent rooms.",
+      "overall": "Good stats and theme, but the causal chain failure means the level doesn't feel designed as a sequence; fixing the triggers would make it a strong medium level."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The fog-shrouded graveyard has perfect reference integrity and clean stats. The Enc0 trigger is a player action rather than a consequence of the enemy defeat, and the Cursed Iron Key used as a direct combat weapon against the Bone Weaver is mechanically unusual though the level does establish the stabbing mechanic narratively.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Ethereal Oil' is exact. Victory condition names 'Ethereal Oil'. Zero mismatches." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 trigger 'Entering the gate triggers the ghoul and opens the path to the inner ruins' — the trigger is player entry, not enemy defeat. Enc1 'Defeating the Sentinel clears the debris blocking the path' is specific and causal. Enc2 'Stabbing the Bone Weaver with the key drains its shield, forcing it to retreat to the Boss Arena' is specific and creative." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/45/60 and damage 10/15/20 escalate cleanly. Boss hp 150 and damage 30 are strictly greater. Total damage 45 vs 100 hp is survivable hard." },
+        "thematic_coherence":  { "score": 5, "reason": "Fog-shrouded graveyard, Stitched Ghoul, Spectral Sentinel, Bone Weaver, Grave Warden — every element is desolate horror. The ranger with a silver-tipped longbow against undead is a classic and coherent combination." },
+        "mechanical_sense":    { "score": 3, "reason": "Bottled Will-o'-Wisp illuminating and exposing spectral weaknesses against the Spectral Sentinel is excellent. Cursed Iron Key stabbing the Bone Weaver to drain its shield is mechanically odd — keys are not typically combat weapons — though the trigger establishes it narratively. Ethereal Oil making weapons effective against eldritch armor is functional." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. 'Poisonous thorns' is a somewhat generic hazard for the first encounter." }
+      },
+      "best_element": "Enc2 trigger — 'Stabbing the Bone Weaver with the key drains its shield, forcing it to retreat to the Boss Arena' — creatively uses the pickup as a combat tool and explains how the boss encounter is triggered.",
+      "worst_element": "Enc0 trigger 'Entering the gate triggers the ghoul' — this is a player action, not a consequence of defeating the enemy. The ghoul encounter is triggered by entering the area, not by any player achievement.",
+      "overall": "A solid hard horror level with clean numbers and good thematic coherence; the trigger issue and the mechanical oddity of using a key as a weapon prevent it from reaching its potential."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The decaying Victorian asylum for a necromancer is thematically coherent and well-paced for easy difficulty. References are all exact and the victory condition names the boss item. The Enc2 trigger describes a guard blocking a door rather than a defeat consequence, and the Obsidian Seal as a combat weakness has weak mechanical logic.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Obsidian Seal' is exact. Victory condition names 'Obsidian Seal' explicitly. Zero mismatches." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 drops a key to the Surgical Wing — specific. Enc1 reveals a secret passage to the crypts — specific. Enc2 trigger 'The Warden guards the vault door to the Grand Mausoleum boss arena' describes a setup, not a consequence of defeat — the transition to the boss arena isn't explained as resulting from defeating the warden." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/40/50 and damage 5/8/10 escalate cleanly. Boss hp 100 and damage 15 are strictly greater. Total damage 23 vs 150 hp is trivially easy, appropriate for easy." },
+        "thematic_coherence":  { "score": 5, "reason": "Victorian asylum, bone scythe, restless orderly, butcher ghost, cursed warden, Architect of Decay — all coherent mysterious horror. Necromancer in a decaying asylum is a natural pairing." },
+        "mechanical_sense":    { "score": 3, "reason": "Spirit Essence Vial perceiving ethereal conduits against the Butcher Ghost is logical. Silver Surgeon Scalpel increasing damage against undead constructs against the Cursed Warden is direct. Obsidian Seal is described as a 'vulnerable point on the final boss' — it's a plot device, not a functional weapon weakness." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. Enc2 trigger is descriptive rather than causal. The Obsidian Seal effect 'Vulnerable point on the final boss' is circular — it describes its own use as a weakness rather than explaining what it does." }
+      },
+      "best_element": "Enc0 trigger — 'Defeating the orderly drops a key to the Surgical Wing' — is the clearest and most mechanically satisfying trigger in the level; item drops as progression keys is a natural game design pattern.",
+      "worst_element": "The Obsidian Seal pickup effect 'Vulnerable point on the final boss' is self-referential rather than descriptive. It tells the player nothing about the item's functional properties.",
+      "overall": "A clean, coherent easy level that would work as a tutorial introduction; the Enc2 trigger and self-referential pickup description are the main issues to address."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The shifting asylum is thematically coherent with a strong causal chain and clean reference chain for most entries. The balance is extreme — enemy damage escalates to 50 per hit against 100 player hp — and the victory condition is entirely generic. The Enc1 weakness uses a descriptor appended to the pickup name.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc1 weakness 'Stabilizing Serum nullifies ghostly phase-shifting' appends a description to the pickup name 'Stabilizing Serum'. All other weaknesses are exact. Victory condition 'Strike the exposed heart during the void cycle' names no items from the level." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 causes the floor to tilt toward the laboratory wing — specific and physical. Enc1 extracting the fuel canister shatters the containment doors. Enc2 obtaining the key unlocks the altar room. All three are specific, physical consequences of the encounters." },
+        "balance":             { "score": 2, "reason": "Enemy damage 30/40/50. Enc2 enemy deals 50 damage — half the player's 100 hp per hit. Total enemy damage 120 exceeds player hp. Boss deals 75 damage per hit — deadlier than any encounter enemy by a wide margin. The numbers are aggressive even for brutal." },
+        "thematic_coherence":  { "score": 5, "reason": "Shifting asylum with gravity fluctuations, flesh-stitched abomination, phantasmal surgeon, blood-crazed berserker clone, Architect of Chaos — every element reinforces chaotic horror. The berserker clone is a thematic highlight." },
+        "mechanical_sense":    { "score": 4, "reason": "Stabilizing Serum nullifying ghostly phase-shifting against the Phantasmal Surgeon is an excellent, specific mechanical connection. Ignited Fuel Canister against the Blood-Crazed Berserker Clone is straightforward fire damage. Ancient Void Key revealing the boss's heart weakness is functional." },
+        "completeness":        { "score": 5, "reason": "Every field is specific, distinct, and inventive. The Blood-Crazed Berserker Clone as an Enc2 enemy is one of the most creative enemy designs in the batch." }
+      },
+      "best_element": "Stabilizing Serum nullifying the Phantasmal Surgeon's ghostly phase-shifting — the pickup effect maps exactly onto the specific combat ability of the enemy, not just a general type weakness.",
+      "worst_element": "Victory condition 'Strike the exposed heart during the void cycle' names no items from the level and could appear on any boss in any game.",
+      "overall": "A chaotic, creative horror level with strong triggers and excellent enemy design, undermined by extreme balance and a generic victory condition."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The Victorian botanical garden at twilight blends horror and serenity effectively. Two of the three triggers are player actions rather than enemy-defeat consequences, and the Ancient Rusty Key as a combat weapon weakness for the Spectral Gardener has no functional logic.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Petrified Rose' is exact. Victory condition names 'rose'. Zero mismatches." },
+        "causal_chain":        { "score": 2, "reason": "Enc0 trigger 'Opening the main atrium door triggers the next area' is a player action, not an enemy defeat consequence. Enc1 'Defeating the wraith unlocks the path to the inner vault' is specific and causal. Enc2 'Finding the key reveals the central chamber door' is about acquiring the pickup, not defeating the Spectral Gardener." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/40/50 and damage 10/15/20 escalate cleanly. Boss hp 120 and damage 25 are strictly greater. Total damage 45 vs 100 hp is survivable medium." },
+        "thematic_coherence":  { "score": 4, "reason": "Victorian botanical garden, vine-wraith, drowned warden, spectral gardener, Arboretum Mother — all fit the serene-horror blend. The combination of serene setting with spectral horror is intentional and mostly works." },
+        "mechanical_sense":    { "score": 3, "reason": "Bottled Moonlight blinding spectral entities against the Drowned Warden is clear. Ancient Rusty Key against the Spectral Gardener — a key that 'opens the inner sanctum' used as combat damage has no functional connection to hurting a spectral gardener. Petrified Rose attracting the boss to a focal point is functional." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. Two triggers are player actions, reducing their design information." }
+      },
+      "best_element": "The Arboretum Mother boss and Petrified Rose interaction — placing the rose on the altar to wither her form is a specific, thematic victory mechanic that fits the botanical garden setting.",
+      "worst_element": "Enc0 trigger 'Opening the main atrium door triggers the next area' — this is a player walking through a door, entirely decoupled from defeating the Vine-Wraith. The encounter could be skipped with no narrative consequence.",
+      "overall": "An interesting mood experiment (serene horror) with good stats and theme, but the trigger failures make the level feel like disconnected rooms rather than a designed sequence."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The enchanted decaying toy workshop is a well-executed whimsical horror concept with perfect references, excellent causal chain, and appropriate easy stats. The Glowing Gear's connection to the Velvet Spider is the only mechanical weak point in an otherwise polished level.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Heart of the Workshop' is exact. Victory condition names 'Heart of the Workshop'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 defeating the clown winds up the toy train opening the path — specific and thematic. Enc1 clearing the spiders causes the storeroom walls to shift into a corridor — vivid and specific. Enc2 destroying the puppet causes the Loom to unravel revealing the stairway — excellent." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/40/50 and damage 5/10/15 escalate cleanly. Boss hp 100 and damage 20 are strictly greater. Total damage 30 vs 100 hp is easy, matching the target." },
+        "thematic_coherence":  { "score": 5, "reason": "Enchanted decaying toy workshop, Clockwork Clown, Velvet Spider, Spectral Puppet, Toymaker's Shadow — every element belongs to the whimsical horror aesthetic. The setting is the most inventive in the file." },
+        "mechanical_sense":    { "score": 3, "reason": "Glowing Gear increasing spell casting speed against the Velvet Spider — a gear speeding up magic has no logical connection to harming a spider. Silver Chime stunning spectral enemies against the Spectral Puppet is exact. Heart of the Workshop granting immunity to boss fear against the Toymaker's Shadow is functional." },
+        "completeness":        { "score": 5, "reason": "Every field is specific, inventive, and distinct. The level reads as coherently designed from setting to reward." }
+      },
+      "best_element": "The causal chain — each trigger is a whimsical physical consequence (toy train winding up, walls shifting, loom unraveling) that matches the setting's mechanical toy theme perfectly.",
+      "worst_element": "Glowing Gear as the Velvet Spider's weakness: the effect 'increases spell casting speed' has no logical connection to harming a spider, mechanical or otherwise.",
+      "overall": "One of the strongest easy levels in the batch — creative, coherent, and fun to read. The only meaningful flaw is one weak mechanical connection."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "chaotic",
+      "player_class": "engineer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The clockwork cathedral is a textbook steampunk level with perfect references, excellent causal chain, and clean stat escalation. Every mechanical connection is logical. This is the strongest entry in the steampunk section.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Master Override Cog' is exact. Victory condition explicitly names 'Master Override Cog'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 releasing a steam valve reveals the path to the main hall. Enc1 Sprite drops a keycard granting bridge entry — a specific item drop. Enc2 guardian collapse triggers emergency shutdown of the core engine. All three are specific, physical consequences." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/40/60 and damage 10/15/20 escalate cleanly. Boss hp 150 and damage 25 are strictly greater. Total damage 45 vs 100 hp is survivable medium." },
+        "thematic_coherence":  { "score": 5, "reason": "Gear-driven clockwork cathedral, rusty automaton, steam sprite, clockwork guardian, The Architect — every element is steampunk chaotic. The setting and enemies are mutually reinforcing." },
+        "mechanical_sense":    { "score": 5, "reason": "Coolant Vial lowering core temperature against the Steam Sprite is obvious. Conductive Copper Wire shorting electrified machinery against the Clockwork Guardian is direct. Master Override Cog stopping the main mechanism against The Architect is logical." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. No location, enemy, or hazard is repeated. The level reads as intentionally designed." }
+      },
+      "best_element": "The mechanical sense is uniformly excellent — every pickup effect maps directly and obviously onto why it would harm the corresponding enemy, creating a coherent system.",
+      "worst_element": "Nothing stands out as a serious flaw. The level is consistently well-constructed across all criteria.",
+      "overall": "A clean, coherent medium steampunk level that would be satisfying to play. The strongest entry in the steampunk section and one of the best in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The clockwork observatory has excellent mechanical connections and stat escalation, but every enemy weakness appends a descriptor to the item name — all four references fail the exact-string check. The causal chain is strong and the theme is fully coherent.",
+      "scores": {
+        "reference_integrity": { "score": 2, "reason": "Enc0 weakness 'Aetheric Wrench impact on joints' appends 'impact on joints'. Enc1 'Conductive Oil coating' appends 'coating'. Enc2 'Magnetic Anchor pull' appends 'pull'. Boss 'Celestial Lens concentrated heat beam' appends 'concentrated heat beam'. All four references fail the exact-string check." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 deactivating the foyer gear activates the lift to the Gear Chamber. Enc1 stripping the Automaton's armor reveals the access hatch to the Telescope Deck. Enc2 calibrating the telescope with the Lens initiates the boss encounter. All three are specific, physically inventive consequences." },
+        "balance":             { "score": 5, "reason": "Enemy hp 50/75/100 and damage 10/20/25 escalate cleanly. Boss hp 250 and damage 40 are strictly greater. Total damage 55 vs 100 hp is tight for hard." },
+        "thematic_coherence":  { "score": 5, "reason": "Decaying clockwork observatory in a smog-choked void, artificer with an aetheric wrench — Clockwork Sentry, Rust-Blighted Automaton, Aether-Corrupted Sentinel, Prime Chronos-Core. Every element is mysterious steampunk." },
+        "mechanical_sense":    { "score": 5, "reason": "Conductive Oil enhancing conductivity for electrical strikes against the Rust-Blighted Automaton is clear. Magnetic Anchor ripping armor against the Aether-Corrupted Sentinel is inventive. Celestial Lens focusing heat against the Chronos-Core is logical." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The Enc2 trigger using the pickup (Celestial Lens) to calibrate the telescope as a boss-summoning mechanic is the most mechanically inventive trigger in the steampunk section." }
+      },
+      "best_element": "Enc2 trigger — 'Calibrating the telescope with the Lens initiates the boss encounter' — uses the pickup as a functional observatory instrument rather than just a combat item, giving the setting real mechanical weight.",
+      "worst_element": "Every single enemy weakness appends a descriptor to the item name rather than using it exactly. This is a systemic reference integrity failure that would cause lookup errors across the entire level.",
+      "overall": "A thematically inventive hard level with strong trigger design, undermined entirely by its reference naming convention — all four weakness references would fail in an engine."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The Whimsical Brass Observatory is a well-constructed easy level with perfect references and appropriate stats. The Enc2 trigger is about the player using the pickup rather than a consequence of defeating the enemy. The Grand Chronometer Key as a boss weakness — 'freezing the clockwork mechanism' — is a creative and thematic resolution.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Grand Chronometer Key' is exact. Victory condition references 'key'. Zero mismatches." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 activating the pressurized door after defeating the bot is specific. Enc1 stopping the spider triggers the elevator — specific. Enc2 trigger 'Turning the key unlocks the Observatory Dome' — this is the player using the pickup, not a consequence of defeating the Steam-Powered Automaton. One trigger is a player action." },
+        "balance":             { "score": 5, "reason": "Enemy hp 15/25/30 and damage 5/8/10 escalate cleanly. Boss hp 60 and damage 15 are strictly greater. Total damage 23 vs 100 hp is trivially easy, appropriate for easy." },
+        "thematic_coherence":  { "score": 5, "reason": "Whimsical Brass Observatory, Rust-Bot 01, Clockwork Spider, Steam-Powered Automaton, Grand Clockmaker — every element is whimsical steampunk. The naming convention is consistent and charming." },
+        "mechanical_sense":    { "score": 5, "reason": "Quick-Dissolve Catalyst increasing acid damage against the Clockwork Spider (acid dissolves metal) is direct. Conductive Copper Wire creating electrical traps against the Steam-Powered Automaton is clear. Grand Chronometer Key freezing the clockwork mechanism against the Grand Clockmaker is thematic." },
+        "completeness":        { "score": 5, "reason": "All fields are specific and distinct. The level is compact and well-designed." }
+      },
+      "best_element": "Grand Chronometer Key freezing the clockwork mechanism holding the boss together — a key that literally stops clockwork is the perfect thematic resolution for a steampunk boss.",
+      "worst_element": "Enc2 trigger 'Turning the key unlocks the Observatory Dome' — this is the player using the pickup as a door key, not a consequence of defeating the Steam-Powered Automaton. The enemy defeat and the area progression are decoupled.",
+      "overall": "A clean, charming easy level that would be fun as an introductory steampunk experience; the trigger decoupling is a minor issue in an otherwise solid design."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The corroded clockwork laboratory is a well-constructed brutal level with perfect references, a strong causal chain, and excellent mechanical sense. The balance is tight but survivable, and the victory condition names the boss item explicitly.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'arc-fuse core' is exact. Victory condition names 'arc-fuse core'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 shutting down the steam valve triggers the alarm in the ventilation shaft — specific and physical. Enc1 disabling the fan blades reveals the path to the power core — specific. Enc2 extracting the arc-fuse core overloads the main power source and summons the boss — specific and mechanically satisfying." },
+        "balance":             { "score": 3, "reason": "Player hp 50. Enemy damage 10/20/25. Total enemy damage 55 exceeds player hp. A single Enc2 hit (25 damage) takes half the player's health. Survivable with near-perfect play for brutal, but the margin is very tight." },
+        "thematic_coherence":  { "score": 5, "reason": "Corroded clockwork laboratory, tense rogue, steam-vent corridor, ventilation shaft, power core, Grand Clockmaker — fully coherent steampunk. The setting progression is physically logical." },
+        "mechanical_sense":    { "score": 5, "reason": "Wrench of containment sealing steam pipes against the steam-powered spider drone is exact. Super-conductive lubricant freezing mechanical joints against the hydraulic guard is precise. Arc-fuse core destabilizing high-voltage machinery against the Grand Clockmaker is direct." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The setting is described with physical specificity. No generic filler." }
+      },
+      "best_element": "Enc2 trigger — 'extracting the arc-fuse core overloads the main power source and summons the boss' — uses the pickup acquisition as a causal event, making the Enc2 enemy defeat and boss summoning feel mechanically connected.",
+      "worst_element": "Balance: total enemy damage of 55 vs 50 player hp means a player who takes one hit per encounter is mathematically eliminated before reaching the boss.",
+      "overall": "A strong brutal level with excellent mechanical design and a coherent progression; the balance is harsh but deliberately so, and the level is otherwise well-constructed."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "ominous",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The rain-slicked industrial clocktower is thematically excellent and well-balanced, but the Insulated Rubber Seal as the Lightning Rod Warden's weakness is mechanically backwards — rubber insulates against electricity and should make the warden immune, not vulnerable. Every other element is strong.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Stabilization Core' is exact. Victory condition names 'Stabilization Core'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 unlocks blast doors to the Boiler Room. Enc1 vents pressure, clearing the staircase to the Zenith — specific physical consequence. Enc2 claiming the Core initiates the bridge sequence to the Boss Platform. All three are specific and physical." },
+        "balance":             { "score": 5, "reason": "Enemy hp 40/60/80 and damage 10/15/20 escalate cleanly. Boss hp 200 and damage 30 are strictly greater. Total damage 45 vs 100 hp is survivable hard." },
+        "thematic_coherence":  { "score": 5, "reason": "Rain-slicked clocktower in a perpetual lightning storm, electrified brass gauntlet, Clockwork Sentry, Steam-Pressure Construct, Lightning Rod Warden, Storm-Engine Titan — perfectly coherent ominous steampunk. The lightning theme runs through every element." },
+        "mechanical_sense":    { "score": 2, "reason": "Copper Conductive Coil increasing lightning radius against the Steam-Pressure Construct — electricity against steam is indirect but defensible. Insulated Rubber Seal as weakness for the Lightning Rod Warden is mechanically backwards: rubber is an electrical insulator and should protect the warden, not damage it. A creature that attracts lightning should be immune to electricity, not weak to its counter. Stabilization Core dampening the boss's storm energy is logical." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The setting description and enemy design are some of the most evocative in the file." }
+      },
+      "best_element": "The unified lightning theme — electrified brass gauntlet, Copper Conductive Coil, Lightning Rod Warden, Storm-Engine Titan — creates the strongest thematic identity of any steampunk level in the batch.",
+      "worst_element": "Insulated Rubber Seal as the Lightning Rod Warden's weakness is mechanically incoherent — rubber blocks electricity, meaning this pickup should theoretically grant the warden immunity rather than vulnerability.",
+      "overall": "A strong hard level undermined by one significant mechanical nonsense: the insulating material defeating the lightning creature. The rest of the level is excellent and would be fun to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The foggy clockwork wasteland has a minor reference variation, a generic victory condition, and numbers that are too easy for medium. The mechanical connections are strong and the causal chain mostly works. Enc2 trigger is about acquiring the pickup rather than defeating the enemy.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc0 weakness 'Chronostaff impact' appends 'impact' to the weapon name 'Chronostaff'. All other references are exact. Victory condition 'Stabilize the main engine room before the city implodes' names no items — this check fails." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 opens the heavy pressure gate to the Gear Works — specific. Enc1 Saboteur death reveals a hidden elevator — specific. Enc2 'Securing the anchor deactivates the boss shield' is about acquiring the pickup (Temporal Anchor), not defeating the Iron Sentinel." },
+        "balance":             { "score": 3, "reason": "Enemy hp 40/50/60 and damage 10/12/15 escalate cleanly but are very low. Total damage 37 vs 100 hp is appropriate for easy, not medium. The difficulty label does not match." },
+        "thematic_coherence":  { "score": 5, "reason": "Desolate foggy clockwork industrial wasteland, chronomancer, Steam Automaton, Clockwork Saboteur, Iron Sentinel, Lord Cogsworth — fully coherent desolate steampunk." },
+        "mechanical_sense":    { "score": 5, "reason": "Brass Gear Wrench jamming mechanical joints against the Clockwork Saboteur is precise. Concentrated Aether Vial freezing time for mechanical entities against the Iron Sentinel is excellent. Temporal Anchor nullifying temporal distortions against Lord Cogsworth is thematic." },
+        "completeness":        { "score": 5, "reason": "All locations, enemies, and hazards are distinct. Every field adds specific information." }
+      },
+      "best_element": "Concentrated Aether Vial temporarily freezing time for mechanical entities — the chronomancer's temporal theme applied directly to the weakness system, making the class identity mechanically meaningful.",
+      "worst_element": "The difficulty mismatch: total enemy damage of 37 against 100 hp is appropriate for easy, not medium. The numbers need to be roughly doubled to justify the medium label.",
+      "overall": "A thematically coherent level with strong mechanical sense, hampered by a mislabeled difficulty and a generic victory condition."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "eerie",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The clockwork foundry beneath Gear-Haven is a well-constructed brutal level with perfect references, a strong causal chain, and logical mechanical connections. Stats are appropriate for brutal difficulty, and the victory condition names both the pickup and the player weapon.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Overclocking Gear' is exact. Victory condition names 'Scepter' (clear reference to Obsidian Scepter of Tectonic Rupture). Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 triggers the release of the pressure lock to the Forge Floor. Enc1 causes the foundry's main core to spin, opening the control room. Enc2 causes the floor to collapse into the Boss Arena. All three are specific, physical, and irreversible consequences." },
+        "balance":             { "score": 3, "reason": "Player hp 50. Enemy damage 10/12/15. Total enemy damage 37 exceeds player hp with minimal margin. Boss damage 25 is roughly half player hp per hit. Tight for brutal, survivable with near-perfect play. Enemy escalation is clean but the damage-to-hp ratio is harsh." },
+        "thematic_coherence":  { "score": 5, "reason": "Smog-choked clockwork foundry, geomancer, Steam-Pressure Automaton, Brass Sentry Spider, Clockwork Saboteur, Steam-Lord Architect — every element is coherent eerie steampunk." },
+        "mechanical_sense":    { "score": 5, "reason": "Magnetic Flux Coil disabling electronic shields against the Brass Sentry Spider is direct. Refined Quartz Lens refracting energy beams against the Clockwork Saboteur is logical. Overclocking Gear massively boosting weapon output for a single decisive strike is a satisfying final mechanic." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The setting description is one of the most evocative in the steampunk section." }
+      },
+      "best_element": "The Enc2 trigger — 'The sabotage of the control room causes the floor to collapse into the Boss Arena' — is the most dramatic and physically specific boss summoning in the file.",
+      "worst_element": "Balance: 50 player hp against enemies dealing 10/12/15 damage with a boss at 25 per hit makes every encounter a survival challenge. Appropriate for brutal but the margins are extreme.",
+      "overall": "A strong, coherent brutal level that would deliver the intended difficulty. Clean references and inventive triggers make it one of the better designs in the steampunk section."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The cloudtop clockwork garden is a pleasant, coherent easy level with perfect references and appropriate stats. The Pressure Valve Handle as a combat weakness for the Clockwork Sentry is unusual but the effect (shutting off steam power for a steam-powered enemy) makes functional sense. The Enc2 trigger is item-drop rather than area-transition.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Master Key' is exact. Victory condition names 'Master Key'. Zero mismatches." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 activates the bridge to the fountain — specific. Enc1 'the sprite's explosion reveals a path to the workshop' — specific physical consequence. Enc2 'the sentry drops the Master Key upon defeat' — this is an item drop, not an area transition trigger. The path to the boss chamber is not established." },
+        "balance":             { "score": 5, "reason": "Enemy hp 20/25/30 and damage 5/7/8 escalate cleanly. Boss hp 50 and damage 10 are strictly greater. Total damage 20 vs 100 hp is trivially easy, appropriate for easy." },
+        "thematic_coherence":  { "score": 5, "reason": "Quiet cloudtop clockwork garden, paladin with holy warhammer, Rust-Bitten Automaton, Steam-Leak Sprite, Clockwork Sentry, Great Chronos Golem — fully coherent serene steampunk." },
+        "mechanical_sense":    { "score": 5, "reason": "Oil Canister lubricating the Steam-Leak Sprite to stop its steam leak is inventive — treating the enemy as broken machinery. Pressure Valve Handle shutting off steam pipes against the steam-powered Clockwork Sentry is direct. Master Key unlocking the golem's heart-core is thematic." },
+        "completeness":        { "score": 5, "reason": "All fields are specific and distinct. The Oil Canister effect 'can be used to lubricate frozen mechanisms or enemies' is one of the most functionally described pickup effects in the batch." }
+      },
+      "best_element": "Oil Canister used against the Steam-Leak Sprite — treating the enemy as a malfunctioning machine that can be 'fixed' (and thereby defeated) rather than fought, which fits both the paladin class and the serene mood perfectly.",
+      "worst_element": "Enc2 trigger 'the sentry drops the Master Key upon defeat' — this establishes a loot drop but doesn't explain how the player reaches the boss chamber. The area transition is missing.",
+      "overall": "A charming, serene easy level with creative mechanical sense; the missing area transition in the Enc2 trigger is the only structural gap."
+    }
+  }
+]

@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "ominous",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal ominous volcanic geomancer level where the boss weakness is 'Cooling Mist' — the encounter 0 pickup — skipping the Magma-Resistant Plating from encounter 2. The encounter 0 trigger describes the player being trapped (bridge collapses behind them) rather than a consequence of defeating the enemy. Total incoming damage is lethal.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Terra-Shard Staff' (player weapon) exact. Enc 1 weakness 'Cooling Mist' (enc 0 pickup) exact. Enc 2 weakness 'Volcanic Catalyst' (enc 1 pickup) exact. Boss weakness 'Cooling Mist' — references enc 0 pickup (prior encounter), which is allowed. Victory condition names 'Cooling Mist' exactly. All references exact, though boss reuses enc 0 pickup over enc 2's."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Entering the cavern causes the rock bridge to collapse behind you' — this is an entry trigger, not a defeat consequence. Enc 1 'Defeating the Wraith releases a pulse that opens the seal to the upper sanctum' — defeat-triggered, specific. Enc 2 'Golem defeat triggers the ignition of the central furnace, awakening the Titan' — defeat-triggered, dramatic. One trigger is an entry event, not a defeat consequence."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Health: 150-250-400 and damage: 15-25-40. Boss at 800/50 is strictly hardest. Total incoming (15+25+40+50=130) vs 100 HP player — mathematically lethal without healing. No healing pickup anywhere (Cooling Mist lowers heat, Volcanic Catalyst increases spell speed, Magma-Resistant Plating grants lava immunity — all utility). The level is unwinnable as designed."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Deep volcanic super-volcano — Magma Scuttler, Cinder Wraith, Molten Golem, Obsidian Titan. Cooling Mist, Volcanic Catalyst, Magma-Resistant Plating. Every element is thematically appropriate and reinforces the ominous volcanic setting."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Cooling Mist (lowers heat) against a Cinder Wraith — cold vs. fire is perfectly logical. Volcanic Catalyst (increases spell speed) against a Molten Golem — speed advantage against a slow powerful enemy makes sense. Boss: Cooling Mist shattering the Titan's heat-based core is mechanically sound."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and volcanic-specific. All enemy names fit the theme. Hazards are specific (Lava Pools, Ash Cloud, Tremor Zones). Magma-Resistant Plating from enc 2 goes unused in the boss fight despite being specifically relevant to a volcanic boss encounter."
+        }
+      },
+      "best_element": "Cooling Mist shattering the Obsidian Titan's core is the most mechanically coherent boss victory condition in the volcanic entries — cold vs. volcanic rock is an intuitive and satisfying mechanic.",
+      "worst_element": "No healing pickup in the entire level with total incoming damage (130) exceeding player health (100) — the level is mathematically impossible without either more health or a healing item.",
+      "overall": "Excellent mechanical sense and thematic coherence, but the complete absence of healing makes this level unbeatable — a fundamental balance failure despite the strong design elsewhere."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A chaotic volcanic pyromancer level with clean exact references throughout. The Frost-Infused Ember as a pyromancer weakness against fire enemies creates an interesting elemental contrast. Causal triggers are specific and defeat-triggered. Well-balanced for hard difficulty.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Inferno Staff' (player weapon) exact. Enc 1 weakness 'Swift Casting Catalyst' (enc 0 pickup) exact. Enc 2 weakness 'Frost-Infused Ember' (enc 1 pickup) exact. Boss weakness 'Frost-Infused Ember' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc 0 'Defeating the Stalker collapses the entrance, blocking the path back and opening the route to the Crag' — defeat-triggered, dramatic and specific (no retreat possible). Enc 1 'Shattering the Golem triggers a seismic event that reveals the path to the Inner Sanctum' — specific geological consequence. Enc 2 'Banishing the Demon ignites the final portal' — defeat-triggered, specific. All three are inevitable defeat-triggered consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-80-120 and damage 10-15-20. Boss at 200/35 strictly harder. Total incoming (10+15+20+35=80) vs 100 HP — appropriate for hard. Volcanic Potion (50 HP heal) from enc 2 provides meaningful recovery. Boss victory condition references 'cooling vents' — specific secondary objective."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Active Volcanic Peak, Ash Stalker, Molten Golem, Pyro-Demon, Magma Core Sentinel — all fit chaotic volcanic. Frost-Infused Ember as a counter to fire enemies is thematically clever (controlled cold vs. uncontrolled heat). Swift Casting Catalyst fits the pyromancer class."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Swift Casting Catalyst (spell speed) against a Molten Golem — faster casting lets you outpace a slow lava creature. Frost-Infused Ember (freezes movement) against a Pyro-Demon and Magma Core Sentinel — cold countering fire is the most intuitive elemental pairing in the dataset. Consistently logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations are distinct. All enemies are unique. Hazards escalate in severity (Lava Geysers, Falling Obsidian Shards, Rising Lava Floor). The boss victory condition adds a secondary mechanic ('Destroy the cooling vents') that makes the fight more complex."
+        }
+      },
+      "best_element": "The enc 0 trigger — 'collapse the entrance, blocking the path back' — creates a point of no return that raises the stakes and makes every subsequent encounter feel more consequential.",
+      "worst_element": "The boss victory condition mentions 'cooling vents' as secondary targets but these aren't set up anywhere in the level — players would be surprised by this mechanic without prior context.",
+      "overall": "One of the strongest levels in the dataset — clean references, excellent causal chain, logical mechanical pairings, and appropriate difficulty. Would be genuinely fun to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A tense volcanic paladin level with a notable structural issue: encounter 1 trigger is 'Opening the supply chest signals the backup guards' — a player action, not a defeat consequence. Boss victory condition ('Destroy the cooling valves') names no specific item. References are exact throughout.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Holy Warhammer' (player weapon) exact. Enc 1 weakness 'Cinder Boots' (enc 0 pickup) exact. Enc 2 weakness 'Liquid Nitrogen Flask' (enc 1 pickup) exact. Boss weakness 'Liquid Nitrogen Flask' exact. All references exact."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc 0 'Defeating the Stalker unlocks the pressure gate' — defeat-triggered. Enc 1 trigger 'Opening the supply chest signals the backup guards' — this is a player action (opening a chest), not a consequence of defeating the Ember Knight. Enc 2 'The Golem death cry triggers the Boss alarm' — defeat-triggered. One trigger is entirely disconnected from defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-75-100 and damage 10-15-20. Boss at 200/30 strictly harder. Total incoming (10+15+20+30=75) vs 150 HP — appropriate for medium. Shield of Faith (invulnerability) from enc 2 provides strong survivability. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Underground Volcanic Facility, Ash Stalker, Ember Knight, Molten Golem, Magma Core Sentinel — all fit tense volcanic setting. Holy Warhammer and Liquid Nitrogen Flask for a paladin fits the 'sacred warrior against elemental threats' archetype."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Cinder Boots (movement speed) against an Ember Knight — speed advantage against a fire knight is defensible (outmaneuvering flaming attacks). Liquid Nitrogen Flask (freeze magma) against a Molten Golem and Magma Core Sentinel is logically perfect — cold vs. lava."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Boss victory condition 'Destroy the cooling valves' names no specific item. Shield of Faith from enc 2 is used in the boss fight (invulnerability). Ancient Relic of Light reward is generic for a paladin level. Enc 1 trigger is a player action, not a defeat consequence."
+        }
+      },
+      "best_element": "Liquid Nitrogen Flask (freeze magma) as the recurring weakness through encounter 2 and the boss is the most mechanically straightforward and satisfying tool in the volcanic entries — cold stopping lava is instantly intuitive.",
+      "worst_element": "Boss victory condition 'Destroy the cooling valves' provides no instruction on using the Liquid Nitrogen Flask — the mechanic is clear in the weakness field but absent from the victory condition.",
+      "overall": "A solid medium-difficulty level with clean references and good thematic consistency; the player-action trigger in enc 1 and generic boss victory condition are the main issues requiring revision."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A desolate brutal volcanic berserker level where encounter 2 enemy weakness is 'Adrenaline Injector speed boost' — a paraphrase rather than the exact name 'Adrenaline Injector'. Boss weakness references the encounter 0 pickup (Cryogenic Frost Canister) rather than the final pickup. The level has excellent escalation but a tight survivability margin.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Heavy Obsidian Greataxe' (player weapon) exact. Enc 1 weakness 'Cryogenic Frost Canister' (enc 0 pickup) exact. Enc 2 weakness 'Adrenaline Injector speed boost' — not exact; pickup name is 'Adrenaline Injector'. Boss weakness 'Cryogenic Frost Canister' (enc 0 pickup) exact — references a prior encounter pickup. Victory condition names it. One imprecise reference."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Killing the Stalker reveals a path to the obsidian bridge' — defeat-triggered, specific. Enc 1 'Destroying the Construct collapses the path to the crater' — defeat-triggered; oddly, destroying the bridge collapses rather than opens the path, but functionally advances. Enc 2 'The death of the Berserker unlocks the inner sanctum' — defeat-triggered. All are defeat consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health: 80-150-250 and damage: 15-25-40. Boss at 500/50 strictly hardest. Total incoming (15+25+40+50=130) vs 100 HP — lethal without Thermal Shielding Unit (heat immunity, not healing). No direct healing pickup. The level is brutally difficult and likely requires strategic play around the enc 1 pick for the boss."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Dead Isle Caldera, Ash Stalker, Ignis Construct, Molten Berserker, Magma Core Sentinel — all fit desolate volcanic. Cryogenic Frost Canister and Adrenaline Injector are slightly sci-fi for a volcanic desolation setting but are defensible."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Cryogenic Frost Canister (frost damage) against an Ignis Construct is the classic cold-vs-fire pairing. Adrenaline Injector (speed) against a Molten Berserker — outrunning a heavy fire berserker makes sense. Boss: Cryogenic Frost Canister against the Magma Core Sentinel (destroying cooling vents after applying frost) is logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are unique. Hazards are specific. Thermal Shielding Unit from enc 2 goes unused in boss fight (heat immunity would be useful against a volcanic boss). Boss victory condition references 'cryogenic frost' specifically."
+        }
+      },
+      "best_element": "The use of Cryogenic Frost Canister as both encounter 1 enemy weakness and boss weakness creates a clear mechanical throughline — the cold item is established early as the key tool and remains central to the boss fight.",
+      "worst_element": "'Adrenaline Injector speed boost' in encounter 2's weakness field — adding 'speed boost' makes the name inexact and would fail a game engine's exact-string resolution.",
+      "overall": "A thematically coherent brutal level with a strong mechanical throughline; fix the enc 2 weakness string and add a healing pickup to make this a shippable design."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A clean easy mysterious volcanic artificer level with exact references throughout. The Frost-Core Catalyst threading from enc 1 pickup through enc 2 weakness to boss weakness and victory condition is a well-executed three-step chain. All triggers are defeat-triggered.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Artificer Wrench' (player weapon) exact. Enc 1 weakness 'Overclock Module' (enc 0 pickup) exact. Enc 2 weakness 'Frost-Core Catalyst' (enc 1 pickup) exact. Boss weakness 'Frost-Core Catalyst' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the stalker activates the elevator to the core' — defeat-triggered, specific. Enc 1 'The wisp dissipates revealing the path to the inner sanctum' — defeat-triggered. Enc 2 'Defeating the golem triggers the chamber gates to rise' — defeat-triggered. All three are defeat consequences. Enc 1 is slightly generic ('revealing the path')."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-30-40 and damage 5-8-10. Boss at 80/15 strictly harder. Total incoming (5+8+10+15=38) vs 100 HP — trivially easy and appropriate. Thermal Cloak (shields against fire) from enc 2 provides defensive utility for the volcanic boss fight."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Subterranean Volcanic Facility, Ash Stalker, Cinder Wisp, Molten Golem, Magma Sentinel — all fit mysterious volcanic. Artificer Wrench, Overclock Module, Frost-Core Catalyst are appropriate artificer-tech items in a volcanic setting."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Overclock Module (attack speed) against a Cinder Wisp — speed advantage to hit an ephemeral creature makes sense. Frost-Core Catalyst (freezes on impact) against a Molten Golem and Magma Sentinel — cold-freezing lava creatures is the most intuitive volcanic mechanic. Perfectly logical throughout."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct. Enemies are unique. Thermal Cloak from enc 2 is a defensive item appropriate for a volcanic boss. The reward 'Ancient Forge Blueprints' is class-appropriate for an artificer. No placeholder text."
+        }
+      },
+      "best_element": "The pickup chain — Overclock Module boosting attack speed, then Frost-Core Catalyst freezing volcanic enemies — creates a coherent artificer toolkit: speed and then temperature control.",
+      "worst_element": "Encounter 1 trigger 'The wisp dissipates revealing the path to the inner sanctum' is slightly generic — 'revealing the path' appears in multiple entries without specifying what physically changes.",
+      "overall": "A clean, well-referenced easy-difficulty level with strong mechanical sense; minor trigger genericism is the only issue in an otherwise solid design."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "eerie",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An eerie volcanic stormcaller level where encounter 1 trigger 'Grab the shard to activate the gate mechanism' is a player action (grabbing a pickup), not a defeat consequence. Also, 'Frozen Vault' as an encounter location inside a volcanic cavern is thematically contradictory. References are exact throughout.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Lightning Spear' (player weapon) exact. Enc 1 weakness 'Conductive Lens' (enc 0 pickup) exact. Enc 2 weakness 'Glacial Shard' (enc 1 pickup) exact. Boss weakness 'Glacial Shard' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc 0 trigger 'Defeat to unlock the bridge to the Frozen Vault' — this just says 'defeat to unlock' which is minimal; no specific physical mechanism described. Enc 1 trigger 'Grab the shard to activate the gate mechanism' — a player action (grabbing enc 1's pickup), not a defeat consequence. Enc 2 'Escaping the collapsing sanctum leads directly to the boss chamber' — player escape action. Two of three triggers don't require defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-80-120 and damage 10-15-20. Boss at 200/35 strictly harder. Total incoming (10+15+20+35=80) vs 100 HP — appropriate for hard. Zephyr Boots (doubles movement speed) from enc 2 provides mobility utility. One minor concern: boss damage (35) is not dramatically higher than enc 2 enemy (20)."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "Subterranean Volcanic Cavern — but encounter 1 location is 'Frozen Vault'. A frozen vault inside a volcanic cavern is a stark thematic contradiction. Ash Stalker, Obsidian Golem, Cinder Wisp, Magma Core Sentinel are all volcanically appropriate; the Frozen Vault undercuts the setting consistency."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Conductive Lens (critical hit chance) against an Obsidian Golem — focused lightning strikes on a conductive stone surface is defensible. Glacial Shard (freezes on contact) against a Cinder Wisp and Magma Core Sentinel — cold countering fire entities is logical for a stormcaller."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are mostly distinct. Zephyr Boots from enc 2 goes unused in the boss fight (speed utility, not boss weakness). All enemies are unique. 'Inner Sanctum' and 'Frozen Vault' are somewhat generic location names."
+        }
+      },
+      "best_element": "Glacial Shard (freezes on contact) as the stormcaller's tool against fire entities in a volcanic setting creates a satisfying elemental opposition that fits the class's weather-manipulation theme.",
+      "worst_element": "'Frozen Vault' as an encounter location inside a volcanic cavern directly contradicts the established setting — a frozen chamber in an active volcano needs explicit in-world justification.",
+      "overall": "The level has good references and balance but weak causal triggers and a thematic contradiction in the Frozen Vault location; these are fixable issues but require design attention before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightful whimsical volcanic beastmaster level at Mount Cinder-Pop. References are exact throughout. The pickup chain (Fireproof Clogs → Icy Glaze Syrup) works as the beastmaster's tools for taming volcanic creatures. Boss victory condition is charming and specific.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Beastmaster Whip' (player weapon) exact. Enc 1 weakness 'Fireproof Clogs' (enc 0 pickup) exact. Enc 2 weakness 'Icy Glaze Syrup' (enc 1 pickup) exact. Boss weakness 'Icy Glaze Syrup' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the Salamander reveals a path to the Boiling Brook' — defeat-triggered, specific. Enc 1 'Knocking the crab into the steam vent opens the gate to the Volcanic Kitchen' — defeat-triggered with a specific environmental interaction. Enc 2 'Taming the turtle triggers the appearance of the boss' — defeat/tame-triggered. All three are defeat/tame consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-25-30 and damage 5-5-5. Boss at 50/10 strictly harder. All encounter damage values identical (5) — no damage escalation. Total incoming (5+5+5+10=25) vs 100 HP — trivially easy, appropriate. Golden Berry (full health restore) from enc 2 provides generous healing for easy difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Mount Cinder-Pop, Sizzling Salamander, Steam-Powered Crab, Toasted Turtle, Magma Muffin Golem — every name reinforces whimsical volcanic perfectly. Boiling Brook, Volcanic Kitchen, Smoldering Foothills — evocative and consistent locations. A magical pet dragon hatchling reward is perfect."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Fireproof Clogs (movement speed) as a weakness for a Steam-Powered Crab — outrunning a crab makes beastmaster sense. Icy Glaze Syrup (bypasses frozen obstacles) against a Toasted Turtle — icing the turtle's shell to disable it is charmingly logical. Boss: solidifying the Magma Muffin Golem with Icy Glaze is mechanically appropriate."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct and evocative. All encounter damage values are identical (5) — minor mechanical monotony. All other fields are specific and personality-driven. 'A magical pet dragon hatchling' reward is the most memorable reward in the dataset."
+        }
+      },
+      "best_element": "The boss victory condition — 'Feed the golem the Icy Glaze Syrup to solidify it into a harmless statue' — is charmingly specific, mechanically coherent, and tonally perfect for a whimsical easy-difficulty level.",
+      "worst_element": "All three encounter enemies deal exactly 5 damage — no damage escalation across the entire encounter sequence, making combat feel mechanically identical regardless of location.",
+      "overall": "The most tonally consistent whimsical volcanic level — charming enemy names, specific victory condition, appropriate difficulty — with only the flat damage values as a design concern."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "serene",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A serene volcanic chronomancer level where the boss victory condition is 'Reduce health to zero' — completely generic, no item named. The trigger for encounter 0 is a player action (triggering coolant flow) rather than a defeat consequence. Boss weakness is 'Liquid Nitrogen Core' from encounter 0, skipping the Chronos Hourglass from encounter 1.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Temporal Blade' (player weapon) exact. Enc 1 weakness 'Liquid Nitrogen Core' (enc 0 pickup) exact. Enc 2 weakness 'Chronos Hourglass' (enc 1 pickup) exact. Boss weakness 'Liquid Nitrogen Core' (enc 0 pickup — prior encounter) exact, but boss victory condition 'Reduce health to zero' names no item."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Triggering the flow of coolant unlocks the path to the Boiling Basin' — player action (triggering coolant), not a defeat consequence. Enc 1 'Shattering the golem reveals the entrance to the Inner Sanctum' — defeat-triggered, specific. Enc 2 'Defeating the wraith stabilizes the portal to the Core Chamber' — defeat-triggered. One trigger is a player action."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/25 strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — appropriate for medium. Solar Crystal from enc 2 (heals fully) provides generous healing. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "'Serene volcanic' is an oxymoronic premise, and the level doesn't fully resolve the tension. 'Obsidian Path', 'Boiling Basin', 'Inner Sanctum' are somewhat generic. Ash Stalker, Magma Golem, Ember Wraith, Magma Sentinel — appropriate enemies but 'serene' mood clashes with 'Boiling Basin' and enemies dealing 10-25 damage."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Liquid Nitrogen Core (freezes nearby lava) against a Magma Golem — cold vs. magma is perfectly logical. Chronos Hourglass (slows time) against an Ember Wraith — time dilation giving a chronomancer advantage over a fast ethereal fire enemy makes sense."
+        },
+        "completeness": {
+          "score": 2,
+          "reason": "Boss victory condition 'Reduce health to zero' is placeholder text. Enc 0 trigger is a player action. Chronos Shard reward name is the same as the enc 0 pickup in another entry (celestial/chronomancer). Three completeness concerns."
+        }
+      },
+      "best_element": "Solar Crystal from encounter 2 explicitly 'Heals the player fully' — arriving just before the boss fight, it's a well-timed resource that makes the boss survivable.",
+      "worst_element": "Boss victory condition 'Reduce health to zero' is the worst possible win condition — completely generic with no mechanic specified and the stated boss weakness item unmentioned.",
+      "overall": "Functional encounter chain with good balance, but the generic boss victory condition and serene-mood-vs-volcanic-setting tension make this level feel underdesigned at the boss level."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A serene celestial paladin level with a chain break at encounter 2: the Comet Vanguard is weak to 'Light-Blessed Hammer' (player weapon) rather than the Star-Fragment from encounter 1. Boss correctly uses the Star-Fragment. The level has good thematic consistency and appropriate difficulty.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Light-Blessed Hammer' (player weapon) exact. Enc 1 weakness 'Aetheric Oil' (enc 0 pickup) exact. Enc 2 weakness 'Light-Blessed Hammer' — reverts to player weapon; enc 1 pickup was 'Star-Fragment'. Boss weakness 'Star-Fragment' (enc 1 pickup) exact. One chain break in enc 2."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeat the Wisp to lower the protective fog barrier' — defeat-triggered. Enc 1 'Smash the Sentinel to reveal the pathway to the summit' — defeat-triggered, direct. Enc 2 'Vanquish the Vanguard to unlock the inner sanctum doors' — defeat-triggered. All three are specific defeat consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-80-120 and damage 10-15-20. Boss at 200/30 strictly harder. Total incoming (10+15+20+30=75) vs 150 HP — appropriate for medium. Celestial Cloak (resists holy damage) from enc 2 is unusual — a paladin resisting holy damage is thematically odd. Otherwise clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Celestial Spire, Cloud Wisp, Nebula Sentinel, Comet Vanguard, Solar Guardian Aethelgard — all fit serene celestial. Aetheric Oil, Star-Fragment, Celestial Cloak — appropriate celestial items. 'Celestial Cloak resists holy damage' is odd for a paladin context."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Aetheric Oil (attack speed) against a Nebula Sentinel is defensible — faster strikes on a cosmic entity. Star-Fragment (purification) channeled into a central altar to defeat the Solar Guardian is thematically appropriate — a sacred paladin act. Light-Blessed Hammer against Comet Vanguard is direct melee."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Celestial Cloak effect 'Resists holy damage' is semantically odd (a paladin item resisting paladin-type damage). Boss victory condition is specific. All fields add distinct information."
+        }
+      },
+      "best_element": "The boss victory condition — 'Channel the Star-Fragment into the center altar' — is a specific, ritually appropriate conclusion for a serene celestial paladin level.",
+      "worst_element": "Celestial Cloak 'Resists holy damage' — a paladin's defensive item resisting the paladin's own damage type is a mechanical contradiction, suggesting the effect was generated without class awareness.",
+      "overall": "A coherent serene celestial level with good thematic consistency; the weapon reversion in enc 2 and the odd holy-resistance effect are design issues, but the level would be playable as-is."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "mysterious",
+      "player_class": "chronomancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A mysterious celestial chronomancer level where encounter 2's Eclipse Knight is weak to 'Chronos Shard' — the same pickup from encounter 0 — rather than the Stardust Catalyst from encounter 1. Boss correctly uses Stardust Catalyst. The Chronos Shard weakness appears in both encounters 1 and 2.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Temporal Blade' (player weapon) exact. Enc 1 weakness 'Chronos Shard' (enc 0 pickup) exact. Enc 2 weakness 'Chronos Shard' — same enc 0 pickup again rather than enc 1 pickup 'Stardust Catalyst'. Boss weakness 'Stardust Catalyst' (enc 1 pickup) exact. One repetition: enc 2 and enc 1 use the same weakness item."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the sentinel unlocks the gate to the Astral Forge' — defeat-triggered, specific. Enc 1 'Crawling through the forge vents triggers the celestial alarm for the final guardian' — defeat-adjacent (crawling after the fight) but specific. Enc 2 'Shattering the knight's shield opens the veil to the boss arena' — defeat-triggered, specific. All three are defeat consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health: 40-60-80 and damage: 10-15-20. Boss at 150/25 strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — the numbers are appropriate for hard? These seem like medium-difficulty numbers for a hard label. Enemy health values (40-60-80) are quite low for hard. Void Essence from enc 2 boosts max temporal energy (not healing)."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Ancient Celestial Observatory adrift in space, Void Sentinel, Comet Crawler, Eclipse Knight, Nebula Weaver — all fit mysterious celestial perfectly. Chronos Shard, Stardust Catalyst, Void Essence — excellent chronomancer-appropriate celestial items."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Chronos Shard (spell casting speed) against a Comet Crawler and Eclipse Knight — accelerating time to outmaneuver celestial entities is appropriate for a chronomancer. Stardust Catalyst (interacts with unstable stellar matter) used against the Nebula Weaver (a being of stellar matter) is perfectly logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and evocative. All enemies are unique. Enc 2 and enc 1 share the same weakness item (Chronos Shard), which is a chain repetition but not a completeness failure per se. 'God-tier artifact: The Eternity Lens' reward is over-the-top but memorable."
+        }
+      },
+      "best_element": "Stardust Catalyst 'severing temporal threads' in the boss victory condition creates a thematically specific conclusion that connects the chronomancer's abilities to the celestial stellar-matter boss.",
+      "worst_element": "Encounters 1 and 2 both use Chronos Shard as the enemy weakness, meaning the pickup chain stalls — no new tool is needed for encounter 2's Eclipse Knight beyond what was already required for encounter 1.",
+      "overall": "Strong thematic coherence and appropriate celestial atmosphere, but the repeated Chronos Shard weakness and below-hard damage numbers indicate this level needed one more design pass."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal ominous celestial shadowblade level with clean exact references throughout. The encounter 2 enemy (Nebula Guardian) has 500 HP and 60 damage — by far the highest encounter enemy stats in the entire dataset. Boss at 800 HP is the hardest, but enc 2 enemy is nearly as dangerous. No healing pickups anywhere.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Shadowblade' (player weapon) exact. Enc 1 weakness 'Spectral Lens' (enc 0 pickup) exact. Enc 2 weakness 'Starlight Focus' (enc 1 pickup) exact. Boss weakness 'Starlight Focus' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc 0 'Defeating the Sentinel opens the Path of Twilight' — defeat-triggered, specific. Enc 1 'Clearing the Ruins activates the Ascendant Bridge' — defeat-triggered, atmospheric. Enc 2 'Surviving the Guardian unlocks the Herald's Sanctum' — defeat/survival triggered, specific. All three are defeat consequences with ascending drama."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Health: 150-300-500 and damage: 25-40-60. Boss at 800/50 is hardest. Total incoming (25+40+60+50=175) vs 100 HP — catastrophically lethal. No healing pickup anywhere (Spectral Lens increases vision, Starlight Focus blinds enemies, Void Essence restores mana — no health recovery). The level is mathematically impossible without cheating."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Broken Celestial Expanse, Nebula Gate, Star-Forge Ruins, Event Horizon Peak — all fit ominous cosmic horror. Void Sentinel, Astral Horror, Nebula Guardian, Eclipse Herald — an escalating sequence of cosmic threats. Spectral Lens and Starlight Focus fit a shadowblade operating in cosmic space."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Spectral Lens (increased vision range) against an Astral Horror — seeing through cosmic distortion to target a horror creature is appropriate. Starlight Focus (blinds cosmic entities) against a Nebula Guardian and Eclipse Herald — focused starlight overwhelming darkness-based cosmic entities is logically sound."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are evocative and distinct. All enemies are unique and themed. Void Essence from enc 2 goes unused in boss fight (mana restoration, not boss weakness). All other fields are specific."
+        }
+      },
+      "best_element": "The causal chain is excellent — Path of Twilight, Ascendant Bridge, Herald's Sanctum — specific named locations created by defeating enemies that make the level's geography feel designed.",
+      "worst_element": "Total incoming damage (175) vs 100 HP with zero healing pickups makes this level literally unbeatable — the brutal difficulty label doesn't excuse mathematical impossibility.",
+      "overall": "The most technically well-constructed level in the celestial file — flawless references, excellent causal chain, strong mechanics — rendered unplayable by catastrophic balance failure. Fix the health/damage math."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A whimsical celestial illusionist level where encounter 0 enemy weakness is 'Mirror Shard' — an item that doesn't exist anywhere in the level. Player weapon is 'Illusionist Staff', encounter 0 pickup is 'Starlight Lens'. This is a broken reference. Encounter 2 enemy also reverts to the player weapon rather than chaining.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Mirror Shard' — no item named 'Mirror Shard' exists; player weapon is 'Illusionist Staff', enc 0 pickup is 'Starlight Lens'. Enc 1 weakness 'Illusionist Staff' (player weapon) — oddly, the second encounter uses the player weapon rather than enc 0 pickup. Enc 2 weakness 'Solidified Aura' (enc 1 pickup) exact. Boss weakness 'Starlight Lens' (enc 0 pickup) exact. Two broken/imprecise references."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the sprite collapses the asteroid into a bridge leading to the second zone' — defeat-triggered, dramatic and specific. Enc 1 'Breaking the golem's shell reveals a secret key to the Boss Gate' — defeat-triggered, specific. Enc 2 'Victory unlocks the main sanctuary entrance for the final encounter' — defeat-triggered. All three are defeat consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 10-15-20 and damage 2-3-4. Boss at 40/5 strictly harder. Total incoming (2+3+4+5=14) vs 50 HP player — very easy, appropriate. Cosmic Nectar (10 HP restore) from enc 2 provides minimal healing. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Astral Plane, Floating Asteroid, Constellation Pathway, Lunar Temple, Nebula Weaver — all fit whimsical celestial. Cloud Sprite, Star Dust Golem, Moonphase Sentinel — whimsical celestial entities. Starlight Lens, Solidified Aura, Cosmic Nectar — appropriate items."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Mirror Shard (doesn't exist) is the enc 0 weapon. Illusionist Staff against a Star Dust Golem is direct melee — fine. Solidified Aura (solidifies light into platforms) against a Moonphase Sentinel is a stretch — physical platforms don't obviously damage a sentinel. Starlight Lens (concentrated beam) against the Nebula Weaver is logical."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Enc 0 weakness references a nonexistent item ('Mirror Shard'). Enc 1 uses the player weapon as enc 1 enemy weakness (wrong position — should be enc 0 pickup). The reference chain is scrambled. Otherwise locations are distinct and all fields are present."
+        }
+      },
+      "best_element": "The asteroid-collapsing-into-a-bridge trigger in encounter 0 is a memorable and visually specific consequence that fits the whimsical celestial setting.",
+      "worst_element": "Encounter 0 weakness 'Mirror Shard' references a nonexistent item — the most fundamental reference failure possible, as neither the player weapon nor any pickup in the level has this name.",
+      "overall": "The scrambled reference chain (nonexistent enc 0 item, inverted enc 1 weapon usage) makes this level's mechanical progression incoherent; significant revision of the weakness fields is required."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A chaotic celestial stormcaller level with clean exact references and a strong causal chain. Encounter 2 has no pickup ('None'/'None'), leaving the player without a new tool before the boss. Boss correctly uses Harmonic Resonance Shard from encounter 1.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Lightning Rod Staff' (player weapon) exact. Enc 1 weakness 'Charged Cloud Core' (enc 0 pickup) exact. Enc 2 weakness 'Harmonic Resonance Shard' (enc 1 pickup) exact. Boss weakness 'Harmonic Resonance Shard' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc 0 'Defeating the Stalker collapses the bridge, dropping the player into the Sunken Comet' — defeat-triggered, dramatic and specific (forced fall). Enc 1 'Shattering the Sentinel releases a shockwave that opens the portal to the Star Forge' — defeat-triggered, physically specific. Enc 2 'The Knight's defeat clears the path to the Nebula Weaver's throne room' — defeat-triggered. All three are specific defeat-triggered physical consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health: 150-250-400 and damage: 20-35-45. Boss at 800/50 is strictly hardest. Total incoming (20+35+45+50=150) vs 300 HP player — survivable given the very high player health. No healing pickup in enc 2 (None/None). This level is actually hard (not brutal) because the 300 HP pool absorbs the damage."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Celestial Spire, Astral Archipelago, Sunken Comet, Star Forge, Nebula Weaver — all fit chaotic celestial perfectly. Void Stalker, Flare Sentinel, Eclipse Knight — escalating cosmic threats. Charged Cloud Core, Harmonic Resonance Shard — thematically appropriate stormcaller items in a celestial setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Charged Cloud Core (ionized cloud movement) against a Flare Sentinel — using storm energy against a solar entity is thematically appropriate. Harmonic Resonance Shard (attracts celestial particles) against an Eclipse Knight and Nebula Weaver — using resonance to disrupt or expose cosmic entities makes sense."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Encounter 2 has 'None'/'None' for pickup — the player enters the boss fight empty-handed from the last encounter. The Eclipse Knight is a powerful enemy (400 HP, 45 damage) with no new tool provided — just the enc 1 pickup carried forward. Otherwise all fields are specific."
+        }
+      },
+      "best_element": "The enc 0 trigger — bridge collapses dropping the player into the Sunken Comet — creates a dramatic point of no return that raises the stakes and explains the impossible-to-backtrack structure.",
+      "worst_element": "Encounter 2 provides no pickup, leaving the player with no new tool after defeating the Eclipse Knight — a 400 HP, 45 damage enemy — before facing an 800 HP boss.",
+      "overall": "One of the stronger chaotic entries — excellent causal chain, clean references, strong theme — but the missing enc 2 pickup is a structural gap that needs filling before this config is complete."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A clean desolate celestial ranger level with exact references throughout. The causal chain is specific and defeat-triggered. The level has appropriate medium-difficulty numbers and the Singularity Lens threads cleanly from encounter 1 through encounter 2 to the boss.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Star-piercer Bow' (player weapon) exact. Enc 1 weakness 'Chronos Quiver' (enc 0 pickup) exact. Enc 2 weakness 'Singularity Lens' (enc 1 pickup) exact. Boss weakness 'Singularity Lens' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the Stalker unlocks the gravity gate to the Astral Spire' — defeat-triggered, specific. Enc 1 'Shattering the Sentry forces the Spire doors to reveal the Void Core' — defeat-triggered, specific. Enc 2 'Exterminating the Horror allows the player to enter the Nebula Weaver's inner sanctum' — defeat-triggered. All three are defeat consequences. 'Exterminating' is slightly brutish for a desolate mood."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/25 strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — appropriate for medium. Celestial Essence (50 HP heal) from enc 2 provides meaningful recovery before the boss. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Abandoned Celestial Observatory, Fractured Moon, Astral Spire, Void Core, Nebula Weaver — all fit desolate celestial. Chronos Quiver (increases fire rate for the Star-piercer Bow) is a class-specific pickup that fits the ranger exactly. Singularity Lens (reveals anomalies) is appropriate."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Chronos Quiver (fire rate increase) against a Solar Sentry — faster arrow rate overwhelming a solar entity makes sense for a ranger. Singularity Lens (reveals cosmic anomalies) against an Eclipse Horror and Nebula Weaver — exposing hidden threats with revealing optics is logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations are distinct. Enemies are unique. Chronos Quiver is specifically named for the Star-piercer Bow, creating a class-specific tool that adds information the generic 'quiver' name wouldn't. No placeholder text."
+        }
+      },
+      "best_element": "Chronos Quiver 'Increases fire rate for Star-piercer Bow' is the only pickup in the dataset explicitly tailored to a specific player weapon — a precise, class-aware design decision.",
+      "worst_element": "Boss victory condition 'Sever the cosmic threads using the Singularity Lens' is specific but 'cosmic threads' aren't established anywhere in the level — a minor context gap.",
+      "overall": "A clean, well-designed medium-difficulty level with excellent reference integrity and class-specific pickup design; minor issues are easily overlooked in what is one of the better entries in this batch."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "eerie",
+      "player_class": "artificer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal eerie celestial artificer level with exact references throughout. The Essence of Void threads from encounter 1 pickup through encounter 2 weakness to the boss weakness and victory condition — a clean three-step chain. The causal chain is specific throughout. Balance is very tight for brutal.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Artificer's Kinetic Wrench' (player weapon) exact. Enc 1 weakness 'Stellar Battery' (enc 0 pickup) exact. Enc 2 weakness 'Essence of Void' (enc 1 pickup) exact. Boss weakness 'Essence of Void' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the automaton opens the path to the Vacuum Corridor' — defeat-triggered. Enc 1 'Shattering the Echo triggers the collapse of the Observation Deck' — defeat-triggered, specific and dramatic (collapses the current area). Enc 2 'The Guardian drops the key to the Inner Sanctum' — defeat-triggered, specific. All three are defeat consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health: 80-120-200 and damage: 15-25-40. Boss at 400/50 is strictly hardest. Total incoming (15+25+40+50=130) vs 150 HP — survivable but very tight. Core Stabilizer from enc 2 (permanently buffs critical damage) helps offense but doesn't heal. No healing pickup. A single mistake could be fatal."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Abandoned Celestial Observatory, Star-Struck Automaton, Void Echo, Celestial Guardian, Nebula-Bound Titan — all fit eerie celestial. Stellar Battery, Essence of Void, Core Stabilizer — appropriate artificer-tech items for a celestial setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Stellar Battery (shields duration) against a Void Echo — sustained shielding to outlast an echo entity is defensible. Essence of Void (condenses dark matter) against a Celestial Guardian and Nebula-Bound Titan — using void energy against celestial entities creates an interesting opposition. Boss: channeling void essence into a titan's core to destabilize it is mechanically coherent."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations are distinct and evocative. All enemies are unique. Each pickup has a specific effect. Core Stabilizer from enc 2 permanently buffs damage — an unusual persistent effect that makes the pickup meaningful beyond the single encounter. No placeholder text."
+        }
+      },
+      "best_element": "Core Stabilizer as a permanent critical damage buff is the most mechanically interesting pickup effect in the dataset — it creates a lasting consequence for the boss fight rather than a one-time use.",
+      "worst_element": "No healing pickup in a brutal level with 130 total incoming damage vs 150 HP — survivable but leaves zero margin for error; one healing item would make this design more forgiving without reducing its challenge.",
+      "overall": "A well-constructed brutal eerie level with clean references and good mechanical design; add one healing pickup and this is a complete, shippable configuration."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A tense celestial engineer level where encounter 0 enemy weakness is 'Plasma Wrench' — which is the encounter 0 pickup name, not the player weapon ('Multi-Tool'). The Plasma Wrench then becomes the weapon used for encounter 1 enemy weakness — but it was acquired as a pickup, creating an ambiguous ordering. This is the reverse of the expected pattern.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Plasma Wrench' — player weapon is 'Multi-Tool'. Enc 0 pickup IS 'Plasma Wrench'. So the player hasn't found the Plasma Wrench yet at enc 0 start. Enc 1 weakness 'Plasma Wrench' — references enc 0 pickup, now acquired. Enc 2 weakness 'Super-Heated Alloy' (enc 1 pickup) exact. Boss weakness 'Super-Heated Alloy' exact. The enc 0 self-referential loop (weakness = same-encounter pickup) and player weapon mismatch create reference integrity issues."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 'Clearing the field exposes the navigation beacon to the second sector' — defeat-triggered, specific. Enc 1 'Defeating the drone triggers the distress signal to the boss lair' — defeat-triggered but odd (a distress signal pointing to the boss lair rather than blocking it). Enc 2 'Killing the Stalker opens the main reactor gate to the boss' — defeat-triggered. Two triggers are specific, one is logically unusual."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 30-40-50 and damage 5-8-10. Boss at 80/15 strictly harder. Total incoming (5+8+10+15=38) vs 150 HP — trivially easy, appropriate. Quantum Battery (full health regeneration) from enc 2 provides generous recovery. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "Drifting orbital space station — Asteroid Scrapper, Nebula Drone, Void Stalker, Solar Core Sentinel. 'Celestial tense' mood fits. However, the player weapon 'Multi-Tool' is never actually used (replaced by Plasma Wrench from enc 0) — the weapon field is effectively unused. 'Celestial tense' is a reasonable combination."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Plasma Wrench (melee, +10 damage) against a Nebula Drone and Asteroid Scrapper is direct and logical for an engineer. Super-Heated Alloy (heat resistance) against a Void Stalker is a stretch — heat resistance doesn't obviously harm a void creature. Boss: Super-Heated Alloy 'coating' to deplete health is vague."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Player weapon 'Multi-Tool' (20 damage) is never used — it's replaced by Plasma Wrench from enc 0. Boss victory condition 'Deplete health using the Super-Heated Alloy coating' is vague. Enc 1 trigger (distress signal to boss lair) is logically unusual."
+        }
+      },
+      "best_element": "The upgrade narrative — finding the Plasma Wrench as a pickup to replace the inferior Multi-Tool — is a classic RPG progression mechanic that could work well if the reference chain were made explicit.",
+      "worst_element": "The player weapon 'Multi-Tool' is never used as a weakness (enc 0 enemy is weak to the pickup found in the same encounter) — the weapon field is functionally dead, which would confuse game-engine parsing.",
+      "overall": "The tool-upgrade narrative is a clever concept undermined by the inverted reference chain structure; clarifying the weapon-vs-pickup ordering would make this a more coherent easy-difficulty design."
+    }
+  }
+]

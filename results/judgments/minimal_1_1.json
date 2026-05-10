@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A Victorian horror alchemist level with a broken reference in encounter 0 — the enemy weakness is 'Acid Vial', but the player weapon is 'Alchemist's Silver Blade' and no pickup named 'Acid Vial' exists. The level partially recovers with exact references in encounters 1 and 2, and the boss. Thematic atmosphere is strong.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 enemy weakness 'Acid Vial' doesn't match player weapon ('Alchemist's Silver Blade') nor any pickup in the level. Enc 1 weakness 'Concentrated Catalyst' (enc 0 pickup) is exact. Enc 2 weakness 'Alchemist's Silver Blade' (player weapon) is exact. Boss weakness 'Philosopher's Stabilizer' (enc 1 pickup) is exact. One broken reference out of four."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 shatters a lock revealing the ventilation shaft; enc 1 drops a key to the Sanctum; enc 2 removing the guardian retracts the blast doors. All three are specific physical consequences of defeating the enemy."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 80-120-200 and damage 15-25-35. Boss at 400/50 is strictly the hardest. Total incoming (15+25+35+50=125) vs 100 HP on hard — brutal enough to be challenging without healing. Concentrated Catalyst and Philosopher's Stabilizer provide utility. Appropriately hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Victorian subterranean research facility, Corroded Construct, Shadow Creeper, Distorted Guardian, Alchemical Abomination — every element reinforces eerie alchemical horror. Setting, enemy names, pickup names, and boss all belong to the same world."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Concentrated Catalyst (increases Acid Vial damage) against a Shadow Creeper is logical for an alchemist. Philosopher's Stabilizer (poison immunity) against the Abomination makes sense — purification vs. corruption. Enc 2 enemy weakened by player weapon (Silver Blade) is direct but fine."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct, enemies are unique, hazards are specific. Aetheric Lens pickup (reveals hidden runes) from enc 2 goes entirely unused in the boss fight — a wasted pickup slot. Otherwise all fields are specific."
+        }
+      },
+      "best_element": "The setting and enemy progression — Abandoned Alchemy Lab to Fungal Infested Basement to Sanctum of Transmutation — creates a sense of descending into increasingly dangerous and corrupted spaces.",
+      "worst_element": "Encounter 0 enemy weakness 'Acid Vial' references an item that doesn't exist in the level; fix by naming the player weapon exactly ('Alchemist's Silver Blade') or adding an Acid Vial as the player weapon.",
+      "overall": "Strong thematic atmosphere and solid causal structure, but the broken enc 0 reference is a showstopper for engine resolution — one fix away from being a good hard-difficulty level."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An ominous horror cathedral level with a mostly clean pickup chain. Boss weakness is 'Frozen Heart core' — adding 'core' to the exact item name 'Frozen Heart'. The level is brutally difficult with total incoming damage exceeding player health, but the Blessed Ember provides some mitigation.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Basic Flame Burst' (player weapon) exact. Enc 1 weakness 'Liquid Phosphorus' (enc 0 pickup) exact. Enc 2 weakness 'Frozen Heart' (enc 1 pickup) exact. Boss weakness 'Frozen Heart core' — adds 'core' qualifier to the exact pickup name 'Frozen Heart'. Minor variation but still identifiable."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 reveals a key to the Crypt entrance; enc 1 triggers a mechanism opening the throne room; enc 2 removes the seal from the Monarch's chamber. All are physical consequences of defeating enemies. 'Mechanism' in enc 1 is slightly generic."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-150-250 and damage 15-25-40. Boss at 400/50 is the hardest. Total incoming damage (15+25+40+50=130) vs 100 HP player — the player is dead before the boss without significant healing. No healing pickup in the level (Frozen Heart freezes enemies, Blessed Ember provides immunity, Liquid Phosphorus enhances flames). The brutal label fits but survivability is questionable."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Decaying cathedral, Shadow Stalker, Iron-Clad Revenant, Cursed Zealot, Ashen Monarch — all reinforce ominous horror perfectly. 'Frozen Heart' in a pyromancer horror level creates thematic contrast that works. Bioluminescent spores in a cathedral foyer is a strong eerie detail."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Liquid Phosphorus (enhances flame duration) against an Iron-Clad Revenant — fire vs. armored undead makes sense. Frozen Heart (freezes enemies) as weakness for a Cursed Zealot is a stretch mechanically. Boss 'Ignite the Monarch using the Frozen Heart core' is contradictory — fire (pyromancer) with ice item is thematically interesting but functionally odd."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and specific. Blessed Ember from enc 2 (dark aura immunity) goes unused in the boss fight. All other fields are specific and non-repetitive."
+        }
+      },
+      "best_element": "The ascending enemy power curve — Shadow Stalker, Iron-Clad Revenant, Cursed Zealot, Ashen Monarch — creates a sense of escalating dread appropriate to the ominous horror mood.",
+      "worst_element": "No healing pickup anywhere in the level makes it likely unbeatable at brutal difficulty — total incoming damage (130) far exceeds player health (100).",
+      "overall": "Atmospheric and well-themed, but the absence of any healing pickup makes this brutal level functionally unwinnable; add a health restoration item and fix the minor boss weakness qualifier."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A tense Gothic horror level with paraphrased weakness strings and a missing pickup in encounter 2 ('None'/'None'). The boss weakness references 'Light from the Lantern of Echoes' rather than the exact item name. Encounter 2 has no pickup, which means the player enters the boss fight with no new tool from that encounter.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Shadowblade slash' — not exact ('Shadowblade'). Enc 1 weakness 'Specter Lens focus' — not exact ('Specter Lens'). Enc 2 weakness 'Lantern of Echoes beam' — not exact ('Lantern of Echoes'). Boss weakness 'Light from the Lantern of Echoes' — description rather than exact name. All four references are imprecise."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Entering the Foyer locks the doors behind you' — this is the encounter start condition, not a defeat consequence. Enc 1 'Finding the Specter Lens allows you to see the secret exit' — the trigger is about finding the pickup, not defeating the enemy. Enc 2 'Lighting the Lantern alerts the Warden' — item use, not enemy defeat. Triggers describe player actions rather than defeat consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/30 is strictly harder. Total incoming damage (10+15+20+30=75) vs 100 HP — appropriate for medium. Clean escalation numerically."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Victorian Manor, Shade Stalker, Lens-Sensitive Ghoul, Void Warden, Weeping Void — all fit Gothic horror tense mood perfectly. Enemy names are creative and setting-specific. Lantern of Echoes is a great horror artifact name."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Specter Lens (reveals hidden spirits) against a Lens-Sensitive Ghoul — the enemy is literally named for its sensitivity to this item, which is clever. Lantern of Echoes (blinding light) against a Void Warden and the Weeping Void (a darkness-based entity) is logical."
+        },
+        "completeness": {
+          "score": 2,
+          "reason": "Encounter 2 has 'None'/'None' for pickup — the last encounter before the boss provides no item. This means the player has no tool from the last third of the level. Additionally, all four weakness strings have modifiers appended, creating systematic imprecision."
+        }
+      },
+      "best_element": "The 'Lens-Sensitive Ghoul' enemy name directly encodes its weakness into its identity — a design choice that feels intentional and elegant.",
+      "worst_element": "Encounter 2 provides no pickup ('None'/'None'), leaving the player without a new tool from the final encounter before the boss — a structural gap that would confuse players following the pickup chain.",
+      "overall": "Strong thematic atmosphere and interesting enemy design, but reference imprecision throughout and a missing enc 2 pickup make this level require significant revision before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A desolate horror ranger level with a notable structure: encounter 0 and 1 both use 'Silver-tipped Arrows' as the enemy weakness, but the pickup for enc 0 is 'Silver-tipped Arrows' — the player doesn't have these arrows at enc 0's start. This is a self-referential pickup loop that would work only if the item is found before the encounter.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 enemy weakness 'Silver-tipped Arrows' — but the pickup for enc 0 IS Silver-tipped Arrows. The player needs to find the item to defeat the enemy, but the item is in that same encounter's pickup slot. Enc 1 weakness 'Silver-tipped Arrows' (enc 0 pickup) is exact. Enc 2 weakness 'Sun-Forged Oil' (enc 1 pickup) is exact. Boss weakness 'Sun-Forged Oil' is exact. The enc 0 situation is an unusual but not impossible self-referential loop; enc 1 repeats enc 0's weakness item without escalation."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 drops a key to the Crypt entrance; enc 1 reveals a hidden passage to the Inner Sanctum; enc 2 central altar opens summoning the boss. All are specific physical consequences of defeating enemies."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-70-100 and damage 15-25-35. Boss at 200/50 is strictly harder. Total incoming (15+25+35+50=125) vs 120 HP — extremely tight for hard, likely requiring the Ancient Talisman (heals on enemy defeat). Ancient Talisman from enc 2 is the only healing — arrives too late."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Ruined mountain monastery, Festering Ghoul, Crypt Stalker, Wraith Warden, Hollow Sentinel — all fit desolate horror well. Silver-tipped Arrows and Sun-Forged Oil are thematically appropriate ranger-horror tools. Consistent setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Silver-tipped Arrows (critical chance against undead) is a classic horror mechanic. Sun-Forged Oil (flammable liquid on projectiles) against a Wraith Warden and the Hollow Sentinel (ignite the armor) is logical fire-vs-undead pairing."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Encounters 0 and 1 share the same weakness item (Silver-tipped Arrows), which is a repetition in the weakness field. Locations are distinct. Graveyard, Crypt Catacombs, Inner Sanctum are functional but 'Inner Sanctum' is used in many entries. No major placeholder text."
+        }
+      },
+      "best_element": "Sun-Forged Oil threading from enc 1 pickup through enc 2 weakness to boss weakness with a specific 'ignite the armor' victory condition is a well-executed three-step mechanical callback.",
+      "worst_element": "Encounters 0 and 1 share the same weakness item (Silver-tipped Arrows) — the pickup chain stalls for one full encounter with no new tool introduced for the enc 1 enemy.",
+      "overall": "Functionally coherent with good horror theming, but the Silver-tipped Arrows repetition across two encounters and extremely tight survivability would need design attention before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A clean, easy necromancer horror level with exact references throughout. The boss health (50) is higher than encounter 2 enemy health (30), correctly escalating. Total incoming damage is trivial for easy difficulty. Well structured.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Scythe of Souls' (player weapon) exact. Enc 1 weakness 'Bone Dust' (enc 0 pickup) exact. Enc 2 weakness 'Holy Censer' (enc 1 pickup) exact. Boss weakness 'Holy Censer' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 unlocks the Crypt Entrance; enc 1 'Smashing the armor triggers the Altar ritual' (specific narrative consequence); enc 2 banishing the wraith opens the Boss Chamber door. All three are specific consequences of defeating the enemy."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-25-30 and damage 5-8-10. Boss at 50/10 is strictly harder. Total incoming (5+8+10+10=33) vs 100 HP — trivially easy and appropriate. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Cursed Necropolis, Shambling Corpse, Possessed Armor, Wraith Shadow, Spectral Warden — all fit mysterious horror well. 'Holy Censer' as a necromancer's tool is an interesting contrast (using holy items against undead) that works in the horror context."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Bone Dust (increases spell casting speed) against Possessed Armor is a stretch — casting speed doesn't obviously damage armor. Holy Censer (purifies undead) against a Wraith Shadow and Spectral Warden is perfectly logical horror mechanics. Most pairs make sense."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Spirit Essence pickup from enc 2 (restores mana) goes unused in the boss fight. All other fields are specific. 'Inner Sanctum' location name is generic and appears in many other entries."
+        }
+      },
+      "best_element": "The 'Smashing the armor triggers the Altar ritual' trigger in encounter 1 is specific and creates a satisfying narrative moment — a physical action with a ceremonial consequence.",
+      "worst_element": "Bone Dust (spell casting speed) as a combat weakness for Possessed Armor lacks mechanical sense — speed doesn't damage armor. Replace with a binding or dispelling item.",
+      "overall": "A clean, well-referenced easy-difficulty level that would be fun to play; the bone dust weakness is the one questionable mechanic, but it doesn't break the level."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A chaotic horror berserker level with a broken boss weakness. The boss weakness is 'Void-Infused Essence' but the pickup is named 'Vial of Void-Infused Essence' — this is a non-exact match. The boss victory condition uses 'Void-Burned Blade' (enc 1 pickup) instead of the stated weakness item, creating a contradictory boss design.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Heavy Greatsword' (player weapon) exact. Enc 1 weakness 'Vial of Void-Infused Essence' (enc 0 pickup) exact. Enc 2 weakness 'Void-Burned Blade' (enc 1 pickup) exact. Boss weakness 'Void-Infused Essence' — the pickup name is 'Vial of Void-Infused Essence', missing 'Vial of'. Boss victory condition references 'Void-Burned Blade' (enc 1 pickup) rather than the stated boss weakness. Two reference issues in the boss section."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 triggers the Archive lockdown; enc 1 'Shattering the final archive shelf reveals the tunnel to the Boiler Room' (specific physical consequence); enc 2 floor collapsing into the Weaver's Lair (dramatic, specific). All consequences of defeating enemies."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 150-250-400 and damage 15-25-40. Boss at 800/50 is strictly the hardest. Total incoming (15+25+40+50=130) vs 100 HP — essentially impossible without the Stolen Heart (full health restoration). Survivability depends entirely on finding that one healing pickup in enc 2. Appropriate for brutal, but very luck-dependent."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Derelict Bio-Research Vessel, Dismemberment Hall, Stitched Abomination, Howling Husk, Flesh-Ripped Berserker, Flesh Weaver — every element reinforces chaotic body-horror. This is the most thematically coherent entry in the batch."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Void-Infused Essence (damage boost) against a Howling Husk is logical — enhanced damage overcomes its defenses. Void-Burned Blade (a blade upgrade) against a Flesh-Ripped Berserker makes sense. Boss weakness item is ambiguous due to naming conflict."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Locations are highly specific and distinct. All enemy names are unique and descriptive. Hazards are varied and violent. 'Stolen Heart of the Weaver' as a pickup name is excellent — thematically tied to the boss. No generic filler."
+        }
+      },
+      "best_element": "The level's naming is the strongest in the batch — Dismemberment Hall, Obsidian Archive, Boiler Room, Flesh-Ripped Berserker, Flesh Weaver — every name reinforces the chaotic horror theme.",
+      "worst_element": "The boss weakness ('Void-Infused Essence') doesn't exactly match the pickup name ('Vial of Void-Infused Essence'), and the victory condition uses a different item entirely ('Void-Burned Blade') — the boss design is internally contradictory.",
+      "overall": "Excellent thematic design and structure, but the boss reference confusion makes this level unshippable as-is; resolve which item defeats the Flesh Weaver and name it consistently throughout."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A horror-serenity mansion level with a fully exact reference chain. The pickup chain is clean: player weapon to enc 0 pickup to enc 1 pickup to boss. The mood contrast (serene horror) is handled with Victorian gardens and moonlit greenhouses — unusual and interesting.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Iron Warden Lantern' (player weapon) exact. Enc 1 weakness 'Glass Reveal Lens' (enc 0 pickup) exact. Enc 2 weakness 'Sun-Bleached Key' (enc 1 pickup) exact. Boss weakness 'Sun-Bleached Key' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 triggers garden gate to swing open; enc 1 'clockwork tower chiming, unlocking the attic stairs' is a specific and atmospheric consequence; enc 2 'shatters the protective seal on the main sanctuary door'. All three are defeat-triggered physical consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/25 is strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — appropriate for medium. Warden's Blessed Seal from enc 2 provides a critical damage buff for the boss fight, a nice design touch."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Mist-covered Victorian mansion, Veiled Spirit, Hollow Gardener, Dust Wraithe, Silent Caretaker — all fit the horror-serenity contrast. 'Whispering Foyer', 'Moonlit Greenhouse', 'Attic Archive' are evocative location names. The serene horror tension is maintained."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Glass Reveal Lens (reveals hidden items) against a Hollow Gardener — making the invisible gardener visible to strike it is logical. Sun-Bleached Key (unlocks divine relics) against a Dust Wraithe is a stretch mechanically. Boss: key unlocking a sanctuary gate is thematic."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Locations are distinct and evocative. Enemy names are unique. Hazards are specific. Each pickup has a clear named effect. The Warden's Blessed Seal from enc 2 is explicitly used to improve boss combat — a complete design."
+        }
+      },
+      "best_element": "The clockwork tower chiming to unlock the attic stairs in encounter 1 is the most atmospheric trigger in the batch — a specific, sensory consequence that fits the Victorian horror-serenity setting perfectly.",
+      "worst_element": "Sun-Bleached Key (unlocks divine relics) as a combat weakness for a Dust Wraithe has no clear mechanical logic — a key doesn't obviously harm a dust-spirit entity.",
+      "overall": "A well-constructed medium-difficulty level with strong atmosphere and clean references; the Sun-Bleached Key as an offensive tool is the only mechanical question mark."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A whimsical horror haunted manor level with a reference break in encounter 2 — the Glass-Eyed Golem is weak to 'Phantom Blade' (player weapon) rather than a pickup from a prior encounter, reverting to the weapon after two pickups were established. Boss correctly uses the Magic Mirror.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Phantom Blade' (player weapon) exact. Enc 1 weakness 'Lantern of Truth' (enc 0 pickup) exact. Enc 2 weakness 'Phantom Blade' again — reverts to player weapon rather than using enc 1 pickup 'Magic Mirror'. Boss weakness 'Magic Mirror' (enc 1 pickup) exact. The enc 2 reversion breaks the chain."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 trigger 'spectral door opening to the Library'; enc 1 'the wraith turns into a key that unlocks the Mirror Hall' — creative and specific; enc 2 'Defeating the golem causes the final boss door to manifest'. All are consequences of defeating enemies."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 10-12-15 and damage 2-3-4. Boss at 30/5 is strictly harder. Total incoming (2+3+4+5=14) vs 50 HP player — trivially easy and appropriate for easy difficulty. Numbers are proportionate."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Toy Workshop, Dusty Library, Mirror Hall, Poltergeist Puppet, Book-Worm Wraith, Glass-Eyed Golem, Giggly Specter — every element is consistently whimsical horror. The setting logic (puppet → library → mirrors → ghost) is coherent."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Lantern of Truth revealing wraiths (light vs. darkness) is logical. Magic Mirror reflecting the ghost's own reflection is both mechanically sensible and thematically delightful. Phantom Blade against Glass-Eyed Golem is direct melee — fine."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct and specific. Ghostly Ribbon from enc 2 (critical strike) goes unused in the boss fight. Otherwise fields are specific and non-repetitive. 'Sticky Floor Spells' as a hazard is pleasantly specific."
+        }
+      },
+      "best_element": "The Giggly Specter boss defeated by reflecting its own reflection in the Magic Mirror is a charming, mechanically sound, and thematically perfect conclusion for a whimsical horror level.",
+      "worst_element": "Encounter 2's enemy weakness reverting to the player weapon (Phantom Blade) rather than chaining from the Magic Mirror pickup breaks the progressive tool system established in the first two encounters.",
+      "overall": "A delightful whimsical horror level with a satisfying boss design; the enc 2 weapon reversion is the one design flaw, easily fixed by making Glass-Eyed Golem weak to the Magic Mirror."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "chaotic",
+      "player_class": "engineer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A chaotic steampunk engineer level with clean pickup chaining and a well-structured causal progression through a crumbling flying fortress. The triggers are somewhat generic but all three are defeat-triggered. Boss references are exact.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Wrench Smasher' (player weapon) exact. Enc 1 weakness 'Pressure Valve Core' (enc 0 pickup) exact. Enc 2 weakness 'Steam Overload Charge' (enc 1 pickup) exact. Boss weakness 'Steam Overload Charge' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Leaking pipe causes pressure buildup that alerts nearby bots' — this is an environmental trigger, not a direct consequence of killing the enemy. Enc 1 'destruction of the drone shatters the glass floor to lower levels' — specific. Enc 2 'Defeating the knight unlocks the pressurized door' — specific. One weak trigger."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/30 is strictly harder. Total incoming (10+15+20+30=75) vs 100 HP — appropriate for medium. Lubricant Canister (25 health) provides mid-level healing."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Crumbling steampunk flying fortress, Steam-Leak Sentinel, Gear-Grinder Drone, Brass Automaton Knight, Clockwork Behemoth — all fit chaotic steampunk well. Hazards (exploding steam pipes, rotating gears, electrified floor) reinforce the setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Pressure Valve Core (heat generation) disrupting a Gear-Grinder Drone is logical — excess pressure could seize mechanical joints. Steam Overload Charge (high-intensity vapor) against a Brass Automaton Knight and Clockwork Behemoth is physically coherent."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. All fields are specific. 'Master Engineer's Goggles' is a satisfying class-specific reward. No placeholder text."
+        }
+      },
+      "best_element": "The boss victory condition ('Deactivate the core using the Steam Overload Charge') is specific and directly references the pickup's effect, making the final mechanic feel earned.",
+      "worst_element": "Encounter 0 trigger ('leaking pipe causes pressure buildup') is a room-state effect rather than a consequence of killing the enemy — the encounter could be bypassed without affecting progression.",
+      "overall": "A solid medium-difficulty steampunk level that would be fun to play; minor trigger weakness and generic middle-encounter hazard are the only design concerns."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A mysterious steampunk artificer level with a critical flaw: encounter 0's pickup is named 'Aether Spanner', which is identical to the player weapon. The enc 1 enemy is then also weak to 'Aether Spanner' (player weapon name), making two encounters use the same weapon name rather than advancing the pickup chain.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Aether Spanner' (player weapon) exact. Enc 0 pickup is named 'Aether Spanner' — same as the player weapon, creating an identity conflict. Enc 1 weakness 'Aether Spanner' — same as player weapon, the pickup didn't advance the chain. Enc 2 weakness 'Voltaic Overloader' (enc 1 pickup) exact. Boss weakness 'Voltaic Overloader' exact. Two encounters share the same weapon name as weakness."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Leaking steam triggers the security alarm, awakening the second guard' — atmospheric but not a direct defeat consequence. Enc 1 'Destroying the Watcher unlocks the vault door' — specific. Enc 2 'Defeating the Automaton bypasses the main reactor security lock' — specific. One weak trigger."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-80-120 and damage 10-15-20. Boss at 200/35 is strictly harder. Total incoming (10+15+20+35=80) vs 100 HP — appropriate for hard. Conductive Plating (shield restoration) from enc 2 provides defensive utility."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Sunken Steam City, Steam-Pressure Sentinel, Clockwork Watcher, Copper Automaton, Clockwork Behemoth — all fit mysterious steampunk. Brass Corridor, Observatory, Generator Room — distinct and evocative locations."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Aether Spanner (melee impact) against steam/clockwork enemies is direct and sensible. Voltaic Overloader (electrical discharge) against a Copper Automaton and Clockwork Behemoth — electricity disrupting metal machines is perfectly logical."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The pickup in enc 0 ('Aether Spanner') is identical to the player weapon, creating a redundant slot. Conductive Plating from enc 2 goes unused in the boss fight. Clockwork Behemoth appears as boss name in both this entry and the steampunk chaotic entry."
+        }
+      },
+      "best_element": "The Voltaic Overloader threading from enc 1 pickup to enc 2 weakness to boss weakness, with the boss victory condition 'Disable the central core using the Voltaic Overloader', is the cleanest mechanical chain in this entry.",
+      "worst_element": "The enc 0 pickup ('Aether Spanner') is identical to the player weapon name — this wastes a pickup slot and causes encounter 1 to use the same weakness as encounter 0, eliminating the pickup chain's first link.",
+      "overall": "The level has good structure and theme, but the duplicate weapon/pickup name fundamentally breaks the progression system; renaming the enc 0 pickup would fix the core issue."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A whimsical steampunk alchemist level in a floating brass city. Boss weakness is 'Liquid Nitrogen coolant canister' — the pickup is named 'Liquid Nitrogen', adding 'coolant canister' as a qualifier. The victory condition provides no specific mechanic, just 'Defeat the guardian to access the Great Archive'.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Alchemical Acid Vial' (player weapon) exact. Enc 1 weakness 'Liquid Nitrogen' (enc 0 pickup) exact. Enc 2 weakness 'Volatile Salts' (enc 1 pickup) exact. Boss weakness 'Liquid Nitrogen coolant canister' — adds 'coolant canister' to exact item name 'Liquid Nitrogen'. Minor variation but identifiable."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Entering the boiler room triggers an alert siren' — entering the room, not defeating the enemy. Enc 1 'Defeating the sentry releases the lock on the maintenance hatch' — specific. Enc 2 'Breaking the gallery glass forces the Boss to initiate battle sequence' — player action (breaking glass), not a defeat consequence. Two generic/incorrect triggers."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health escalates 20-25-30 and damage 5-5-5. Boss at 50/10 is strictly harder. Damage doesn't escalate in encounters but the boss represents a clear jump. Total incoming (5+5+5+10=25) vs 100 HP — trivially easy and appropriate. Steam Tonic (health restore) provides additional cushion."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Floating brass city, Brass Beetle, Steam Sentry, Copper Cobra, Clockwork Custodian Cogsworth — all fit whimsical steampunk well. 'Cogsworth' is a memorable and appropriate boss name. Setting is consistently mechanical-whimsical."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Liquid Nitrogen (freezes mechanical joints) against a Steam Sentry is mechanically sensible. Volatile Salts (explosive) against a Copper Cobra is plausible. Boss: Liquid Nitrogen on a clockwork custodian (seize the gears) makes sense."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All encounter damage values are identical (5) — no escalation. Boss victory condition is 'Defeat the guardian to access the Great Archive' — generic, no specific mechanic. Steam Tonic from enc 2 (health restore) is the only utility pickup; others are all combat-enhancing."
+        }
+      },
+      "best_element": "The boss name 'Clockwork Custodian Cogsworth' is the most memorable and appropriate name for a whimsical steampunk level boss in this batch.",
+      "worst_element": "The boss victory condition ('Defeat the guardian to access the Great Archive') provides no specific mechanic and doesn't reference the stated boss weakness item — it's placeholder text.",
+      "overall": "Charming whimsical theme with flat damage values across encounters and a generic boss victory condition; functional but needs a design pass on triggers and the boss win condition."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A tense brutal steampunk rogue level with a clean pickup chain through three distinct locations. Boss weakness uses 'High-Pressure Lubricant' from encounter 0, skipping the pickup chain. The boss victory condition ('Disable the central steam regulator') names no specific item.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Silver Daggers' (player weapon) exact. Enc 1 weakness 'High-Pressure Lubricant' (enc 0 pickup) exact. Enc 2 weakness 'Volatile Coal Briquette' (enc 1 pickup) exact. Boss weakness 'High-Pressure Lubricant' — references enc 0 pickup (a prior encounter), which is allowed. Victory condition doesn't name any item — generic 'Disable the central steam regulator'."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Leaking pipe alerts the security patrols ahead' — environmental, not a defeat consequence. Enc 1 'Overheated core triggers an emergency lockdown in the hanger' — consequence of defeating the Automaton makes sense. Enc 2 'Data upload to the main server awakens the Overseer' — player action (data upload), not a defeat consequence."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 80-120-200 and damage 15-25-40. Boss at 300/50 is strictly harder. Total incoming (15+25+40+50=130) vs 100 HP — brutal and likely fatal without the Brass Plating Patch (20 HP). One healing pickup is insufficient for this damage output. Appropriate for brutal label if that's intentional."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Victorian industrial clocktower, Steam Sentry, Gear-Grinder Automaton, Prototype Assassin Bot, Clockwork Overseer — all fit tense steampunk. Brass Corridor, Boiler Room, Hanger Deck are distinct industrial locations."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "High-Pressure Lubricant (slows mechanical movement) against a Gear-Grinder Automaton — jamming gears with lubricant is logical. Volatile Coal Briquette (explosive area damage) against a Prototype Assassin Bot is sensible. Boss: lubricant again seizing the Overseer's mechanisms works."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Boss victory condition names no specific item. Brass Plating Patch (enc 2) provides minimal healing (20 HP) for a brutal level. 'Steam Sentry' name also appears in the steampunk desolate entry. 'Hanger' (misspelling of 'hangar') appears twice."
+        }
+      },
+      "best_element": "The pick chain (Silver Daggers → Lubricant slows Automaton → Briquette explodes Bot) creates a satisfying rogue-appropriate escalation from melee to chemical to explosive.",
+      "worst_element": "The boss victory condition ('Disable the central steam regulator') is completely generic and mentions no specific item — the player has no clear instruction on how to use the stated boss weakness.",
+      "overall": "Functionally solid steampunk level with a clean pickup chain, but the generic boss victory condition and two off-trigger instances reduce the overall design quality."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "ominous",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An ominous steampunk stormcaller level where multiple enemy weaknesses use paraphrases. Enc 0 uses 'Lightning Discharge' — which isn't the player weapon name ('Stormcaller Gauntlet'). Enc 1 uses 'Conductive Plating damage amplification'. The boss correctly uses 'Conduit Rod'. Significant reference issues throughout.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Lightning Discharge' — player weapon is 'Stormcaller Gauntlet', not 'Lightning Discharge'; no pickup named 'Lightning Discharge' exists. This is a description of the weapon's effect, not its name. Enc 1 weakness 'Conductive Plating damage amplification' — not exact ('Conductive Plating'). Enc 2 weakness 'Conduit Rod melee arc' — not exact ('Conduit Rod'). Boss weakness 'Conduit Rod' — exact. Three of four references are imprecise or broken."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'defeat triggers loading crane to drop the bridge to the Factory Floor' — specific physical consequence. Enc 1 'Stopping the machine pulse grants access to the Boiler Room' — defeat-triggered. Enc 2 'Extracting the Aether Battery destabilizes the room and unlocks the Overlord's Sanctum' — specific."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-150-250 and damage 15-25-35. Boss at 500/40 — boss damage (40) is actually LOWER than enc 2 enemy damage (35 vs 40 — wait, enc 2 is 35, boss is 40, so boss is slightly higher). Health escalation is clean. Boss at 500 health is clearly the hardest. Total incoming (15+25+35+40=115) vs 100 HP — needs Aether Battery utility. Difficulty seems right for hard."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Victorian industrial city under smog, Docks-to-Factory-to-Boiler-Room progression — all fit ominous steampunk. Steam-Automaton Sentry, Brass Shield-Bearer, Steam-Powered Assassin, Clockwork Overlord — consistent mechanical enemies."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Conductive Plating (conductive surface) amplifying damage against a Brass Shield-Bearer — using metal's conductivity against it is logical but the weakness name is the item not an effect. Conduit Rod (high-voltage machinery interaction) against a Steam-Powered Assassin and the Overlord is mechanically sound. Lightning Discharge isn't an item."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Hazards are specific and varied. Aether Battery (enc 2) is used in the trigger — 'Extracting it destabilizes the room' — an interesting design choice. No major placeholder text."
+        }
+      },
+      "best_element": "The trigger chain — loading crane drops bridge, machine pulse grants access, Aether Battery extraction destabilizes room — is specific and physical throughout.",
+      "worst_element": "Encounter 0 weakness 'Lightning Discharge' names a spell effect rather than the player weapon 'Stormcaller Gauntlet' — a fundamental reference failure that would break weapon lookup in a game engine.",
+      "overall": "Good causal structure and thematic consistency undermined by systematic reference imprecision; the level needs a full pass to replace effect-names with exact item names in the weakness fields."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A desolate steampunk chronomancer level with clean exact references. The pickup chain is tight and logical. The boss victory condition is specific. One trigger is a player action rather than a defeat consequence.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Clockwork Dagger' (player weapon) exact. Enc 1 weakness 'Oiled Cog' (enc 0 pickup) exact. Enc 2 weakness 'Temporal Stabilizer' (enc 1 pickup) exact. Boss weakness 'Temporal Stabilizer' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 'triggers the activation of the pressure-locked gate' — defeat-triggered, specific. Enc 1 'Crushing the sentry reveals the access key to the Clocktower summit' — defeat-triggered. Enc 2 'Eliminating the scavenger unlocks the central engine room door' — defeat-triggered. All three are defeat consequences. However, 'reveals the access key' in enc 1 is slightly generic."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 200/35 is strictly harder. Total incoming (10+15+20+35=80) vs 100 HP — appropriate for medium. Chronos-Elixir (enc 2, restores health) provides useful mid-level healing."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "Industrial Ruin with Rusty Gear-Hound, Brass Sentry, Sky-Pirate Scavenger — Sky-Pirate Scavenger in a desolate steampunk ruin is thematically jarring. The first two enemies fit; the third introduces a different faction without context. Aether-Core Automaton boss fits the setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Oiled Cog (increases movement speed) against a Brass Sentry — movement speed isn't obviously an offensive tool. Temporal Stabilizer (stops time for 3 seconds) against a Sky-Pirate Scavenger and Aether-Core Automaton (freeze shielding) is a strong chronomancer mechanic."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. All fields are specific. 'Master Chronos Chronometer' reward is class-appropriate. Sky-Pirate Scavenger as the enc 2 enemy feels like it belongs in a different level, but the field is specific."
+        }
+      },
+      "best_element": "Temporal Stabilizer (stops time) used to freeze the Aether-Core Automaton's shielding creates a mechanically specific and class-appropriate boss encounter.",
+      "worst_element": "Sky-Pirate Scavenger in a 'desolate industrial ruin' setting — the enemy type clashes with the established setting and mood, feeling like it was borrowed from a different level template.",
+      "overall": "A clean, well-referenced medium-difficulty level that would be fun to play; the Sky-Pirate Scavenger is the only thematic misfit, easily replaced with a more setting-appropriate enemy."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "eerie",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal eerie steampunk geomancer level where encounter 2 provides no pickup ('N/A'/'None'). This means the player enters the boss fight with no new tool from the final encounter. Boss weakness and victory condition correctly reference the Magma Core from encounter 1.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Earth Shatter Staff' (player weapon) exact. Enc 1 weakness 'Obsidian Polisher' (enc 0 pickup) exact. Enc 2 weakness 'Magma Core' (enc 1 pickup) exact. Boss weakness 'Magma Core' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Shattering the boiler releases pressurized steam that reveals the hallway' — defeat-triggered environmental consequence. Enc 1 'Deactivating the magnet pulse triggers an alarm that unlocks the Heavy Maintenance Bay' — defeat-triggered. Enc 2 'Defeating the tank clears the pressure-lock door to the Arachnid Forge' — defeat-triggered. All three are specific."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-120-200 and damage 15-25-35. Boss at 400/50 is strictly harder. Total incoming (15+25+35+50=125) vs 150 HP — survivable but extremely tight for brutal. No healing pickup anywhere (enc 2 'N/A'). No healing makes this level very difficult to complete."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Subterranean Steam Factory, Steam-Vent Sentry, Gear-Grinder Automaton, Corroded Steam Tank, Clockwork Arachnid Prime — all fit eerie steampunk well. 'Magma Core' in a steam factory is thematically coherent."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Obsidian Polisher (increases melee damage against metal) against a Gear-Grinder Automaton is direct and logical. Magma Core (volcanic energy source) against a Corroded Steam Tank and Clockwork Arachnid Prime — using volcanic heat to destroy steam machinery is mechanically sound."
+        },
+        "completeness": {
+          "score": 2,
+          "reason": "Encounter 2 has 'N/A'/'None' for pickup — the final encounter before the boss provides no item. This is a structural gap. Combined with no healing anywhere in the level, this makes the level feel incomplete and undesirable to play."
+        }
+      },
+      "best_element": "The Clockwork Arachnid Prime boss name is the most distinctive boss name in the steampunk entries, fitting the eerie tone perfectly.",
+      "worst_element": "No pickup in encounter 2 and no healing pickup anywhere in the level — the player enters a brutal boss fight with 400 HP empty-handed from the last encounter and potentially severely damaged.",
+      "overall": "Clean references and good theme, but the missing enc 2 pickup and total absence of healing make this level a frustrating play experience; adding a healing item and a proper enc 2 pickup are required fixes."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serene steampunk paladin level with a break in the reference chain at encounter 2 — the Clockwork Watchman is weak to the player weapon 'Blessed Greatsword' rather than a pickup from a prior encounter. Boss correctly uses the Overcharged Capacitor. Victory condition is generic.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Blessed Greatsword' (player weapon) exact. Enc 1 weakness 'Copper Coil' (enc 0 pickup) exact. Enc 2 weakness 'Blessed Greatsword' — reverts to player weapon rather than using Overcharged Capacitor (enc 1 pickup). Boss weakness 'Overcharged Capacitor' (enc 1 pickup) exact. One broken chain link."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'releases the pressure valve to open the garden path' — defeat-triggered. Enc 1 'Clearing the ivy reveals the service tunnel to the clocktower' — defeat-triggered and specific. Enc 2 'Stopping the watchman unlocks the main boss chamber door' — defeat-triggered. All three are specific physical consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-25-30 and damage 5-5-5. Boss at 80/10 — boss damage strictly greater (10 > 5). All encounter damage is identical (5) — no damage escalation. Total incoming (5+5+5+10=25) vs 150 HP player — trivially easy, appropriate for easy. Boss health is appropriately higher."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Aetheric Clockwork Gardens — Steam-Vent Sentry, Iron Ivy Crawler, Clockwork Watchman, Brass Guardian Automaton — consistently fit serene steampunk. The 'garden' framing is a nice touch for a serene mood in a mechanical setting."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Copper Coil (electrical conductivity) against an Iron Ivy Crawler — conducting electricity through metal ivy to root it is plausible but a stretch. Overcharged Capacitor (stores static energy) against a Brass Guardian Automaton — discharging electricity into a brass automaton is logically sound. Blessed Greatsword against steam-mechanical foes is generic."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Boss victory condition 'Disable the main clockwork core' names no specific item. Oil Lubricant (enc 2) 'Restore health' is a generic effect name. All three encounter enemy damage values are identical (5), suggesting undifferentiated generation. Two completeness issues."
+        }
+      },
+      "best_element": "The 'Clearing the ivy reveals the service tunnel' trigger in encounter 1 is a specific, setting-appropriate physical consequence that fits the Clockwork Gardens theme.",
+      "worst_element": "Boss victory condition 'Disable the main clockwork core' is completely generic and doesn't reference the Overcharged Capacitor — a player loading this config would not know how to win the boss fight.",
+      "overall": "Functional easy-difficulty level with consistent theme, but the weapon reversion in enc 2, flat encounter damage values, and generic boss victory condition indicate this was generated with less precision than other entries."
+    }
+  }
+]

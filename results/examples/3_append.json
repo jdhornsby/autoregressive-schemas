@@ -1,0 +1,63 @@
+{
+  "theme": "fantasy",
+  "encounters": [
+    {
+      "location": "The Whispering Foyer",
+      "enemy": {
+        "name": "Shadow Construct",
+        "health": 50,
+        "damage": 10,
+        "weakness": "flame burst"
+      },
+      "trigger": "Burning the tapestry reveals a hidden stairwell leading to the Iron Crypts.",
+      "pickup": {
+        "name": "Frozen Heart Amulet",
+        "effect": "Grants frost resistance"
+      },
+      "hazard": "Falling soot that obscures vision."
+    },
+    {
+      "location": "The Iron Crypts",
+      "enemy": {
+        "name": "Rust Golem",
+        "health": 80,
+        "damage": 15,
+        "weakness": "intense heat"
+      },
+      "trigger": "The Golem shatters, triggering a pressure plate that opens the gate to the Altar of Void.",
+      "pickup": {
+        "name": "Sun-Touched Chalice",
+        "effect": "Reflects magical attacks"
+      },
+      "hazard": "Slippery oil patches."
+    },
+    {
+      "location": "The Altar of Void",
+      "enemy": {
+        "name": "Void Sentinel",
+        "health": 120,
+        "damage": 20,
+        "weakness": "Sun-Touched Chalice reflection"
+      },
+      "trigger": "The Sentinel dies, causing the altar to collapse and revealing the path to the Boss throne room.",
+      "pickup": {
+        "name": "Ancient Relic Key",
+        "effect": "Unlocks the Boss chamber barrier"
+      },
+      "hazard": "Void rifts that damage health over time."
+    }
+  ],
+  "objective": "Purge the temple of its dark corruption.",
+  "player_weapon": "flame burst",
+  "player_weapon_damage": 25,
+  "player_health": 150,
+  "boss": {
+    "name": "Obsidian Lich",
+    "health": 300,
+    "damage": 40,
+    "weakness": "Frozen Heart Amulet",
+    "victory_condition": "Channel the Amulet to freeze the Lich's core before the clock runs out."
+  },
+  "setting": "An ominous, decaying cathedral suspended in a void dimension.",
+  "reward": "The Crown of Embers"
+}

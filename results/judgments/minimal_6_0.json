@@ -1,0 +1,354 @@
+[
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The Abyssal Spire holds together as a coherent fire-vs-shadow progression with a sensible pickup chain. Enc2 reuses the Enc0 pickup as its weakness rather than the immediately prior Enc1 pickup, leaving Bottled Solar Flare unused by enemies until the boss. The victory condition is entirely generic and names no items from the level.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc2 weakness correctly names an earlier pickup (Sun-Touched Ember from Enc0) but skips the Enc1 pickup; boss weakness is exact. Victory condition names no items from the level, failing that check." },
+        "causal_chain":        { "score": 5, "reason": "All three triggers are specific physical consequences — iron doors unlocking, an echo shattering to reveal a stairwell, a relic inserted into an altar summoning the boss. Removing any encounter would break the sequence." },
+        "balance":             { "score": 5, "reason": "Enemy hp 50/60/75 and damage 10/15/20 escalate cleanly. Boss hp 200 and damage 30 are strictly greater. Total incoming damage 45 vs 100 hp is survivable for medium." },
+        "thematic_coherence":  { "score": 5, "reason": "Fire pyromancer vs. shadow/eclipse enemies across a cinder spire is fully consistent. Every element reinforces the ominous fire-shadow conflict." },
+        "mechanical_sense":    { "score": 5, "reason": "Sun-Touched Ember augments fire damage and is used against a shadow-based echo. Bottled Solar Flare deals massive damage to shadow creatures and is used against the Eclipse Lord. Both connections are obvious." },
+        "completeness":        { "score": 4, "reason": "All locations and enemies are distinct and specific. The victory condition is the weakest field — 'Reduce boss health to zero before he plunges the world into eternal darkness' adds no mechanical information." }
+      },
+      "best_element": "The Bottled Solar Flare pickup — 'Deals massive damage to shadow-based creatures' feeds directly into the Eclipse Lord boss weakness, making the Enc1 pickup feel pre-planned rather than incidental.",
+      "worst_element": "The victory condition. It describes a generic defeat rather than naming the Bottled Solar Flare or any specific mechanic; it could appear on any boss in the game.",
+      "overall": "A well-structured, thematically tight level that would be enjoyable to play; the only meaningful flaw is a generic victory condition and the minor skip in the pickup-weakness chain."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The Whispering Mushroom Grove is charming and internally consistent as a whimsical fantasy progression. The weakness chain mostly works but Enc0's enemy weakness uses a description of the weapon rather than its exact name, and the triggers are somewhat generic. The boss is the only notably dark element in an otherwise light setting.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc0 weakness is 'High-pitched tones from the Enchanted Whistle' instead of the exact name 'Enchanted Whistle'. Enc1 and Enc2 weaknesses are exact. Boss weakness 'Ancient Sun-Shard' is exact; victory condition uses 'Sun-Shard' — minor shortening." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 trigger 'clears the path' is generic. Enc1 'taming the toad opens the gate' and Enc2 'clearing the swarm reveals the entrance' are similarly vague. Encounters could plausibly be reordered." },
+        "balance":             { "score": 5, "reason": "Enemy hp 20/30/40 and damage 5/8/10 escalate cleanly. Boss hp 80 and damage 15 are strictly greater. Total damage 23 vs 100 hp is trivially easy, matching the easy target." },
+        "thematic_coherence":  { "score": 4, "reason": "Grove, sprites, toads, and pixies are all coherent whimsical fantasy. The Shadow-Bound Fawn is a slight tonal shift but is framed as purification, keeping it appropriate." },
+        "mechanical_sense":    { "score": 3, "reason": "Glittering Nectar 'increases charisma and attraction' as a weapon against a Bubble-Blowing Toad is a stretch — no clear functional connection. Golden Honeycomb slowing flying enemies against the Fluttering Pixie Swarm is excellent. Ancient Sun-Shard against the Shadow-Bound Fawn is logical." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. The trigger texts are slightly repetitive in structure ('Defeating/Taming/Clearing X reveals/opens path to Y') and add little beyond the bare transition." }
+      },
+      "best_element": "Golden Honeycomb slowing flying enemies used against the Fluttering Pixie Swarm — the pickup effect maps cleanly onto the enemy type.",
+      "worst_element": "Enc0 enemy weakness uses a description ('High-pitched tones from the Enchanted Whistle') rather than the weapon name; this would fail an exact-string lookup in an engine.",
+      "overall": "A pleasant, coherent easy level that fits the whimsical mood well; the reference integrity failure and generic triggers prevent it from being polished enough to ship without revision."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The Weeping Catacombs is a well-constructed dark fantasy dungeon with a clean pickup chain and strong causal triggers. All enemy weaknesses resolve to exact item names from prior encounters. The only notable flaw is a victory condition that names no items, and the Heart of the Cathedral pickup effect is defensive rather than offensive, making the boss weakness mechanically unusual.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "All three enemy weaknesses are exact strings. Boss weakness 'Heart of the Cathedral' is exact. However, the victory condition 'Purify the throne of corruption' names no items from the level — this check fails." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 shatters the seal to the inner sanctum; Enc1 dispels shadows to unlock the crypt elevator; Enc2 lowers the barricade to the throne room. All three are specific physical consequences that would break the sequence if removed." },
+        "balance":             { "score": 5, "reason": "Enemy hp 60/80/120 and damage 15/30/40 escalate cleanly. Boss hp 300 and damage 60 are strictly greater. Total damage 85 vs 150 hp is survivable but tight, appropriate for hard." },
+        "thematic_coherence":  { "score": 5, "reason": "Paladin vs. undead/shadow enemies in catacombs with holy weapons is a textbook dark fantasy setup. Every element is consistent with the tense mood." },
+        "mechanical_sense":    { "score": 4, "reason": "Sun-Touched Amulet boosting shadow damage against the Shadow Stalker is clear. Vial of Holy Flame coating weapons against the Ironclad Revenant is logical. Heart of the Cathedral 'removes vulnerability to boss mechanics' is defensive, making it unusual as the boss's offensive weakness — defensible but mechanically odd." },
+        "completeness":        { "score": 5, "reason": "Every location, enemy, and hazard is distinct and specific. No field is generic or repetitive." }
+      },
+      "best_element": "The causal chain — each encounter's defeat directly unlocks or reveals the path to the next in a physically specific way, making the level feel designed rather than randomly assembled.",
+      "worst_element": "The victory condition 'Purify the throne of corruption' is entirely generic and misses the opportunity to reference the Heart of the Cathedral or any other named item.",
+      "overall": "A solid, playable hard level with tight stats and a well-constructed narrative flow; the generic victory condition is the main design debt."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "mysterious",
+      "player_class": "illusionist",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The Whispering Observatory is the strongest entry in this batch — every reference resolves exactly, the causal chain is specific, and the light/prism theme runs consistently through every pickup and enemy. The player's 40 hp makes the level genuinely brutal but each enemy damage value is still survivable if played carefully.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses use exact pickup names from prior encounters. Boss weakness 'Astral Key' is exact. Victory condition explicitly names 'Astral Key'. Zero mismatches." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 unlocks the Archive Door specifically; Enc2 trigger 'Shattering the Knight's armor exposes the unstable core of the final boss' is vivid and specific. Enc1 trigger 'lowering of the Observatory's main spire' leads plausibly to the Celestial Observation Deck but the physical causation is slightly abstract." },
+        "balance":             { "score": 4, "reason": "Enemy hp 50/70/90 and damage 25/30/35 escalate cleanly. Boss hp 250 and damage 50 are strictly greater. With only 40 player hp, a single Enc0 hit takes 62% health — brutal as labeled. Survivable with perfect play but the margin is razor-thin." },
+        "thematic_coherence":  { "score": 5, "reason": "Floating library, temporal rift, illusionist with a prism staff — every enemy (Void Sentinel, Spectral Librarian, Twilight Knight, Chronos Weaver) belongs in this world. The setting and enemies are mutually reinforcing." },
+        "mechanical_sense":    { "score": 5, "reason": "Essence of Reflection mirrors light to reveal invisible objects against the Spectral Librarian. Star-Forged Lens magnifies light attacks against the Twilight Knight. Astral Key stabilizes the energy field around the boss chamber — all connections are obvious and thematic." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. No location, hazard, or enemy is repeated. Each pickup effect directly informs why it counters the next enemy." }
+      },
+      "best_element": "The unified light/optics theme through every pickup — Essence of Reflection, Star-Forged Lens, Astral Key — creates a coherent mechanical identity that matches the illusionist class and the observatory setting.",
+      "worst_element": "The Enc1 trigger ('lowering of the Observatory's main spire') is slightly abstract as a causal mechanism; it works narratively but the physical logic is less crisp than the other triggers.",
+      "overall": "The best-designed level in the batch — coherent theme, clean references, specific triggers, and appropriate brutal difficulty. Would be genuinely fun and challenging to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The Whispering Glade is a clean, serene progression with exact pickup references and a well-escalating stat line. The Moon-Dew weakness against the Bramble-Guardian is a loose mechanical connection, and the victory condition slightly shortens the pickup name. The level feels designed rather than assembled.",
+      "scores": {
+        "reference_integrity": { "score": 4, "reason": "All three enemy weaknesses use exact pickup names. Boss weakness 'Spirit-Binding Keystone' is exact. Victory condition uses 'Keystone' rather than the full name — minor variation but clearly identifiable." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 reveals the gate to Crystal Brook; Enc1 causes water to recede, exposing the path to Elder Oak; Enc2 entry into the boss chamber. All three triggers are specific physical consequences of defeating each enemy." },
+        "balance":             { "score": 5, "reason": "Enemy hp 20/30/40 and damage 5/8/10 escalate cleanly. Boss hp 60 and damage 15 are strictly greater. Total damage 23 vs 100 hp is trivially easy, appropriate for easy." },
+        "thematic_coherence":  { "score": 4, "reason": "Bioluminescent forest, twilight, wisp, river sprite, and bramble-guardian all fit the serene fantasy setting. The boss having a 'chaotic energy rift' is slightly off-tone for serene, though the victory frames it as healing." },
+        "mechanical_sense":    { "score": 3, "reason": "Sun-Kissed Petal emitting warm light against a Shimmering River Sprite is a loose connection — light vs. a water spirit is defensible. Ancient Moon-Dew increasing restorative magic as a weapon against a Twisted Bramble-Guardian has no clear functional logic — restorative magic shouldn't hurt a plant creature." },
+        "completeness":        { "score": 5, "reason": "All locations, enemies, and hazards are distinct. Every field adds specific information. No generic filler." }
+      },
+      "best_element": "The Enc1 trigger — water receding to expose the path to Elder Oak — is a specific, elegant physical consequence that makes the world feel reactive.",
+      "worst_element": "Ancient Moon-Dew as a weapon against the Twisted Bramble-Guardian: the pickup increases restorative magic potency, which has no obvious offensive application against a plant creature.",
+      "overall": "A well-paced easy level with a pleasant serene atmosphere; the mechanical connection for Moon-Dew is the main weak point but the level would still be enjoyable to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The Shattered Void Citadel has exact references and clean stat escalation but suffers from a generic Enc0 trigger and a questionable mechanical connection for Essence of Stability. The victory condition is the highlight — naming both the pickup and weapon. The Knowledge-Eater Construct in an Echoing Library is a mild thematic quirk for a void citadel.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses use exact pickup/weapon names. Boss weakness 'Void Anchor' is exact. Victory condition names both 'Void Anchor' and 'Cursed Greataxe' explicitly." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 trigger 'opens the path to the Inner Sanctum' is generic with no specific physical mechanism. Enc1 'reveals the master switch for the boss gate' is specific. Enc2 'shattering the Shade awakens the Final Warden' is specific. One of three triggers is too vague." },
+        "balance":             { "score": 5, "reason": "Enemy hp 60/80/100 and damage 15/20/25 escalate cleanly. Boss hp 300 and damage 40 are strictly greater. Total damage 60 vs 150 hp is survivable for hard." },
+        "thematic_coherence":  { "score": 4, "reason": "Void citadel, spatial rifts, mirror shades, and entropy warden all fit the chaotic fantasy theme. The Knowledge-Eater Construct in an Echoing Library feels slightly incongruous inside a Void Citadel." },
+        "mechanical_sense":    { "score": 3, "reason": "Essence of Stability granting immunity to spatial rifts as a weapon against the Knowledge-Eater Construct has no clear functional connection — stability doesn't obviously harm a knowledge-eating creature. Crystalline Focus against the Mirror Shade and Void Anchor against an ethereal warden are both logical." },
+        "completeness":        { "score": 4, "reason": "All locations and enemies are distinct. Enc0 trigger is vague. 'Echoing Library' within a 'Shattered Void Citadel' is slightly generic as a location name." }
+      },
+      "best_element": "The victory condition explicitly names both the Void Anchor and the Cursed Greataxe, giving the final encounter a two-step mechanical clarity that most entries lack.",
+      "worst_element": "Essence of Stability as the Knowledge-Eater Construct's weakness: the pickup grants immunity to spatial rifts, which is a defensive property with no obvious offensive application against a library creature.",
+      "overall": "A functional hard level with good stat escalation and a satisfying final boss mechanic; the weak Enc0 trigger and the Essence of Stability connection reduce its overall quality."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "eerie",
+      "player_class": "necromancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The mist-shrouded necropolis is thematically excellent with a clean pickup chain and strong causal triggers. The numbers are too easy for a medium difficulty label, and the victory condition is again generic. The Cursed Silver Bell's connection to the Animated Flesh Golem is mechanically weak.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "All three enemy weaknesses use exact pickup/weapon names. Boss weakness is exact. Victory condition 'Purify the ritual site after shattering the boss's defense' names no items — this check fails." },
+        "causal_chain":        { "score": 5, "reason": "Enc0's iron gate opening, Enc1's tide of shadows leading to the altar, and Enc2's teleportation seal to the boss arena are all specific, evocative physical consequences. The chain feels inevitable." },
+        "balance":             { "score": 3, "reason": "Enemy hp 30/40/60 and damage 5/8/12 escalate cleanly. Boss hp 150 and damage 20 are strictly greater. Total damage 25 vs 100 hp is very easy — the numbers feel appropriate for easy, not medium. The difficulty label does not match." },
+        "thematic_coherence":  { "score": 5, "reason": "Blood moon, mist-shrouded necropolis, Bone Scythe, Spectral Screamer, Flesh Golem, High Priest Malakor — every element is eerie and coherent. One of the strongest thematic packages in the batch." },
+        "mechanical_sense":    { "score": 3, "reason": "Bottle of Holy Water against Spectral Screamer is classic and obvious. Cursed Silver Bell 'causes spiritual destabilization in ethereal beings' used against an Animated Flesh Golem — a flesh golem is not primarily ethereal, making this connection weak. Heart of the Lich as a vulnerability catalyst for the boss is functional." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and distinct. The setting description ('decaying, mist-shrouded necropolis under a blood moon') is more evocative than any other entry in the batch." }
+      },
+      "best_element": "The Enc1 trigger — 'The Screamer's death shatters the silence, summoning a tide of shadows that lead to the sacrificial altar' — is the most evocative narrative trigger in the file.",
+      "worst_element": "The difficulty mismatch: total enemy damage of 25 against 100 hp is trivially survivable, making 'medium' an incorrect label. The numbers belong on an easy level.",
+      "overall": "A thematically excellent level hampered by mismatched difficulty and a generic victory condition; the atmosphere is strong but the numbers need tuning to earn the medium label."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The Desolate Ashlands level has clean stat escalation and a logical pickup chain but suffers from two reference variations where descriptors are appended to item names. The triggers are generic and the causal chain is weak. The overall flow works but the reference naming and trigger quality pull it down.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc0 weakness 'Obsidian Longbow arrows' appends 'arrows' to the weapon name. Enc1 weakness 'Sun-Touched Flint fire damage' appends 'fire damage'. Enc2 and boss are exact. Two references fail the exact-string check." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 trigger 'clears the path' is generic. Enc1 trigger 'Retrieving the Essence unlocks the gate' is about the pickup, not the enemy defeat. Enc2 trigger 'Using the Shard forces the Void Gate to open' is specific. Only one of three triggers is a true consequence of defeating the enemy." },
+        "balance":             { "score": 4, "reason": "Enemy hp 40/60/80 and damage 10/15/20 escalate cleanly. Boss hp 200 and damage 30 are strictly greater. Total damage 45 vs 50 hp is extremely tight — survivable with near-perfect play, appropriate for brutal." },
+        "thematic_coherence":  { "score": 4, "reason": "Ashlands, ash stalker, sludge horror, phantom sentinel, Hollow Sovereign all fit the desolate mood. 'Void-Crystal Shard' and the Hollow Sovereign's void theme are slightly at odds with the ash-and-desolation setting but not a serious mismatch." },
+        "mechanical_sense":    { "score": 4, "reason": "Sun-Touched Flint igniting ammunition against the Sludge Horror (fire vs. sludge) is logical. Essence of Clarity revealing invisible targets against the Phantom Sentinel is clear. Void-Crystal Shard draining the boss's shield is functional." },
+        "completeness":        { "score": 4, "reason": "All locations and enemies are distinct. 'Falling debris from the crumbling ceiling' in Enc2 is somewhat generic as a hazard description. The Enc1 trigger is about the pickup rather than the encounter." }
+      },
+      "best_element": "The stat escalation — enemy hp 40/60/80 with damage 10/15/20 against 50 player hp creates genuine tension at each encounter and earns the brutal label.",
+      "worst_element": "The Enc1 trigger makes the pickup retrieval the progression gating event rather than defeating the enemy — undermining the expected encounter-defeat-then-advance structure.",
+      "overall": "A serviceable brutal level with good number design but weak triggers and reference name variations that would cause lookup failures in an engine; it needs trigger revision and exact item naming."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The decaying research station is a well-constructed sci-fi horror level with a strong causal chain and coherent theme. Two of the three enemy weaknesses append descriptors to the item name, failing the exact-string check. The victory condition explicitly names the key item, which partially compensates.",
+      "scores": {
+        "reference_integrity": { "score": 3, "reason": "Enc0 weakness 'Plasma Welder heat damage' appends 'heat damage'. Enc1 weakness 'Overclocked Power Cell surge' appends 'surge'. Enc2 and boss weaknesses are exact. Two references fail the exact-string check." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 destroying the drone activates the ventilation shaft; Enc1 killing the Stalker triggers emergency lockdown in the bridge; Enc2 neutralizing the turret opens the blast doors. All three are specific, physical, sequential consequences." },
+        "balance":             { "score": 5, "reason": "Enemy hp 30/50/80 and damage 10/20/25 escalate cleanly. Boss hp 250 and damage 40 are strictly greater. Total damage 55 vs 100 hp is survivable for hard." },
+        "thematic_coherence":  { "score": 5, "reason": "Decaying space station, plasma welder, corrupted drones, void stalker, AI core boss — every element belongs to the sci-fi horror genre. The progression from cryo-storage to reactor to bridge to AI core is textbook." },
+        "mechanical_sense":    { "score": 4, "reason": "Plasma Welder heat damaging a Corrupted Security Drone is logical. Overclocked Power Cell surge against a Void Stalker is a stretch — an energy surge against a void creature has indirect logic. Corrosive Acid Vial dissolving turret shielding is obvious." },
+        "completeness":        { "score": 5, "reason": "Every field is distinct and adds specific information. The setting progression (cryo bay to reactor to bridge to AI core) is coherent and non-repetitive." }
+      },
+      "best_element": "The causal chain — each encounter defeat produces a specific station-wide event (ventilation shaft opens, lockdown triggers, blast doors open) that forces progression to the next area.",
+      "worst_element": "Two enemy weaknesses append descriptors to item names rather than using the exact names, which would cause string-matching failures in an engine.",
+      "overall": "A well-designed tense sci-fi level with strong causal flow and appropriate difficulty; the reference naming issues are the only meaningful flaw."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The chronosphere space station has perfect reference integrity and a logical pickup chain. The trigger from Enc1 references a 'bridge' that doesn't match Enc2's Observation Deck location, and the numbers are too easy for medium difficulty. The Ancient Keycode naming feels anachronistic for sci-fi but the theme holds.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses use exact pickup/weapon names. Boss weakness 'Ancient Keycode' is exact. Victory condition names 'Ancient Keycode' explicitly. Zero mismatches." },
+        "causal_chain":        { "score": 3, "reason": "Enc0 reveals the security terminal for the corridor — specific. Enc1 trigger says 'stabilizes the floor, granting access to the bridge' but Enc2 is at the Observation Deck, not a bridge — minor location mismatch. Enc2 'forces the bulkhead open' is specific." },
+        "balance":             { "score": 3, "reason": "Enemy hp 30/50/70 and damage 5/10/15 escalate cleanly. Boss hp 150 and damage 25 are strictly greater. Total damage 30 vs 100 hp is far too easy for medium — these numbers suit an easy level." },
+        "thematic_coherence":  { "score": 4, "reason": "Chronosphere space station, temporal wraith, void sentinel, and Timeless Overlord are coherent. 'Ancient Keycode' is an odd naming choice for a sci-fi context — 'ancient' implies archaeology, not technology." },
+        "mechanical_sense":    { "score": 5, "reason": "Stasis Battery freezing kinetic energy against the Temporal Wraith is precise. Warp Core Shard amplifying chronomantic powers against the Void Sentinel is logical. Ancient Keycode unlocking the command override against the Timeless Overlord is functional." },
+        "completeness":        { "score": 5, "reason": "All locations, enemies, and hazards are distinct. Every field adds specific information. No generic filler." }
+      },
+      "best_element": "Perfect reference integrity — every pickup name chains exactly to the next enemy weakness with no approximations, making this level engine-ready.",
+      "worst_element": "The difficulty balance: total enemy damage of 30 against 100 hp is appropriate for easy, not medium. The label and numbers are mismatched.",
+      "overall": "A clean, coherent level with the best reference chain in the batch; the mislabeled difficulty and one trigger location mismatch are the only issues."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The collapsing orbital station has perfect reference integrity and a strong causal chain, but the balance is incoherent — total enemy damage of 90 against 50 player hp with no healing makes survival mathematically implausible. The Frost-Wreathed Sentinel is a thematic oddity in a chaotic AI siege setting.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses use exact pickup/weapon names. Boss weakness 'Plasma Stabilizer' is exact. Victory condition names 'stabilizer' (clear reference). Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 forces open the bulkhead; Enc1 unlocks the security override for the Reactor Core; Enc2 forces the AI mainframe to manifest its core consciousness. All three are specific consequences that make the next encounter inevitable." },
+        "balance":             { "score": 2, "reason": "Enemy damage 20/30/40 vs 50 player hp. A single hit from Enc2 (40 damage) leaves the player at 10 hp. Total enemy damage 90 far exceeds the player's 100 hp. Even with no healing pickups, the player cannot realistically survive all three encounters. Numbers feel random rather than tuned." },
+        "thematic_coherence":  { "score": 4, "reason": "Collapsing orbital station under AI siege is coherent for chaotic sci-fi. The Frost-Wreathed Sentinel in Cryo-Storage is explained by location but 'frost-wreathed' reads as fantasy rather than sci-fi." },
+        "mechanical_sense":    { "score": 3, "reason": "Supercharged Battery Cell tripling Ionic Surge Staff damage against the Frost-Wreathed Sentinel — electricity vs. frost is plausible but indirect. Data Core Fragment decrypting a lock used as combat weakness against the Void-Stalker Construct has no functional logic. Plasma Stabilizer stunning mechanical enemies against the System Archon is logical." },
+        "completeness":        { "score": 5, "reason": "All locations, enemies, and hazards are distinct. Every field is specific. No generic filler." }
+      },
+      "best_element": "The Enc2 trigger — 'Securing the stabilizer forces the AI mainframe to manifest its core consciousness' — is the most narratively satisfying boss summoning trigger in the file.",
+      "worst_element": "The balance: 90 total enemy damage against 50 player hp makes this level unwinnable under any reasonable interpretation. The stats feel unreviewed.",
+      "overall": "Strong narrative flow and clean references undercut by incoherent balance; a player loading this level would die before reaching the boss under normal conditions."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The derelict Oort cloud station has perfect reference integrity and appropriate easy difficulty. All three encounter triggers are player actions unrelated to defeating the enemy — the causal chain criterion fails completely. The level feels like a shopping list rather than a designed sequence.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Master Keycard' is exact. Victory condition references 'keycard'. Zero mismatches." },
+        "causal_chain":        { "score": 1, "reason": "Enc0 trigger 'Opening the main lab doors' is a player action, not a consequence of defeating the enemy. Enc1 'Activating the terminal to bridge power' is a player action. Enc2 'Accessing the server room elevator' is a player action. None of the three triggers are consequences of the encounter." },
+        "balance":             { "score": 5, "reason": "Enemy hp 20/30/40 and damage 5/8/10 escalate cleanly. Boss hp 100 and damage 15 are strictly greater. Total damage 23 vs 100 hp is easy, matching the target." },
+        "thematic_coherence":  { "score": 5, "reason": "Derelict research station, Micro-Drone Swarm, Glitch-Bot, Sentient Security Turret, AI Core Guardian — all coherent mysterious sci-fi. The progression from airlock to hydroponics to core is logical." },
+        "mechanical_sense":    { "score": 4, "reason": "Cryo-Coolant Canister freezing mechanical joints against Glitch-Bot is clear. Neural Override Chip stunning synthetic lifeforms against Sentient Security Turret is direct. Master Keycard as combat weakness for the AI Core Guardian is unusual but the boss is a guardian of a locked door." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. All three triggers describe player actions rather than encounter consequences, making them functionally identical in structure and adding no unique design information." }
+      },
+      "best_element": "Clean reference integrity — every pickup name chains exactly, making this level engine-ready for the weakness lookup system.",
+      "worst_element": "All three triggers are generic player actions ('Opening the main lab doors', 'Activating the terminal', 'Accessing the elevator') with no connection to defeating the enemy — the encounters could be removed entirely and progression would be identical.",
+      "overall": "The trigger failure makes this level feel like a series of rooms rather than a designed encounter sequence; fixing the triggers would make it a solid easy level."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The derelict space station in a nebula is the strongest sci-fi entry in the batch. References are all exact, the causal chain is specific and physical, and the victory condition names two items. Stats escalate cleanly and the theme is fully coherent.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Ancient Void Key' is exact. Victory condition explicitly names 'Ancient Void Key' and 'Void-Edge Dagger'. Zero mismatches." },
+        "causal_chain":        { "score": 5, "reason": "Enc0 hacks the mainframe to open the Engineering Deck; Enc1 overloads the cooling system to force blast doors open; Enc2 initiates lockdown and teleports the player into the boss arena. All three are specific, physical, non-reorderable consequences." },
+        "balance":             { "score": 5, "reason": "Enemy hp 50/75/100 and damage 15/20/30 escalate cleanly. Boss hp 300 and damage 50 are strictly greater. Total damage 65 vs 100 hp is tight for hard, appropriate." },
+        "thematic_coherence":  { "score": 5, "reason": "Void-Edge Dagger, Corrupted Sentry, Plasma Stalker, Void Sentinel, Omnis-Core Overlord — every element fits the ominous sci-fi void theme. The station progression from cryo to engineering to reactor is textbook." },
+        "mechanical_sense":    { "score": 5, "reason": "Cryogenic Coolant Canister freezing mechanical joints against the Plasma Stalker (heat vs. cold opposition) is excellent. Phase-Shift Battery enabling teleportation against the Void Sentinel (outmaneuver a void creature) is creative. Ancient Void Key disabling boss shield generators is direct." },
+        "completeness":        { "score": 5, "reason": "Every field is specific, distinct, and adds unique information. No location, enemy, or hazard is repeated. The level reads as intentionally designed." }
+      },
+      "best_element": "The victory condition names both the Ancient Void Key and the Void-Edge Dagger, giving the final encounter a clear two-step mechanical resolution that is the best-written boss conclusion in the file.",
+      "worst_element": "Nothing stands out as a serious flaw. The level is well-constructed throughout.",
+      "overall": "A high-quality hard level that would be genuinely fun to play — clean references, specific triggers, coherent theme, and tight stats. The best overall entry in this file."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The bio-engineering station has perfect reference integrity and a strong thematic identity. However, two of the three triggers are player actions rather than enemy-defeat consequences, and the encounter stat progression inverts between Enc1 and Enc2 on both health and damage.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Ancient Power Cell' is exact. Victory condition names 'Ancient Power Cell' and 'Acid Spray'. Zero mismatches." },
+        "causal_chain":        { "score": 2, "reason": "Enc0 trigger 'Opening the main coolant valve' is a player action unrelated to defeating the enemy. Enc1 trigger 'Downloading the master keycode from the console' is a player action. Only Enc2 trigger (inserting the Power Cell) is a specific consequence — though it's about the pickup, not the enemy defeat." },
+        "balance":             { "score": 2, "reason": "Enemy hp 30/50/40 inverts between Enc1 and Enc2 (40 < 50). Enemy damage 10/20/15 also inverts (15 < 20). Multiple escalation inversions are a clear design flaw. Boss hp 200 and damage 30 are strictly greater than individual encounter enemies." },
+        "thematic_coherence":  { "score": 5, "reason": "Abandoned bio-engineering station, alchemist with acid spray, mutated spore-drone, containment breaker prototype, sentient wiring swarm, Omega-Synth Prime — fully coherent sci-fi horror." },
+        "mechanical_sense":    { "score": 5, "reason": "Cryo-Stabilizer Fluid freezing organic targets against the Containment Breaker Prototype (organic creature) is exact. Thermal Singularity Core igniting against the Sentient Wiring Swarm (heat vs. wiring) is direct. Ancient Power Cell overloading the boss is functional." },
+        "completeness":        { "score": 4, "reason": "Locations and enemies are distinct. Two triggers describe player console interactions rather than encounter consequences, reducing their information value." }
+      },
+      "best_element": "The thematic coherence is excellent — alchemist with acid and cryo tools in a bio-engineering station creates a natural fit between player class and environment.",
+      "worst_element": "Stat inversions between Enc1 and Enc2: both health (50→40) and damage (20→15) decrease, making Enc2 easier than Enc1. Combined with two generic triggers, the level's structure is significantly undermined.",
+      "overall": "Good theme and references, but the balance inversions and trigger failures make this level feel unreviewed; it would need both fixes before it is playable as designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "whimsical",
+      "player_class": "rogue",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The Orbiting Junkyard of Lost Socks is a delightful whimsical concept executed cleanly — exact references, appropriate easy stats, and a fully coherent absurdist theme. The Enc2 trigger is vague and the final encounter's transition to the boss is generic, but the level is otherwise well-constructed.",
+      "scores": {
+        "reference_integrity": { "score": 5, "reason": "All three enemy weaknesses are exact pickup/weapon names. Boss weakness 'Master Override Key' is exact. Victory condition references 'key' and 'Duster' — both clear. Zero serious mismatches." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 activates the magnetic lift specifically. Enc1 jams the machinery, opening the vent — specific. Enc2 trigger 'Winning the brawl grants access to the Final Archive Chamber' is generic ('winning the brawl' is a restatement of defeating the enemy)." },
+        "balance":             { "score": 5, "reason": "Enemy hp 20/30/40 and damage 5/10/15 escalate cleanly. Boss hp 100 and damage 25 are strictly greater. Total damage 30 vs 100 hp is easy, matching the target." },
+        "thematic_coherence":  { "score": 5, "reason": "Dust-Bunny Bot, Greedy Sorting Claw, Sentient Lint-Trap, and the Sock Sovereign in an orbiting sock junkyard is a brilliantly coherent whimsical world. Every element belongs to the same absurd premise." },
+        "mechanical_sense":    { "score": 4, "reason": "Static Ion Battery imbuing electric current against the Greedy Sorting Claw (metal claw shorted by electricity) is logical. Super-Lubricant Spray allowing movement through electrified gates used against the Sentient Lint-Trap — lubricant preventing lint adhesion is creative and thematically consistent." },
+        "completeness":        { "score": 5, "reason": "Every field is specific and inventive. No location, enemy, or hazard is repeated. The whimsical naming convention is internally consistent throughout." }
+      },
+      "best_element": "The setting concept — Orbiting Junkyard of Lost Socks — with enemies (Dust-Bunny Bot, Sentient Lint-Trap, Sock Sovereign) that all belong to the same absurdist premise. The world-building is exceptional for a level config.",
+      "worst_element": "Enc2 trigger 'Winning the brawl grants access to the Final Archive Chamber' is the weakest trigger in the level — it says nothing specific about how the Lint-Trap's defeat causes the transition.",
+      "overall": "A memorable, fun-to-read level that would be entertaining to play. The whimsical theme is the best in the file and the mechanics support it well."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The orbital crystal garden has interesting thematic elements but severe reference and balance problems. Every enemy weakness appends a descriptor rather than using the exact item name, and 20 player hp against enemies dealing 8-25 damage per hit makes survival incoherent even for a brutal label. The victory condition names no items.",
+      "scores": {
+        "reference_integrity": { "score": 2, "reason": "Enc0 weakness 'crystalline resonate staff vibration' appends 'vibration'. Enc1 'Focusing Lens light refraction' appends 'light refraction'. Enc2 'Stellar Core Fragment intense heat' appends 'intense heat'. Boss weakness 'Celestial Seal' is exact but victory condition 'seal the architect in geomantic stone' names no items. Three of four references fail exact-string check." },
+        "causal_chain":        { "score": 4, "reason": "Enc0 opens gate to observation deck; Enc1 activates bridge to core chamber; Enc2 reveals boss terminal. All three are specific physical consequences. The transitions are slightly terse but each is a genuine consequence of enemy defeat." },
+        "balance":             { "score": 1, "reason": "Player hp 20, weapon damage 5. Enc0 enemy deals 8 damage — player can survive 2 hits max before dying. Enc2 enemy deals 15 damage — instant near-death per hit. Boss deals 25 — instant kill from full health. No healing pickups are listed. The player cannot survive this level." },
+        "thematic_coherence":  { "score": 4, "reason": "Ancient orbital crystal garden, geomancer, photosynthetic construct, celestial architect — mostly coherent serene sci-fi. 'Void Weaver' in a serene crystal garden is slightly jarring." },
+        "mechanical_sense":    { "score": 4, "reason": "Focusing Lens amplifying staff resonance against the Photosynthetic Construct (light/resonance against a light-eating creature) is logical. Stellar Core Fragment emitting geothermal heat against the Void Weaver is defensible. Celestial Seal rendering boss vulnerable to geomancy fits the class identity." },
+        "completeness":        { "score": 4, "reason": "All locations and enemies are distinct. Inconsistent capitalization throughout (lowercase weapon name, mixed case pickups) is a minor quality issue. Victory condition is generic." }
+      },
+      "best_element": "The Celestial Seal pickup — 'renders the boss vulnerable to geomancy' — is the most class-specific pickup effect in the batch, tying directly to the player class identity.",
+      "worst_element": "20 player hp with a 5-damage weapon against enemies dealing 8-25 damage makes this level unwinnable. A single hit from the Enc1 enemy (10 damage) leaves the player at half health; the boss deals an instant kill. These numbers are incoherent.",
+      "overall": "Despite some thematic promise, this level cannot be played as configured — the player health and enemy damage values are incompatible with any reasonable interpretation of survivability."
+    }
+  }
+]

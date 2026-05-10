@@ -1,0 +1,63 @@
+{
+  "objective": "Exorcise the corrupted heart of the Cathedral of Embers",
+  "player_weapon": "Cinder Staff",
+  "player_weapon_damage": 15,
+  "player_health": 100,
+  "encounters": [
+    {
+      "location": "The Narthex",
+      "enemy": {
+        "name": "Ash Stalker",
+        "health": 30,
+        "damage": 10,
+        "weakness": "Cinder Staff fire damage"
+      },
+      "hazard": "Falling debris",
+      "pickup": {
+        "name": "Frozen Tear",
+        "effect": "Grants frost enchantment"
+      },
+      "trigger": "Defeating the Stalker unlocks the heavy iron gate leading to the nave"
+    },
+    {
+      "location": "The Nave",
+      "enemy": {
+        "name": "Obsidian Gargoyle",
+        "health": 50,
+        "damage": 15,
+        "weakness": "Frozen Tear cold damage"
+      },
+      "hazard": "Searing floor tiles",
+      "pickup": {
+        "name": "Essence of Void",
+        "effect": "Nullifies shadow barriers"
+      },
+      "trigger": "Breaking the gargoyle reveals the path to the inner sanctum"
+    },
+    {
+      "location": "The Sanctum",
+      "enemy": {
+        "name": "Shadow Priest",
+        "health": 60,
+        "damage": 20,
+        "weakness": "Essence of Void disruption"
+      },
+      "hazard": "Soul-draining mist",
+      "pickup": {
+        "name": "Sun-Gold Seal",
+        "effect": "Blinds dark entities"
+      },
+      "trigger": "Banishing the priest causes the main altar to lower into the boss lair"
+    }
+  ],
+  "boss": {
+    "name": "Void Patriarch",
+    "health": 150,
+    "damage": 25,
+    "victory_condition": "Purify the patriarch using the Sun-Gold Seal",
+    "weakness": "Sun-Gold Seal"
+  },
+  "reward": "Eternal Flame Amulet",
+  "theme": "Gothic Fantasy",
+  "setting": "A decaying, shadow-choked stone cathedral"
+}

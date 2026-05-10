@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "mysterious",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A mysterious underwater geomancer level with a clean pickup chain for encounters but a boss reference anomaly: boss weakness is 'Resonance Shards' from encounter 0, skipping the final pickup (Tectonic Heart) established in encounter 2. The objective also states 'Retrieve the Tectonic Heart' which conflicts with using it in gameplay.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Earth Spike Gauntlet' (player weapon) exact. Enc 1 weakness 'Resonance Shards' (enc 0 pickup) exact. Enc 2 weakness 'Crystal Catalyst' (enc 1 pickup) exact. Boss weakness 'Resonance Shards' — references enc 0 pickup, which is a prior encounter so technically allowed; victory condition says 'resonance shards' (lowercase) vs. pickup name 'Resonance Shards'. Minor capitalization variation."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the Sentinel opens the main temple seal' — specific and defeat-triggered. Enc 1 'Destroying the construct reveals a hidden path to the sanctum' — specific. Enc 2 'Slaughtering the eel triggers the boss summoning ritual' — specific and dramatic. All three are defeat-triggered consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-75-100 and damage 10-15-20. Boss at 200/30 is strictly harder. Total incoming (10+15+20+30=75) vs 100 HP — appropriate for medium. Tectonic Heart (pressure immunity) from enc 2 provides defensive utility. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sunken City, Coral Sentinel, Hydro-Construct, Abyssal Eel, Abyssal Leviathan — every element fits mysterious underwater ruins. Resonance Shards, Crystal Catalyst, Tectonic Heart — all have geological/underwater theming appropriate to a geomancer. Excellent consistency."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Resonance Shards (vibration sensitivity) against a Hydro-Construct — vibrations disrupting water-based structures is logical. Crystal Catalyst (earth into crystal spikes) against an Abyssal Eel — crystalline spikes piercing a creature makes sense. Tectonic Heart for pressure immunity is appropriate for the setting."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct and specific. The objective 'Retrieve the Tectonic Heart' conflicts with it being a passive armor pickup rather than a quest item, creating a minor inconsistency. Otherwise all fields are specific."
+        }
+      },
+      "best_element": "The geological pickup chain — Resonance Shards, Crystal Catalyst, Tectonic Heart — is thematically unified around a geomancer's elemental toolkit and fits the underwater setting naturally.",
+      "worst_element": "The objective states 'Retrieve the Tectonic Heart' but it's listed as an encounter 2 pickup (passive defense item) — the item's role is inconsistent between the objective and the level design.",
+      "overall": "A well-designed medium-difficulty level with excellent thematic coherence and mechanical sense; the minor objective inconsistency is the only design issue worth flagging."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "serene",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serene underwater beastmaster level where encounter 2 provides no pickup ('None'/'None'), leaving the player without a new tool before the boss. Boss weakness correctly uses the Sunken Amulet from encounter 1. The level is thematically appropriate and easy.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Coral Staff' (player weapon) exact. Enc 1 weakness 'Luminous Shell' (enc 0 pickup) exact. Enc 2 weakness 'Sunken Amulet' (enc 1 pickup) exact. Boss weakness 'Sunken Amulet' exact, victory condition names it exactly. All references exact, but enc 2 provides no pickup for future use."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Finding the shell reveals the hidden path' — this is finding the pickup, not defeating the enemy. Enc 1 'Defeating the Stalker opens the passage to the Leviathan cavern' — defeat-triggered, specific. Enc 2 'The sentinel guards the central chamber where the boss resides' — this is a description, not a trigger at all. One trigger is a description, one is a pickup-find action."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-25-30 and damage 5-5-5. Boss at 50/10 strictly harder. Total incoming (5+5+5+10=25) vs 100 HP — trivially easy, appropriate. All encounter damage values are identical (5) — no damage escalation, but acceptable for easy."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Sunken Temple Ruins, Crab Guardian, Kelp Stalker, Deep Water Sentinel, Ancient Leviathan — all fit serene underwater. Luminous Shell (attracts sea life) and Sunken Amulet (controls aquatic relics) are thematically appropriate tools for a beastmaster in this setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Luminous Shell (attracts sea life) against a Kelp Stalker — attracting other creatures to distract or overwhelm it makes sense for a beastmaster. Sunken Amulet (controls aquatic relics) used to pacify the Leviathan is perfectly appropriate for the beastmaster class and serene mood."
+        },
+        "completeness": {
+          "score": 2,
+          "reason": "Encounter 2 has 'None'/'None' for pickup — the last encounter before the boss provides no item. Encounter 2 trigger is a description rather than a trigger action. Encounter damage doesn't escalate. Three completeness issues."
+        }
+      },
+      "best_element": "The boss victory condition — 'Use the Sunken Amulet to pacify the creature' — fits the beastmaster class and serene mood perfectly; the objective is taming, not killing.",
+      "worst_element": "Encounter 2 provides no pickup, and its 'trigger' is just a static description of the room — both the pickup and trigger fields are effectively blank.",
+      "overall": "Thematically appropriate easy-difficulty level with a satisfying beastmaster boss design, but the empty enc 2 and flat damage values indicate incomplete generation; needs a proper enc 2 pickup and trigger."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An ominous underwater necromancer level where encounter 2 enemy weakness reverts to the player weapon ('Bone Scythe') rather than an encounter 1 pickup. Boss weakness uses 'Abyssal Core' from encounter 1, skipping the established chain. A causal chain break occurs in encounter 1 trigger.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Bone Scythe' (player weapon) exact. Enc 1 weakness 'Tainted Kelp' (enc 0 pickup) exact. Enc 2 weakness 'Bone Scythe' — reverts to player weapon, doesn't use enc 1 pickup 'Abyssal Core'. Boss weakness 'Abyssal Core' (enc 1 pickup) exact, victory condition names it exactly. One chain break in enc 2."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc 0 'Slaying the mariner reveals a rusted key to the ventilation shaft' — defeat-triggered, specific. Enc 1 trigger 'Eel carcass blocks the path to the ancient gate' — this describes the state AFTER defeat (carcass blocking path) which creates a paradox: killing the eel blocks the path forward rather than opening it. Enc 2 'Construct destruction triggers the Leviathan awakening' — defeat-triggered, specific. One trigger is logically broken."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 80-120-180 and damage 15-25-35. Boss at 400/50 is strictly harder. Total incoming (15+25+35+50=125) vs 200 HP — survivable for hard with Spirit Essence (50 HP heal) from enc 2. Appropriately challenging."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sunken Temple of Drowned Gods, Coral Graveyard, Murky Trench, Submerged Fortress, Sunken Mariner, Bio-luminescent Eel, Guardian Construct, Abyssal Leviathan — every element reinforces ominous underwater necromancy. Tainted Kelp and Abyssal Core are excellent setting-specific items."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Tainted Kelp (increases necrotic damage) against a Bio-luminescent Eel is defensible — necrotic energy overwhelming a living creature. Abyssal Core (stabilizes pressure) sealing a rift makes narrative sense for the victory condition. Bone Scythe as direct melee is clear."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and evocative. Tainted Kelp, Abyssal Core, Spirit Essence — all specific. 'Eel carcass blocks the path' trigger is unusual but shows specific world-building. Fields are non-repetitive."
+        }
+      },
+      "best_element": "The setting progression — Coral Graveyard to Murky Trench to Submerged Fortress — creates a genuine sense of descending through layers of ominous underwater danger.",
+      "worst_element": "Encounter 1 trigger 'Eel carcass blocks the path to the ancient gate' — killing the eel creates an obstacle rather than removing one, which would trap the player rather than advancing them.",
+      "overall": "Strong thematic atmosphere and good balance, but the logically broken enc 1 trigger (carcass blocks path) and enc 2 weapon reversion need design fixes before this config is playable."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "tense",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal tense underwater stormcaller level where encounter 0 enemy weakness 'Chain Lightning' doesn't match the player weapon name 'Stormcaller Gauntlet'. The rest of the chain is exact. This is the most ambitious escalation in the dataset with encounter enemies at 150/300/450 health.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Chain Lightning' — player weapon is 'Stormcaller Gauntlet', no pickup named 'Chain Lightning' exists. Enc 1 weakness 'Voltage Conduit' (enc 0 pickup) exact. Enc 2 weakness 'Conductive Harpoon' (enc 1 pickup) exact. Boss weakness 'Conductive Harpoon' exact, victory condition names it exactly. One broken reference."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc 0 'Destroying the drone triggers the emergency pressure door to the turbine chamber' — defeat-triggered, specific. Enc 1 'Sentinel causes the main ballast control to fail and open the path to the Leviathan Pit' — dramatic and specific engineering consequence. Enc 2 'Slaying the Maw causes the abyss floor to collapse, revealing the boss chamber' — catastrophic and specific. All three are inevitable defeat-triggered consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health: 150-300-450 and damage: 20-35-45. Boss at 800/50 is the hardest overall. Total incoming damage (20+35+45+50=150) vs 100 HP player — mathematically impossible without the Thermal Shard (pressure immunity, not healing). No healing pickup in the level. The level is numerically unwinnable as designed."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sunken underwater city in the Mariana Trench — Pressure Drone, Eel Sentinel, Crystalline Maw, Abyssal Leviathan. Voltage Conduit, Conductive Harpoon, Thermal Shard — all fit a sci-fi-inflected underwater stormcaller setting. Setting is described with specific atmospheric detail ('Cold, claustrophobic, and highly dangerous')."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Voltage Conduit (electrical conductivity) against an Eel Sentinel — conducting electricity through an eel is perfectly logical. Conductive Harpoon (piercing and anchoring) against a Crystalline Maw and the Abyssal Leviathan — harpoon anchoring the target for an electrical overload is mechanically sound and satisfying."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are highly specific. All enemy names are unique. Hazards are setting-appropriate. Thermal Shard (enc 2, pressure immunity) goes unused in the boss fight. All other fields are specific."
+        }
+      },
+      "best_element": "The causal chain is the strongest in this file — each trigger describes a specific physical engineering consequence (pressure door, ballast failure, floor collapse) that makes the next location mechanically inevitable.",
+      "worst_element": "Total incoming damage (150) on a 100 HP player with no healing pickup makes this level numerically impossible without reducing all encounter/boss damage values.",
+      "overall": "Exceptional causal structure and thematic coherence, but the level is mathematically unbeatable without healing — a damage or health rebalancing pass is required before this config is shippable."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "eerie",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "An eerie underwater shadowblade level with an enc 2 weapon weakness reversion (Shadowblade instead of a pickup) and a mechanically odd boss weakness. The boss is weak to 'Thermal Core' which was acquired in encounter 1, providing pressure immunity — using heat to defeat a leviathan is thematically interesting.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Shadowblade' (player weapon) exact. Enc 1 weakness 'Void Fins' (enc 0 pickup) exact. Enc 2 weakness 'Shadowblade' — reverts to player weapon; doesn't chain from enc 1 pickup 'Thermal Core'. Boss weakness 'Thermal Core' (enc 1 pickup) exact, victory condition names it exactly. One chain break."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'activates the sonar pulse revealing the path to the sunken reactor' — defeat-triggered, specific. Enc 1 'grants access to the restricted emergency hatch leading to the trench' — defeat-triggered. Enc 2 'Destruction of the sentinel clears the debris blocking the Leviathan's lair' — defeat-triggered, specific. All three are defeat consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/30 is strictly harder. Total incoming (10+15+20+30=75) vs 100 HP — appropriate for medium. Repair Nanites (20 HP) from enc 2 provides limited healing."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Sunken industrial research facility, Barnacle Crawler, Ghost Eel, Corroded Sentinel, Abyssal Leviathan — all fit eerie underwater. 'Void Fins', 'Thermal Core', 'Repair Nanites' mix fantasy-shadow and sci-fi elements, which is slightly inconsistent for a shadowblade."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Void Fins (movement speed in dark currents) as a combat weakness against a Ghost Eel — speed doesn't obviously damage a ghost. Thermal Core (heat/pressure) against an Abyssal Leviathan — heat against a deep-sea creature makes sense, but how does a shadowblade use it offensively? The boss victory condition 'Strike while energized by the Thermal Core' is vague."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. All enemies are unique. Hazards vary. Repair Nanites from enc 2 is a minor healing pickup. The boss victory condition is slightly vague ('Strike the creature's bioluminescent lure while energized by the Thermal Core') but specific enough."
+        }
+      },
+      "best_element": "The 'sonar pulse revealing the path to the sunken reactor' trigger in encounter 0 is a setting-specific, technologically coherent consequence that fits the industrial underwater setting.",
+      "worst_element": "Encounter 2's weapon weakness reverts to 'Shadowblade' rather than chaining from the Thermal Core, and Void Fins (movement speed) as a combat weakness against a Ghost Eel has no clear offensive mechanism.",
+      "overall": "A serviceable medium-difficulty level with good causal structure; the reference chain break and speed-as-weapon weakness are the main issues requiring design revision."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A chaotic underwater pyromancer level where encounter 0 enemy weakness is 'Flame Burst' rather than the exact player weapon name 'Flame Burst Staff'. Encounter 1 weakness uses a compound description. The boss correctly references 'Thermal Pressure Core'. Thematic premise (pyromancer underwater) creates interesting tension.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Flame Burst' — player weapon is 'Flame Burst Staff'; 'Flame Burst' is a shortened version, not exact. Enc 1 weakness 'Thermal Insulation Suit static discharge' — not exact; the pickup name is 'Thermal Insulation Suit'. Enc 2 weakness 'Thermal Pressure Core blast' — not exact; pickup name is 'Thermal Pressure Core'. Boss weakness 'Thermal Pressure Core' — exact. Three imprecise references."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Draining the coolant tank exposes the station archives' — player action (draining), not directly a defeat consequence. Enc 1 'Retrieving the power core triggers the facility lockdown alarm' — pickup action, not defeat. Enc 2 'Destroying the security barrier grants access to the ocean floor surface' — defeat-triggered. Two triggers are player actions rather than defeat consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-150-250 and damage 15-25-35. Boss at 400/50 is strictly harder. Total incoming (15+25+35+50=125) vs 100 HP — survivable only with Void-Resistant Serum (max health + pressure immunity) from enc 2. One healing pickup late in the level. Very tight for hard — nearly brutal."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Chaotic underwater survival with Corroded Mech-Crab, Mutated Trench Eel, Security Sentinel Alpha, Abyssal Leviathan — all fit the chaotic underwater setting. Thermal Insulation Suit (waterproofs flame) is a clever conceit for a pyromancer underwater."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Thermal Insulation Suit's 'static discharge' against a Mutated Trench Eel — electromagnetic discharge underwater is logical. Thermal Pressure Core (explosive thermal charge) against a Security Sentinel and Abyssal Leviathan is mechanically coherent."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are specific and unique. 'Void-Resistant Serum' from enc 2 goes to boss fight as the player's health buffer. All fields add distinct information."
+        }
+      },
+      "best_element": "The Thermal Insulation Suit (waterproofs flame) pickup is a creative solution to the thematic challenge of a pyromancer fighting underwater — it explains the mechanical paradox within the pickup itself.",
+      "worst_element": "Two of three encounter triggers are player actions (draining coolant, retrieving core) rather than defeat consequences — the encounters could be bypassed, breaking the causal structure.",
+      "overall": "Creative thematic premise with a smart pickup design, but reference imprecision and player-action triggers rather than defeat-consequence triggers need fixing before this level is shippable."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "desolate",
+      "player_class": "warden",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A desolate brutal underwater warden level with an unusual reference structure: the Corroded Security Drone (enc 1 enemy) is weak to 'Titanium Plating' which is the enc 0 pickup — but Titanium Plating is an armor item (damage resistance), not obviously a weapon. The harpoon launcher has 60 damage, by far the highest weapon damage in the dataset.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Harpoon Launcher' (player weapon) exact. Enc 1 weakness 'Titanium Plating' (enc 0 pickup) exact. Enc 2 weakness 'Thermal Pulse Battery' (enc 1 pickup) exact. Boss weakness 'Thermal Pulse Battery' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc 0 'triggers the pressure seal to open to the main turbine hall' — defeat-triggered, specific. Enc 1 'bypasses the override lock to the reactor core' — defeat-triggered, specific. Enc 2 'Slaying the Horror wakes the Abyssal Leviathan from its hibernation' — defeat-triggered, dramatically specific. All three are inevitable defeat-triggered consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 150-250-400 and damage 15-25-40. Boss at 800/50 is strictly hardest. Total incoming (15+25+40+50=130) vs 200 HP — survivable with Emergency Oxygen Tank (full health once) from enc 2. Player weapon (Harpoon, 60 damage) makes encounters faster but doesn't prevent incoming damage. Appropriate for brutal."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Submerged Research Station Alpha, Rust-Crab Scavenger, Corroded Security Drone, Deep-Sea Hive Horror, Abyssal Leviathan — all fit desolate underwater. Titanium Plating and Thermal Pulse Battery are appropriate sci-fi underwater tools."
+        },
+        "mechanical_sense": {
+          "score": 2,
+          "reason": "Titanium Plating (damage resistance by 20%) as a combat weakness for a Corroded Security Drone — armor plating doesn't obviously harm a drone. The item is defensive, not offensive. Thermal Pulse Battery (damages internal circuitry) against a Deep-Sea Hive Horror and the Leviathan is logical. One nonsensical pair."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and specific. Enemy names are unique and setting-appropriate. Emergency Oxygen Tank from enc 2 is the only healing. The unusual player weapon damage (60) stands out — much higher than any other entry."
+        }
+      },
+      "best_element": "The causal chain is one of the strongest in the dataset — each trigger describes a specific physical system (pressure seal, override lock, hibernation awakening) that makes the next encounter inevitable.",
+      "worst_element": "Titanium Plating (a 20% damage resistance buff) as a combat weapon against a security drone is mechanically nonsensical — defensive armor as an offensive tool has no clear mechanism.",
+      "overall": "Strong causal structure and good thematic consistency, but the armor-as-weapon weakness in encounter 1 is the most mechanically incoherent pairing in this file and needs redesigning."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightful whimsical underwater illusionist level in Submerged Atlantis. References are exact throughout. The boss weakness (Bubble Wand) skips back to encounter 0's pickup rather than using the final encounter's Sea Urchin Treat — but that's allowed since it's a prior encounter pickup. Victory condition is charming and specific.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Refraction Blade' (player weapon) exact. Enc 1 weakness 'Bubble Wand' (enc 0 pickup) exact. Enc 2 weakness 'Shell Sandals' (enc 1 pickup) exact. Boss weakness 'Bubble Wand' (enc 0 pickup — prior encounter) exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'current pushes the player toward the Abyssal Archway' — defeat consequence but slightly passive/environmental. Enc 1 'Opening the turtle's treasure chest unlocks the path' — this is a pickup-find action, not a defeat action. Enc 2 'Clearing the Guard allows the player to challenge the Barnacle Baron' — defeat-triggered. Two of three triggers are specific."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 15-20-25 and damage 5-8-10. Boss at 50/10 strictly harder. Total incoming (5+8+10+10=33) vs 100 HP — trivially easy and appropriate. Sea Urchin Treat (20 HP heal) from enc 2 provides cushion. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Submerged Atlantis, Grumpy Guppy, Ticklish Turtle, Crabby Guard, Barnacle Baron — every element is consistently whimsical underwater fantasy. Bubble Wand, Shell Sandals, Sea Urchin Treat — delightful items. Coral Cathedral, Abyssal Archway, Sunken Throne — evocative locations."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Bubble Wand (floating light orbs) against a Ticklish Turtle — distracting or disorienting a turtle with light is plausible. Shell Sandals (movement speed) against a Crabby Guard — speed doesn't obviously damage the guard, but outmaneuvering a crab makes thematic sense. Boss: giant bubble trapping the Baron is whimsical and mechanically coherent."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location is distinct and evocative. All enemies are unique and named with personality. Hazards are specific and setting-appropriate. No placeholder text or generic descriptions."
+        }
+      },
+      "best_element": "The boss victory condition — 'Use the Bubble Wand to trap the Baron in a giant bubble to float him to the surface' — is the most charming and mechanically specific conclusion in the dataset, perfectly fitting the whimsical tone.",
+      "worst_element": "Encounter 1 trigger 'Opening the turtle's treasure chest unlocks the path' — the causal agent is finding a chest, not defeating the Ticklish Turtle; the turtle's defeat isn't clearly required.",
+      "overall": "The most tonally consistent and charming level in the dataset; minor causal trigger imprecision is the only issue in an otherwise excellent whimsical underwater design."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "chaotic",
+      "player_class": "beastmaster",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A chaotic jungle beastmaster level where encounter 2 enemy weakness is 'Sharpened Flint' — the same pickup used in encounter 1 — rather than the Flash Flare from encounter 1. The boss uses Flash Flare (from enc 1) correctly. The causal triggers are partial: enc 1 trigger is a player action rather than a defeat consequence.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Iron Claws' (player weapon) exact. Enc 1 weakness 'Sharpened Flint' (enc 0 pickup) exact. Enc 2 weakness 'Sharpened Flint' — repeated from enc 1; enc 1 pickup was 'Flash Flare', so enc 2 should chain to Flash Flare. Boss weakness 'Flash Flare' (enc 1 pickup) exact. One chain repetition: enc 2 uses enc 0's pickup instead of enc 1's."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 'Defeating the viper clears the path to the River Delta' — specific. Enc 1 trigger 'Securing the flare attracts the attention of the alpha pack' — this is a pickup-find action (securing the flare), not a defeat action. Enc 2 'The panther's final roar summons the Apex Predator Jaguar' — defeat-triggered and specific. One trigger is a pickup action."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50-80-120 and damage 10-15-20. Boss at 200/35 is strictly harder. Total incoming (10+15+20+35=80) vs 150 HP — appropriate for hard. Ancient Herb Bundle (heals moderate health) from enc 2 provides useful recovery."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Mayan Jungle Ruins, Venomous Viper, River Crocodile, Shadow Panther, Apex Predator Jaguar — all fit chaotic jungle survival. Iron Claws for a beastmaster is thematically appropriate. Flash Flare is slightly generic but fits the setting."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Sharpened Flint (increased melee damage) against a River Crocodile is direct melee — fine. Sharpened Flint again against a Shadow Panther — same item twice, raises question of why it's a weakness for two different creature types. Flash Flare (blinds enemies) against an Apex Predator Jaguar — blinding a predator that hunts by sight is logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are unique (Viper, Crocodile, Panther, Jaguar — a nice escalating predator sequence). Boss victory condition 'Reduce boss health to zero' is completely generic. Ancient Herb Bundle (moderate healing) is appropriately vague but functional."
+        }
+      },
+      "best_element": "The enemy sequence — Venomous Viper, River Crocodile, Shadow Panther, Apex Predator Jaguar — is a believable jungle predator hierarchy that makes the level feel designed.",
+      "worst_element": "Boss victory condition 'Reduce boss health to zero' is placeholder text that provides no instruction on using the Flash Flare weakness item.",
+      "overall": "A functional hard-difficulty level with good enemy progression, but the weakness repetition in enc 2, one player-action trigger, and generic boss victory condition need design revision."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "mysterious",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A mysterious jungle ranger level with a critical reference break: encounter 1 enemy weakness is 'Corrosive Blade' — an item that doesn't exist. The enc 0 pickup is 'Venom Gland' which 'adds corrosive damage to blade'; the enemy weakness names the effect rather than the item. The level partially recovers in encounter 2.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0 weakness 'Longbow' (player weapon) exact. Enc 1 weakness 'Corrosive Blade' — no item named 'Corrosive Blade' exists; the pickup is 'Venom Gland' which adds corrosive damage. 'Corrosive Blade' is the effect, not the item name. Enc 2 weakness 'Sun-Shard' (enc 1 pickup) exact. Boss weakness 'Sun-Infused Poison Dagger' (enc 2 pickup) exact. One broken reference."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'surrounding trees shift, revealing a path to the ruins' — defeat-triggered, specific environmental consequence. Enc 1 'Golem's collapse destroys a sealed gate leading to the inner sanctuary' — specific and defeat-triggered. Enc 2 'killing the panther triggers the awakening of the boss' — defeat-triggered. All three are defeat consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 5-10-15. Boss at 150/25 strictly harder. Total incoming (5+10+15+25=55) vs 100 HP — appropriate for medium. No healing pickup but incoming damage is manageable."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Mist-covered Amazonian ruins, Viper Stalker, Stone Golem, Shadow Panther, Ancient Canopy Guardian — all fit mysterious jungle. Sun-Shard and Sun-Infused Poison Dagger are appropriate artifacts. Setting is consistent."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Venom Gland (corrosive damage) against a Stone Golem — acid eroding stone is logical. Sun-Shard (absorbs solar light) preparing a Sun-Infused Poison Dagger — the progression from raw material to crafted weapon is an interesting mechanic. Boss: light-infused weapon against a shadowy guardian is appropriate."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are unique. Sun-Infused Poison Dagger as the enc 2 pickup is a specifically named crafted weapon — a step above generic pickup naming. No placeholder text."
+        }
+      },
+      "best_element": "The Sun-Shard (absorbs solar light) leading to the Sun-Infused Poison Dagger creation is an elegant two-step crafting narrative that fits the mysterious ranger archetype.",
+      "worst_element": "Encounter 1 weakness 'Corrosive Blade' names the weapon effect rather than the pickup item 'Venom Gland' — a reference failure that would prevent a game engine from resolving the weakness lookup.",
+      "overall": "Good causal structure and thematic design, but the 'Corrosive Blade' reference failure in enc 1 is a showstopper — fix by renaming the enc 1 weakness to 'Venom Gland'."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A tense brutal jungle rogue level where encounter 2 enemy weakness reverts to the player weapon ('Dagger of Silence') rather than enc 1's Antidote Potion. Boss correctly uses Ancient Incense from enc 1. The enc 2 reversion is a design gap, and the victory condition only says to 'reduce boss health to zero while under the effect' — generic.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Dagger of Silence' (player weapon) exact. Enc 1 weakness 'Antidote Potion' (enc 0 pickup) exact. Enc 2 weakness 'Dagger of Silence' — reverts to player weapon; enc 1 pickup was 'Ancient Incense', which should chain here. Boss weakness 'Ancient Incense' (enc 1 pickup) exact. One chain break in enc 2."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'viper's death triggers a tremor, revealing a hidden stairwell' — defeat-triggered, dramatic. Enc 1 'Defeating the guardian unlocks the stone seal to the inner sanctum' — specific. Enc 2 'stalker's death howls summon the boss from the canopy' — defeat-triggered and atmospheric. All are defeat consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-120-180 and damage 15-25-40. Boss at 300/50 strictly harder. Total incoming (15+25+40+50=130) vs 100 HP — nearly unbeatable. Jungle Berry (moderate healing) from enc 2 is insufficient. The level is brutal but the single small healing pickup won't save the player."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Deep Amazonian Basin, Venomous Pit Viper, Corrupted Jungle Guardian, Shadow Stalker, Apex Predator Jaguar — all fit tense jungle exploration. Antidote Potion and Ancient Incense are thematically appropriate jungle tools."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Antidote Potion (negates environmental poison) against a Corrupted Jungle Guardian — using purification against corruption is logical. Ancient Incense (calms aggressive wildlife) against the Apex Predator Jaguar — using scent/ritual to calm a predator makes perfect beastmaster-adjacent sense for a rogue."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Boss victory condition 'Reduce boss health to zero while under the effect of the Ancient Incense' partially explains the mechanic but doesn't name a specific action. Jungle Berry effect 'Heals moderate wounds' is functional but generic."
+        }
+      },
+      "best_element": "Ancient Incense calming the Apex Predator Jaguar is a thematically resonant boss mechanic — using ritual knowledge rather than brute force to subdue a predator fits the tense jungle mood.",
+      "worst_element": "Encounter 2 enemy weakness reverts to the player weapon, wasting the pickup chain established through the first two encounters — the Shadow Stalker should be weak to Ancient Incense, not the Dagger.",
+      "overall": "Thematically strong with good causal triggers and a clever boss mechanic, but the chain break in enc 2 and near-unbeatable damage totals are design flaws requiring correction."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serene jungle warden level with clean exact references throughout and a proper three-link pickup chain. The boss uses Sunstone from encounter 1. The level is genuinely easy with trivial damage values. Triggers are all defeat-triggered consequences.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Iron Sickle' (player weapon) exact. Enc 1 weakness 'Zephyr Feather' (enc 0 pickup) exact. Enc 2 weakness 'Sunstone' (enc 1 pickup) exact. Boss weakness 'Sunstone' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'reveals the path to the Sunlit Pond' — defeat-triggered. Enc 1 'Stalker drops a key to the Ancient Ruins entrance' — defeat-triggered item drop, specific. Enc 2 'Destroying the sprite opens the inner sanctum doors' — defeat-triggered. All three are defeat consequences. Enc 1's 'drops a key' is slightly generic."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-30-40 and damage 5-5-8. Boss at 80/10 strictly harder. Encounter 1 damage same as encounter 0 (5) — minor inversion in damage escalation. Total incoming (5+5+8+10=28) vs 150 HP — trivially easy, appropriate. Guardian Crest (enc 2) provides boss damage shield."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Lush jungle ruins, Overgrown Creeper, Mist Stalker, Stone Golem Sprite, Ancient Canopy Guardian — all fit serene nature recovery. Zephyr Feather, Sunstone, Guardian Crest are appropriately nature-themed items for a warden."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Zephyr Feather (increases movement speed) against a Mist Stalker — speed doesn't obviously damage a stalker, though outmaneuvering a pursuit predator makes some sense. Sunstone (unlocks hidden energy sources) against a Stone Golem Sprite — energy sources could power or animate the golem, making Sunstone's use as a channeling tool sensible. Boss: Sunstone channeled into Guardian's core is logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are varied. Encounter 1 and 0 share the same damage value (5) — a minor escalation gap. 'Falling petals' as a hazard in enc 2 is the most distinctive hazard in a serene context. No placeholder text."
+        }
+      },
+      "best_element": "The Guardian Crest from encounter 2 explicitly 'Provides shield against boss damage' — the only pickup in the dataset that is transparently designed for the boss fight, giving the player a clear tool.",
+      "worst_element": "Zephyr Feather (movement speed) as a combat weakness for a Mist Stalker lacks mechanical logic — speed buffs don't obviously harm a predator enemy.",
+      "overall": "A clean, well-referenced easy-difficulty level that would be fun to play; the speed-as-weapon weakness and flat enc 0-1 damage values are minor design issues in an otherwise solid configuration."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An ominous jungle necromancer level where encounter 2 enemy (Shadow Jaguar) is weak to 'Scythe of Withering' — the player weapon — rather than enc 1's Soul-Infused Obsidian Dagger. The boss correctly uses Soul-Infused Obsidian Dagger. The player weapon is used as a weakness in two different encounters.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc 0 weakness 'Scythe of Withering' (player weapon) exact. Enc 1 weakness 'Corpse-Lantern' (enc 0 pickup) exact. Enc 2 weakness 'Scythe of Withering' — reverts to player weapon; enc 1 pickup was 'Soul-Infused Obsidian Dagger'. Boss weakness 'Soul-Infused Obsidian Dagger' (enc 1 pickup) exact. One chain break."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Light the Corpse-Lantern to reveal the path to the altar' — this is using the pickup, not defeating the enemy. Enc 1 'Slay the Ape to activate the ancient stone gate' — defeat-triggered. Enc 2 'Defeat the Jaguar to unlock the sanctum entrance' — defeat-triggered. One trigger is a pickup-use action."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/25 strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — appropriate for hard? Actually this seems like medium difficulty numbers for a hard label. Damage escalation is modest. Essence Vials (20 HP) provides minimal healing."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sunken Amazonian Rainforest, Rotting Vine-Stalker, Carrion Ape, Shadow Jaguar, Grave Warden of the Canopy — all reinforce dark necromantic overgrowth. Corpse-Lantern, Soul-Infused Obsidian Dagger — excellent necromancer-specific items for a jungle setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Corpse-Lantern (increases attack range) against a Carrion Ape — necromantic range advantage over a melee ape is plausible. Soul-Infused Obsidian Dagger (stuns on strike) against the Grave Warden is logical — stunning a guardian to purify the blighted heart. Boss victory condition 'Purify the Blighted Heart' doesn't name the item, though."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Boss victory condition 'Purify the Blighted Heart' names no specific item — generic. Enc 0 trigger uses pickup rather than defeat. Encounter 2 weapon reversion. Three completeness concerns. Locations are distinct."
+        }
+      },
+      "best_element": "Enemy naming — Rotting Vine-Stalker, Carrion Ape, Shadow Jaguar, Grave Warden of the Canopy — creates a coherent dark jungle bestiary that feels designed around the necromancer class.",
+      "worst_element": "Boss victory condition 'Purify the Blighted Heart' provides no instruction on using the stated boss weakness item (Soul-Infused Obsidian Dagger) — players would not know how to end the fight.",
+      "overall": "Strong thematic design with an evocative setting, but multiple structural gaps (enc 0 trigger, enc 2 weapon reversion, generic boss condition) require revision before this level is shippable."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A whimsical neon jungle alchemist level where encounter 1 enemy weakness is 'Dewdrop Essence coating' rather than the exact pickup name 'Dewdrop Essence'. Otherwise references are clean. The Gilded Toad King is a memorable boss name and the victory condition is specific.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Alchemical Acid Flask' (player weapon) exact. Enc 1 weakness 'Dewdrop Essence coating' — adds 'coating' qualifier; pickup is 'Dewdrop Essence'. Minor variation but identifiable. Enc 2 weakness 'Ever-Flowing Mana Vials' (enc 1 pickup) exact. Boss weakness 'Ever-Flowing Mana Vials' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc 0 'Defeating the sprite reveals the path to the Glowing Riverbank' — defeat-triggered. Enc 1 'Capturing the monkey opens the vine-covered temple entrance' — defeat/capture triggered. Enc 2 'Shattering the guardian grants access to the throne room' — defeat-triggered. All three are defeat or capture consequences."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 20-30-40 and damage 5-8-10. Boss at 50/10 strictly harder. Total incoming (5+8+10+10=33) vs 100 HP — trivially easy, appropriate. Alchemist's Satchel (max potion capacity) from enc 2 is a useful alchemist-specific buff."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Neon Jungle, Vine-Tangled Sprite, Mud-Slinging Monkey, Petrified Tree Guardian, Gilded Toad King — every element is consistently whimsical jungle fantasy. Dewdrop Essence, Ever-Flowing Mana Vials, Alchemist's Satchel — class-appropriate whimsical items."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Dewdrop Essence (health regen) coating a monkey to damage it is a stretch. Ever-Flowing Mana Vials (unlocks mana harnessing) against a Petrified Tree Guardian and the Toad King — the alchemist using mana to restore the boss's true form is thematically appropriate for a whimsical alchemist."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations are distinct. Enemies are unique and personality-driven. Every pickup effect is specific. Boss victory condition explicitly states the mechanic. No placeholder text."
+        }
+      },
+      "best_element": "The boss victory condition — 'Splash the Toad King with the Ever-Flowing Mana Vials to restore his true form' — is both mechanically specific and tonally perfect for a whimsical easy-difficulty level.",
+      "worst_element": "Dewdrop Essence 'coating' qualifier in encounter 1 weakness field; a minor imprecision, but exact naming would make this entry flawless.",
+      "overall": "A charming, well-constructed easy-difficulty level with excellent thematic consistency; one minor reference qualifier and a slightly stretched mechanical connection are the only issues."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "eerie",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "An eerie jungle chronomancer level with clean exact references. The causal trigger in encounter 1 describes the player 'capturing the monkey's spirit' rather than defeating it, which is slightly ambiguous but thematically appropriate. Boss correctly uses Temporal Siphon.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc 0 weakness 'Time Blade' (player weapon) exact. Enc 1 weakness 'Chronos Shard' (enc 0 pickup) exact. Enc 2 weakness 'Temporal Siphon' (enc 1 pickup) exact. Boss weakness 'Temporal Siphon' exact, victory condition names it exactly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 'Defeating the Stalker reveals the path to the canopy bridge' — defeat-triggered, specific. Enc 1 'Capturing the monkey's spirit opens the boss gate' — capture action (appropriate for a spirit battle), specific but bypasses encounter structure. Enc 2 'Exorcising the Jaguar reveals the Wraith's altar' — defeat-equivalent, specific. Triggers are specific but enc 1 skips directly to 'boss gate' rather than the next encounter."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 40-60-80 and damage 10-15-20. Boss at 150/25 strictly harder. Total incoming (10+15+20+25=70) vs 100 HP — appropriate for medium. Jungle Nectar (minor health restore) from enc 2 provides minimal healing. Clean escalation."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Mist-shrouded prehistoric jungle, Vine Stalker, Spirit Monkey, Shadow Jaguar, Chrono-Wraith — the chronomancer elements (Chronos Shard, Temporal Siphon) blend with jungle eerie appropriately. 'Ancient Ziggurat Entrance' is a slightly generic location name."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Chronos Shard (increases attack speed) against a Spirit Monkey — time-acceleration making the monkey vulnerable to rapid strikes is logically coherent for a chronomancer. Temporal Siphon (extracts temporal energy) against a Shadow Jaguar and Chrono-Wraith — draining time energy from temporal entities is perfectly aligned."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. Enemies are varied. All pickups have specific effects. Jungle Nectar's 'minor health restoration' effect is vague but functional. 'Control over the jungle's flow of time' reward is thematically resonant."
+        }
+      },
+      "best_element": "The mechanical sense is flawless — Chronos Shard and Temporal Siphon create a chronomancer-specific toolkit that logically connects to each enemy type through temporal energy mechanics.",
+      "worst_element": "Encounter 1 trigger 'Capturing the monkey's spirit opens the boss gate' — this implies opening the final boss gate at encounter 1, skipping the enc 2 → boss narrative structure.",
+      "overall": "A well-referenced and mechanically sound medium-difficulty level; the enc 1 trigger's 'boss gate' phrasing is a structural awkwardness, but the level is otherwise shippable."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A desolate brutal jungle berserker level with a notable mechanic: encounter 2 enemy (Alpha Stalker) is weak to 'Charged Obsidian Spike', and the encounter 2 pickup IS 'Charged Obsidian Spike'. This is a self-referential loop where the player needs the item to defeat the enemy but gets it from the same encounter. Boss correctly uses it.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc 0 weakness 'Iron Greataxe' (player weapon) exact. Enc 1 weakness 'Obsidian Spike' (enc 0 pickup) exact. Enc 2 weakness 'Charged Obsidian Spike' (enc 2 pickup — same encounter) — this creates a self-referential loop. Boss weakness 'Charged Obsidian Spike' exact. The enc 2 self-reference is unusual but enc 2's trigger implies the encounter 2 pickup charges the spike: the pickup IS the charged version."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Dying scream alerts the pack guardians ahead' — defeat-triggered but 'dying scream' implies the enemy activates the trigger with its death cry, which is specific. Enc 1 'Breaking the ruin altar summons the Alpha Stalker' — player action (breaking an altar), not a defeat consequence. Enc 2 'Defeat leads to the opening of the inner sanctum gate' — generic ('defeat leads to'). Two weak triggers."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Health escalates 80-120-200 and damage 15-25-40. Boss at 400/50 strictly harder. Total incoming (15+25+40+50=130) vs 150 HP — very tight for brutal with only Storm Essence and Charged Obsidian Spike (no healing). Survivable with Storm Essence's lightning boost helping kill faster, but no direct healing."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Desolate jungle ruins, Rotting Vine-Strangler, Overgrown Guardian, Alpha Stalker, Primeval Blight-Stalker — all fit desolate primeval dread. Obsidian Spike, Storm Essence, Charged Obsidian Spike — the escalating spike concept is a nice mechanical throughline."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Obsidian Spike (conducts electrical energy) against an Overgrown Guardian — electrifying a plant/stone guardian makes sense. Charged Obsidian Spike (storm-charged) against an Alpha Stalker and Primeval Blight-Stalker — storm energy vs. parasitic blight is thematically coherent."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Enc 2 trigger 'Defeat leads to the opening of the inner sanctum gate' is generic and starts with 'Defeat leads to' which is minimal. Enc 1 pickup 'Storm Essence' and its effect on the boss is indirect (fights via enc 2 pickup). No healing pickup available."
+        }
+      },
+      "best_element": "The Obsidian Spike → Charged Obsidian Spike progression creates a two-stage crafting narrative within the level — finding the spike and then charging it before the final fight.",
+      "worst_element": "Encounter 1 trigger 'Breaking the ruin altar summons the Alpha Stalker' is a player action rather than a defeat consequence — the encounter 1 enemy's defeat doesn't logically cause enc 2 to appear.",
+      "overall": "Creative weapon-crafting narrative with good thematic consistency, but two non-defeat triggers and the self-referential enc 2 pickup loop need design clarification before shipping."
+    }
+  }
+]
