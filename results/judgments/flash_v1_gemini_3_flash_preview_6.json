@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "chaotic",
+      "player_class": "engineer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A well-structured steampunk clockwork level that feels genuinely designed — the three encounters build spatially (overlook to grinder to core) and mechanically (each pickup feeds into the next enemy). The boss and victory condition are coherent, though the victory condition drops item-name references.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Every enemy weakness cites the prior pickup or weapon by exact name. The boss weakness names the Conductive Copper Rod exactly, but the victory_condition ('Overload Cogsworth's internal capacitor until he undergoes total meltdown') references no named item."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — pressure valve bursts opening a hatch; E1 — pulley system lowers a bridge; E2 — explosion shatters glass ceiling. All three are specific physical consequences of defeating the enemy that make the next location inevitable."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health/damage escalate cleanly (60/10, 80/15, 100/20). Boss at 400/35 is clearly the hardest. Total encounter damage is 45 against 150 player HP — comfortably survivable at medium difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — enemy names, location names, hazards, pickups, and boss name — reinforces a chaotic steampunk clockwork identity. Nothing feels out of place."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Wrench on exposed joints, lubricant creating slippery surfaces, acid on cooling pipes, copper rod as lightning rod — every pickup-weakness pairing has a clear functional logic."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three encounter locations, enemies, and hazards are distinct and specific. No repeated descriptions or filler text."
+        }
+      },
+      "best_element": "The causal chain is the strongest aspect — each encounter's defeat triggers a specific physical mechanism (pressure valve, pulley bridge, glass ceiling explosion) that makes the next area feel like a consequence rather than a door opening.",
+      "worst_element": "The victory_condition ('Overload Cogsworth's internal capacitor until he undergoes total meltdown') names no item from the level, breaking consistency with the otherwise tight reference chain. It should reference the Conductive Copper Rod explicitly.",
+      "overall": "This is a solid, playable level that delivers on the chaotic steampunk engineer fantasy. The escalating encounters and item handoffs would make for satisfying moment-to-moment gameplay."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A coherent mysterious steampunk level set in a clockwork sanatorium. The encounter chain and causal triggers are strong, but the weapon name 'Overcharged Tesla Wrench' is consistently shortened to 'Tesla Wrench' in weaknesses and the victory condition, creating recurring reference mismatches.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "E0 weakness uses 'Tesla Wrench electrical arcs' and E2/boss use 'Tesla Wrench' — the weapon is named 'Overcharged Tesla Wrench'. The Vial of Corrosive Lubricant and Frequency Tuning Fork are referenced exactly, but two weakness fields and the victory_condition truncate the weapon name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — steam valve opens brass doors; E1 — drone explosion dislodges jammed elevator; E2 — golem falls into furnace triggering emergency override. All three triggers are specific narrative consequences of enemy defeat."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemies escalate cleanly (60/15, 90/20, 120/25). Boss at 300/35 is hardest. Total encounter damage is 60 against 100 player HP — tight for hard difficulty, which is appropriate. Minor concern: boss health at 300 feels moderate for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The sanatorium setting, steam-leak automaton, plated sentry drone, boiler golem, and great chronometer warden all reinforce the mysterious steampunk atmosphere consistently."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Tesla arc against steam-leak automaton (electrical, logical), corrosive lubricant dissolves plated drone (logical), Tesla wrench impact on boiler golem pilot hatch (reasonable), tuning fork on glass casing (logical). All connections are defensible."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Locations, enemies, and hazards are all distinct and specific. Each encounter adds unique information."
+        }
+      },
+      "best_element": "The causal chain is excellent — each trigger is a specific mechanical or architectural consequence (doors, elevator, emergency override) that makes the level feel like a designed space.",
+      "worst_element": "The recurring shortening of 'Overcharged Tesla Wrench' to 'Tesla Wrench' in three references is a systematic reference integrity failure. A simple find-replace on the weapon name would fix it.",
+      "overall": "A competent hard-difficulty level that would feel tense and mysterious in play. The reference truncation issue is the main design flaw but doesn't break the level's playability."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming whimsical steampunk garden level with creative names and a good item handoff chain, but the balance is broken by health inversions and the causal triggers are generic actions without enemy-defeat consequences.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weapon and all three pickup references appear by exact name in subsequent weaknesses. Boss victory_condition ('Dissolve the main drive gear') doesn't name the Concentrated Solar Solvent, losing one reference."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "All three triggers are bare descriptions ('Opening the valve,' 'Activating the magnetic lift,' 'Unlocking the Grand Chronometer door') with no subject and no connection to defeating the encounter enemy. The chain exists spatially but not causally."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Enemy health inversions: E1 (30) is lower than E0 (40). Damage inversions: E2 (8) is lower than E1 (10). Two separate escalation failures. Easy difficulty makes this less critical but the numbers still feel unconsidered."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — hedge-trimmer bot, spark-bee, dizzy telescope sentinel, grumpy grandfather clockwork, floating clockwork gardens — is consistently whimsical and steampunk. The naming is inventive and cohesive."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Siphon vs hedge-trimmer (generic), corrosive dew dissolving a spark-bee (bee is organic/mechanical hybrid — stretch), magnetic shard attracting a metal sentinel (logical), solar solvent melting clockwork grease (logical). The E1 connection is the weakest."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and thematic. One minor issue: the boss victory condition is slightly generic ('halt the mechanism')."
+        }
+      },
+      "best_element": "The whimsical naming — 'Grumpy Grandfather Clockwork,' 'Dizzy Telescope Sentinel,' 'Spark-Bee' — is the strongest aspect, creating a coherent and charming identity that a designer would want to ship.",
+      "worst_element": "The causal triggers are placeholder-level. 'Opening the valve to the Gear-Hydrangea bridge' gives no subject and no reason why defeating the enemy causes this. Each trigger should state what the enemy's defeat physically causes.",
+      "overall": "Visually appealing and charming, but the broken escalation and passive triggers mean this level wouldn't function correctly as a designed space. Easy to fix with targeted edits."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A well-constructed brutal steampunk rogue level with strong causal triggers and tight reference integrity. The brutal difficulty is reflected in punishing enemy stats against a low player HP pool, which is intentional but represents a near-impossible survival scenario.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weapon and all three pickups are referenced by exact name in subsequent weaknesses. Boss victory_condition says 'Inject the Override Key into the boss's central boiler' — 'Override Key' is a minor truncation of 'Master Control Override Key'."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — dog's core destroyed causes pressure surge unlocking bulkhead; E1 — death cry resonates with elevator mechanism; E2 — inserting Override Key into console opens the door. All three are specific, physical, defeat-driven consequences."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemies escalate cleanly (60/25, 120/35, 150/40), boss at 400/45 is hardest. However, player has only 50 HP against total encounter damage of 100 — the player is statistically dead before reaching the boss. Brutal label fits the intent but the numbers suggest zero survivability."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — underbelly setting, sentry dog, automaton guard, brass inquisitor, arch-engineer malphas — fits a tense steampunk rogue infiltration perfectly."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Brass knuckles vs sentry dog (generic but functional), acid dissolves automaton joints (logical), tuning fork disrupts sonic sensors of inquisitor (logical), override key injected into boiler (clever rogue finisher). One generic connection but all defensible."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The level builds a coherent infiltration narrative across all fields."
+        }
+      },
+      "best_element": "The causal chain is exceptionally well-constructed — the death cry resonating with elevator machinery is the standout, a creative and specific narrative consequence that makes encounter 1 feel essential.",
+      "worst_element": "The player's 50 HP against 100 total damage from encounters alone makes the level essentially unwinnable without perfect play and hazard avoidance. The player weapon damage (15) vs enemy health values (60-150) also means very long fights for a rogue. Consider raising player HP to 80.",
+      "overall": "The design craft is strong — great triggers, great references, great theme — but the numbers make this brutal in a unfun way rather than a satisfying challenge way. Would benefit from slight HP tuning."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "ominous",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A structurally sound ominous steampunk level with excellent causal triggers and clean escalation, but with a critical mechanical logic failure: the Brass Insulation Gloves (a defensive item granting immunity) are listed as the Brass Chimera's weakness, which makes no sense as an offensive tool.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All four weakness fields contain the exact name of the prior pickup or weapon. Boss victory_condition says 'stunned by the Coil' — minor truncation of 'Overcharged Capacitance Coil.' All references are identifiable."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — sentry core explosion unlocks elevator; E1 — chimera's death causes structural failure opening path; E2 — golem falls through floor revealing entrance. All three are specific physical consequences of enemy defeat."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Clean escalation (80/15, 120/20, 150/25). Boss at 400/35 is hardest. Total encounter damage of 60 against 100 player HP is survivable for hard difficulty. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Clockwork sentry, brass chimera, galvanized steam-golem, grand architect malphas — all fit an ominous steampunk stormcaller identity. The setting and enemy names work together."
+        },
+        "mechanical_sense": {
+          "score": 2,
+          "reason": "E1 is a severe failure: the Brass Chimera's weakness is 'Brass Insulation Gloves,' a pickup that grants immunity to electrical feedback. Insulation gloves are defensive gear, not an offensive weapon. There is no logical mechanism by which wearing insulating gloves damages a chimera. Three of four connections are logical but this one is broken."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct and specific. Each encounter adds unique information and contributes to the ominous escalation."
+        }
+      },
+      "best_element": "The causal chain is spotless — each enemy defeat triggers a specific architectural failure (explosion, structural collapse, floor collapse) that makes the level feel like a disintegrating ironworks.",
+      "worst_element": "The Brass Chimera's weakness being 'Brass Insulation Gloves' is an unplayable mechanic. Insulation gloves protect the player, they don't damage enemies. The pickup should have been an offensive item (e.g., a current-amplifier or thermal flask) to make sense as a weakness.",
+      "overall": "Would be a strong hard-difficulty level if not for the insulation gloves weakness — a single broken mechanic that a player would immediately notice as nonsensical when trying to understand how to fight the Chimera."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The strongest level in the set — tight reference integrity throughout (including the victory condition), clean stat escalation, specific causal triggers, and a well-realized desolate chronomancer identity. The only weakness is that the Vial of Accelerated Mercury's effect (movement speed) doesn't logically explain why the Clockwork Sentinel would be vulnerable to it.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every weakness cites the prior pickup or weapon by exact name. The boss victory_condition explicitly names the Temporal Anchor Coil. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — disabling automaton opens steam-gate; E1 — condensing wraith unlocks elevator; E2 — dismantling sentinel reveals hidden hatch. All three are specific defeat consequences that make the next encounter inevitable."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Clean escalation (60/15, 80/20, 100/25). Boss at 300/40 is hardest. Total encounter damage of 60 against 150 player HP is well-calibrated for medium difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Stuttering automaton, steam-wraith, clockwork sentinel, the great chronometer — all reinforce the desolate decaying-time theme. The temporal and mechanical elements are integrated throughout."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "E0 — time-shard dagger against stuttering automaton (temporal disruption, logical). E1 — static flux capacitor freezes electrical currents against a steam-wraith (logical). E2 — vial of accelerated mercury (movement speed buff) as the clockwork sentinel's weakness has no clear damaging mechanism. Boss — temporal anchor coil to bypass a time-loop attack (perfect). One connection is mechanically broken."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All fields are distinct and specific. The three enemy types (automaton/wraith/sentinel) are varied and the hazards (swinging blades/bursting pipes/collapsing floor) escalate in danger well."
+        }
+      },
+      "best_element": "The boss mechanic — using the Temporal Anchor Coil to rewind past an inescapable time-loop attack — is the best single design choice in the file. It's mechanically coherent, thematically perfect for a chronomancer, and the victory condition explicitly names the item.",
+      "worst_element": "The Vial of Accelerated Mercury grants movement speed, which has no clear offensive application against the Clockwork Sentinel. This should be a debuff (e.g., mercury poured into joints seizes them) to make the weakness logically functional.",
+      "overall": "This level would be genuinely fun to play — the temporal theme is consistent, the combat escalation is clean, and the boss mechanic is creative. The one mechanical logic issue (mercury as speed boost) slightly undercuts an otherwise excellent design."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "eerie",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An atmospheric eerie steampunk geomancer level with excellent thematic coherence and solid mechanical sense, but the brutal difficulty means the player faces 160 total encounter damage against only 100 HP, and two of three triggers are driven by pickup interactions rather than enemy defeats.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E0 weakness names the weapon exactly. E1 names 'Corroded Copper Seal' exactly. E2 names 'Quicksilver Ash' (truncating 'Vial of Quicksilver Ash') — minor variation. Boss names 'Resonance Tuning Fork' exactly. Victory_condition references no named item."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0 trigger — 'Inserting the Copper Seal into the altar' (pickup action, not enemy defeat). E1 trigger — 'Defeating the drone causes gear floor collapse' (specific defeat consequence). E2 trigger — 'The Tuning Fork's vibration shatters the glass ceiling' (pickup action, not defeat). Two of three triggers are item-use actions disconnected from defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Enemy escalation is clean (150/40, 200/55, 250/65). Boss at 800/80 is hardest. However, total encounter damage is 160 against player HP of 100 — the player is mathematically eliminated before reaching the boss even without hazards. Brutal label acknowledges difficulty but this is survivability-breaking."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Submerged brass cathedral, fog-drenched vestibule, steam-burnt automaton, gilded scavenger drone, oil-slicked stalker, great brass architect — every element reinforces the eerie steampunk geomancer identity. The rising ichor level in the boss fight is a strong environmental touch."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "E0 — scepter impact on boiler (generic physical). E1 — geomancer warps metals to distort drone's metal body (logical for geomancer class). E2 — quicksilver ash petrifies mechanical parts making joints brittle (logical). Boss — resonance fork shatters crystalline core (logical). Most connections are grounded."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The environmental escalation (cathedral architecture degrading) is well-constructed."
+        }
+      },
+      "best_element": "The rising ichor level mechanic in the boss fight — 'shatter the Architect's core while the ichor level is rising' — creates a timed environmental pressure that makes the boss encounter feel dynamic and eerie.",
+      "worst_element": "The player's 100 HP against 160 total encounter damage makes the level statistically impossible to clear without perfect hazard avoidance. This isn't intentional 'brutal' design — it's broken arithmetic. Raise player HP to at least 150 for brutal to feel punishing-but-fair.",
+      "overall": "Visually and thematically excellent, but the math makes it unplayable as-configured. The geomancer mechanics are creative and the eerie atmosphere is consistent — this just needs a stat adjustment to function."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming serene steampunk paladin level with strong thematic coherence and good item handoffs, but the causal triggers are all passive sentences with no subject, and encounter 1's enemy health (30) is lower than encounter 0's (40).",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weapon and all three pickups are referenced by exact name in subsequent weaknesses. Boss victory_condition says 'resonant frequency of the tuning fork' — does not name the Silver Tuning Fork by its exact name."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "E0 trigger: 'Unlocks the gate to the Golden Aviary.' E1 trigger: 'Activates the elevator to the Sky Observatory.' E2 trigger: 'Opens the Sanctum of the Great Clockmaker.' All three are passive sentences with no grammatical subject — there is no causal agent and no stated mechanism. The triggers could belong to any encounter in any level."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "E1 health (30) is lower than E0 (40) — a health escalation inversion. Damage holds (5, 5, 10) but E0 and E1 are tied. Boss health (100) and damage (15) are barely higher than E2 (50/10). Easy difficulty excuses low stakes but the inversion is still a design flag."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Floating gardens, reflection pool, golden aviary, sky observatory, rusting guard, clockwork songbird, stained glass golem, great chronos warden — every element is serene and steampunk. The paladin class fits the gentle 'subdue without killing' framing."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Blessed hammer vs rusting guard (generic, paladin-appropriate), solar lens blinds clockwork songbird's sensors (logical), anointed oil cleanses stained glass golem of corruption (logical), silver tuning fork shatters crystalline warden (logical). All connections are defensible."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The enemy variety (guard, songbird, golem) is strong for an easy level."
+        }
+      },
+      "best_element": "The enemy variety — rusting guard, clockwork songbird, stained glass golem — is creative and escalates in visual complexity while maintaining the serene steampunk theme.",
+      "worst_element": "The three triggers are the weakest in the dataset — they are pure passive-voice placeholders ('Unlocks the gate,' 'Activates the elevator,' 'Opens the Sanctum') that provide no causal mechanism or narrative logic. Each trigger needs a subject and a consequence.",
+      "overall": "Would be a pleasant, low-stakes level thematically, but the passive triggers mean it would feel like a sequence of disconnected rooms rather than a designed level. Easy to fix but currently incomplete."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "mysterious",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A mysterious underwater geomancer level with perfect reference integrity and strong thematic coherence, marred by two stat escalation inversions in encounter 2 and three vague causal triggers that don't clearly result from defeating enemies.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Weapon and all three pickups are referenced by exact name in subsequent weaknesses and the boss victory_condition. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "E0 trigger — 'A massive tectonic shift opens a path' (vague, not clearly caused by defeating the wraith). E1 trigger — 'The cavern walls collapse, revealing the entrance' (vague, no stated cause). E2 trigger — 'The heavy stone doors rumble open' (completely generic, no causal agent). None of the three triggers are specific consequences of the encounter."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "E0 and E1 escalate (60/15, 100/20). E2 inverts on both health (80 < 100) and damage (10 < 20). Boss at 350/40 is hardest. Two escalation failures in encounter 2 make the final encounter before the boss the weakest regular enemy."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Silt-bound wraith, armored crustacean titan, static jellyfish swarm, kraken of the magnetic rift — all fit the mysterious underwater geomancer theme. The tectonic and geological elements are woven throughout."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Obsidian staff vs silt wraith (generic), sulfur crystal adds explosive heat to stone spike against crustacean (logical geomancer ability), geode of conductivity channels electricity through earth against electrical jellyfish (logical), tidal magnetite collapses rift pillars onto kraken (logical). Most connections are grounded."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct. The descent from basalt pillars to sunless grotto to bioluminescent throne is a well-rendered environmental progression."
+        }
+      },
+      "best_element": "The boss victory condition — 'Use Tidal Magnetite to collapse the rift pillars onto the beast' — is specific, item-named, and spatially imaginative. It describes a distinct mechanical action rather than a generic 'strike the weak point.'",
+      "worst_element": "Encounter 2 (Static Jellyfish Swarm) is weaker than Encounter 1 on both health (80 vs 100) and damage (10 vs 20), making the penultimate encounter a difficulty dip right before the boss. This breaks the escalation contract.",
+      "overall": "Strong reference integrity and thematic coherence, but two escalation inversions and passive triggers make this feel less designed than it could be. The underwater geomancer identity is well-realized."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "serene",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A well-executed serene underwater beastmaster level with strong mechanical sense throughout — every pickup-weakness pair has a clear ecological logic — and a creative non-violent boss resolution (feeding the turtle). Minor variation in the boss victory_condition reference is the only weakness.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weapon and all three pickups are referenced by exact name. Boss victory_condition says 'Feed the Plankton to the Turtle' — 'Plankton' is a minor truncation of 'Golden Plankton.'"
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 — serpent retreats into a dark tunnel leading to Crystal Cave (specific narrative consequence); E1 — grouper drops a bone key that unlocks the Pearl Gate (specific item drop); E2 — sentry falls revealing path to Guardian's Throneroom (specific physical reveal). All three are defeat-driven."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Clean escalation (30/5, 40/8, 50/10). Boss health (150) is clearly greatest. Boss damage (12) is barely above E2 (10) — a very minor inversion concern, but within easy-difficulty tolerance. Total encounter damage of 23 against 100 HP is very gentle."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Kelp forest, crystal cave, pearl gate, sea serpent, shadow grouper, armored crab sentry, ancient sea turtle — nearly all elements fit the serene underwater beastmaster setting. 'Shadow Grouper' edges slightly toward eerie rather than serene, but it's minor."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Coral whistle calms sea creatures (beastmaster tool against animal), glow-snail illuminates darkness exposing shadow grouper (light vs shadow-hiding enemy), siren pearl calms aggressive wildlife including armored crab (logical), golden plankton soothes ancient turtle's hunger (perfect ecological logic)."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All fields are specific and distinct. The escalation from serpent to grouper to crab to turtle is varied and well-paced."
+        }
+      },
+      "best_element": "The boss victory condition — 'Feed the Plankton to the Turtle to soothe its ancient hunger' — is the best non-combat resolution mechanic in the file. It fits the beastmaster class, the serene mood, and the easy difficulty perfectly.",
+      "worst_element": "Boss damage at 12 is only 2 points above the final encounter enemy's 10 — the boss barely feels more dangerous than the preceding encounter. For even an easy difficulty, the boss should feel meaningfully harder.",
+      "overall": "A genuinely pleasant easy level that would feel satisfying to a player who wants to explore and interact rather than fight. The ecological logic is consistent and the non-combat boss is a creative touch."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A thematically rich ominous necromancer level set in a leviathan graveyard, with strong escalation and excellent thematic coherence. Two of three triggers are driven by item interactions (collecting or consuming pickups) rather than enemy defeats, and the boss victory condition uses a minor name truncation.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E0 and E1 weaknesses are exact. E2 weakness is exact (Ossified Marrow Dagger). Boss weakness is exact (Essence of the Void Heart). Boss victory_condition says 'Use the Void Heart' — minor truncation of 'Essence of the Void Heart.'"
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0 trigger — 'Collecting the vial awakens the Guardian of the Altar' (pickup interaction, not defeating the enemy). E1 trigger — 'Slaying the wraith causes temple floor to collapse' (specific defeat consequence, strong). E2 trigger — 'Consuming the Void Heart summons the Final Leviathan' (consuming a pickup, not a combat outcome). Two of three triggers bypass the enemy fight."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemies escalate (150/15, 200/20, 300/25). Boss at 800/40 is hardest. Total encounter damage is 60 against 100 player HP — survivable but tight for hard difficulty. The health values are very high for encounters in a hard level, but damage values are restrained, creating a war-of-attrition feel appropriate for a necromancer."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sunless trench, leviathan graveyard, abyssal husk, corrupted reef wraith, dread-angler lich, krakos the soul-eater — every element reinforces the ominous necromancer underwater identity. The necromantic vocabulary (harvesting souls, ossified marrow) is consistently applied."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Soul staff against abyssal husk (necromantic weapon vs undead, logical), bioluminescence reveals and weakens spirits/wraith (light exposing invisible enemy, logical), marrow dagger pierces spectral armor of lich (ritual blade vs spectral creature, logical), void heart bypasses internal defenses (vague but thematically coherent). Solid throughout."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The descent from ribcage passage to shattered altar to maw of the deep is a well-rendered environmental escalation."
+        }
+      },
+      "best_element": "The encounter 1 trigger — 'Slaying the wraith causes the temple floor to collapse into the Maw of the Deep' — is a specific, physical, cinematic consequence of combat that makes the level feel dynamic.",
+      "worst_element": "The encounter 0 trigger ('Collecting the vial awakens the Guardian') makes the first enemy fight feel unnecessary for progression — the player could theoretically just grab the item and skip the enemy. The trigger should be tied to defeating the Abyssal Husk.",
+      "overall": "A strong hard-difficulty level with excellent atmosphere and a well-realized necromancer identity. The item-triggered transitions are the main design flaw but don't break the level's overall playability."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "tense",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A high-energy brutal underwater stormcaller level with excellent thematic coherence and mechanical sense, but every weakness field appends a descriptor beyond the exact item name, multiple references are technically imprecise, and the player has 80 HP against 105 total encounter damage.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "E0 weakness says 'Volt-Harpoon Staff electrical surges' (weapon name present but appended). E1 says 'Concentrated Salt-Sphere exposure' (pickup name present but appended). E2 says 'Super-Conductor Core discharge' (appended). Boss uses 'Essence of the Gale' exactly. Three of four weaknesses use the name plus a descriptor rather than the exact name alone."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0 — eel's death scream sonar reveals hidden passage (specific and creative). E1 — 'The ink clears to show a massive vault door opening' (ink clearing is a consequence of defeating the cephalopod, but the connection is not explicit). E2 — cathedral roof collapses exposing final arena (specific physical consequence). One trigger is weakly causal."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Encounter escalation is clean (150/30, 200/35, 300/40). Boss at 1000/60 is hardest. Total encounter damage is 105 against player HP of 80 — the player cannot survive all encounters without perfect play. Brutal label fits intent but the math is broken."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Armored trench-eel, ghost-skin cephalopod, siren-wraith, drowned storm-god — all fit the tense abyssal stormcaller identity. The storm-underwater fusion theme is applied consistently and creatively."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Volt harpoon electricity against armored eel (electrical vs conductive armor), salt sphere corrodes organic scales of cephalopod (chemistry vs biology), super-conductor amplifies lightning against siren-wraith (escalating electrical damage vs spiritual entity), essence of the gale pierces storm-god's shield (thematic counter). All connections are logical and well-matched to class."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The environmental escalation from coral arch to whispering cavern to sunken cathedral is vivid."
+        }
+      },
+      "best_element": "The encounter 0 trigger — 'A sonar pulse from the eel's death scream reveals a hidden cave passage' — is the most creative and specific trigger in the file. It uses the enemy's anatomy as the mechanism, making the kill feel purposeful.",
+      "worst_element": "Every weakness appends a qualifier ('electrical surges,' 'exposure,' 'discharge') instead of using the exact pickup name. While the names are identifiable, this systematic imprecision would cause reference-resolution failures in a game engine relying on exact string matching.",
+      "overall": "Mechanically imaginative and thematically excellent, but the player HP-to-damage ratio is broken and the reference strings need cleaning. Would be a thrilling brutal level with those fixes applied."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "eerie",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A functional eerie underwater shadowblade level with clean stat escalation and exact boss references, but all three encounter triggers are passive or action-independent sentences with no clear causal link to defeating enemies, and E0 and E1 weaknesses append descriptors beyond the exact item name.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "E0 weakness says 'Obsidian Kukri critical strikes' (weapon name present but appended). E1 says 'Bioluminescent Essence flash' (pickup name present but appended). E2 names 'Corrosive Ink Vial' exactly. Boss weakness and victory_condition both use 'Void Anchor' exactly. Two of four weaknesses are imprecise."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "E0 trigger — 'Opening the rusted bulkhead to the sunken research lab' (no subject, no cause). E1 trigger — 'Activating the emergency drainage system to access the deep vent' (a player action, not a consequence of defeating the cephalopod). E2 trigger — 'The collapse of the seafloor revealing the ancient temple entrance' (passive, no agent). None of the triggers specify a mechanism caused by defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Clean escalation (60/15, 80/20, 100/25). Boss at 350/40 is hardest. Total encounter damage of 60 against player HP of 150 is well-calibrated for medium difficulty. All escalation checks pass."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Kelp graveyard, spectral angler, mutated cephalopod, armored crustacean guard, krakos the void-sealed — mostly eerie and abyssal. 'Submerged Laboratory Delta' feels more sci-fi thriller than eerie ancient ocean, slightly disrupting the atmosphere."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "E0 — obsidian kukri critical strikes vs spectral angler (physical blade vs spectral enemy — unclear why physical criticals are effective against a spirit). E1 — bioluminescence flash blinds cephalopod (light vs vision-dependent predator, logical). E2 — corrosive ink vial melts chitin armor of crustacean (logical). Boss — void anchor breaks eldritch shields (logical for eldritch boss). One weak connection."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The kelp graveyard to lab to vent to temple descent is well-rendered."
+        }
+      },
+      "best_element": "The boss victory condition — 'Shatter the three eldritch seals using the Void Anchor and execute with the Obsidian Kukri' — is specific, dual-item-referenced, and describes a clear two-stage mechanic that would feel satisfying to execute as a shadowblade.",
+      "worst_element": "All three encounter triggers are agentless passive constructions ('Opening the bulkhead,' 'Activating the drainage system,' 'The collapse of the seafloor') — none of them specify what the player's defeat of the enemy actually causes. The triggers feel copy-pasted from a template.",
+      "overall": "The numbers work well for a medium difficulty and the boss design is strong, but the passive triggers make this feel like a map with waypoints rather than a designed encounter sequence. The shadowblade identity is present but could be more deeply integrated."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A confident underwater pyromancer level that leans into a fire-vs-ice theme with strong mechanical sense throughout. Reference integrity is clean and the escalation is mostly solid, but the player's 100 HP against 120 total encounter damage is slightly over-punishing for hard difficulty, and E0's trigger is weakly causal.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Weapon and all three pickups are referenced by exact name in subsequent weaknesses. Boss victory_condition names 'Molten Aegis' exactly. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 — 'A volcanic eruption opens a path' (not clearly caused by defeating the glacial eel — volcanic eruption is an environmental event, not a combat consequence). E1 — squid's death cry shatters a barrier (specific defeat consequence). E2 — chimera collapses into whirlpool sucking the player downward (specific physical consequence). Two of three are strong."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemies escalate cleanly (80/30, 120/40, 150/50). Boss at 500/65 is clearly hardest. Total encounter damage is 120 against player HP of 100 — player cannot survive all hits, verging on brutal rather than hard. The difficulty label is slightly miscalibrated."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The Boiling Abyss, sulfur vents, frozen trenches, coral graveyard, glacial eel, crystalline squid, abyssal chimera, leviathan of eternal frost — the fire-vs-ice-in-the-deep theme is applied inventively throughout. The chaotic mood is earned by the environmental variety."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Torch staff melts glacial eel (fire vs ice, classic), magnesium flare blinds crystalline squid (light flash against a visual/reflective creature), napalm core burns abyssal chimera (fire delivery against organic creature), molten aegis detonated inside leviathan's mouth (climactic fire delivery). Every connection is logical and satisfying."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The environmental contrast (sulfur vents → frozen trenches → coral graveyard) is a strong design choice."
+        }
+      },
+      "best_element": "The fire-vs-ice theme applied to an underwater setting is the strongest thematic choice in the file — every enemy is cold/frozen, every weapon is fire-based, and the contrast creates a coherent elemental identity for the entire level.",
+      "worst_element": "The encounter 0 trigger ('A volcanic eruption opens a path to the Frozen Trenches') is not caused by defeating the glacial eel — volcanic eruptions are environmental events. A better trigger would link the eel's defeat to a physical change (e.g., 'the eel's body blocks the thermal vent, causing pressure to build and blast open the next passage').",
+      "overall": "A strong, imaginative level with excellent mechanical sense and thematic coherence. Would be fun to play as a pyromancer — the fire delivery mechanics escalate satisfyingly to the final boss encounter."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "desolate",
+      "player_class": "warden",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A well-constructed brutal warden level with excellent reference integrity (including exact boss victory condition), strong mechanical sense, and a satisfying desolate atmosphere. The primary issue is that the player's 100 HP faces 135 total encounter damage — survivable in intent for brutal, but the E1 trigger is driven by item retrieval rather than enemy defeat.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All three encounter weaknesses reference the exact prior pickup or weapon name. Boss weakness and victory_condition both reference 'Ancient Sealant' exactly. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 — opening the siren's gate causes an acoustic boom that awakens the Trench Stalker (specific and consequential). E1 — 'Retrieving the core destabilizes the sea floor' (item retrieval action, not defeating the Trench Stalker). E2 — sealing the cathedral doors traps the player with the boss (specific and narrative). Two of three are strong."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemies escalate cleanly (150/35, 250/45, 300/55). Boss at 800/75 is hardest. Total encounter damage is 135 against player HP of 100. For brutal difficulty this is extreme but not incoherent — the intent is clear. The difficulty label is accurate, but the player would need to avoid most hits to reach the boss."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Desolate abyss, whispering kelp beds, sulfur vents, sunken cathedral, bleached siren, trench stalker, void maw, abyssal leviathan — every element reinforces the desolate crushing-depths identity. The bleak, survivalist atmosphere is consistent throughout."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Harpoon through vocal sac (specific anatomy-targeted strike against a siren), bioluminescent bile corrodes chitin shell of trench stalker (acid vs armor), thermal core heat against ice-veined void maw (elemental counter), ancient sealant bonds shut breathing vents of leviathan (creative suffocation mechanic). Every connection is logical and thematic."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The environmental descent (kelp beds to sulfur vents to sunken cathedral) is well-rendered and desolate."
+        }
+      },
+      "best_element": "The boss victory condition — 'Seal the Leviathan's primary breathing vents using the Ancient Sealant' — is one of the most mechanically inventive in the file. It describes a specific, non-combat-conventional method of killing the boss that fits the warden's utilitarian identity.",
+      "worst_element": "The E1 trigger ('Retrieving the core destabilizes the sea floor') makes item pickup — not enemy defeat — the mechanism for progression. The Trench Stalker could be defeated and the player ignores it if the trigger only requires grabbing the Thermal Core.",
+      "overall": "A strong brutal level with creative mechanics, a well-realized desolate identity, and satisfying boss design. The brutal difficulty is demanding but internally consistent — this would be a challenging and rewarding play experience."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The most charming and thematically consistent level in the file — a whimsical underwater illusionist experience with perfect reference integrity, clean escalation, and imaginative pickup-triggered causal mechanisms. The only note is that all three triggers are driven by pickup interactions rather than enemy defeats, but in a whimsical easy context this is forgivable.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Weapon and all three pickups are referenced by exact name in subsequent weaknesses. Boss victory_condition names 'Ever-Glowing Starfish' exactly. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 — 'Opening the Prism Shell releases a beam of light pointing toward the Sunken Tea Party' (specific physical mechanism via pickup). E1 — 'The Giggling Pearl's laughter echoes through a pipe, leading to the Crystal Grotto' (specific physical mechanism via pickup). E2 — 'Placing the Starfish on the altar opens the grand gates' (specific physical mechanism). All three triggers are specific and causal, but driven by pickup actions rather than defeating enemies — consistent with the whimsical easy tone."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Clean escalation (40/5, 50/8, 60/10). Boss at 150/15 is clearly hardest. Total encounter damage of 23 against player HP of 200 is extremely gentle — perfect for easy difficulty. All escalation checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Grumpy puffer-balloon, dizzy seahorse waiter, confused mirror-crab, barnaby the bubbling behemoth, sunken tea party, crystal grotto, king's ballroom — every element is inventive, whimsical, and underwater. A designer would ship this theme package without revision."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Bubble-wand pops puffer-balloon (illusionist tool vs balloon creature, charming), prism shell dazzles dizzy seahorse (visual distraction vs already-confused enemy), giggling pearl sonic waves shatter mirror-crab's mirror illusions (sound vs reflective creature, logical), starfish blinds behemoth then mirage traps him (illumination plus illusionist finisher, perfect)."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is specific, distinct, and adds unique information. The whimsical naming is inventive throughout with zero generic or filler text. The hazard 'Spilled Earl Grey currents' is a standout detail."
+        }
+      },
+      "best_element": "The 'Sunken Tea Party' encounter — complete with a dizzy seahorse waiter, spilled Earl Grey currents, and a giggling pearl as a pickup — is the most inventive and tonally consistent encounter in the entire file. It's specific, funny, and mechanically coherent.",
+      "worst_element": "All three triggers are item-interaction driven (opening/activating/placing pickups) rather than consequences of defeating enemies. In a strict interpretation, the player could theoretically skip the enemies and just interact with items to progress. For an easy whimsical level this is low-impact, but it's still a structural gap.",
+      "overall": "The best-designed level in the file. Would be genuinely fun and delightful to play — the thematic consistency is flawless, the escalation is clean, and the non-combat illusionist mechanics are creative throughout."
+    }
+  }
+]

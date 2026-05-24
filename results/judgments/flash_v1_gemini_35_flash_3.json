@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "ominous",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "This level is tightly constructed: every pickup feeds directly into the next enemy's weakness, triggers are physical consequences of encounter outcomes, and the volcanic/geomancer theme is internally consistent throughout. The pickup names (Frostfire Quartz, Quake Crystal, Obsidian Aegis) feel designed for this specific level rather than generic. The biggest concern is player survivability at 80 HP facing 90 cumulative encounter damage, though this is technically in line with a 'brutal' designation.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every enemy weakness references either the player weapon or the exact prior pickup name. Boss weakness is 'Obsidian Aegis' matching the E2 pickup exactly. Victory condition names the Obsidian Aegis explicitly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific physical consequences: volcanic tremor collapses the ridge path (E0), Golem's death rattle shatters the cavern floor (E1), Wyrm crash triggers an eruption that catapults the player (E2). Each makes the next encounter structurally inevitable."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health (120<180<220) and damage (25<30<35) escalate perfectly; boss is clearly the hardest at 450hp/50dmg. However, cumulative encounter damage of 90 vs player HP of 80 means the player is arithmetically dead before the boss — very punishing even for brutal."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element reinforces volcanic and ominous: basalt ridge, ash basin, caldera edge, obsidian core setting. The geomancer's ice-infused counters (Frostfire Quartz, Quake Crystal) make thematic sense as elemental opposites."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Cold vs fire logic holds for Frostfire Quartz/Cinder Golem and Obsidian Aegis reflecting Ignis's supernova. Quake Crystal (seismic sinkholes) vs Pyroclastic Wyrm is slightly weaker — why would seismic sinkholes specifically counter a flying/mobile wyrm?"
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three locations, enemy names, hazards, and pickups are distinct and specific. No field is generic or reused. The setting description adds unique flavor not derivable from other fields."
+        }
+      },
+      "best_element": "The causal chain — each trigger is a specific physical consequence (not 'a door opens') that makes the level feel like an interconnected space rather than three disconnected rooms.",
+      "worst_element": "Player HP of 80 against 90 cumulative encounter damage makes the level arithmetically unsurvivable without healing mechanics, which are not referenced anywhere in the config.",
+      "overall": "A well-designed brutal level that would be engaging with appropriate healing mechanics; the reference chain is flawless and the volcanic theme is fully committed."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The level is mechanically clean with a perfect reference chain and strong statistical escalation. The 'chaotic' mood is well-represented by cascading environmental disasters (eruptions, earthquakes, collapsing structures) that drive progression. One thematic oddity is a fire-class player wielding a fire weapon that is listed as the Magma Slime's weakness, implying fire beats fire.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact names from prior pickups or the player weapon. Boss weakness 'Obsidian Catalyst' matches the E2 pickup exactly. Victory condition explicitly names both 'Obsidian Catalyst' and 'Searing Firestaff'."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Volcanic eruption opens a fissure to E1 (E0), earthquake collapses a bridge forcing descent to E2 (E1), golem body forms a bridge to the boss arena (E2). All are specific physical consequences of the encounter events."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (120<180<240) and damage (25<35<45) escalate monotonically. Boss is clearly hardest (500hp/60dmg). Player HP 150 vs cumulative encounter damage 105 is survivable. Hard difficulty matches the numbers."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Caldera of Chaos with eruptions, hellhounds, and lava golems fits the chaotic volcanic theme well. However, a Pyromancer's 'Searing Firestaff' being listed as the Magma Slime's weakness is odd — a fire entity should be resistant to fire, not weak to it."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Frostfire Essence (freezing fire) vs Molten Hellhound and Cryo-Shield Rune vs Lava Golem are both cold-counter-fire logic. Obsidian Catalyst (amplifies projectile impacts) vs boss to crack core armor makes sense. Fire staff vs fire slime is the one illogical pairing."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three locations (Ash Grotto, Obsidian Ravine, Core Chamber Entrance), enemies, hazards, and pickups are distinct. No generic filler; every field adds specific information."
+        }
+      },
+      "best_element": "The causal chain using environmental escalation (fissure, bridge collapse, body-as-bridge) creates a credible sense of a chaotic, crumbling volcanic environment.",
+      "worst_element": "A Pyromancer's fire weapon being listed as the weakness of a fire-based Magma Slime undermines the elemental logic — fix by making the slime weak to the Cryo pickups obtained earlier, or justify why fire amplifies fire in this context.",
+      "overall": "A solid hard-difficulty volcanic level with clean mechanics; the fire-beats-fire weakness is a design blemish but everything else functions well."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A classic paladin-vs-fire-lord setup with a clean reference chain and well-paced difficulty curve. The level benefits from a clear holy-vs-volcanic elemental contrast (holy water, consecrated weapons, frost runes against fire enemies), though the triggers lean more toward puzzle-gate mechanics than organic environmental consequences. The hazard descriptions are unusually terse.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses match exact prior pickup names or player weapon. Boss weakness 'Aegis Rune of Frost' matches E2 pickup exactly. Victory condition names both 'Consecrated Halberd' and 'Aegis Rune of Frost' precisely."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1 (drawbridge chain signals the Obsidian Sentry) and E2 (pressure plates part lava falls to expose the inner sanctum) are clear causal links. E0's trigger ('Unlocking the Basalt Gate, which rumbles open to reveal the magma rivers ahead') is weaker — it describes a gate opening but doesn't explain what caused it or why the player progresses to The Searing Bridge specifically."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (60<80<100) and damage (15<20<22) escalate cleanly. Boss at 250hp/35dmg is clearly the hardest. Player HP 150 vs cumulative encounter damage 57 is very comfortable for medium difficulty — appropriately accessible."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Paladin holy toolkit (Consecrated Halberd, Holy Water, Frost Aegis) against a Fire Lord in a volcanic caldera is a classic, coherent setup. The 'Frost-Infused Shield Core' feels slightly generic for the holy/volcanic setting — it could belong to any class in any zone."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Holy water cooling/purifying a Magma Core Golem is intuitive. Frost-infused cold cracking Obsidian Sentry armor makes physical sense. Aegis Rune of Frost granting heat immunity and cold damage against Ignis the Fire Lord is perfectly logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations and enemies are distinct. However, hazard descriptions are extremely terse — 'Sulfur Gout,' 'Lava Splashes,' 'Falling Volcanic Debris' — each is just a name with no descriptive detail, unlike the richer hazard text in other levels."
+        }
+      },
+      "best_element": "The holy-vs-fire elemental logic is mechanically coherent throughout: every single pickup counter makes intuitive sense, making this one of the most mechanically readable levels in the set.",
+      "worst_element": "The hazard descriptions are minimal placeholders ('Sulfur Gout,' 'Lava Splashes') that add no environmental texture — expand each to a sentence describing the hazard's mechanical effect.",
+      "overall": "A reliable medium-difficulty level with intuitive mechanics; it plays it safe thematically but executes cleanly and would be playable as designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The desolate berserker level has outstanding thematic atmosphere and a flawless reference chain with specific, physical triggers. The primary flaw is balance: the player has 150 HP facing 145 cumulative encounter damage, leaving virtually no HP before the boss — and the boss hits for 85. Additionally, using a fire shield (Basalt Fire-Shield Core) and fire-infused item (Heart of the Volcano) against fire enemies as their 'weaknesses' lacks mechanical logic.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All enemy weaknesses use exact pickup names from prior encounters or the player weapon. Boss weakness 'Heart of the Volcano' matches the E2 pickup exactly. Victory condition explicitly names both 'Heart of the Volcano' and 'Shattered Magma Greatsword'."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific physical consequences: volcanic crust collapses under the player (E0), death roar triggers earthquake shattering the wall (E1), the sentinel's hammer falling on a pressure plate raises the bridge (E2). Each is a unique, non-interchangeable consequence."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Cumulative encounter damage (35+50+60=145) vs player HP (150) leaves the player with only 5 HP before facing a boss that deals 85 damage — arithmetically impossible without healing. While 'brutal' justifies high difficulty, this crosses into unplayable even with perfect play."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The desolate mood is impeccably executed: cooling magma, jagged obsidian spires, toxic sulfur vents, Ashen Husk enemies, and the 'Ashen Conqueror' reward. The berserker class fits the brutal, direct combat approach perfectly."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Frost-Infused Obsidian Shard (ice damage) vs Lavaborn Stalker is solid cold-vs-fire logic. However, Basalt Fire-Shield Core (absorbs fire damage — a defensive item) as the weakness of the Magma Sentinel is unclear as an offensive tool. Heart of the Volcano (grants fire energy and damage boost) as the weakness of a fire giant is also counterintuitive — fire against a fire boss."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Setting description is the most detailed in the file. All locations, enemies, and hazards are distinct and specific. The reward description with exact percentage ('fifty percent') and conditional trigger ('when standing near active flame sources') is unusually precise and well-designed."
+        }
+      },
+      "best_element": "The reward description — 'Molten Heart passive skill, which increases berserk damage by fifty percent when standing near active flame sources' — is the most mechanically specific and thematically fitting reward in the entire file.",
+      "worst_element": "The Basalt Fire-Shield Core (a fire-absorbing defensive shield) being listed as the Magma Sentinel's weakness makes no sense offensively — a defensive item should not be listed as the primary weapon to defeat an enemy.",
+      "overall": "A atmospherically excellent level that would frustrate players in practice due to the near-zero HP survivability margin; the desolate theme is the best in the file but the balance and one mechanical logic flaw need fixing."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A well-structured easy level with an interesting 'ancient lost civilization' mysterious angle for the volcanic genre. The reference chain is flawless, but the escalation pattern breaks between E0 and E1 (E1 is weaker than E0 in both HP and damage), and one enemy weakness has a dubious mechanical justification. The artificer theme is well-served by gadget-style pickups, though some feel anachronistically sci-fi for ancient ruins.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact prior pickup names or player weapon. Boss weakness 'Sonic Resonator Tuning Fork' matches E2 pickup exactly. Victory condition references the Sonic Resonator Tuning Fork by name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific, non-generic consequences: deactivating the golem opens floodgates (E0), defeating lavalings stabilizes pressure revealing an elevator shaft (E1), defeat triggers seismic collapse that seals escape and forces entry into the central chamber (E2). The escalating urgency is notable."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "E0 has 50hp/10dmg and E1 has 40hp/8dmg — E1 is weaker than E0 in both stats, breaking the required escalation. E2 (60hp/12dmg) recovers the curve. Boss (120hp/15dmg) is the hardest. Player HP 150 is very safe for easy."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The 'ancient obsidian civilization ruins' framing fits the mysterious mood well. However, the Magnetic Force Field Emitter and Sonic Resonator Tuning Fork feel like modern sci-fi gadgets incongruous with ancient volcanic ruins — an artificer in ruins would use more alchemical or clockwork-style tools."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Cryo-Infused Core (freezing) vs Lavaling Swarm is solid cold-vs-fire. Sonic Resonator (shatters volcanic structures) vs Obsidian Colossus is excellent — sound shatters stone. However, Magnetic Force Field Emitter (repels metallic projectiles and debris) as the weakness of an Ash-Wing Wyrm (an ash/wing creature) has no logical mechanical connection — magnetic fields don't obviously hurt ash creatures."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. The setting description is detailed. The E0/E1 stat inversion is a design oversight rather than a completeness issue per se. Minor point: the player weapon does 35 damage against a boss with only 120 HP, making the weapon feel overpowered for easy even relative to the boss."
+        }
+      },
+      "best_element": "The causal chain has escalating finality — E2's trigger seals the escape route, transforming the level's final encounter into an inescapable confrontation, which is strong design for a mysterious/tense level.",
+      "worst_element": "The stat inversion between E0 (50hp/10dmg) and E1 (40hp/8dmg) means the player faces a harder enemy first and then an easier one, breaking the intended difficulty curve.",
+      "overall": "A decent easy-mode level with a good mysterious angle; the stat inversion and one illogical enemy weakness are fixable flaws that a designer review would catch quickly."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "eerie",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "This level successfully merges the volcanic and eerie genres by populating a volcanic cavern with spectral enemies (spectre, banshee) rather than purely elemental ones. The reference chain is perfect, the difficulty curve is well-calibrated for hard, and the causal chain is largely strong. Minor issues include a grammatical error in E0's trigger and hazard descriptions that are names rather than descriptions.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or player weapon. Boss weakness 'Charged Obsidian Relic' matches E2 pickup exactly. Victory condition explicitly names the Charged Obsidian Relic."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1 (death rattle shatters basalt pillars, collapses ceiling to expose chamber) and E2 (banshee's final scream triggers volcanic eruption, forces player to flee into caldera core) are excellent specific triggers. E0's trigger contains a grammatical error ('A massive tremors cracks') and is slightly less specific, though the functional connection is clear."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health (90<120<140) and damage (25<30<35) escalate cleanly. Boss is clearly hardest (350hp/45dmg). Player HP 100 vs cumulative encounter damage 90 is very tight — just survivable, fitting for hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The spectral enemies (Ash-Sliver Spectre, Pyre-Bound Banshee) in an eerie volcanic cavern are a creative fusion. The stormcaller's lightning weapon in a volcanic zone is slightly dissonant, though the eerie mood partially bridges it. The Molten Silt Lurker is more standard volcanic than eerie."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Frost-Infused Gale Stone (freezing wind) vs Molten Silt Lurker is solid cold-vs-molten logic. Vortex Conduit Crystal (storm magic amplification) vs Pyre-Bound Banshee — storm disrupting a fire-bound spirit is thematically plausible. Charged Obsidian Relic (lightning to plasma) vs Ignis's obsidian armor — plasma breaking volcanic stone is reasonable."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations and enemies are distinct and specific. Hazard descriptions for E0 ('Sulphuric Gas Geyser') and E1 ('Acidic Steam Vents') are single names without descriptive elaboration, unlike the richer hazard text elsewhere. E2's 'Lava Waterfalls' similarly underdescribed."
+        }
+      },
+      "best_element": "The Pyre-Bound Banshee as the E2 enemy is the most creative creature in any volcanic level — combining volcanic and supernatural horror elements in a single compelling name that perfectly fits the eerie mood.",
+      "worst_element": "Hazard descriptions are single nouns ('Sulphuric Gas Geyser,' 'Acidic Steam Vents') with no mechanical detail — they should describe how the hazard affects gameplay, not just name it.",
+      "overall": "A creative level that successfully merges volcanic and eerie tones; it would be engaging to play and mostly works as designed, with minor polish needed on triggers and hazard descriptions."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The whimsical volcanic level is a fully committed tonal exercise with creative and internally consistent world-building. The reference chain is valid, but the Glittering Ice-Cream Cone (E1 pickup) is never used as any enemy's weakness, breaking the pickup chain's economy. The E2 trigger is also weak — an NPC pointing the way is not a physical consequence. Overall the most charming level in the file.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E0 (player weapon), E1 (E0 pickup: Soothing Aloe-Soothe Spray), and E2 (player weapon again: Tickle-Feather Whip) weaknesses all reference valid items. Boss uses E2 pickup 'Super-Soaker Squirty-Frog' exactly. However, the Glittering Ice-Cream Cone (E1 pickup) is never used as any enemy's weakness, making it a dangling item in the chain — technically the references present are valid, but a pickup was generated and abandoned."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 (strawberry lava geyser washes player into Marshmallow Caldera) and E1 (giant marshmallow rolls away revealing entrance) are specific, whimsical-but-causal triggers. E2's trigger ('The grateful Ash-Panda points a fluffy paw toward the throne room') is an NPC gesture, not a physical consequence — very weak as a structural trigger."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (25<35<40) and damage (5<8<10) escalate cleanly. Boss (80hp/15dmg) is clearly the hardest. Player HP 150 vs cumulative damage 23 is trivially easy — perfectly calibrated for 'easy' difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Mount Fizz with sweet-scented pink lava, Popcorn Pumice Fields, Marshmallow Caldera, and a Pyre-Puppy boss is an exceptionally committed whimsical theme. The beastmaster class taming rather than killing the boss is a perfect genre-appropriate twist."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Aloe-Soothe Spray cooling and calming a fiery bat is internally consistent within the whimsical logic. Super-Soaker cold water against a fire puppy is intuitive. The unused Glittering Ice-Cream Cone (fire immunity for one fight) generates fire immunity mid-level but the remaining enemies are not fire-typed in a way that requires it."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The Glittering Ice-Cream Cone (E1 pickup granting fire immunity) is never used as an enemy's weakness and doesn't appear in the boss or victory condition — it's a pickup that the player carries with no purpose in the weakness chain. This is a structural completeness gap."
+        }
+      },
+      "best_element": "The victory condition — 'Douse Flamb\u00e9's fiery tail with the Super-Soaker Squirty-Frog to make him playfully submit' — is the best single victory condition in the file: it matches the beastmaster's taming identity, the whimsical tone, and uses the pickup logically.",
+      "worst_element": "The Glittering Ice-Cream Cone (E1 pickup) is generated but never appears as any enemy's weakness — it is dead weight in the item chain. Remove it and make E2's weakness the Ice-Cream Cone, or replace it with a pickup that feeds into E2.",
+      "overall": "The most imaginative level in the file; it would be genuinely fun to play as a whimsical interlude, but the dangling Ice-Cream Cone item and the weak E2 trigger are structural issues that undermine the otherwise tight design."
+    }
+  },
+  {
+    "case": {
+      "genre": "volcanic",
+      "mood": "serene",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The volcanic/serene/chronomancer combination is unusual and largely well-executed: the level reads as a contemplative puzzle dungeon where the player uses time and cold magic to cool volcanic elements. The reference chain is perfect. The main structural weakness is that all three triggers are item-activation events (placing, activating, inserting items) rather than enemy defeat consequences, creating a repetitive pattern.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact pickup names from prior encounters or player weapon. Boss weakness 'Aeon Core' matches E2 pickup exactly. Victory condition names the Aeon Core explicitly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "All three triggers work by placing or activating a pickup on an environmental object — a valid mechanic but repetitive. Each trigger does produce a specific result (gate opens, path revealed, guardian summoned), so the causal logic is sound, but the identical item-key structure across all three encounters reduces variety."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (75<90<110) and damage (15<20<25) escalate perfectly. Boss (250hp/35dmg) is clearly the hardest. Player HP 150 vs cumulative damage 60 is comfortable for medium. The difficulty curve matches 'medium' appropriately."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The volcanic/serene theme is creative — a tranquil volcanic zone with starry skies and slow-flowing lava. Chronomancer time-themed pickups (Chilled Hourglass, Stardust Chronometer, Aeon Core) fit the class. The boss 'Ignis, the Timeless Ember' is the fourth boss named 'Ignis' in this file, which is noticeably formulaic."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Chilled Hourglass (freezes volcanic heat) vs Molten Strider is cold-against-molten. Stardust Chronometer (reverse-gravity, magma protection) vs Magma Weaver — time magic disrupting a lava weaver is internally consistent. Aeon Core (stilled time blast) vs 'Timeless Ember' is thematically resonant — stopping time against a creature defined by its timelessness."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The repetitive trigger structure (all three use item-in-slot) is a design pattern choice rather than a completeness failure, but it does make the three encounters feel formulaic rather than individually crafted."
+        }
+      },
+      "best_element": "The Aeon Core vs 'the Timeless Ember' boss is the strongest thematic pickup-enemy pairing in any volcanic level — stopping time against a creature called 'timeless' is conceptually elegant.",
+      "worst_element": "All three encounter triggers use the same mechanic (place/activate the picked-up item on an environmental object to advance), making the level feel like three versions of the same puzzle rather than a progression of distinct challenges.",
+      "overall": "A thoughtfully themed level that would play well as a medium-difficulty puzzle-oriented zone; the repetitive trigger structure is its main design weakness."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This is one of the strongest levels in the file: the celestial/serene/paladin combination is fully realized with crystalline platforms, stardust, and a solar-light toolkit that fits the paladin class perfectly. The reference chain is flawless, the stats escalate cleanly, and every mechanical pairing is logical. The only structural note is that all three triggers are item-activation events.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every weakness uses the exact prior pickup name. Boss weakness 'Mirror of the Cosmos' matches E2 pickup exactly. Victory condition references both 'Mirror of the Cosmos' and 'Dawnstar Mace of Devotion' by name."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "All three triggers involve placing or bathing an object with the acquired pickup to advance — mechanically valid but repetitive across all three encounters. Each does produce a specific named outcome (portal opens, pathway manifests, guardian summoned), so causal logic is sound."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (60<80<100) and damage (15<20<25) escalate perfectly. Boss (250hp/35dmg) is clearly the hardest. Player HP 150 vs cumulative damage 60 fits 'medium' difficulty comfortably."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — crystalline platforms, starry nebula, Dawnstar Mace, Aetherial Luminary Lens, solar essence, cosmic mirror — reinforces celestial serenity. The paladin as a guardian of light battling corrupted celestial entities in a tranquil space environment is a compelling, coherent identity."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Light-based lens vs void-stalker, solar fire vs nebula wraith (which blocks dark barriers), and a cosmic mirror reflecting the Star-Eater's own attacks back at her are all mechanically intuitive and thematically resonant pairings."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations (First Archway, Celestial Gardens, Zenith Obelisk), enemies, hazards, and pickups are distinct and specific. Every field adds information. The reward (Aegis of Infinite Stars granting immunity to void energy) is thematically appropriate and specific."
+        }
+      },
+      "best_element": "The Mirror of the Cosmos victory condition — reflect the Star-Eater's own cosmic supernova back at her, then strike with the Dawnstar Mace — is a two-stage boss mechanic that uses both the final pickup and the starting weapon elegantly.",
+      "worst_element": "All three encounter triggers follow the same item-on-altar pattern — placing, bathing, and aligning items to advance. The level would benefit from at least one trigger driven by enemy defeat rather than item use.",
+      "overall": "A near-flawless medium celestial level that would be a pleasure to play; it is the cleanest execution of the format in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "mysterious",
+      "player_class": "chronomancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A strong celestial-mysterious level with excellent world-building (Shattered Clockwork Nebula, dying neutron star, crystalline time shards). The reference chain is perfect, the difficulty curve is appropriate for hard, and the causal chain is mostly excellent. Two issues: the location name 'The Void Void' is an obvious duplication error, and the Chrono-Anchor (described as a health-restoration tool) being listed as an enemy's combat weakness is mechanically unclear.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or the player weapon. Boss weakness 'Aetheric Singularity Core' matches E2 pickup exactly. Victory condition references the Aetheric Singularity Core by name."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 (phantom death destabilizes gravity well, opening a wormhole to E1) and E2 (golem's core rupture breaks the pocket dimension, revealing the path to the boss) are specific and compelling. E1's trigger contains 'the Void Void' — a clearly unintended duplication — and the shift into a 'pocket dimension' is functional but the naming error undermines confidence in the design."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (90<140<180) and damage (25<30<40) escalate cleanly. Boss (350hp/50dmg) is clearly the hardest. Player HP 120 vs cumulative damage 95 is tight but survivable, calibrated well for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The Shattered Clockwork Nebula — where time flows in crystalline shards and stellar debris orbits a dying neutron star — is the most evocative setting in the file. Every encounter location (Observatory of Lost Epochs, Stellar Forge, the boss's Chronos Altar) reinforces the temporal-celestial mystery."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Solaris Lens (refracts cosmic light to blind celestial beings) vs Nova Sentry is logical. Aetheric Singularity Core (gravity shield, converts projectiles to temporal energy) vs the Archon is excellent — his own energy redirected. However, the Chrono-Anchor's described function is restoring health by rewinding time, not dealing damage — listing it as the Event Horizon Golem's combat 'weakness' is mechanically muddled."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The location name 'The Void Void' is a clear typographic error that would appear directly in the game UI. This is the kind of error that would require a designer to reject the output. All other fields are specific and non-redundant."
+        }
+      },
+      "best_element": "The setting description — 'a localized rift where time flows in crystalline shards and ancient stellar debris orbits a dying neutron star' — is the most evocative single sentence in the file and perfectly establishes the mysterious celestial tone.",
+      "worst_element": "The location name 'The Void Void' is an unambiguous duplication error that would ship as a visible UI bug. It should be 'The Void' or a distinct named dimension.",
+      "overall": "A compelling hard-difficulty level with excellent atmosphere that is unfortunately undermined by an obvious naming error; fix 'The Void Void' and this would be one of the best levels in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The ominous celestial shadowblade level is thematically excellent — void daggers, wraiths, singularity sentinels, and a cosmic Unmaker — and the causal chain is one of the most dynamic in the file. The primary flaw is that player HP (80) is lower than the cumulative encounter damage (90), making the level arithmetically unsurvivable. The inconsistent capitalization in pickup names ('Lunar Prism shard,' 'Nebula Shroud potion') is a completeness issue.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Cross-references are functionally exact within the file — 'Lunar Prism shard' (lowercase 's') is matched exactly as the E1 enemy weakness, and 'Nebula Shroud potion' (lowercase 'p') is matched exactly as E2's weakness. However, the inconsistent capitalization compared to all other pickup names in the file constitutes a minor formatting defect."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific and dynamic: wraith's evaporating core destabilizes a gravity well (E0), golem's collapse shatters the bridge and the player must use the Nebula Shroud potion to survive the descent into the Void Abyss (E1 — this actively integrates the pickup into the transition), the sentinel's death opens a direct portal to the boss throne room (E2). Each consequence is non-interchangeable."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Player HP is 80. Cumulative encounter damage is 25+30+35=90. The player is arithmetically dead before reaching the boss (600hp/85dmg). Even for brutal difficulty, this configuration requires the player to take zero hits, which is not a design philosophy — it is an unplayable configuration."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Void-Infused Dagger, Shattered Astral Canopy, Stellar Wraith, Singularity Sentinel, and Aurelius the Unmaker all form a perfectly coherent dark celestial identity. The shadowblade class fits the void/assassination fantasy precisely."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Lunar Prism shard (redirects solar radiation) against a Corona Golem (solar/corona entity) is elegant — turning its own energy against it. Nebula Shroud (invisibility to cosmic entities) against a Singularity Sentinel (a cosmic guardian) is logical. Astral Essence Core (breaks celestial shields) against Aurelius's invulnerability shield is direct and clear."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct and vivid. The capitalization inconsistency in 'Lunar Prism shard' and 'Nebula Shroud potion' (lowercase second words versus title case everywhere else) is a presentation defect. Otherwise the fields are specific and non-redundant."
+        }
+      },
+      "best_element": "The E1 trigger — 'forcing the player to leap into the Void Abyss using the Nebula Shroud potion to survive the descent' — is the most creative trigger in the file because it integrates the pickup into the transition itself, not just into combat.",
+      "worst_element": "80 HP against 90 cumulative encounter damage is not brutal difficulty — it is an error. The player health needs to be at least 100 (or preferably 120) for the level to be theoretically completable even with perfect play.",
+      "overall": "A thematically strong and creatively designed level that cannot be completed as configured; fixing the player HP from 80 to at least 100 would make it a standout brutal-difficulty level."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightfully consistent whimsical celestial level where the illusionist uses sparkle-based tools, moon-owl feathers, and sneeze powder against sleepy and sulking celestial creatures. The reference chain is perfect and the balance is clean. The primary weakness is the causal chain — all three triggers are passive environmental events ('a bridge materializes,' 'leaves part,' 'a portal opens') that have no connection to what the player or enemy actually did.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or the player weapon. Boss weakness 'Sack of Comet-Sneeze Powder' matches E2 pickup exactly. Victory condition references using the Sack of Comet-Sneeze Powder to wake the King."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "All three triggers describe things that happen without being caused by the encounter: a rainbow bridge materializes (E0 — not caused by defeating the Sulking Nebulite), nebula leaves part (E1 — similarly passive), a celestial portal opens (E2 — no stated cause). None of these are consequences of defeating the enemy or using a specific item — they feel like random environmental events."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (35<40<45) and damage (5<8<10) escalate cleanly. Boss (80hp/15dmg) is clearly the hardest. Player HP 120 vs cumulative damage 23 is trivially easy, appropriate for 'easy' difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Pastel Constellation Gardens, Sulking Nebulite, Gloom-weaving Spider-Star, Moon-Owl, Comet-Sneeze Powder, and the Slumbering Constellation King form a perfectly coherent whimsical celestial world. The illusionist using playful, non-violent tools matches the class and tone."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Liquid Starlight (dazzling sparkles to blind) vs Gloom-weaver (creature of darkness) is elegant. Moon-Owl feather (teleportation and tickling) used against a Snoozing Comet-Golem — tickling it awake/defeating it — works within whimsical logic. Comet-Sneeze Powder disrupting a Slumbering King's focus is a perfect non-violent whimsical resolution."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is specific and adds unique information. Enemy names (Sulking Nebulite, Gloom-weaving Spider-Star, Snoozing Comet-Golem) are creative and distinctive. The reward ('a basket of glowing space-peaches') adds delightful world-building detail."
+        }
+      },
+      "best_element": "The reward — 'The legendary Cosmic Tiara of Illusions and a basket of glowing space-peaches' — is a perfect whimsical touch that demonstrates full tonal commitment right to the end.",
+      "worst_element": "All three encounter triggers are passive events with no causal connection to the combat or player actions — 'a bridge of solid rainbows materializes' does not explain what made it appear. Each trigger should reference what the player or enemy did to cause the transition.",
+      "overall": "An imaginative and charming easy-mode level with flawless thematic execution; fixing the causal chain triggers to connect them to encounter outcomes would make this a near-perfect whimsical design."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-executed chaotic celestial level with a strong causal chain driven by enemy defeat consequences. The stormcaller's toolkit escalates logically from frost to light to wind against a series of increasingly dangerous cosmic entities. A minor thematic concern is the Molten Sun-Eater and Solar Corona Forge, which feel more volcanic than celestial, slightly diluting the genre.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or the player weapon. Boss weakness 'Vortex Essence' matches E2 pickup exactly. Victory condition explicitly references the Vortex Essence wind shield and the mechanic of deflecting meteors."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific consequences of enemy defeat: larva core implodes creating a gravity well that pulls the player down (E0), energy pulse from the stalker's death activates a ruined teleporter (E1), sun-eater's destruction shatters the surrounding barrier revealing the path to the boss (E2). None could be reordered without breaking the chain."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health (90<140<180) and damage (25<30<35) escalate cleanly. Boss (400hp/45dmg) is clearly hardest. Player HP 120 vs cumulative damage 90 is survivable but tight, fitting for hard. One minor note: the player weapon at 35 damage against a 400hp boss requires 12 hits, while the boss's 45 damage would kill the player in less than 3 hits — asymmetric but acceptable for hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The Shattered Astral Highway, Supernova Larva, Stardust Graveyard, and Unbound Singularity are all strongly celestial-chaotic. The Molten Sun-Eater and Solar Corona Forge in E2 introduce a solar/volcanic flavor that dilutes the pure celestial chaos theme — they fit better in a volcanic zone."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Charged Nebula Shard (freezing cosmic frost) against a Scorched entity is cold-vs-heat. Astral Prism (concentrated solar beam) against a Sun-Eater is poetically resonant — focusing the sun's own energy against a sun-consuming creature. Vortex Essence (wind shield, deflects objects) used to deflect Aurelius's own meteors back at him is mechanically clear and creative."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. The Solar Corona Forge location and Molten Sun-Eater enemy feel slightly recycled from volcanic genres rather than being unique to this celestial level, but the fields themselves are specific and non-redundant."
+        }
+      },
+      "best_element": "The Astral Prism vs Molten Sun-Eater pairing — using concentrated solar energy against a creature that eats stars — is the most thematically satisfying pickup-enemy match in the celestial set.",
+      "worst_element": "The Molten Sun-Eater and Solar Corona Forge are volcanic-flavored names in a celestial level; renaming them to something like 'Stellar Plasma Devourer' and 'Nebula Furnace' would maintain the chaos theme while staying true to the celestial genre.",
+      "overall": "A strong hard-difficulty level with creative use of the stormcaller toolkit and excellent causal chain; minor thematic contamination from volcanic naming conventions is the only real issue."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The desolate celestial ranger level has a clean structure and good overall balance, but is weakened by two issues: an 'Obsidian Golem' placed in a celestial/asteroid setting (a volcanic enemy type that is thematically mismatched), and the victory condition using the paraphrase 'hyper-charged aether shot' instead of the exact weapon name 'Aether-Infused Compound Bow'. The enemy name 'Obsidian Golem' also appears in another level in this file.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All encounter weaknesses use exact pickup or weapon names. Boss weakness 'Singularity Prism' matches E2 pickup exactly. However, the victory condition says 'fire a final hyper-charged aether shot' rather than naming 'Aether-Infused Compound Bow' directly — it is an implied reference rather than an exact name match."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1 (Golem's crystalline core shatters, overcharging the warp gate to E2) and E2 (Stalker's defeat disrupts gravitational field, breaking seals to the boss) are specific and causal. E0's trigger ('A celestial beacon activates, sending a distress pulse that reveals the path') is vague — it doesn't specify what action triggered the beacon or why the combat outcome caused it."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (50<75<90) and damage (15<20<25) escalate perfectly. Boss (200hp/35dmg) is clearly hardest. Player HP 120 vs cumulative damage 60 is comfortable for medium. Clean and well-calibrated."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "The crumbling asteroid belt and cosmic dust setting is strongly desolate-celestial. However, the E1 enemy 'Obsidian Golem' is a volcanic/earth-type creature name that is tonally and visually inconsistent with an asteroid-belt setting. It also appears as an enemy in the volcanic/mysterious/artificer level (Case 5), suggesting a generic filler choice."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Starlight Catalyst Arrow (piercing light, ignores energy shields) against an Obsidian Golem — light piercing dark stone is defensible. Nova-Core Capacitor (explosive thermal energy) against a Cosmic Void-Stalker is generic but plausible. Singularity Prism (gravitational pulse, disrupts energy shields) against Astraea's gravity barrier is a direct mechanical match."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The 'Obsidian Golem' is a generic enemy name that appears in another level in the same file. The E0 trigger is vague. The setting is described well but individual encounter hazards ('Intermittent solar flare bursts,' 'Pockets of zero-gravity void,' 'Falling meteor debris') are fairly generic for a celestial level."
+        }
+      },
+      "best_element": "The Singularity Prism vs Astraea's gravity barrier victory condition is mechanically coherent: a gravitational disruptor against an empress whose power is gravitational.",
+      "worst_element": "The 'Obsidian Golem' in an asteroid-belt setting is the most jarring thematic mismatch in the file — an earth/volcanic creature has no business in a celestial desolation zone. Replace with a space-specific entity (crystal golem, void construct, stellar automaton).",
+      "overall": "A functional medium level with a clean difficulty curve, but the out-of-place Obsidian Golem and a weak E0 trigger prevent it from being a fully realized design."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "eerie",
+      "player_class": "artificer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The eerie celestial artificer level creates strong atmosphere with a haunted observatory drifting in a starless void, and the artificer toolkit (prisms, stabilizers, cores) fits the class well. The reference chain is perfect. However, the balance is severely broken: 40 HP against 52 cumulative encounter damage is arithmetically impossible even before the 250hp/30dmg boss. The trigger pattern (item inserted into slot three times) is also repetitive.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or player weapon. Boss weakness 'Quasar Prism' matches E2 pickup exactly. Victory condition explicitly names both 'Quasar Prism' and 'Chronos-Aether Gauntlet'."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "All three triggers use the item-into-slot mechanic (pedestal, telescope, dark-rift device) to advance — functional and internally consistent, but identical in structure. Each produces a distinct named outcome (gravity lift, path cleared, seal shattered), so causal logic is sound despite the repetitive pattern."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Player HP is 40. Cumulative encounter damage is 12+18+22=52. The player is mathematically dead before reaching the boss. The player weapon deals 15 damage against a 250hp boss while the boss deals 30 damage per hit — the player cannot survive long enough to win. This is labeled 'brutal' but the stats describe an impossible scenario, not a hard one."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The Shattered Astral Observatory drifting in a starless void is an exceptionally eerie celestial setting. Dread Star Larva, Umbral Stalker, Void-Infused Comet Golem, and Astraea the Star-Eater all belong to the same dark celestial world. The artificer's tool-based progression fits the observatory exploration narrative."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Supernova Core (blinding starlight, neutralizes shadows) against an Umbral Stalker (shadow creature) is perfect light-vs-dark logic. Singularity Stabilizer (containment fields to freeze unstable particles) against a Void-Infused Comet Golem — stabilizing and containing a void entity. Quasar Prism (amplifies energy into a focused beam) to pierce Astraea's dark armor is mechanically clear."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All three encounter locations, enemies, hazards, and pickups are distinct. The item-use trigger pattern is the same across all three encounters, which is a design repetition issue. The Chronos-Aether Gauntlet at 15 damage against escalating enemies (60-100hp) and a 250hp boss feels underpowered even relative to the weapon-vs-weakness chain."
+        }
+      },
+      "best_element": "The setting — 'The Shattered Astral Observatory, drifting in a silent, starless void with crumbling constellation pathways' — is the most atmospheric and eerie setting description in the celestial set, establishing the tone in a single sentence.",
+      "worst_element": "40 HP is not a brutal difficulty tuning — it is an error. The player cannot survive the first three encounters (52 combined damage) let alone the boss. A brutal artificer should have lower HP than a tank class but 40 is below any reasonable floor; increase to at least 80.",
+      "overall": "Atmospherically one of the best levels in the file, completely undermined by HP tuning that makes it unplayable; the eerie celestial artificer concept deserves a properly balanced version."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The abandoned solar station is the most distinctive setting in the celestial set — a sci-fi engineer in a decaying orbital platform rather than a fantasy celestial realm. The reference chain is perfect, the balance is clean, and the tense mood is well-maintained through the station's corrupted systems. Minor issues: a slight naming inconsistency between 'Stella Dynamo Core' (in E1's trigger) and 'Stella Dynamo Deck' (E2's location), and 'Stella' instead of 'Stellar' reads as a potential typo.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior pickup names or player weapon. Boss weakness 'Singularity Disruptor Matrix' matches E2 pickup exactly. Victory condition explicitly names both 'Singularity Disruptor Matrix' and 'Ion-Plasma Welder'."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1 (defeating the Sentinel causes its core to overload, blasting open the access shaft) and E2 (synthesizing the item triggers an automated alert, summoning the boss) are specific and varied. E0's trigger (inserting the capacitor core into a sub-station console to unlock a pressure door) is an item-key mechanic rather than an enemy defeat consequence, slightly reducing variety."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Health (35<40<50) and damage (10<12<15) escalate cleanly. Boss (100hp/20dmg) is clearly hardest. Player HP 150 vs cumulative damage 37 is very safe for easy. The difficulty is appropriately accessible."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Abandoned solar harvesting station, corrupted drones, plasma welder, capacitor cores, and a rogue mainframe AI ('The Solar Core Architect') form a fully coherent hard sci-fi celestial-tense identity. The engineer class is perfectly matched to the station environment."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Overcharged Capacitor Core (disables celestial shielding) against a Corrupted Drone Sentinel (tech entity with shields) is direct. Sub-atomic Prism Filter (focused light beams) against an Astral Void Creeper is light-vs-void logic. Singularity Disruptor Matrix (collapses spacetime fields, neutralizes gravitational barriers) collapsing the Architect's defensive shield is mechanically explicit."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "E1's trigger mentions 'the Stella Dynamo Core' while E2's location is named 'Stella Dynamo Deck' — the Core/Deck naming discrepancy combined with 'Stella' vs 'Stellar' (the conventional spelling) reads as a consistency error. All other fields are specific and distinct."
+        }
+      },
+      "best_element": "The E2 trigger — 'Synthesizing the Singularity Disruptor Matrix triggers an automated alert, summoning the station's rogue mainframe defender' — is the most creative trigger structure in the celestial set because the player's own crafting action summons the boss.",
+      "worst_element": "The 'Stella Dynamo' naming (E1 trigger: 'Stella Dynamo Core,' E2 location: 'Stella Dynamo Deck') contains both a possible typo ('Stella' for 'Stellar') and a Core/Deck discrepancy for what appears to be the same location — a naming consistency error that would require a fix before shipping.",
+      "overall": "A well-designed easy level with a distinctive sci-fi identity that sets it apart from the fantasy-celestial levels; minor naming inconsistencies aside, it would be enjoyable and functional to play."
+    }
+  }
+]

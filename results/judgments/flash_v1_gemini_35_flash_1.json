@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "This is a tightly designed alchemist level where every pickup feeds directly into the next encounter's weakness in a clean sequential chain. The monastery-catacombs-crypt-sanctum layout feels physically coherent, and the alchemical identity of the player class is reflected consistently across all named items. It reads like a designed level, not a filled-in template.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every enemy weakness names either the player weapon or an exact prior pickup. Boss weakness is 'Calcified Basilisk Eye' (enc2 pickup). Victory condition names both 'Calcified Basilisk Eye' and 'Vitriol Caster' by exact name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific physical consequences: floor collapses from picking up the flask, acid blood burns open a gate after the ghoul dies, an earthquake from grabbing the basilisk eye cracks open the sanctum. Removing any encounter breaks the chain."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy HP (75/120/150) and damage (30/35/40) escalate monotonically. Boss (350 HP, 50 dmg) is strictly harder than any encounter enemy. Hard difficulty with 100 player HP feels appropriately challenging."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every pickup and enemy name is grounded in alchemical horror — Phosphorus Extract, Silver Nitrate Solute, Plague-Bloated Ghoul, Amalgamated Abbot. The medieval monastery setting supports both the horror genre and the alchemist class perfectly."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "All four pickup-weakness pairs have crisp logic: vitriol corrodes the homunculus, phosphorus ignites the gas-prone ghoul, silver nitrate burns unholy tissue, and the basilisk eye's petrifying beam exposes the stone heart the vitriol then dissolves."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is specific and non-redundant. All three locations, enemies, and hazards are distinct. The objective and reward are specific to the alchemist class and the monastery narrative."
+        }
+      },
+      "best_element": "The boss victory condition — dissolving the petrified stone heart with the Vitriol Caster after the Calcified Basilisk Eye exposes it — creates a two-item combo that makes both pickups feel meaningful and earned.",
+      "worst_element": "Nothing is seriously broken. If forced to pick: 'Weeping Homunculus' is a slightly generic horror enemy name that could appear in many levels; a more alchemically-specific name would have raised the ceiling.",
+      "overall": "This is a well-constructed level that would be genuinely fun to play. The sequential pickup chain gives the player a clear sense of progression and every encounter feels purposeful."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The pyromancer-in-catacombs level has strong thematic identity and a clean pickup chain, but two of the three triggers are disconnected from the encounter outcomes — one fires on player movement, one on an optional environmental action. The boss mechanic is unusual: using a defensive item (immunity to necrotic rot) as a weapon against the boss's necrotic aura is a stretch.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact names: player weapon, Consecrated Oil (enc0), Searing Brand (enc1), Ashen Phylactery (enc2). Boss victory condition names the Ashen Phylactery by exact name."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc0 trigger fires on 'approaching the altar' — player movement, not an encounter consequence. Enc1 trigger fires on burning a painting — a side action with no stated connection to defeating the Sewn Abomination. Only enc2's trigger ('defeating the Wight shatters the floor') is a direct encounter consequence."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy HP (60/120/180) and damage (25/35/40) escalate cleanly. Boss (350 HP, 50 dmg) is hardest. Player at 80 HP with brutal difficulty and a 15-damage weapon creates genuine pressure. All inversions absent."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Ash-choked catacombs, consecrated oil, a Flayed Priest with a necrotic aura — every element reinforces the ominous religious horror tone. The pyromancer identity is consistently reflected in fire-based pickups and mechanics."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Fire-brand vs undead husk and burning oil vs stitched abomination are logical. However, the Ashen Phylactery grants immunity to necrotic rot — using a defensive item that grants immunity as the boss's 'weakness' is functionally odd; it neutralizes his defense rather than damaging him, which blurs the weakness mechanic."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All fields are specific and the locations are distinct. Minor issue: 'Embalming Chambers' and 'Bone Vaults' are fairly generic Gothic Horror location names that could appear in any horror level without tonal loss."
+        }
+      },
+      "best_element": "The stat escalation is precise and intentional — brutal difficulty is genuinely brutal with 80 HP and a 15-damage weapon against enemies scaling up to 180 HP.",
+      "worst_element": "Enc0's trigger ('approaching the altar opens a trapdoor') is pure player movement and has no connection to the encounter with the Weeping Husk. Replacing it with a consequence of defeating the husk would fix this.",
+      "overall": "Playable and thematically sharp, but the weak causal chain makes the first two transitions feel unmotivated. A designer would flag the triggers before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This is a near-flawless Gothic Horror vampire level. The pickup chain is perfectly sequential, all three triggers are direct encounter consequences, and the vampire-hunter thematic logic is consistent throughout. Escalation is textbook clean and medium difficulty is well-calibrated.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Shadow-Forged Dagger (enc0 weapon), Luminescent Bile (enc1), Consecrated Oil (enc2), Silver-Tipped Stake (boss) — every exact name resolves. Victory condition uses 'Silver-Tipped Stake' by name and references 'blood-shield' from the boss's mechanics."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: rusted grate collapses under the ghoul's weight, revealing the tunnel. Enc1: the stalker's dying screech shatters the window, exposing a ledge. Enc2: the gargoyle's stone rubble crashes through the belfry floor into the boss's hidden sanctuary. All three are forced physical consequences of defeating the enemy."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (60/80/100) and damage (15/20/25) escalate perfectly. Boss (250 HP, 35 dmg) is clearly harder than any encounter enemy. Medium difficulty with 100 player HP and 25 weapon damage is well-calibrated."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element belongs to the same vampire-hunter Gothic Horror world: Consecrated Oil, Silver-Tipped Stake, Baron Von Karas the Blind Sanguine, the Sanguine Amulet reward. The tense mood is reinforced by escalating locations — baptistry to ossuary to belfry to hidden sanctum."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Luminescent Bile illuminates and dissolves organic barriers — perfect for a creature that stalks in darkness. Consecrated Oil bypasses supernatural defenses — logical for a gargoyle sentinel. Silver-Tipped Stake pierces ancient vampire hearts — the classic mechanic, perfectly assigned."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All fields are specific and distinct. One minor point: 'reclaim the lost relic' in the objective is a generic phrase that could belong to any level; a named relic would have been more specific."
+        }
+      },
+      "best_element": "The causal chain is exemplary — each trigger is a direct physical consequence of the enemy's defeat, creating an unbroken chain from the ghoul's collapsing weight to the gargoyle's rubble opening the boss room.",
+      "worst_element": "The objective mentions 'reclaim the lost relic' without naming the relic. A named artifact would tie the objective to the level's identity as specifically as the boss is.",
+      "overall": "This is an excellent level that would be fun and cohesive to play — a rare case where almost everything works and the vampire-hunter fantasy is fully realized."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A strong desolate ranger level with a clean pickup chain and well-matched thematic elements. The trigger for enc0 is atmospheric rather than causal — picking up an item triggers a distant shriek, which suggests where to go next but doesn't force the transition. Everything else holds together well.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Silvered Longbow (weapon), Phial of Consecrated Oil (enc0 pickup), Quiver of Phosphor Arrows (enc1 pickup), Sunburst Sigil (enc2 pickup) — all exact names chain correctly. Victory condition references both 'Sunburst Sigil' and 'Silvered Longbow' by name."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger: picking up the oil causes a distant shriek — this is atmospheric foreshadowing, not a forced transition; the player could ignore the stables. Enc1 and enc2 triggers are direct encounter consequences (Wendigo's ribcage reveals a key; specter's core unseals iron doors)."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (90/120/140) and damage (25/30/35) escalate monotonically. Boss (300 HP, 45 dmg) is hardest. Hard difficulty with 80 player HP and 35 weapon damage is appropriate. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Silvered arrows, consecrated oil, phosphor light, sunburst sigil — all are classic desolate ranger horror equipment. Weeping Ghoul, Blight-Bloated Wendigo, Gloomweaver Specter, Hollow Monarch form a coherent undead/shadow enemy progression. The dead frontier outpost setting is evocative."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Silvered Longbow vs undead ghoul (silver vs undead), consecrated oil (holy flame) vs supernatural wendigo, phosphor arrows (burns shadow armor) vs Gloomweaver Specter (shadow creature), sunburst sigil (true sunlight) vs Hollow Monarch (shadow shield) — every connection is tight and logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. The reward ('permanent immunity to terror effects and increases critical strike chance in darkness') is class-specific and thematically appropriate."
+        }
+      },
+      "best_element": "The Sunburst Sigil mechanic — a radiant amulet that emits true sunlight when shattered, stripping the Hollow Monarch's shadow shield before a finishing arrow — is a well-realized two-phase boss kill that uses the ranger's ranged identity.",
+      "worst_element": "Enc0's trigger is atmospheric rather than causal. A shriek suggests where to go but doesn't force the player to the stables. Replacing it with a physical consequence (e.g., the ghoul's death draws the Wendigo's attention, collapsing the watchtower exit) would tighten the chain.",
+      "overall": "A very solid level that would be fun to play. The desolate hunter-versus-shadow-creatures fantasy is fully committed to, and the sequential pickup chain gives the player meaningful choices."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A competent necromancer dungeon crawl with a clean pickup chain, but the causal triggers are the weakest part — two of the three are disconnected from the encounter outcome, reading more like generic 'a door opens' transitions. The easy difficulty calibration is excellent. Thematic identity is strong.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Bone-Splinter Wand (weapon), Ethereal Ash Flask (enc0), Grave-Dust Talisman (enc1), Scepter of the Soul-Binder (enc2) — all exact names chain correctly through to the boss. Victory condition names the Scepter by exact name."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc0 trigger: 'A secret iron gate slides open in the wall' — no cause stated whatsoever, purely a generic door-opens transition. Enc2 trigger: 'A massive, bone-chiseled portal hums to life' — again, no explicit cause tied to defeating the Stitched Abomination. Only enc1 ('the ghoul's defeat causes a lever to drop') is a proper encounter consequence."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (35/40/50) and damage (5/8/10) escalate cleanly. Boss (100 HP, 15 dmg) is hardest. Player at 150 HP with 25-damage weapon against these numbers is appropriate for easy difficulty. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Luminescent green fog, bone-chiseled portal, Ethereal Ash Flask, Grave-Dust Talisman, Arch-Necromancer Malakar — every element is consistent with mysterious necromancer horror. The Grim Grimoire reward ties the loot directly to the necromancer class identity."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Ethereal Ash Flask (freezing frost) vs Silt-Drowned Ghoul (waterlogged) is logical. Grave-Dust Talisman (reflects necrotic energy) vs Stitched Abomination (necrotic creature) is sound. Bone-Splinter Wand vs Animated Sarcophagus Lid is a minor stretch — why does a wand specifically counter an animated stone lid? Defensible but the connection is weak."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct. 'Embalming Chamber' is a location name that reappears in other levels in this file, and 'Stitched Abomination' is a common horror enemy archetype. These don't break the level but slightly reduce specificity."
+        }
+      },
+      "best_element": "The easy difficulty calibration is precise — 150 HP player facing enemies that deal 5/8/10 damage with 35/40/50 HP creates a genuinely forgiving experience without being trivial, which is hard to nail.",
+      "worst_element": "Enc0's trigger is a non-cause: 'A secret iron gate slides open in the wall' with no stated reason. This is placeholder-level writing. Tying it explicitly to defeating or interacting with the Animated Sarcophagus Lid would fix it.",
+      "overall": "Playable and thematically consistent but the two broken triggers leave the level feeling like encounters were stitched together rather than designed as a sequence. A quick revision to the trigger text would significantly improve the cohesion."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An outstanding brutal berserker level set in a collapsing asylum. All three triggers are specific physical consequences of the encounters, the pickup chain is intact, and the escalation curve is the steepest in the file. The boss victory condition (injecting adrenaline for cardiac arrest) is creatively twisted and fits the asylum setting perfectly.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Spiked Heavy Cleaver (weapon), Phosphor Flare (enc0), Defibrillator Battery (enc1), Concentrated Adrenaline Serum (enc2) — all exact names chain correctly. Victory condition uses 'Concentrated Adrenaline Serum' by exact name and the mechanism (cardiac arrest via injection) derives directly from the item's stated effect."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: structural collapse blocks the exit, forcing a drop through a floor grate. Enc1: an explosion blasts open blast doors. Enc2: the ceiling collapses, exposing an elevator shaft. All three are specific, forced physical consequences — the player has no alternative path in each case."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (120/180/240) and damage (25/30/40) escalate steeply. Boss (500 HP, 55 dmg) is dramatically harder than any encounter enemy. Player at 100 HP facing these numbers on brutal is appropriately punishing. All inversions absent."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element belongs to the asylum horror genre: Suture Beast, Coaltongue Shadow, Galvanized Amalgam, Screaming Warden, Defibrillator Battery, Concentrated Adrenaline Serum. The chaotic mood is reinforced by a level structure of literal collapse — each transition is driven by the environment falling apart."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Phosphor Flare vs shadow (light/heat vs shadow entity) and Defibrillator Battery vs Galvanized Amalgam (electricity in electrified water) are excellent. The Adrenaline Serum as a boss weakness is mechanically unusual — it's a buff item used as a poison delivery — the connection works narratively but a designer might question whether a 'strength serum' should function as a cardiac poison."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location, enemy, hazard, and pickup is distinct and vivid. The reward ('Berserker's Rage' passive and a weapon cosmetic skin) is class-specific and earned. No field feels like filler."
+        }
+      },
+      "best_element": "The boss victory condition is the most creative in the file — injecting the Concentrated Adrenaline Serum into the Warden's exposed heart valve to induce cardiac arrest, then decapitating him, is visceral, class-appropriate for a berserker, and perfectly fits the asylum setting.",
+      "worst_element": "The Adrenaline Serum's stated effect ('temporarily triples physical strength and negates pain receptors') doesn't cleanly explain why it causes cardiac arrest in the boss — the item description would benefit from a note about its lethality in sufficient dosage.",
+      "overall": "This is one of the best levels in the file. The chaotic falling-asylum structure, steep escalation, and twisted boss mechanic would make for a memorable and fun brutal encounter."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A creative serene-horror botanical level with strong thematic identity and excellent mechanical sense. The main weakness is in the weapon reference: the enc0 enemy weakness is listed as 'Purifying Bell resonance' rather than the exact weapon name 'Purifying Bell', and two of the three triggers are vague about their cause. The Great Weeping Willow boss is a standout design choice.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 enemy weakness is 'Purifying Bell resonance' — the weapon is named 'Purifying Bell', making this a description rather than an exact name match. Enc1, enc2, and boss weaknesses all use exact pickup names. One broken reference at the first encounter is a meaningful design flaw."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0 trigger: 'Unlocking the heavy glass doors...activates a rhythmic thudding' — what causes the unlocking? No stated cause. Enc1 trigger: 'The collapse of a rotting wooden archway forces the player into the Lily Gardens' — generic environmental collapse with no stated connection to the encounter. Only enc2's trigger (shattering the frozen lily gate) is somewhat tied to defeating the lurker, though even that is not fully explicit."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (50/60/75) and damage (10/15/20) escalate cleanly. Boss (150 HP, 30 dmg) is strictly harder than any encounter enemy. Medium difficulty with 100 HP player is appropriate. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The serene horror theme — toxic pollen, crystalline lurkers in freezing lily gardens, a corrupted Great Weeping Willow with a frozen heart — is inventive and consistent. The Purifying Bell as a warden weapon fits perfectly, and the botanical pickup names (Luminescent Pollen Dust, Sun-Infused Root) are imaginative and thematically unified."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Pollen dust neutralizes shadow armor on a Shadow-Bound Creeper; Concentrated Sap dissolves the Crystalline Silt Lurker's crystallized shell (explicit mechanical match); Sun-Infused Root emits solar heat and ignites the willow's frozen heart. Every connection is tight and logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct and specific to the greenhouse setting. No field reads as a placeholder. The reward (Solar Signet for enhanced health regeneration in tranquil zones) ties the loot to both the class and the serene theme."
+        }
+      },
+      "best_element": "The Vial of Concentrated Sap versus the Crystalline Silt Lurker is a perfect pickup-weakness pair — the item's stated effect (dissolves crystallized outer shells) matches the enemy's implied anatomy exactly, which is rare precision.",
+      "worst_element": "The enc0 enemy weakness 'Purifying Bell resonance' is a description instead of the weapon's exact name. This is a simple fix (remove 'resonance') but it breaks reference integrity at the first encounter.",
+      "overall": "A distinctive and imaginative level that would stand out for its unusual serene-horror aesthetic. The causal chain issues prevent it from reaching the top tier, but the thematic and mechanical design is excellent."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "An inventive whimsical horror carnival level with near-perfect execution. The candy-themed enemies and alchemical carnival pickups are consistently delightful, the pickup chain is intact, and the mechanical connections are clever. The enc1 trigger is slightly weak — it gives the player a keycard rather than physically moving them — but the overall design is cohesive.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Prismatic Wand of Illusions (weapon), Jar of Sour Pixie Dust (enc0), Peppermint Shield Charm (enc1), Ultra-Sticky Caramel Lasso (enc2) — all exact names resolve correctly. Victory condition names the Caramel Lasso explicitly and describes the exact mechanical use (jamming clockwork gears)."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 and enc2 triggers are direct encounter consequences (blob defeat opens path; golem ashes melt the lock). Enc1 trigger — shattering the spider's web reveals a keycard — gives the player a means to proceed rather than physically transitioning them; the player still has to choose to use the keycard. Slight weakening of the chain."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (40/50/60) and damage (5/8/10) escalate cleanly. Boss (120 HP, 15 dmg) is hardest. Player at 200 HP with 25-damage weapon against these numbers is appropriate for easy. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element is grounded in the whimsical carnival horror setting — Cotton Candy Blob, Taffy Spider, Marshmallow Golem, Baron Von Honk the Clockwork Clown. The candy-themed pickups (Pixie Dust, Peppermint Charm, Caramel Lasso) are imaginative and consistent. This feels like one coherent creative vision."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Sour Pixie Dust dissolves sticky/sugary substances against a Sticky Taffy Spider — a perfect thematic and functional match. Peppermint Charm repels heat/fire against a Flaming Marshmallow Golem — equally precise. Caramel Lasso traps mechanical components against a Clockwork Clown — excellent. All four pairs are logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are specific to the carnival setting and distinct from each other. The Master Illusionist's Top Hat reward (manifesting physical clones) is class-specific and thematically resonant. No generic fields."
+        }
+      },
+      "best_element": "The Sour Pixie Dust versus Sticky Taffy Spider pair is a textbook pickup-weakness design — the item's sole effect (dissolves sticky/sugary substances) maps perfectly onto the enemy's defining characteristic (stickiness), making the solution feel obvious in retrospect.",
+      "worst_element": "Enc1's trigger gives the player a keycard rather than physically forcing them to the next area. It's functionally the same result but breaks the 'inevitable consequence' pattern that makes the other two triggers stronger.",
+      "overall": "This is a charming and well-executed easy level. The candy horror carnival concept is fully committed to, and the mechanical connections are some of the most precise in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "chaotic",
+      "player_class": "engineer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A clean, well-structured steampunk engineer level where every system works as intended. The pickup chain is intact, all three triggers are direct encounter consequences, escalation is textbook, and the industrial thematic identity is consistent throughout. The victory condition shortens 'Supercharged Boiler Valve Key' to 'Valve Key' but the reference is still unambiguous.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All pickup weaknesses chain correctly. The victory condition references 'the Valve Key' rather than the full name 'Supercharged Boiler Valve Key' — identifiable but not exact. All other references are precise."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: the drone's severed power line sparks, igniting the fuel line leading to the Furnace Room — specific physical consequence. Enc1: the golem's falling debris crushes elevator struts, dropping the player down. Enc2: the dynamo beetle's explosion activates an emergency override, opening blast doors. All three are forced, specific, and remove alternative paths."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (60/80/100) and damage (15/20/25) escalate perfectly. Boss (250 HP, 35 dmg) is hardest. Medium difficulty with 100 player HP is well-calibrated. Player weapon damage of 25 is competitive. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Pneumatic Rivet Gun, Acidic Lubricant, High-Voltage Capacitor, Boiler Valve Key — all are authentic engineering tools in a chaotic steampunk industrial setting. Clockwork Scrapper Drone, Brass Sentry Golem, Steam-Dynamo Beetle, Iron Dreadnought Mech form a coherent mechanical enemy progression."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Acidic Lubricant corrodes and slows the Brass Sentry Golem's joints; High-Voltage Capacitor sends an EMP against the electrical Steam-Dynamo Beetle; the Boiler Valve Key vents steam against the Mech's radiator core. Every pair has explicit, direct functional logic."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations (Gear Assembly Floor, Smelting Furnace Room, Generator Core) are distinct and specific. No repeated hazards or enemy archetypes. The reward (Prototype Jetpack blueprint and Grand Architect rank) is class-appropriate and specific."
+        }
+      },
+      "best_element": "The causal chain is tight and physically grounded — the drone's sparking power line ignites a fuel line, the golem's debris crushes an elevator, the beetle's explosion triggers an override. Each transition is a direct consequence of the encounter and feels physically real.",
+      "worst_element": "The victory condition uses 'Valve Key' as a shorthand instead of the full pickup name. It's a minor inconsistency but in a game engine context, an exact string match matters.",
+      "overall": "A reliable, well-designed medium level that would be enjoyable to play. It lacks the creative flair of the carnival or vampire levels but executes every design requirement precisely."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "This level has a significant structural flaw: encounter 1's enemy uses the player's base weapon as its weakness rather than the encounter 0 pickup (Corrosive Acid Phial), breaking the sequential pickup chain. The Corrosive Acid Phial is then used in encounter 2. This means the chain has a gap: the enc0 pickup is skipped for one encounter and the base weapon appears twice as an enemy weakness. The triggers are also notably vague.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 weakness: player weapon (Lightning-Infused Tesla Wrench) — correct. Enc1 weakness: again 'Lightning-Infused Tesla Wrench' — the player weapon used a second time instead of the enc0 pickup (Corrosive Acid Phial). The sequential chain is broken here. Enc2 weakness: Corrosive Acid Phial (enc0 pickup) — skipped one encounter. Boss weakness: Pneumatic Freeze Discharger (enc2 pickup) — correct. One broken chain reference at enc1."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc0 trigger: 'Unlocking the central pressure gate reveals a path' — no stated cause; what causes the unlocking? Generic. Enc1 trigger: 'Activating the auxiliary backup generator floods the lower levels with high voltage, opening the vault hatch' — how is the generator activated? Presumably by defeating the Brass Sentry Drone but not stated. Enc2 trigger: 'Disabling the safety lock on the crucible causes an explosion' — more explicit but the 'disabling' action is not tied to defeating the enemy. Two of three triggers lack explicit causal connection to the encounter."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (90/120/160) and damage (25/30/40) escalate cleanly. Boss (350 HP, 50 dmg) is hardest. Hard difficulty with 120 player HP feels appropriate. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Subterranean Clockwork Vaults of New London, Tesla Wrench, Corrosive Acid Phial, Superconductive Copper Core, Pneumatic Freeze Discharger, Chronos Engine — every element is steampunk-appropriate and fits the mysterious mood. The Clockwork Vaults setting is evocative and specific."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Tesla Wrench (lightning) vs Automaton Guard works. Using the Tesla Wrench again for the Brass Sentry Drone in enc1 skips the Corrosive Acid Phial — the acid phial's effect (melts heavy metals) would have been a perfect match for the brass drone. The intended chain is visible but broken. Freeze Discharger vs Chronos Engine (freeze then shatter) is excellent."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct and specific. The Superconductive Copper Core (amplifies electrical energy) goes entirely unused as a weapon — its only role is as an encounter pickup but it never appears as an enemy weakness, which wastes a field. Otherwise complete."
+        }
+      },
+      "best_element": "The boss victory condition — freeze the main gear shaft with the Pneumatic Freeze Discharger, then shatter it with the Tesla Wrench — is a satisfying two-step combo that uses both the boss's weakness and the player's base weapon.",
+      "worst_element": "Encounter 1's enemy uses the player's base weapon (Tesla Wrench) as its weakness instead of the encounter 0 pickup. This breaks the sequential pickup chain that is the core structural logic of the level format and means the Corrosive Acid Phial goes unused for an encounter.",
+      "overall": "Structurally compromised by the broken pickup chain and vague triggers. The thematic identity is excellent but a designer would rework encounters 1 and 2 to restore the sequential weakness progression before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "An exceptionally well-crafted whimsical steampunk alchemist level set in Dr. Bumble's floating greenhouse. Every system works: the pickup chain is intact, all three triggers are specific consequences of the encounters, escalation is clean, and the Dr. Bumble's world is consistently inventive throughout. This is among the best-designed levels in the file.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Seltzer-Infused Acid Spitter (weapon), Congealed Copper Grease (enc0), Spark-Inducing Phlogistic Powder (enc1), Concentrated Solvent of Dr. Bumble (enc2) — all exact names chain correctly. Victory condition names the Concentrated Solvent and the Seltzer-Infused Acid Spitter by exact name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: inserting the defeated beetle's central gear into a console opens a hatch — a specific use of the defeated enemy's component. Enc1: using the defeated vulture's battery cell to power the magnetic lift — direct use of the enemy's remains. Enc2: an alarm klaxon as the sentry falls shatters the dome, revealing the boss's laboratory. All three are direct encounter consequences."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (30/35/40) and damage (5/8/10) escalate cleanly. Boss (80 HP, 12 dmg) is hardest. Player at 150 HP with 15-damage weapon is appropriate for easy. All checks pass, including boss damage being strictly greater than enc2 damage (12 > 10)."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Dr. Bumble's floating clockwork greenhouse, aromatic lavender tea sprayed by gears, Rust-Bitten Brass Beetle, Overclocked Steam-Vulture, Sprocket-Eyed Mechanical Sentry, Grandmaster Clockwork Alchemist-Bot — every element belongs to the same charming whimsical steampunk world. The Phlogistic Powder is a clever alchemical reference."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Copper Grease lubricates/dissolves clockwork joints on a mechanical vulture; Phlogistic Powder over-pressurizes steam valves on a steam-powered sentry; Concentrated Solvent dissolves the boss's reinforced brass armor. Every connection is direct and functional."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific to the Dr. Bumble world. The reward (Legendary Alchemical Blueprints for the Ever-Bubbling Elixir of Flight) is whimsical, class-specific, and narratively earned."
+        }
+      },
+      "best_element": "The encounter triggers that use the defeated enemy's own components — inserting the beetle's gear into a console, powering a lift with the vulture's battery cell — create a unique loop where defeating enemies is mechanically necessary for progression, not just clearing the room.",
+      "worst_element": "The boss's HP (80) and damage (12) being only slightly above encounter 2 (40 HP, 10 dmg) makes the boss feel like a fourth encounter rather than a climactic challenge. For an easy level this is acceptable, but tighter boss scaling would add more drama.",
+      "overall": "One of the best levels in the file. Dr. Bumble's greenhouse is a specific, coherent world and the encounter-component-reuse triggers are a genuinely clever design mechanic. Fun to play and fun to read."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A tight, well-constructed brutal rogue infiltration level. All three triggers are specific encounter consequences, the pickup chain is intact, and the escalation is steep and appropriate for brutal difficulty. The industrial steampunk setting is consistent and tense. No structural flaws.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Electro-Charged Dagger (weapon), Supercharged Capacitor (enc0), Corrosive Acid Vial (enc1), Overcharged Boiler Core (enc2) — all exact names chain correctly. Victory condition names the Overcharged Boiler Core explicitly and specifies the exact action (detonate inside the exhaust port)."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: the sentry's short-circuit blows open a ventilation shaft. Enc1: the Goliath's death explosion ruptures the fuel line, forcing the player to drop. Enc2: deactivating the Skinner unlocks the hydraulic elevator. All three are direct encounter consequences with no player agency required to trigger the transition."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (60/120/150) and damage (25/35/40) escalate cleanly. Boss (350 HP, 50 dmg) is hardest. Player at 80 HP with 15-damage weapon is brutal by design — encounters deal nearly enough damage to kill on their own. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Steam-Choked Under-Grid of New London, Electro-Charged Dagger, Clockwork Sentry, Steam-Goliath Drone, Brass-Plated Skinner, Iron Dreadnought Colossus — every element is steampunk industrial. The tense mood is reinforced by the rogue's infiltration framing and the escalating industrial danger of each area."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Supercharged Capacitor (high-voltage) against the Steam-Goliath Drone (electrical/mechanical); Corrosive Acid Vial coating the blade to melt the Brass-Plated Skinner's plating; Overcharged Boiler Core detonated inside the Colossus's exhaust port. All connections are mechanically precise and satisfying."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three locations (Piston Chamber Alpha, Pressure Refinery, Chemical Drainage Canal) are distinct industrial environments. All enemies and hazards are specific. The reward (Master-Key Sprocket and title of Shadow Saboteur) is class-specific and thematically earned."
+        }
+      },
+      "best_element": "The boss victory condition — detonating the Overcharged Boiler Core inside the Colossus's main exhaust port while surviving sweeping shredder blades — creates a tense, specific gameplay scenario that uses the rogue's infiltration skills and the pickup's explosive property together.",
+      "worst_element": "The HP jump from encounter 1 (120) to encounter 2 (150) is the smallest relative increase in the escalation curve. A steeper jump to 180-200 would better reflect the brutal difficulty ramp. Not a design error, just a missed opportunity.",
+      "overall": "One of the strongest levels in the file — a clean, cohesive brutal rogue level where every system is working. The steampunk industrial sabotage fantasy is fully realized."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "ominous",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A thematically strong stormcaller level in an abandoned sky-foundry, but with two significant problems: multiple enemy weaknesses append descriptions to item names rather than using exact strings, and there is a clear escalation inversion where encounter 2 is weaker than encounter 1 in both HP and damage. The pickup chain is otherwise intact.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Three of four weakness references include descriptive text beyond the item name: enc0 weakness is 'Tesla-Coil Staff electricity overload' (should be 'Tesla-Coil Staff'); enc2 weakness is 'Grounded Galvanic Battery discharged into its intake vents' (should be 'Grounded Galvanic Battery'); boss weakness is 'Aetheric Rod used to attract storm strikes to its main clockwork gear' (should be 'Aetheric Rod'). Only enc1 ('Condenser Fluid') uses an exact name. Multiple broken references."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger: 'A sudden drop in steam pressure opens the blast doors' — cause is stated but only loosely connected to defeating the automaton (the pressure drop presumably results from the fight). Enc1: 'The Golem's core detonates upon defeat, shattering the floor' — direct consequence. Enc2: 'The drone crashes into the central power regulator, activating the main elevator' — direct consequence. Two of three are explicit; enc0 is weaker."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Enc0 enemy: 75 HP, 20 dmg. Enc1: 120 HP, 30 dmg. Enc2: 90 HP, 25 dmg. Encounter 2 is weaker than encounter 1 in both HP and damage — a clear inversion. Boss (300 HP, 45 dmg) is hardest. The inversion at enc2 breaks the escalation curve and makes encounter 3 feel like a step backward."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Tesla-Coil Staff, Condenser Fluid, Grounded Galvanic Battery, Aetheric Rod — all electricity/storm themed. Lightning-scarred smog, sky-foundry, Smog-Weaver Drone, Arch-Mechanist Clockwork Colossus — every element fits the ominous steampunk stormcaller identity. The setting is evocative."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Condenser Fluid freezes and brittles the Molten Golem (perfect counter to molten metal); Galvanic Battery discharges voltage into the Smog-Weaver's intake vents (electrical attack on an electrical machine); Aetheric Rod channels lightning to shatter the Colossus's gear shaft. All connections are tight and logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The Tempest Lord subclass unlock and Lightning Core reward are class-appropriate and specific. No generic filler fields."
+        }
+      },
+      "best_element": "The thematic coherence between the stormcaller class and the level environment is excellent — the Aetheric Rod that channels atmospheric pressure into localized lightning storms perfectly bridges the player's class fantasy and the steampunk sky-foundry setting.",
+      "worst_element": "The enc2 enemy (Smog-Weaver Drone: 90 HP, 25 dmg) is weaker than enc1 (Molten Golem: 120 HP, 30 dmg), breaking the escalation curve. A designer would flag this immediately — the third encounter should be the hardest before the boss.",
+      "overall": "Strong thematic and mechanical design undercut by broken reference strings and an escalation inversion. Fix the weakness names to exact pickup names and swap the enc2 stats to be higher than enc1, and this becomes a top-tier level."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A clean, well-structured chronomancer level in a desolate clockwork metropolis. All three triggers are direct encounter consequences, the pickup chain is intact, escalation is perfect, and the temporal steampunk thematic identity is consistent. The Clockwork Archivist as a mid-level enemy is a creative choice that fits the archive setting.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Temporal Scepter (weapon), Electro-Magnetic Disrupter (enc0), Chronos-Infused Liquid Nitrogen (enc1), Aether-Charged Paradox Core (enc2) — all exact names chain correctly. Victory condition names the Aether-Charged Paradox Core by exact name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: automaton's central core overloads, blasting open brass vault doors. Enc1: destroying the drone triggers a security lockdown override, dropping a hydraulic elevator. Enc2: archivist collapses, activating a conveyor belt to the Observatory platform. All three are specific, mechanical consequences of defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (60/80/100) and damage (15/20/25) escalate cleanly. Boss (250 HP, 35 dmg) is hardest. Medium difficulty with 120 player HP is well-calibrated. Player weapon damage of 25 is competitive. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Rust-covered clockwork metropolis in copper fog, Temporal Scepter, Chronos-Infused Liquid Nitrogen, Aether-Charged Paradox Core, Grand Chronometer Goliath — the temporal steampunk identity is strong and consistent. The desolate mood is well served by abandoned, decaying environments in every location."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Electro-Magnetic Disrupter shorts the Shielded Sentry Drone's shielding — perfect. Chronos-Infused Liquid Nitrogen freezes the Clockwork Archivist's gears — direct and logical. Aether-Charged Paradox Core overloads the Goliath's temporal engine — thematically resonant. Temporal Scepter vs Rust-Eaten Automaton is the weakest link — time magic's effect on a rusty machine is a reasonable stretch but not as crisp as the others."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations (Overgrown Gearway, Smelting District, Archive Sub-Basement) are distinct. All enemies, hazards, and pickups are specific. The Master Temporal Sigil reward granting permanent time-dilation capabilities is class-specific and earned."
+        }
+      },
+      "best_element": "The Clockwork Archivist as the encounter 2 enemy is a creative, setting-specific choice that many levels would have filled with a generic golem or sentinel. An archivist collapsing into gears and activating a conveyor belt feels both narratively specific and mechanically satisfying.",
+      "worst_element": "The Temporal Scepter versus a Rust-Eaten Automaton is the weakest pickup-weakness pairing in the level — the connection between time magic and defeating a rusted machine is real but underexplained. A brief note that the scepter accelerates decay would clarify the mechanic.",
+      "overall": "A well-executed medium-difficulty level that hits every design target. The temporal theme adds distinctiveness, and the escalating industrial-decay setting is consistently realized."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "eerie",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A striking brutal geomancer level set in an abandoned clockwork observatory. The pickup chain is intact, escalation is steep and appropriate, and mechanical sense is excellent — especially the Resonating Tuning Fork versus the Glass-Spliced Chimera. The boss victory condition describes the mechanism from the item effect without naming the item, and the enc1 trigger is vague about its cause.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All enemy weaknesses use exact pickup or weapon names. Boss weakness is 'Magnetite Core Charger' (enc2 pickup) — correct. The victory condition describes the effect ('Magnetize Ironheart's iron plating to pull down the massive overhead copper flywheel') without naming the Magnetite Core Charger. The mechanism is unambiguously derived from the item but the item name is absent from the victory condition. Minor gap."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0: inserting the automaton's brass core into a console opens the bulkhead — specific use of the enemy's remains. Enc2: the chimera's death throes collapse the floorboards, plunging the player into the engine chamber — direct consequence. Enc1 trigger: 'Scaling the shattered framework of the solar system model leads the player to the high rafters' — this describes player movement, not a triggered consequence of defeating the Brass-Winged Harpy. Slightly generic."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (140/180/220) and damage (45/55/65) escalate steeply and consistently. Boss (450 HP, 80 dmg) is dramatically harder. Player at 120 HP against enemies dealing 45-65 damage is appropriately brutal. Weapon damage of 35 creates real tension. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Clockwork observatory under a starless smog sky, Shattering Seismic Chisel, Vial of Corrosive Vitriol, Resonating Tuning Fork, Magnetite Core Charger, Grand Archon Ironheart — every element belongs to the eerie steampunk geomancer world. The blend of geological weaponry and clockwork setting is unusual and consistent."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Corrosive Vitriol melts the Brass-Winged Harpy's alloy plating; Resonating Tuning Fork shatters the Glass-Spliced Chimera's glass components — a precise direct match stated in the item's effect; Magnetite Core Charger's gravitational pull on Ironheart's iron plating triggers a physical crushing mechanism. All four pairs are logically sound."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations (Gear-Grinding Vestibule, Clockwork Orrery, High Rafters) are distinct and specific to the observatory. All enemies and hazards are unique. The legendary tectonic astrolabe reward is class-specific and evocative."
+        }
+      },
+      "best_element": "Resonating Tuning Fork versus the Glass-Spliced Chimera is the most precisely designed pickup-weakness pair in the file — the item's stated effect ('vibrates at frequencies capable of shattering hardened glass') maps exactly onto the enemy's stated composition ('Glass-Spliced'), making the connection feel inevitable.",
+      "worst_element": "The victory condition does not name the Magnetite Core Charger — it describes the action (magnetize the iron plating) without referencing the item. In a game engine, victory conditions that don't name their required item risk being misunderstood. Adding 'using the Magnetite Core Charger' would fix this.",
+      "overall": "A strong and distinctive brutal level with a creative geomancer-in-clockwork-observatory concept. The glass/tuning-fork mechanic is the most elegant design choice in the entire file, and the brutal escalation is well-calibrated."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming serene steampunk paladin level in the Whispering Gardens of Brass. Every system is working: the pickup chain is intact, all three triggers are direct encounter consequences (including the elegant hound-collar access-code mechanic), escalation is clean, and the divine-steampunk thematic blend is consistent. This is one of the tightest easy levels in the file.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Blessed Steam Hammer (weapon), Vial of Sacred Condensate (enc0), Piston-Charged Sun-Crystal (enc1), Aegis Clockwork Cog (enc2) — all exact names chain correctly. Victory condition names the Aegis Clockwork Cog by exact name and specifies the precise action (deflecting the gear barrage back at the power core)."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: keycard drops from the drone, unlocking the elevator — direct loot drop as transition key. Enc1: deactivating the apiary keeper opens the security barrier — encounter defeat equals progression. Enc2: the hound's collar contains the access code — a creative mechanic that ties defeating the enemy directly to unlocking the boss room. All three are specific."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP (40/50/60) and damage (5/8/10) escalate cleanly. Boss (120 HP, 15 dmg) is hardest. Player at 200 HP with 25-damage weapon is extremely forgiving — appropriate for easy. All checks pass."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Whispering Gardens of Brass with clockwork butterflies and steam mists, Blessed Steam Hammer, Sacred Condensate, Piston-Charged Sun-Crystal, Aegis Clockwork Cog — the divine-paladin-meets-serene-steampunk fusion is inventive and internally consistent. The Clockwork Architect boss fits the setting as a corrupted overseer."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Sacred Condensate (holy water coating) weakens copper-plated enemies — the Corrupted Clockwork Apiary Keeper is explicitly copper-plated, a direct match. Sun-Crystal (divine solar beam) counters the Feral Brass Guard-Hound (metal, divine vulnerability). Aegis Cog (deflects gear attacks) against the Clockwork Architect (who attacks with gear barrages) — the reflected-attack mechanic is perfectly set up by the item's description."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific to the floating greenhouse setting. The Gilded Heart Engine reward is class-appropriate and specific. No generic filler fields."
+        }
+      },
+      "best_element": "The Aegis Clockwork Cog versus the Clockwork Architect is a perfectly designed final encounter: the item's stated effect (deflects gears and reflects laser beams) is pre-loaded to work against the boss's stated attack pattern (central gear barrage), making the player feel clever for using what they found.",
+      "worst_element": "Boss damage (15) is only 5 points above encounter 2 (10), making the difficulty jump to the boss minimal. For an easy level this is fine, but the boss could afford 20+ damage to feel more climactic without breaking the easy difficulty target.",
+      "overall": "A polished, well-designed easy level where every element supports the serene steampunk paladin fantasy. The hound-collar access-code and reflected-gear-barrage mechanics show genuine design creativity within a clean, complete structure."
+    }
+  }
+]

@@ -2,8 +2,6 @@
 
 Does field ordering in a JSON tool-call schema affect what a small LLM actually generates? This repo tests that with Gemini's structured output: six schema variants, same prompt, same 39 fields, 64 input cases. A rubric-based judge scores each output; analysis scripts crunch the results.
 
-Companion repo to [the blog post](https://blog.nenyalabs.com/autoregressive-schemas/).
-
 ## Prerequisites
 
 - Python 3.12+

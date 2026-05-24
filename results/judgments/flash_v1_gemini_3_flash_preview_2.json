@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "mysterious",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This level is a textbook example of a well-designed pickup chain: each encounter drops exactly the item needed to defeat the next enemy, and the boss weakness flows naturally from the final pickup. The geomancer/tectonic theme is consistent from weapon name through victory condition, and the three underwater biomes (coral shelf, kelp forest, frozen grotto) create a coherent spatial progression. It feels designed rather than assembled.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every weakness resolves exactly: E1 uses player weapon 'Staff of Tectonic Plates', E2 uses 'Siren Crystal', E3 uses 'Magma Core', boss uses 'Sunken Earth Relic' — all exact names. Victory condition names the relic explicitly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific physical consequences: rockslide reveals the path, death song resonates to open a vortex, and jellyfish core sinks into a pedestal to unlock the door. Each encounter is structurally load-bearing."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (60→80→100) and damage (15→20→25) escalate monotonically; boss health (300) and damage (40) exceed all encounter stats. Difficulty label 'medium' matches the numbers for a 150 HP player."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Abyssal trench setting, tectonic weapon, coral/kelp/grotto biome progression, and a Leviathan boss buried under tectonic plates all reinforce the mysterious underwater geomancer theme without a single out-of-place element."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Siren Crystal shatters brittle structures, targeting a Brittle-Shell Serpent; Magma Core heats water, melting a Glacial Jellyfish; Sunken Earth Relic manipulates tectonic pressure to bury the Leviathan — every pair is logically clear."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three locations, enemies, hazards, and pickups are distinct and specific. No field feels like filler; every element adds unique information to the level's world."
+        }
+      },
+      "best_element": "The item chain is the standout design: Siren Crystal → Brittle-Shell Serpent → Magma Core → Glacial Jellyfish creates a puzzle loop where the prior encounter's reward is the key to the next, and each pairing has an obvious mechanical logic.",
+      "worst_element": "Nothing is broken here. The weakest point is minor: the frozen grotto biome introduces ice enemies but the tectonic/geomancer theme is ocean-floor-focused, making the ice section feel slightly bolted on. Linking the grotto to a volcanic rift would tighten the setting.",
+      "overall": "This would be a genuinely satisfying level to play — clear item-chain progression, escalating tension, and a boss encounter that pays off the entire pickup chain thematically and mechanically."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "serene",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The level has a pleasant serene-underwater aesthetic and a sensible three-stage flow, but weaknesses are described in terms of item effects rather than item names, and a named entity ('Ancient Guardian') appears in a trigger but never as an encounter. The flat-to-declining damage numbers and one enemy health inversion are minor but real design flaws for even an easy level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "E2 weakness is 'Phosphorescent Sea Slug toxic coating' (not the exact item name 'Phosphorescent Sea Slug') and E3 weakness is 'Enchanted Pearl shield reflection' (not 'Enchanted Pearl'). Both are descriptions of effects, not names. Boss weakness 'Siren's Flute Shell' is exact."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E1→E2 is clear (slug's glow reveals passage). E2 trigger 'awakening the Ancient Guardian' sets up a named entity that never appears — E3 has a Shadow Moray instead. E3→Boss is strong (flute calls the Whale King). One dangling reference breaks the chain."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy damage does not escalate: 10→12→8 — E3 does less damage than E1. Enemy health: 40→50→45 — E3 health dips below E2. Boss damage (15) only barely exceeds the encounter average. Easy label forgives some looseness, but these are genuine inversions."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Luminescent Coral Gardens, kelp forest, crystal grotto, and whispering reef all fit the serene underwater mood. The Giant Whale King as a final boss resolved by lullaby is appropriate. One minor issue: 'Shadow Moray' in encounter 3 carries a slightly darker tone than 'serene.'"
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Siren's Flute Shell calming a whale king is a perfect thematic connection. Enchanted Pearl shield reflecting to harm a Shadow Moray is defensible (light vs shadow). However, the toxic coating of a phosphorescent slug as a weakness for a Crystal-Shelled Crab lacks any clear logic — the crystal shell should resist toxins."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The 'Ancient Guardian' named in the E2 trigger is never encountered, creating a dangling narrative thread. All locations and enemies are otherwise distinct and specific, but this orphaned reference is a notable completeness failure."
+        }
+      },
+      "best_element": "The victory condition — using the Siren's Flute Shell to lull the Whale King back to sleep — is thematically perfect for a serene beastmaster level, resolving the encounter without violence and matching the mood exactly.",
+      "worst_element": "The E2 trigger invents an 'Ancient Guardian' that never appears in the level. Either the E3 encounter should be the Ancient Guardian, or the trigger should be rewritten to match the actual E3 enemy.",
+      "overall": "Playable and pleasant in tone, but the dangling trigger reference, declining damage curve, and imprecise weakness names would all be flagged in a design review before shipping."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The necromantic underwater setting is atmospheric and the pickup chain broadly works, but every single weakness field is a description rather than an exact item name, creating systemic reference integrity failures. The E3 trigger names 'the Great Kraken' while the boss is 'Leviathan the Necrotic' — a direct contradiction. Enemy health escalation also inverts at encounter 3.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "All four weaknesses use descriptive phrases rather than exact names: 'Soul-Reaping strikes from the Scythe of the Drowned Soul', 'Exposure to the Vial of Abyssal Ichors', 'Swarms from the Ossified Relic', 'The Prism of Despair' (adds article). Four broken or modified references is a systemic failure."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E1→E2 (death cry shatters seal) and E2→E3 (pressure plate reveals cathedral) are specific and causal. E3 trigger names 'the Great Kraken' as the boss entity, but the actual boss is 'Leviathan the Necrotic' — a direct contradiction that breaks the final link."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy damage escalates (15→20→30) and boss damage (40) is highest. However, enemy health inverts at E3: 120→200→150. Boss health (500) is highest. Player HP of 80 for 'hard' creates genuine danger. One health inversion is the main issue."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Kelvin Chasm, Bioluminescent Cavern, Sunken Cathedral, spectral horrors, and a necrotic Leviathan all reinforce the ominous underwater necromancer theme well. 'Kelvin' (a temperature unit) as a location name is a minor odd note, but doesn't meaningfully break immersion."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Abyssal Ichors corroding spectral armor on an Armored Bone-Crab makes sense. Ossified Relic summoning skeletal vanguards to distract a Lich is thematically strong. Prism of Despair inverting undead regeneration against the Leviathan is creative and coherent."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The boss-name contradiction ('Great Kraken' in trigger vs 'Leviathan the Necrotic' in the boss block) is a significant completeness failure. All locations, enemies, and hazards are otherwise distinct and specific."
+        }
+      },
+      "best_element": "The Prism of Despair mechanic — inverting the Leviathan's healing factor to turn regeneration into a weakness — is a mechanically elegant and thematically appropriate necromancer ability that directly justifies the boss design.",
+      "worst_element": "The E3 trigger saying 'the Great Kraken resides' in the boss chamber while the boss block names a different entity ('Leviathan the Necrotic') is a direct internal contradiction. The boss name must be consistent throughout.",
+      "overall": "The level has a strong dark atmosphere and creative mechanics, but systemic weak reference naming and the boss identity contradiction would require revision before this configuration could be loaded reliably."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "tense",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal-difficulty stormcaller level that genuinely earns its difficulty label through escalating damage values that each threaten a significant portion of the player's 100 HP. The pickup chain is mostly exact, the causal chain is strong, and the electrical/storm theme is well-matched to the underwater volcanic trench setting. Two minor issues — an imprecise weakness description and a thematically contradictory hazard — keep it from a perfect score.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1 uses exact player weapon, E3 uses exact pickup 'Conductive Eel Scale', boss uses exact 'Static Discharge Core' with exact victory condition reference. E2 weakness is 'Hyper-Oxygenated Kelp speed boost' — not the exact item name 'Hyper-Oxygenated Kelp'. One imprecise reference."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E2→E3 (Sentinel's death roar collapses the seafloor) and E3→Boss (placing the Core into the pedestal summons the Kraken) are specific and inevitable. E1 trigger 'Opening the kelp seal attracts the Trench Sentinel' is slightly abstract — what 'kelp seal' is being opened? Slightly unclear but connected."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (80→150→200) and damage (40→65→80) escalate monotonically. Boss health (500) and damage (95) are strictly highest. With 100 HP, every encounter is life-threatening — perfectly appropriate for 'brutal' difficulty."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Crackling vents, sulfur chimneys, magma chamber, electrical pickups, and an Ancient Kraken boss all fit the tense underwater stormcaller theme strongly. 'Freezing Pressure Spikes' as a hazard inside the Obsidian Magma Chamber is a thematic contradiction — freezing and magma don't coexist."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Conductive Eel Scale boosting electrical conductivity to defeat a Magma-Crusted Crustacean (electrical vs heavily armored shell) is solid. Static Discharge Core as an internal detonation mechanism against the Kraken is mechanically creative. Hyper-Oxygenated Kelp speed boost as a weakness for the Trench Sentinel is a stretch — speed helps dodge but isn't a direct weakness."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The reward 'The Eye of the Storm Relentless Storm' reads as a typographical error (missing punctuation or word), which is a minor but real completeness failure."
+        }
+      },
+      "best_element": "The escalating damage values (40→65→80→95) that all threaten the player's 100 HP create a level where every encounter is genuinely dangerous — the 'brutal' label is earned mathematically, not just thematically.",
+      "worst_element": "'Freezing Pressure Spikes' as the hazard inside an Obsidian Magma Chamber is a direct thematic contradiction. The hazard should be volcanic — lava jets, pressure buildups, or magma eruptions — to match the location.",
+      "overall": "This would be a tense, skill-testing level where a single mistake in any encounter could end the run — exactly what 'brutal' difficulty should feel like, and the stormcaller-vs-Kraken finale is satisfying."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "eerie",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A cleanly designed eerie underwater shadowblade level with a textbook pickup chain and smooth causal progression. Every weakness references an exact item name, enemy stats escalate properly, and the eerie atmosphere is consistent across all named elements. It is competent and functional without standing out as exceptional.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact names: player weapon 'Obsidian Kukri' for E1, 'Phosphorescent Gland' for E2, 'Vial of Brine Acid' for E3, 'Shard of the Abyss' for the boss. Victory condition names the Shard explicitly. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E2→E3 (acid melts bulkhead, revealing cathedral) and E3→Boss (placing Shard in Altar summons Guardian) are specific and physical. E1 trigger 'Opening the Kelp Gate triggers the descent into the Deep Vent' is somewhat vague — the Kelp Gate isn't established, and E2 location is 'Sulfur Vents' not exactly 'the Deep Vent.'"
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (60→85→110) and damage (15→20→25) escalate cleanly. Boss health (350) and damage (40) exceed all encounter stats. With 150 HP, medium difficulty is appropriate and survivable."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Coral Graveyard, Sulfur Vents, Sunken Cathedral, Obsidian Kukri, shadow energy — every element reinforces the eerie underwater shadowblade identity. Enemy names (Bioluminescent Stalker, Corroded Sentinel, Void-Touched Eel) all fit the dark underwater tone."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Shard of the Abyss enhancing blade with shadow energy against the Trench Guardian is clear. Vial of Brine Acid dissolving 'reinforced plating' on a Void-Touched Eel is generic — acid vs eel is not a natural pairing and the eel's void nature is ignored. Phosphorescent Gland blinding light-sensitive foes fits the Corroded Sentinel only if we assume it is light-sensitive, which isn't established."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three locations, enemies, hazards, and pickups are distinct and specific. No filler text, no repeated elements. Every field contributes unique information."
+        }
+      },
+      "best_element": "The encounter-to-encounter pickup logic is the level's strongest suit: the Phosphorescent Gland illuminates dark tunnels (solving the navigation problem) and blinds light-sensitive foes (solving the combat problem), making it a multi-purpose tool that feels designed.",
+      "worst_element": "The Vial of Brine Acid as a weakness for the Void-Touched Eel ignores the enemy's defining characteristic (void nature) entirely — the acid dissolves plating, but the eel doesn't have plating. The weakness should engage with the eel's void corruption.",
+      "overall": "A solid, functional level that would play well — clean escalation, strong atmosphere, and a satisfying pickup chain, held back only by one mechanical non-sequitur in the encounter design."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The strongest creative achievement in this batch: a pyromancer operating in an underwater volcanic trench is an inherent tension that the level commits to fully, with a pickup chain that culminates in injecting a fuel cell into a wyrm's gills for internal combustion. Reference integrity is nearly perfect, causal chain is strong, and the numbers are tight for hard difficulty.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1, E2, and E3 weaknesses all use exact item names. Boss weakness 'Hyper-Oxygenated Fuel Cell' is exact. Victory condition says 'the fuel cell' rather than the full name 'Hyper-Oxygenated Fuel Cell' — a minor abbreviation but clearly identifiable."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E1: structural collapse forces player into Coral Catacombs (physical consequence). E2: death cry echoes, summoning a guardian to the Obsidian Maw (narrative consequence). E3: crustacean shell explodes, revealing the Abyssal Throne entrance (physical consequence). All three are specific and irreversible."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health (80→120→200) and damage (25→30→40) escalate cleanly. Boss health (500) and damage (55) are highest. Player HP of 100 for hard is tight but survivable if careful. One minor note: boss weapon damage (35) exceeds E1 enemy damage (25) but player has 100 HP — the margin is thin, appropriate for hard."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Volcanic trench, sulfur vents, coral catacombs, obsidian maw, magnesium flare, thermite harpoon — all reinforce the chaotic pyromancer underwater identity. 'Razor-Sharp Barnacles' in the Coral Catacombs is slightly mundane compared to the volcanic elements around it, but doesn't break the theme."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Magnesium Flare blinds the Bioluminescent Stalker (intense light vs a creature that navigates by its own bioluminescence). Thermite Harpoon pierces heavy armor of the Molten Crustacean (heat-igniting penetrating weapon vs armored shell). Fuel Cell injected into wyrm's gills for internal combustion is mechanically perfect for a pyromancer."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. The setting description is unusually detailed and specific. Minor: the objective says 'assassinate the Wyrm King' — 'assassinate' is an unusual verb for a level where the player approaches openly through three combat encounters."
+        }
+      },
+      "best_element": "The fuel-cell-into-gills victory condition is the best mechanic in the entire batch — it's logical (oxygen-rich fuel in an enclosed underwater space causes combustion), class-appropriate (pyromancer uses fire even underwater), and specific enough to be memorable.",
+      "worst_element": "The Bioluminescent Stalker reappears as an enemy name in both this level and at least one other level in the batch, slightly undermining the sense of a unique enemy roster. Using a more specific enemy name here would have strengthened the level's identity.",
+      "overall": "This would be a fun, creative level that rewards the player for understanding the environment — a pyromancer who turns underwater volcanic chemistry into weapons is exactly the kind of class-environment synergy that makes good level design."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "desolate",
+      "player_class": "warden",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A brutal desolate underwater level with strong escalating numbers and mostly exact references. The level is undermined by one significant causal chain error — the E2 trigger names a 'Void Serpent' that never appears, with E3 instead presenting a Spectral Angler — and by the boss's 'victory condition' using a repurposed defensive item in a way that lacks mechanical clarity.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1 uses exact player weapon, E2 and E3 use exact prior pickup names, boss weakness 'Pressurized Oxygen Core' is exact. Victory condition uses 'Oxygen Core' — a shortened form of the exact name 'Pressurized Oxygen Core'. Minor variation, but one reference."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E1→E2 (scent of ichor attracts a scavenger from the vents) is logical. E2 trigger says vibrations 'disturb the slumber of the Void Serpent' but E3 features a Spectral Angler — the named entity never appears. E3→Boss (pressurized gas signals the Warden of the Abyss) is clear."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (150→250→300) and damage (35→45→50) escalate monotonically. Boss health (800) and damage (70) are strictly highest. Player HP of 100 for brutal is punishing — E1 alone does 35% of health — and the label is fully earned."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Pressure-crushed reef, sulfuric vent fields, midnight graveyard, and Krakos the Trench Sovereign all project a desolate underwater atmosphere effectively. 'Entangling Ghost Kelp' is a nice touch for the Spectral Angler encounter. One minor issue: the Ultrasonic Frequency Emitter feels more technological than the rest of the setting's organic-horror tone."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Shock-Conducting Resin adding electrical damage vs Heat-Hardened Crustacean (electricity vs heat-hardened armor) is logical. Ultrasonic Emitter stunning 'bioluminescent creatures' as the stated effect, but applied to a 'Spectral Angler' — spectral entities aren't described as bioluminescent; the emitter's stated effect doesn't match the enemy category. Pressurized Oxygen Core detonated as an explosive — repurposing a healing item offensively requires an explanatory stretch."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The 'Void Serpent' named in the E2 trigger but never appearing is a dangling reference that creates a completeness hole. All other locations, enemies, and hazards are distinct and specific. The 'Warden of the Abyss' in the E3 trigger could be confused with the player class 'warden.'"
+        }
+      },
+      "best_element": "The stat escalation is among the tightest in the batch — enemy health and damage both monotonically increase across all three encounters and into the boss, and the numbers are calibrated to make a 100 HP player feel genuinely threatened at every stage.",
+      "worst_element": "The E2 trigger promising a 'Void Serpent' that never materializes is a broken narrative promise — it should either be replaced with the Spectral Angler or the E3 encounter should be redesigned around the Void Serpent.",
+      "overall": "A mechanically sound brutal level that would feel punishing and tense in play, held back by a narrative contradiction in the causal chain and one mechanical mismatch in enemy weaknesses."
+    }
+  },
+  {
+    "case": {
+      "genre": "underwater",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The most thematically distinct and charming level in the batch: a sneezing whale, sunken tea party, and tickle seaweed create a coherent whimsical identity that no other level in the file approaches. Reference integrity and causal chain are clean. However, all three encounter enemies share identical stats (40 HP, 5 damage), producing zero difficulty escalation even for an easy level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact names: player weapon 'Bubble Scepter of Illusions', then 'Prismatic Pearl', 'Whistle Shell', boss uses exact 'Golden Tea Biscuit'. Victory condition names the biscuit explicitly. Perfect chain."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E2→E3 (jellyfish dance away, clearing route to Sunken Tea Party) and E3→Boss (crab retreats, unveiling gate to Boss Lagoon) are charming and specific. E1 trigger 'Opening the Pearl Clam reveals path to Jellyfish Grove' is acceptable but slightly mechanical — it describes an action on an item not established in the encounter rather than a consequence of defeating the enemy."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "All three encounter enemies have identical health (40) and damage (5) — zero escalation. Enemy health does not increase at all. Boss health (100) is higher and boss damage (10) is double, providing minimal graduation. Even for 'easy' difficulty this is flat, and it suggests fields were filled in without cross-checking escalation."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — Neon Coral Garden, Tickle Seaweed, Floating Sting-Bubbles, Sunken Tea Party, Confused Hermit Crab, Barnaby the Bubbling Whale — belongs to the same whimsical underwater world. Nothing is out of place. A designer would ship this theme package."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Prismatic Pearl blinding jellyfish with light works (jellyfish are photosensitive). Whistle Shell confusing a hermit crab is defensible (sound disruption on a crustacean). Golden Tea Biscuit luring and satisfying a hungry whale is tonally perfect. Minor: the Prismatic Pearl's blinding effect on the Giggling Jellyfish is reactive rather than logically linked to the enemy's specific vulnerability."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations are distinct and charming. However, three enemies with identical stats (40/5) feels like default placeholder values rather than designed numbers. Whistle Shell's effect description 'Plays a high-pitched tune' is extremely generic — it provides no mechanical information."
+        }
+      },
+      "best_element": "The Sunken Tea Party location with the Confused Hermit Crab is the most inventive encounter in the entire file — it takes the whimsical brief and fully commits, producing something that would be immediately recognizable as a distinct design identity.",
+      "worst_element": "Three encounters with identical health (40) and damage (5) values is the most glaring balance failure in the batch. Even easy difficulty should show some stat progression — the enemies feel like copies of a template rather than individually designed encounters.",
+      "overall": "Delightful to read and would likely be fun for a younger audience or light-difficulty run, but the completely flat enemy stats would make the first three encounters feel identical in practice."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "chaotic",
+      "player_class": "beastmaster",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A jungle temple beastmaster level with strong Mesoamerican theming and a satisfying pickup chain that mostly holds together. The E3 weakness — assigning a defensive damage-reduction totem as a combat weakness — is mechanically unconvincing, and the E1 trigger vaguely references 'a swarm' that never materializes as the actual E2 encounter. Numbers are solid for hard difficulty.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1 uses exact player weapon 'Weighted Iron Whip', E2 uses 'Vial of Serpent Venom', boss uses 'Sun-Shard Mirror' — all exact. E3 weakness 'Blessed Totem of Warding' is the exact pickup name, so technically a passing reference, but the totem is a defensive item (reduces damage taken) being listed as an enemy combat weakness."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E2→E3 (Alpha drops stone key unlocking the temple gate) and E3→Boss (panther's blood flows into altar, summoning guardian) are specific and causal. E1 trigger says the death roar 'awakens the swarm in the canopy' but E2 is a single enemy (Screeching Howler Alpha), not a swarm — a named consequence that doesn't match the actual next encounter."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health (80→120→150) and damage (15→20→30) escalate cleanly. Boss health (400) and damage (45) are highest. Player HP of 100 for hard difficulty is appropriate — E3 enemy deals 30% of HP per hit. One minor note: boss damage (45) is only 50% higher than E3 damage (30), which is a modest jump for a boss."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Vine swamps, banyan archway, inner sanctum, crocodile, howler monkey, shadow panther, and Kozotl the Sun-Eater (Aztec-inflected name) form a coherent Mesoamerican jungle temple identity. Every element belongs in the same world."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Serpent venom poisoning the Howler Alpha and Sun-Shard Mirror reflecting the Sun-Eater's solar beam are both strong, logical connections. Blessed Totem of Warding (reduces physical damage) as the weakness for a Shadow-Stalker Panther is a stretch — the totem's protective aura might ward off shadows, but the item description says nothing about shadow creatures."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All three locations, enemies, hazards, and pickups are distinct. The E1 trigger mentions 'a swarm' that never appears as the E2 encounter (it's a single Alpha instead), which is a minor narrative inconsistency. Otherwise specific and well-populated."
+        }
+      },
+      "best_element": "Kozotl the Sun-Eater with a solar-beam-reflection victory condition is a well-designed boss encounter — it requires a prior-acquired item, has a specific multi-step execution (reflect three times), and thematically fits the corrupted sun-god setting.",
+      "worst_element": "The Blessed Totem of Warding as a combat weakness for the Shadow-Stalker Panther is mechanically unconvincing — a totem that reduces physical damage taken is a player defense item, not an offensive tool, and there's no explanation for why it harms the panther.",
+      "overall": "A fun, thematically distinctive jungle level with a satisfying final boss, but the mechanical mismatch in E3 and the loose E1 trigger would need revision for a polished release."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "mysterious",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A ranger level with a coherent mysterious jungle theme, but reference integrity is systematically broken — every single weakness is a description of how the item is used rather than the item's name. Enemy health inverts at encounter 3, and two of the three triggers are generic path-opening descriptions rather than specific causal consequences.",
+      "scores": {
+        "reference_integrity": {
+          "score": 1,
+          "reason": "Every weakness is a descriptive paraphrase: 'Sylvan Longbow precision shots to the glowing core', 'Fire-Starter Flint ignited arrows', 'Light reflected off the Silver Serpent Scale', 'Essence of the Sun placed in the central pedestal'. Not one weakness uses an exact item name. This is a systemic failure across all four references."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "E1 trigger is 'A rusted gate swings open' — a generic path-opens description with no connection to defeating the enemy. E2 (death roar causes rockslide) is specific and causal. E3 trigger 'a beam of light pierces the canopy, illuminating the Boss Arena' is atmospheric but not a consequence of the player's action or the enemy's defeat."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy damage escalates (15→20→25). Enemy health inverts: 60→100→80 (E3 is weaker than E2). Boss health (300) and damage (40) exceed all encounter stats. For medium difficulty with 150 HP, numbers are survivable but the health inversion is a clear design flaw."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Whispering Canopy, thorn-choked entrance, sunless grotto, ancient altar of mists — all establish a mysterious jungle atmosphere. Sylvan Longbow, silver serpent scale, essence of the sun — ranger-appropriate items. Kallos the Eternal Bloom is slightly generic as a boss name but fits the purification objective."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Fire killing a Fungal Behemoth is obvious and satisfying. Light reflected from the Silver Serpent Scale damaging a Shadow Jaguar (light vs shadow) is logical. Essence of the Sun dispelling darkness placed in a pedestal to purify the Bloom is thematically coherent. All connections work."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations and enemies are distinct. 'Thorn-Choked Entrance' and 'Ancient Altar of Mists' are somewhat generic fantasy location names that could appear in any level. The boss victory condition ('inserting the Essence and surviving for 60 seconds') is specific and adds unique mechanical information."
+        }
+      },
+      "best_element": "The boss mechanic — insert the Essence of the Sun into the central pedestal and survive for 60 seconds — is a specific, timed defensive challenge that fits both the ranger class (holding position) and the purification theme.",
+      "worst_element": "Systematic use of descriptive weakness text instead of item names (every single weakness in the level) is the most damaging issue. A game engine parsing 'precision shots to the glowing core' cannot match that string to any item in the level's item registry.",
+      "overall": "Thematically pleasant and mechanically logical, but the complete failure of exact item-name references throughout the level means it would fail reference validation in any real game configuration system."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A tense rogue jungle level with clean reference integrity and good thematic cohesion. The boss name contradiction — the E3 trigger summons 'the Jungle Spirit' but the boss block names 'The Blight-Winged Serpent' — is the primary flaw. With only 40 HP and brutal difficulty, the enemies' damage values (12/18/22) feel softer than expected, though this creates a specific tension where each hit is a meaningful percentage of total health.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "E1 uses exact player weapon 'Serrated Kukri', E2 uses 'Vial of Orchid Sap', E3 uses 'Jagged Obsidian Shard', boss uses 'Mirror-Polished Scale' — all exact names. Victory condition references 'Mirror-Polished Scale' and 'the Kukri' (clear reference to the player weapon)."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E1→E2 (dying screech awakens territorial Silverback Guardian) is specific and consequential. E2→E3 (collapse breaks a seal on the Temple of the Sun) is a physical consequence leading to a new location. E3 trigger 'Shaman's mask shatters, summoning the Jungle Spirit' names a different entity than the actual boss ('Blight-Winged Serpent') — a direct contradiction in the final link."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy health (60→90→110) and damage (12→18→22) escalate cleanly. Boss health (250) and damage (30) are highest. However, a 'brutal' label with 40 player HP and max enemy damage of 22 means ~1-2 hits can be lethal — the brutality comes from low HP, not high enemy values. This is a valid design choice but the enemy damage values feel closer to 'hard' than 'brutal' in absolute terms."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Muddy Gully, Ancient Ruin Staircase, Overgrown Sacrificial Altar — tense jungle ruins with escalating danger. Venom-Spit Raptor, Silverback Guardian, Shadow-Leopard Shaman — coherent jungle enemy roster. 'Blight-Winged Serpent' fits the source-of-rot theme. One slight tension: 'Mirror-Polished Scale' as a rogue's final item feels more paladin-esque than rogue-ish."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Jagged Obsidian Shard's fire damage against Shadow-Leopard Shaman (fire vs supernatural/shadow entity) is logical. Mirror-Polished Scale reflecting the Serpent's Gaze to petrify it is mechanically satisfying. Vial of Orchid Sap (speeds movement) as a Silverback Guardian weakness is a mild stretch — mobility helps against a large, slow enemy, but it's not an obvious damage vector."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations, enemies, and hazards are distinct. The 'Jungle Spirit' named in the E3 trigger but replaced by 'Blight-Winged Serpent' in the boss block is a dangling reference. The Jagged Obsidian Shard effect says 'adds fire damage to the next three attacks' — this is specific and functional. No generic filler, but the boss name mismatch creates a completeness gap."
+        }
+      },
+      "best_element": "The Mirror-Polished Scale victory condition — reflecting the Serpent's Gaze three times to petrify it, then delivering a final blow — is a well-paced multi-step mechanic that rewards prior item acquisition and fits the rogue class's reactive playstyle.",
+      "worst_element": "The E3 trigger announcing 'the Jungle Spirit' and the boss block naming 'The Blight-Winged Serpent' is a direct contradiction. These must refer to the same entity; the trigger should use the boss's actual name.",
+      "overall": "A tense, well-constructed rogue level with satisfying mirror-mechanic boss design, undermined by one name contradiction at the most critical narrative handoff — the moment before the boss fight."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serene warden jungle level with clean reference integrity and appropriate easy-difficulty numbers. Mechanical connections are thematically apt (sunlight vs wasps, moonlight purifying poison, seed of purity vs corruption). The level is held back by one enemy health inversion, a generic E1 trigger, and a location name ('Sunken Hollow') that carries slightly ominous connotations out of step with the serene mood.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1 uses exact weapon 'Nature's Staff', E2 uses 'Sun-Infused Pollen', E3 uses 'Moonlight Nectar', boss uses 'Ancient Seed of Purity' — all exact names. Victory condition says 'Plant the Ancient Seed' — drops 'of Purity', a minor truncation, but identifiable."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E2→E3 (buzzing stops, revealing hidden stone bridge to Great Lotus) is a specific consequence of defeating the wasps. E3→Boss (pond water clears, showing entrance to Heart of the Forest) is natural and causal. E1 trigger 'A path opens through the dense brambles toward the Sunken Hollow' is purely generic — it describes a door opening, not a consequence of the encounter."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy damage (5→8→10) escalates cleanly. Enemy health inverts: 50→40→60 — E2 is weaker than E1. Boss health (150) and damage (15) are highest. For easy difficulty with 200 HP, the player is in minimal danger, which suits the mood but the health inversion is a real design error."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Emerald Canopy, Whispering Brook, Great Lotus Pond — serene jungle locations. Thorn Spriggan, Gloom Wasp, Tainted Vine Crawler, Blight-Titan — nature-warden-appropriate. 'Sunken Hollow' as a location name carries slightly ominous overtones inconsistent with 'serene' mood. Everything else fits."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Sun-Infused Pollen blinding insects directly targets the Gloom Wasp — insects are sensitive to pollen and light. Moonlight Nectar purifying poison defeats the Tainted Vine Crawler through direct purification. Ancient Seed of Purity weakening corruption neutralizes the Blight-Titan. Every pair has clear thematic and functional logic."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. 'Moonlight Nectar' is a specific and evocative item name. The E1 trigger is generic ('path opens through brambles') but all other fields are specific. No repeated elements or filler text."
+        }
+      },
+      "best_element": "The three pickup effects form a thematic arc: sunlight (Sun-Infused Pollen) → moonlight (Moonlight Nectar) → seed/growth (Ancient Seed of Purity) — a natural/celestial progression that fits the warden class identity and creates a satisfying item narrative.",
+      "worst_element": "The E1 trigger 'A path opens through the dense brambles toward the Sunken Hollow' is entirely generic and not a consequence of defeating the Thorn Spriggan. It should read as the Spriggan's death causing the brambles to wither, making the path opening a specific physical consequence.",
+      "overall": "A pleasant, easy-to-follow level with mechanically apt item pairings and a calming nature theme, but the health inversion and generic first trigger would be flagged in review."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-constructed ominous jungle necromancer level with clean reference integrity, a strong causal chain, and well-escalating numbers for hard difficulty. The Flesh-Stitcher Behemoth is a creative enemy name. Minor weakness: the Shattered Bone Amulet as E3 enemy weakness relies on an implicit connection (bone amulet vs flesh-stitcher), and the victory condition abbreviates the exact item name.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1 uses exact weapon, E2 uses exact 'Essence of Decay', E3 uses exact 'Shattered Bone Amulet', boss uses exact 'Vial of Ancient Ichor'. Victory condition says 'while the Ichor is active' — 'Ichor' is an abbreviation of 'Vial of Ancient Ichor'. Minor truncation but clearly identifiable."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E1: stone altar sinks into mud, opening path to Sunken Shrine — physical consequence. E2: death scream shatters stone barrier, revealing the Heart of the Grove — specific destruction event. E3: blood-red moon rises, summoning the Avatar of Rot to the central temple — atmospheric but specific narrative consequence that creates inevitability. All three are strong."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (60→120→180) and damage (15→20→25) escalate monotonically. Boss health (500) and damage (40) are strictly highest. Player HP of 80 for hard is punishing — E3 at 25 damage per hit represents 31% of health. Escalation is clean and the difficulty label is earned."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Whispering Mangroves, Obsidian Delta, Thorn-Choked Clearing, Sunken Shrine, Heart of the Grove — all project a cursed, ominous jungle atmosphere. Blighted Vine-Stalker, Spectral Guardian, Flesh-Stitcher Behemoth, Avatar of Rot — coherent necromantic jungle enemy roster. Every element belongs in the same world."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Essence of Decay enhancing necrotic damage vs Spectral Guardian (necrotic energy affecting spectral beings) is logical. Vial of Ancient Ichor boosting mana regen to prevent Avatar's regeneration is a creative offensive repurposing. Shattered Bone Amulet granting immunity to spectral drain vs Flesh-Stitcher Behemoth — the amulet protects against spectral drain, but the Behemoth is a flesh-stitcher, not a spectral entity; the connection is unclear."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct and specific. 'Swinging Log Traps' in a jungle is a concrete physical hazard. 'Flesh-Stitcher Behemoth' and 'Avatar of Rot' are inventive, specific names. No filler or repeated elements anywhere."
+        }
+      },
+      "best_element": "The E3 trigger — 'A blood-red moon rises, summoning the Avatar of Rot to the central temple' — is the most atmospheric trigger in the file. It creates a specific, memorable narrative moment that makes the boss encounter feel inevitable and earned.",
+      "worst_element": "The Shattered Bone Amulet as the Flesh-Stitcher Behemoth's weakness lacks a clear connection — the amulet protects against spectral drain, but the Behemoth is a physical flesh-stitching creature with no spectral property established. A stitching/binding theme would better justify the bone amulet's use.",
+      "overall": "One of the strongest levels in the file — tight numbers, strong atmosphere, specific causal chain, and a memorable boss trigger. The single mechanical mismatch in E3 is the only thing preventing a higher overall assessment."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A whimsical alchemist jungle level with charming location names and a clean pickup chain. The trigger for E1 references 'Opening the Nectar Jar' when the pickup is named 'Sweet Nectar Syphon' — a naming inconsistency. Enemy damage inverts at E2 (5, down from E1's 10). The Grand Giggling Gorilla boss and rainbow-bubble victory condition are perfectly calibrated to the whimsical tone.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "E1, E2, E3 enemy weaknesses and boss weakness all use exact item names. Victory condition references 'Prismatic Enzyme' and 'rainbow bubbles' (derived from the effect description, not another item). E1 trigger says 'Opening the Nectar Jar' when the pickup is named 'Sweet Nectar Syphon' — a naming mismatch in the trigger field."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E2→E3 (dispersing pollen reveals hidden path with giant glowing mushrooms) is specific and visual. E3→Boss (vine-cat retreats into hollow log serving as arena entrance) is specific and physical. E1 trigger references a 'Nectar Jar' that doesn't exist by that name — the pickup is 'Sweet Nectar Syphon' — creating a minor reference mismatch in the trigger."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy health escalates (40→50→60) correctly. Enemy damage inverts: 10→5→12 — E2 deals less damage than E1. Boss health (150) and damage (15) exceed encounter stats. For easy difficulty the overall numbers are appropriate, but the damage inversion at E2 is a real flaw even for easy."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Glow-Berry Grove, Sparkling Stream, Hummingbird Hollow, Bouncy Bramble Patch, Sneezing Ferns, Tickle Grass, Grumpy Moss-Toad, Grand Giggling Gorilla — every element is whimsical, specific, and belongs to the same playful world. A designer would ship this theme package unchanged."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Sweet Nectar Syphon luring/affecting the Confused Pollen-Cloud is a stretch — the syphon's effect is health restoration and honey flavor, which doesn't obviously interact with a pollen entity. Prismatic Enzyme adding rainbow shimmer to potions making the Gorilla laugh into a nap is tonally perfect if mechanically whimsical. Refined Solar Yeast increasing flask damage for the Tangled Vine-Cat is generic — any damage boost would defeat any enemy."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The 'Nectar Jar' / 'Sweet Nectar Syphon' naming inconsistency in the E1 trigger is a small but real completeness error. Otherwise every field is specific and adds unique information."
+        }
+      },
+      "best_element": "The Grand Giggling Gorilla boss and its victory condition — 'Cover the Gorilla in rainbow bubbles until he laughs himself into a nap' — is the most charming boss design in the batch and perfectly encapsulates the whimsical easy-mode design intent.",
+      "worst_element": "The E1 trigger referring to 'Opening the Nectar Jar' when the pickup is named 'Sweet Nectar Syphon' is a naming inconsistency that would fail item-lookup validation. The trigger should use the exact pickup name.",
+      "overall": "A delightful, internally consistent whimsical level that commits fully to its tone — most issues are minor polish items rather than structural flaws, and the overall design would be fun to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "eerie",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The most conceptually inventive level in the file: a chronomancer navigating an eerie jungle where even the hazards ('Quicksand of Lost Seconds') are temporally themed. Reference integrity is perfect, escalation is clean, and every pickup-enemy pairing has a logical temporal or elemental connection. The only notable weakness is that all three triggers are player-action-based rather than enemy-defeat-based, making encounters feel somewhat optional.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact names: 'Temporal Siphon Staff', 'Sunlight Essence Vial', 'Clockwork Heartstone', boss 'Chrono-Stabilizer Lens'. Victory condition describes the lens's function (freeze in time) without explicitly naming it, but the boss block's weakness field already establishes the exact name."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E1 trigger 'Opening the Sun-Sealed Gate leading to the Sunless Grove' and E2 trigger 'Activating the Monolith of Ages to reveal the Bridge of Sighs' and E3 trigger 'Lowering the Drawbridge to the Heart of the Jungle' are all player actions, not consequences of defeating enemies. The chain progresses but encounters feel skippable — none of the triggers require defeating the enemy to proceed."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health (60→75→90) and damage (15→20→25) escalate monotonically. Boss health (250) and damage (35) are strictly highest. Player HP of 100 for medium difficulty is appropriate — survivable with attention but not trivial."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Whispering Mangroves, Moss-Choked Gateway, Sunless Grove, Bridge of Sighs, Phase-Shifting Panther, Gloom-Weaver Spider, Rust-Eater Golem, Aeon Serpent — every element is eerie and temporally inflected. 'Quicksand of Lost Seconds' is an exceptional hazard name. A designer would ship this theme package."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Sunlight Essence burning spectral foliage and blinding the Gloom-Weaver Spider (light vs darkness) is logical. Chrono-Stabilizer Lens freezing the Aeon Serpent in time is a perfect chronomancer mechanic. Clockwork Heartstone stabilizing time loops as a weakness for a Rust-Eater Golem is the weakest pairing — a rust-eating golem's vulnerability to a clockwork stabilizer requires accepting that the golem is itself clockwork, which isn't established."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are distinct, specific, and thematically charged. 'Collapsing Stone Treads' and 'Venomous Spore Clouds' are concrete, specific hazards. No filler text or repeated elements anywhere."
+        }
+      },
+      "best_element": "'Quicksand of Lost Seconds' as a hazard name is the best single piece of writing in the entire file — it's thematically specific, immediately evocative, and tells you exactly what kind of world you're in with four words.",
+      "worst_element": "All three triggers are player actions (opening, activating, lowering) rather than enemy-defeat consequences, meaning the encounters don't structurally require completion to progress. At least one trigger should be an event caused by defeating the enemy to create gameplay necessity.",
+      "overall": "A creatively excellent level with strong thematic cohesion and clean numbers — the only structural weakness is that the causal chain doesn't require defeating enemies, which reduces encounter urgency."
+    }
+  },
+  {
+    "case": {
+      "genre": "jungle",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A high-raw-number brutal berserker level with significant structural problems. E3 reuses the player weapon ('Obsidian Greataxe') as its weakness instead of the prior encounter's pickup (Sharpening Whetstone), breaking the item chain. The Sharpening Whetstone — the E2 pickup — is therefore never used as a weakness anywhere. The boss victory condition is entirely generic. The E2 enemy at 600 HP is the toughest enemy in the file and may represent an outlier design choice.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "E1 and E2 weaknesses correctly use the player weapon and prior pickup. E3 weakness reverts to 'Obsidian Greataxe' (player weapon) instead of the E2 pickup 'Sharpening Whetstone', breaking the expected chain. Boss weakness 'Primal Fetish' is exact. Victory condition ('Reduce boss health to zero while surviving its final enrage phase') references no specific items. Two reference failures: E3 chain break and generic victory condition."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1: vine wall withers, revealing path to Overgrown Temple — specific physical event. E2: temple floor collapses, dropping player into Sunken Arena — specific irreversible consequence. E3: terrifying roar summons boss from the canopy — somewhat generic but spatially connected. The chain progresses logically even if E3's trigger is less specific than E1/E2."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy health inverts: 250→600→450 — E3 is significantly weaker than E2. Enemy damage escalates (60→90→110). Boss health (2000) and damage (150) are extreme but appropriate for 'brutal'. Player has 400 HP and 85 weapon damage — the E2 Ancient Stone Guardian at 600 HP requires 7+ hits at full damage with no buffs, creating an unusually long encounter."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Whispering Wilds, Sinking Marshland, Overgrown Temple, Sunken Arena, Rot-Bloated Viper, Ancient Stone Guardian, Stalking Shadow Panther — all fit the desolate jungle berserker aesthetic. 'Corrosive Bile Vial' is suitably grim. The Blighted Apex Predator is an appropriately terrifying boss name for the genre."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Corrosive Bile Vial applying acid to the Ancient Stone Guardian (acid vs stone) is logical. E3 weakness 'Obsidian Greataxe' means the player just uses their base weapon — the Sharpening Whetstone (which boosts weapon damage by 50%) is presumably relevant as a buff, but this isn't expressed as the enemy's weakness. Primal Fetish as a boss weakness makes no mechanical sense as listed — it's a defensive invincibility trigger, not an offensive tool."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations and enemies are distinct. However, the Sharpening Whetstone pickup from E2 is never referenced as any enemy's weakness — it's a buff item that feeds into nothing. The boss victory condition ('Reduce boss health to zero while surviving its final enrage phase') is the most generic victory condition in the file, adding no information beyond 'defeat the boss.'"
+        }
+      },
+      "best_element": "The causal chain from encounter to encounter is physically grounded and satisfying: vine wall withers → temple floor collapses → boss summoned by roar. The three-stage environmental destruction creates a sense of escalating chaos fitting for the berserker/desolate brief.",
+      "worst_element": "The Sharpening Whetstone is a dead-end pickup: it increases weapon damage but is never referenced as any enemy's or boss's weakness. Every prior encounter's pickup feeds into the next enemy's weakness, so the Whetstone's isolation breaks the design pattern and leaves E3 without a meaningful item dependency.",
+      "overall": "The level has brutal numbers and good atmosphere but suffers from a broken item chain, a wasted pickup, and a completely generic boss victory condition — it needs substantial revision to match the quality of other levels in this batch."
+    }
+  }
+]

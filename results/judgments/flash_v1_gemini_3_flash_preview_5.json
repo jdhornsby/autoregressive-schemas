@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "This level has a clear progression through a derelict station with a well-constructed pickup chain that terminates in an EMP payload against the rogue AI. The causal triggers, however, are player-action-driven rather than encounter-consequence-driven, making the encounters feel loosely coupled. It reads as designed but with some mechanical seams.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc1, Enc2, and boss weaknesses all reference prior pickups by exact name. Enc0 weakness uses 'Arc Welder electrical short-circuiting' instead of the exact weapon name 'Industrial Arc Welder.' Boss victory_condition shortens 'EMP Logic Spike' to 'EMP Spike' — one minor variation."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0 trigger ('Opening the airlock door') and Enc1 trigger ('Activating the emergency drainage system') are player actions with no specific connection to defeating the preceding enemy. Only Enc2 trigger ('Overriding the central elevator lockout') naturally leads to the boss. Encounters could largely be reordered."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy HP escalates 60/120/180 and damage escalates 20/25/35, both monotonically. Boss at 500 HP and 45 damage is clearly the hardest. Player HP of 80 vs cumulative enemy damage of 80 is tight but survivable for hard difficulty. Numbers feel intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sci-fi horror on a derelict station orbiting a dying star is fully realized. Every element — corrupted drones, bio-organic mutants, security automaton, rogue AI boss, arc welder weapon — belongs in this world. No element feels out of place."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "All four pickup-weakness pairs have strong logical grounding: arc electricity short-circuits drones, cryo canister freezes biological mass, overcharged capacitor delivers high-voltage burst to the automaton, and EMP disables the AI boss. No stretches."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All three encounter locations are distinct, hazards are unique, and pickups each add functional information. The boss victory condition referencing 'orbital laser strikes' introduces a new mechanic not established in the encounter chain — a minor addition that isn't broken but wasn't foreshadowed."
+        }
+      },
+      "best_element": "The pickup chain (Cryo Canister → Overcharged Capacitor → EMP Logic Spike) is elegantly ordered: each item exploits the next enemy's specific vulnerability, creating a coherent escalating toolkit.",
+      "worst_element": "The Enc0 and Enc1 triggers are generic player-action unlocks rather than consequences of the encounters themselves; replacing them with outcomes tied to defeating the enemy would tighten the causal chain.",
+      "overall": "A competent, tense sci-fi horror level with a satisfying item chain and strong thematic identity. The loose triggers prevent it from feeling fully designed, but the mechanical and thematic elements would make it engaging to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A well-integrated chronomancy level set on a dying Dyson Sphere where time-based mechanics run through every encounter. The causal chain is strong, with each enemy's death or defeat directly unlocking the next area. Reference names are embedded in descriptive phrases rather than used standalone, which is a recurring minor issue.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Every weakness references valid items but via descriptions rather than exact names: 'Temporal Siphon Staff (Disrupts phasing),' 'Entropy Battery (Overloads its internal clock),' 'Zero-Point Core (Neutralizes the boss's event horizon shield).' The boss victory_condition requires the Zero-Point Core at under 10% health, which is specific and named. Parenthetical descriptors are consistently used, making this a pattern rather than an oversight, but they deviate from exact-name matching throughout."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are direct physical or narrative consequences of the encounter: the Entropy Battery powers a lift (enc0), the guardian's death cry unlocks a pressurized seal (enc1), and the sentinel's core explosion breaches the floor (enc2). Removing any encounter would break the chain."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 60/80/100 and damage escalates 15/20/25 monotonically. Boss at 300 HP and 35 damage is clearly harder than any encounter enemy. Player HP of 100 vs boss damage of 35 is appropriately challenging for medium. The boss victory condition (detonate at under 10% health) adds execution pressure that fits the medium tier."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Desolate sci-fi chronomancy is fully realized across every field: Dyson Sphere setting, phase-shifting scavenger, stall-motion guardian, void-touched sentinel, and the Eternal Singularity boss. The Entropy Battery and Chrono-Stabilizer pickups reinforce the time/entropy theme consistently."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Every pickup-weakness pair has clear logic: Entropy Battery overloads a time-locked guardian's internal clock, the Temporal Staff disrupts phase-shifting, the Zero-Point Core neutralizes the singularity's event horizon shield. All connections are intuitive and thematically grounded."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are unique and named distinctly. The Chrono-Stabilizer pickup (immunity to time-slow) is never used as a weapon or boss counter — it's a defensive utility item that doesn't feed into the combat chain, leaving enc2's pickup slot essentially decorative in a reference-integrity sense (correctly, the Void-Touched Sentinel's weakness is the weapon, not that pickup)."
+        }
+      },
+      "best_element": "The causal chain is the standout feature — each encounter's death or destruction directly and physically creates the path to the next area, making the level feel like one continuous collapsing structure.",
+      "worst_element": "The consistent use of parenthetical descriptions appended to item names ('Entropy Battery (Overloads its internal clock)') instead of citing items by exact name introduces ambiguity and would cause reference-resolution failures in any strict name-matching system.",
+      "overall": "A cohesive, well-designed chronomancy level that would be engaging to play, with strong thematic integration and a satisfying causal chain. The parenthetical weakness descriptions are a structural habit that weakens reference clarity."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An excellently constructed brutal-tier sci-fi level set on a collapsing refinery. The causal chain is driven entirely by catastrophic physical consequences, the pickup chain is exact and unambiguous, and the escalating numbers are brutal. This is the tightest level in the file.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon name 'Ionized Arc-Staff.' Enc1 weakness = exact pickup 'Overclocked Power Cell.' Enc2 weakness = exact pickup 'Liquid Nitrogen Canister.' Boss weakness = exact pickup 'EMP Burst Module.' Boss victory_condition references both 'EMP' and 'Arc-Staff' — the shortening of 'EMP Burst Module' is the only deviation and it's unambiguous."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are immediate physical consequences: an explosion destroys a bulkhead forcing movement (enc0), shaft collapse drops the player onto the next floor (enc1), the Titan's death explosion creates a bridge (enc2). Every transition is forced and specific — removing any encounter would sever the chain."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy HP escalates 250/400/600, damage escalates 35/50/65, both strictly monotonic. Boss at 1500 HP and 80 damage is clearly dominant. Player HP of 100 vs first-enemy 35 damage is punishing and appropriate for brutal. All stat lines feel deliberate."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The chaotic mood is embodied structurally — the level itself is collapsing. Overloaded drones, cybernetic swarm, mech-titan, and rogue core intelligence all belong on a haywire refinery. Ionized Arc-Staff is perfectly class-appropriate for a stormcaller. Nothing feels misplaced."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Arc-Staff shorts out overloaded electrical drone; Overclocked Power Cell bypasses energy shields on cybernetic swarm; Liquid Nitrogen makes mechanical armor brittle; EMP disables the core intelligence's kinetic shielding. All four connections are immediately logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is specific, distinct, and non-redundant. Locations (Shattered Observation Deck, Clogged Ventilation Shafts, Reactor Maintenance Floor) are all unique and vividly named. Hazards are environment-specific. No field is generic or repeated."
+        }
+      },
+      "best_element": "The causal chain is structurally embedded in the setting: the station is actively falling apart, and each encounter's resolution physically disassembles the environment to force the next encounter. This is level design, not just connected rooms.",
+      "worst_element": "The boss victory_condition shortens 'EMP Burst Module' to 'EMP' — a minor naming inconsistency that could cause a reference-resolution mismatch in a strict system, though the intent is unambiguous.",
+      "overall": "This is a near-flawless brutal-tier level: mechanically tight, thematically unified, and causally coherent. It would be genuinely punishing and engaging to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A cyber-archaeology level with a clean pickup chain and appropriate easy-tier numbers. The triggers are entirely generic player-action unlocks (bulkhead, lift, firewall bypass) with no connection to defeating the enemies, making the causal structure weak. The level functions mechanically but doesn't feel designed.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc1 weakness references 'Ionized Solder coating' (pickup is 'Ionized Solder' — minor descriptor addition). Enc2 references 'Overclock Chip frequency' (pickup is 'Overclock Chip'). Boss references 'Logic Bypass Key' exactly. Boss victory_condition uses exact name 'Logic Bypass Key.' One consistent pattern of appended descriptors but all pickups are identifiable."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "All three triggers are generic access-unlock actions ('Unlocks the heavy bulkhead,' 'Activates the lift,' 'Bypasses the security firewall') with no connection to what happens in the encounter. The player could arrive at any location in any order — the trigger text describes traversal, not consequence. Encounters are effectively unlinked."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 30/35/40 and damage escalates 5/8/10 monotonically. Boss at 100 HP and 12 damage is harder than any encounter enemy. Player HP of 100 vs cumulative damage of 23 across all encounters is trivially safe, which correctly matches the easy difficulty label."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Cyber-archaeology in a sunken datavault is a distinct and coherent mysterious sci-fi theme. 'Logic Gate Keeper,' 'Logic Bypass Key,' and 'The Core Architect' all reinforce the computational/archaeological hybrid. Enc0's 'Glitch Drone' is slightly generic but fits the abandoned-tech setting."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Resonance Spanner vibrations disrupting a Glitch Drone is logical. Ionized Solder bypassing energy shields of a Static Sentinel works. Overclock Chip frequency disrupting a Logic Gate Keeper is mechanically coherent. Logic Bypass Key granting mainframe access is a narrative rather than combat mechanic — it's an environmental item used offensively, which is slightly odd but defensible for an artificer."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All encounter locations are distinct. Hazards are appropriately specific (leaking coolant, flickering light bridges, electrified floor tiles). The boss victory_condition 'Inject the Logic Bypass Key into the primary cooling vent' is specific and functional. No repeated fields."
+        }
+      },
+      "best_element": "The thematic consistency of computational vocabulary (logic gate, overclock, bypass key, core architect) throughout the level gives it a coherent identity that a player would immediately recognize.",
+      "worst_element": "All three triggers are structurally identical generic unlock actions that have no relationship to defeating the encounter enemy; the level would read identically if all three enemies were removed and replaced with locked doors.",
+      "overall": "A thematically coherent easy-tier level that would be pleasant to play for new players, but its generic trigger structure means it never coheres into a designed experience — it's a series of rooms rather than a level."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-constructed sci-fi infiltration level with a clean four-step pickup chain and strong causal triggers. The shadowblade class is well-served by the stealth-infiltration framing. One mechanical mismatch (EMP vs biological crew) slightly undermines the coherence.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon 'Phase-Shift Katana.' Enc1 = exact pickup 'EMP Emitter.' Enc2 = exact pickup 'Cryo-Grenade.' Boss = exact pickup 'Neural Disruptor.' Boss victory_condition references 'Neural Disruptor' by name. Zero mismatches."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger (overriding a console to open blast doors) and enc1 trigger (collecting a data log triggering elevator descent) are specific actions with clear spatial consequences. Enc2 trigger (Assassin's death drops a security override key) is a direct combat-consequence item drop. The enc1 trigger slightly breaks immersion — collecting a data log passively triggering an elevator descent is a weak causal link, but all three transitions are at minimum purposeful."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 80/150/200 and damage escalates 25/30/40, both monotonically. Boss at 500 HP and 50 damage is clearly dominant. Player HP of 100 vs boss damage of 50 is punishingly tight for hard. Numbers are appropriate and intentional."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Ominous sci-fi infiltration on a derelict cryo station is fully coherent. 'Void-Stalker Assassin' mirrors the shadowblade class well. The cryo-grenade appearing in a cryo-containment facility is excellent environmental consistency. 'Mutated Maintenance Crew' is slightly generic but appropriate."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Phase-Shift Katana vs Sentry Drone ✓. Cryo-Grenade freezing hyper-reactive biological tissue of the Assassin ✓. Neural Disruptor bypassing AI defensive subroutines ✓. EMP Emitter vs Mutated Maintenance Crew is the problem: EMP affects electronics, but the crew is described as 'mutated' (biological), making this a clear mechanical mismatch."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All encounter locations are distinct (Decompression Chamber, Bio-Hazard Laboratory, Reactor Core Access). Hazards are environment-specific and non-repeated. Every field adds unique information. The boss victory_condition is specific and involves a named item and a named action."
+        }
+      },
+      "best_element": "The cryo-grenade appearing as a pickup in a cryo-containment facility and functioning as a weapon against a biological enemy is a tight piece of environmental and mechanical storytelling.",
+      "worst_element": "EMP Emitter as the weakness of the 'Mutated Maintenance Crew' — a biological enemy — is a mechanical contradiction; replacing EMP with a chemical or biological agent would resolve this without changing the level structure.",
+      "overall": "A solid hard-tier infiltration level that would be engaging and tense to play. The EMP-versus-biological mismatch is a notable design error in an otherwise well-constructed level."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A standout level that elegantly merges alchemical and sci-fi horror into a coherent bio-research lab setting. The pickup chain is exact, the causal triggers are all narrative consequences of the combat, and the alchemical chemistry of the pickups (silver nitrate, phosphorus, mercury) is thematically unified.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon 'Volatile Catalyst Gauntlet.' Enc1 = exact pickup 'Silver Nitrate Solution.' Enc2 = exact pickup 'Phosphorus Extract.' Boss = exact pickup 'Stabilized Mercury Core.' Boss victory_condition names 'Stabilized Mercury Core' exactly. Perfect chain with zero variation."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: slime's death unlocks the bulkhead to Hydroponics Bay (combat consequence). Enc1: a distress signal from the Reactor Core activates as the carrier falls (death-triggered narrative event). Enc2: containment field failure releases Experiment X from cryo-stasis (environmental consequence of the fight). All three are specific and unavoidable."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP escalates 60/80/100 and damage escalates 15/20/25, strictly monotonic. Boss at 300 HP and 35 damage is clearly dominant over any encounter enemy. Player HP of 100 vs medium-tier enemies at 25 max damage is appropriately challenging. All numbers feel deliberate."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The alchemical class is perfectly served by a bio-research lab setting where the pickups are real chemical compounds (silver nitrate, phosphorus extract, mercury core). The progression from necrotic slime to mutated spore-carrier to cybernetic parasite to chimeric sovereign is a coherent escalation of biological horror."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Silver nitrate (freezing properties) vs mutated spore-carrier is slightly loose — silver nitrate has antiseptic/reactive properties but 'freezing' is a stretch. All other pairs are tight: catalyst gauntlet vs slime, phosphorus (incendiary) vs cybernetic parasite, mercury toxin vs biological experiment. One defensible stretch."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three encounter locations are unique and evocative. Hazards are distinct and environment-specific. The pickup names form a thematic series (silver nitrate → phosphorus extract → stabilized mercury core) that adds narrative coherence beyond function. Every field is specific."
+        }
+      },
+      "best_element": "The pickup trio — Silver Nitrate Solution, Phosphorus Extract, Stabilized Mercury Core — forms a genuine alchemical sequence of real chemical compounds, giving the level an intellectually coherent identity that reinforces the alchemist class.",
+      "worst_element": "Assigning 'reactive freezing properties' to silver nitrate is chemically inaccurate and mechanically loose; a more accurate reagent or a different stated effect would close this gap.",
+      "overall": "One of the strongest levels in the file — thematically unified, mechanically coherent, and structurally tight. Would be genuinely engaging to play as an alchemist character."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "whimsical",
+      "player_class": "rogue",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming whimsical sci-fi level with strong thematic imagination and a good causal chain. The primary flaw is a stat escalation error — enc1's enemy has lower HP than enc0's — and the enemy in enc2 is defeated by the player's base weapon rather than the enc1 pickup, which leaves that pickup (Hyper-Magnetized Toffee) orphaned in the combat chain.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 weakness = exact weapon 'Luminescent Grapple-Hook.' Enc1 weakness = exact pickup 'Fizzing Soda Spray.' Enc2 weakness = 'Luminescent Grapple-Hook' (weapon again, valid). Boss weakness = exact pickup 'Overloaded Battery Truffle.' However, the enc1 pickup 'Hyper-Magnetized Toffee' is never used as any enemy's weakness — it only triggers the bridge transition — meaning one pickup slot is decorative with no combat function. Boss victory_condition does not reference the Truffle by name."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger (opening the pressurized soda vault reveals the path) and enc2 trigger (butler drops a keycard unlocking the Inner Sanctum) are specific event triggers. Enc1 trigger (drone's explosion activates a magnetic bridge) is a direct death consequence. The enc0 trigger is an environmental action rather than a combat outcome, slightly weakening the chain."
+        },
+        "balance": {
+          "score": 2,
+          "reason": "Enemy HP does NOT escalate monotonically: enc0 = 40, enc1 = 30, enc2 = 45. Enc1's enemy is weaker than enc0's. Damage is flat at 5/5/5 with no escalation across encounters. Boss HP 100 > 45, boss damage 10 > 5 — barely harder than encounters. Numbers match the 'easy' label but the inversion in HP and flat damage show no intentional design."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "The whimsical candy-station setting is fully committed to and internally consistent: Gummy Marshmallow Bay, Neon Orchard, Bouncing Gelatin Floor, Baron Von Sprinkle, Hyper-Magnetized Toffee. Every element reinforces the absurdist sugar-tech aesthetic. Nothing is out of place."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Grapple-hook vs Sticky Syrup Sentry (grappling through sticky environment) ✓. Fizzing Soda Spray dissolving Glitter-Winged Drone — dissolution of glitter by soda is a whimsical stretch. Grapple-Hook vs Bumbling Robot Butler — no clear mechanical reason why a grapple hook specifically defeats this enemy; the enc1 pickup (Hyper-Magnetized Toffee) goes unused as a weapon. Overloaded Battery Truffle short-circuiting shields ✓."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "Locations are distinct. However, 'Hyper-Magnetized Toffee' has an effect ('Sticks to metallic surfaces') but is never used as a combat weakness — it only triggers a bridge, leaving its offensive potential unused. The boss victory_condition ('Defeat the Baron and disable the Sugar-Ray Satellite') doesn't reference the Truffle by name, leaving the mechanic under-specified."
+        }
+      },
+      "best_element": "The setting and thematic imagination are exceptional — 'Hyper-Magnetized Toffee,' 'Baron Von Sprinkle,' and 'Bouncing Gelatin Floor' are inventive and consistently whimsical, creating a memorable world.",
+      "worst_element": "The HP non-escalation (enc1 enemy at 30 HP is weaker than enc0's 40 HP) combined with flat damage values (5/5/5) shows the numbers were not reviewed for balance; a simple ascending sequence would fix this.",
+      "overall": "A delightful premise with strong creative execution but structural flaws in both balance and the pickup chain. It would be fun to play thematically but the flat difficulty curve would make it feel random rather than designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A beautiful contradiction — serene mood, brutal difficulty — executed effectively through a tranquil floating garden setting where every enemy is a geological or physical phenomenon. The pickup chain uses paraphrases throughout, and the boss victory_condition is generic, but the structural design is otherwise strong.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "All four weaknesses are paraphrases rather than exact names: 'Vibrational frequencies from the Resonance Staff' (weapon), 'Focused light via the Refined Quartz Lens' (pickup), 'Freezing temperature of the Liquid Nitrogen Core' (pickup), 'Manual override using the Anti-Gravity Anchor to ground its levitating power source' (pickup). None cite items by exact standalone name. Boss victory_condition 'Destruction of the central processing node' references no specific named item from the level — it's entirely generic."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are direct physical consequences of defeating the enemy: the drone's core explosion shatters a glass barrier, the golem's collapse creates a bridge across a nitrogen lake, the phantom's dissipation activates a lift. Every transition is a physical inevitability caused by the enemy's destruction."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 150/200/250 and damage escalates 40/45/50, both monotonically. Boss at 600 HP and 70 damage is clearly dominant. Player HP of 50 vs first-enemy 40 damage means one hit represents 80% of total health — appropriate for brutal. Boss's 70 damage would one-shot the player, making it extremely punishing. Matches brutal."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Serene sci-fi geomancer in floating gardens is fully realized: Crystal Arboretum, Stillness Pond, Prism Shard Golem, Mercury Phantom, Serene Architect. Every element reinforces the tranquil-but-deadly aesthetic. The Refined Quartz Lens and Liquid Nitrogen Core are perfectly class-appropriate for a geomancer."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Resonance Staff vibrations shattering a Prism Shard Golem's crystal structure — elegant. Quartz Lens focusing light on the golem — classic crystal weakness. Liquid Nitrogen solidifying a Mercury Phantom — logical state-change mechanic. Anti-Gravity Anchor grounding a levitating boss — direct counter-mechanic. All four are immediately intuitive."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All encounter locations and hazards are distinct and specific. The boss victory_condition 'Destruction of the central processing node' is generic placeholder text that introduces no named item, specific mechanic, or unique consequence — it could apply to any boss. A reference to the Anti-Gravity Anchor would close this gap."
+        }
+      },
+      "best_element": "The mechanical sense is exceptional — the Quartz Lens focusing light on a crystal golem, liquid nitrogen solidifying mercury, and an anti-gravity anchor grounding a levitating boss are all satisfying logical connections that feel like a geomancer's toolkit.",
+      "worst_element": "The systematic use of descriptions instead of exact item names in all four weakness fields means this level would fail reference-integrity checks in any name-matching system; the boss victory_condition compounds this by referencing nothing from the encounter chain.",
+      "overall": "A visually and thematically strong level with excellent mechanical design, undercut by a structural habit of paraphrasing item names instead of citing them exactly. Would be satisfying to play; needs a single copy-editing pass to fix reference consistency."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-crafted gothic horror alchemist level set in a calcined monastery. The pickup chain is exact and thematically coherent — alchemical compounds throughout. The causal triggers are the main weakness: they are environmental rituals or generic door-opening actions rather than direct combat consequences.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon 'Corrosive Vitriol Flasks.' Enc1 = exact pickup 'Concentrated Saltpeter.' Enc2 = exact pickup 'Mercurial Solvent.' Boss = exact pickup 'Essence of Pure Phosphorus.' Boss victory_condition references 'Phosphorus light' — 'Pure Phosphorus' from 'Essence of Pure Phosphorus' is slightly shortened but immediately identifiable. Near-perfect."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc0 trigger ('Opening the monastery's main door to the Cloisters') is a generic location transition with no connection to defeating the poltergeist. Enc1 trigger ('Lighting the three silver braziers in the garden square') is an environmental puzzle unrelated to defeating the revenant — the player could do this before or without that combat. Only enc2 trigger ('Unlocking the iron gate to the Cathedral Sanctuary') moves the player to the boss area, and it's still generic. No trigger is a consequence of winning the encounter."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 60/120/150 and damage escalates 15/20/25, both monotonically. Boss at 400 HP and 35 damage is clearly dominant. Player HP of 80 vs boss damage of 35 is tight for hard. The encounter damage values (up to 25) allow multiple hits, making it challenging but survivable. Appropriate for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Eerie horror monastery alchemist is fully realized: ink-stained poltergeist in the scriptorium, fused petal revenant in the cloister gardens, calcified monk in the apothecary basement, alchemical amalgamation in the cathedral. Every element belongs to this specific world. The alchemical pickup trio (saltpeter, mercurial solvent, phosphorus) is period-appropriate."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Corrosive vitriol flasks vs poltergeist (dissolving spectral matter) ✓. Concentrated saltpeter (explosive enhancer) vs petal revenant ✓. Mercurial solvent dissolving supernatural armor of a calcified monk ✓. Essence of Pure Phosphorus creating blinding white light to burn the amalgamation ✓. All connections are alchemically grounded."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All encounter locations are distinct and evocative. Hazards are varied (razor quills, toxic pollen, shattering glass). The boss name 'The Alchemical Amalgamation' is slightly generic for the final villain but functional. No fields are repeated or placeholder text."
+        }
+      },
+      "best_element": "The alchemical pickup sequence (vitriol → saltpeter → mercurial solvent → phosphorus) forms a historically grounded chemistry chain that perfectly matches the alchemist class and the eerie monastery setting.",
+      "worst_element": "None of the three triggers are consequences of defeating the encounter enemy — they are all generic environmental actions (open a door, light braziers, unlock a gate) that could occur regardless of whether combat took place, making the encounters feel decorative.",
+      "overall": "A thematically rich and mechanically coherent horror level that would be atmospheric and engaging to play. The broken causal chain means the encounters feel optional rather than mandatory, which is the primary design flaw."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An excellent brutal-tier horror pyromancer level with strong thematic identity and a causal chain driven by specific ritual actions and combat consequences. The Essence of the Phoenix as a single-use death-prevention item that also serves as the boss-killing mechanism is a clever dual-function design.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc1 weakness = 'Soul-Soaked Kerosene ignition' (pickup is 'Soul-Soaked Kerosene' — descriptor added but name present ✓). Enc2 weakness = 'Holy fire using the Consecrated Salve' (pickup is 'Consecrated Salve' — name embedded ✓). Boss weakness = 'Detonation of the Essence of the Phoenix' (exact name ✓). Boss victory_condition references 'Essence of the Phoenix' ✓. Enc0 weakness = 'Direct fire from the Obsidian Censer' instead of exact weapon name 'Obsidian Censer of Hellfire' — one paraphrase in a level that otherwise respects exact names."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: pulling the Lever of Sighs opens the gate to the Crypt of Murmurs — specific named action ✓. Enc1: igniting the Librarian's scrolls reveals a hidden passage to the Sanctum — death-consequence ritual ✓. Enc2: extinguishing the three eternal torches summons the Grave Lord — specific ritual summons the boss directly ✓. All three triggers are specific, named, and mechanically meaningful."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "HP escalates 150/300/450, damage escalates 40/60/75, both strictly monotonic. Boss at 1200 HP and 95 damage is clearly dominant — 95 damage vs 100 HP player health means near-instant death per hit, appropriate for brutal. The Essence of the Phoenix's death-prevention effect is a built-in safety valve that adds tactical depth without breaking the brutality."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Ominous horror pyromancer in an ossuary is perfectly unified: hellfire censer, weeping effigy, flayed librarian, marrow golem, grave lord Malphas. Soul-Soaked Kerosene, Consecrated Salve, and Essence of the Phoenix are all thematically apt pyromancer tools. The Hall of Choking Ash, Crypt of Murmurs, Sanctum of Rotted Ribs are vivid and specific."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Hellfire censer vs weeping effigy (fire purges the cursed effigy) ✓. Soul-Soaked Kerosene igniting the Flayed Librarian's scrolls to consume the librarian ✓. Consecrated Salve adding holy property for fire vs undead bone Marrow Golem ✓. Essence of Phoenix detonation burning Malphas from within ✓. All four connections are thematically and mechanically elegant."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All encounter locations are distinct and vivid. Every hazard is unique and environment-specific. The Consecrated Salve serves a dual function (healing + holy property) that adds tactical decision-making. Boss victory_condition is specific and visceral. No repeated or generic fields."
+        }
+      },
+      "best_element": "The Essence of the Phoenix serving dual functions — preventing death once AND acting as the boss-killing catalyst — is an elegant mechanic that rewards saving it for the right moment and creates genuine tactical tension.",
+      "worst_element": "Enc0 weakness references 'Direct fire from the Obsidian Censer' instead of the exact weapon name 'Obsidian Censer of Hellfire' — a minor paraphrase that is the only structural imperfection in an otherwise excellent level.",
+      "overall": "A near-flawless brutal horror level with rich thematic identity, exact pickup references, and an outstanding causal chain driven by ritual actions. Would be genuinely tense and satisfying to play as a pyromancer."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A functional but unremarkable horror sanatorium level. The pickup chain is exact and the enemy lineup escalates cleanly, but the triggers are generic traversal actions with no connection to the encounter combat, and the numbers are too lenient for a 'medium' difficulty.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon 'Obsidian Dagger.' Enc1 = exact pickup 'Vial of Holy Water.' Enc2 = exact pickup 'Shattered Mirror Shard.' Boss = exact pickup 'Blessed Oil.' All exact. Boss victory_condition references 'ignite the altar' but not 'Blessed Oil' by name — a minor omission in the condition text, but the weakness field is exact."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "Enc0 trigger ('Finding the Ward Key leads to the Pharmacy') is a generic item-find with no connection to defeating the Screeching Nurse. Enc1 trigger ('Unlocking the back door reveals the Chapel entrance') is a generic door-unlock. Only enc2 trigger ('The altar slides away to reveal the Boss lair') is a physical event that creates the boss encounter. The first two triggers could occur without any combat."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "HP escalates 40/50/60 and damage escalates 10/12/15, both monotonically. Boss HP 200 > 60 ✓. Boss damage 25 > 15 ✓. However, player HP of 100 vs maximum enemy damage of 25 (boss) means the player can absorb four boss hits — very comfortable for 'medium.' The numbers technically escalate correctly but the overall threat level is too low for medium difficulty."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Horror tense shadowblade in a sanatorium is a natural fit: screeching nurse, poltergeist chemist, shadow stalker, archbishop of rot. The settings (patient intake ward, darkened pharmacy, forgotten chapel) create a coherent gothic horror progression. 'Archbishop of Rot' as a sanatorium boss is slightly incongruous — it would fit better in a church level — but the Whispering Sanatorium framing is consistent otherwise."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Holy water removing spectral armor from a ghost ✓. Shattered mirror shard reflecting shadow projectiles of a Shadow Stalker ✓. Blessed Oil ignoring physical resistance of the Archbishop ✓. Obsidian Dagger vs Screeching Nurse (physical melee) is basic but functional. All connections are logical, nothing is inspired."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct, hazards are specific. The boss victory_condition ('Defeat the Archbishop and ignite the altar') is slightly underspecified — it introduces 'ignite the altar' without reference to any pickup or mechanic established in the level. No fields are obviously generic or repeated."
+        }
+      },
+      "best_element": "The Shattered Mirror Shard reflecting shadow projectiles against the Shadow Stalker is a mechanically elegant connection — the item's function directly counters the enemy's attack type.",
+      "worst_element": "Two of three triggers are generic door/key unlocks disconnected from defeating the encounter enemy; the encounters feel like optional obstacles in a corridor rather than necessary escalating confrontations.",
+      "overall": "A competent but unambitious horror level that would be functional but not particularly tense despite its mood label. The low numbers and generic triggers make it feel like a tutorial sanatorium rather than a designed medium challenge."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An excellent desolate horror ranger level with a strong causal chain, exact item references embedded in descriptive phrases, and escalating numbers that match the hard difficulty label. The Weeping Marshes setting and its progression through sunken chapel to rotting orchard to the gate of sorrows creates a coherent desolate atmosphere.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All item names are present in weakness fields but with descriptors appended: 'Direct shots from the Shattered Glass Longbow to its exposed ribcage,' 'Vial of Luminescent Bile reveals its physical heart,' 'Obsidian Arrowheads penetrate its heavy plate armor,' 'The Salted Cinder Pot dissolves her protective cocoon.' All four pickup/weapon names are embedded and identifiable. Boss victory_condition explicitly names 'Salted Cinder Pot' and 'longbow' ✓."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0: Stalker's death lifts the fog revealing the path — death consequence ✓. Enc1: burning the Harvester's remains signals the Guardian to emerge — post-death ritual triggers enc2 directly ✓. Enc2: Mourner's defeat opens the gate to the Heart of the Marsh — death consequence leads to boss ✓. All three are specific, physical, and unavoidable."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 120/150/200 and damage escalates 35/40/45, both monotonically. Boss at 500 HP and 60 damage is clearly dominant. Player HP of 100 vs enc0 enemy doing 35 damage is very tight for hard — three hits from the first enemy. The Obsidian Arrowheads granting +15 permanent damage adds a progression element. Matches hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Desolate horror ranger in the Weeping Marshes is fully realized: mire-stalker, spectral harvester, iron-clad mourner, blighted matriarch. Every location name (Sunken Chapel, Rotting Orchard, Gate of Sorrows, Heart of the Marsh) reinforces the desolate, grief-soaked atmosphere. 'Shattered Glass Longbow' is an unusual and evocative weapon for this world."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Luminescent Bile revealing invisible spectral entities for targeting is a classic visibility mechanic ✓. Obsidian Arrowheads penetrating heavy plate armor of the iron-clad mourner is direct and logical ✓. Salted Cinder Pot (ignite and purge eldritch corruption) dissolving the Matriarch's corruption cocoon ✓. Longbow headshots finishing the boss are a satisfying skill-expression requirement ✓."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location, enemy, hazard, and pickup is distinct and specific. The Obsidian Arrowheads granting a permanent +15 damage is a meaningful permanent upgrade that adds mechanical depth. The boss's multi-step victory condition (dissolve cocoon + five headshots) is specific and engaging. No generic or repeated fields."
+        }
+      },
+      "best_element": "The two-step boss victory condition — dissolve the corruption cocoon with the Salted Cinder Pot, then land five headshots with the longbow — creates a specific skill-expression challenge that uses both the encounter pickup and the player's class weapon.",
+      "worst_element": "Item names are consistently cited with appended descriptors rather than as exact standalone names; while all items are identifiable, this pattern would cause reference failures in exact-match systems.",
+      "overall": "A high-quality desolate horror level that would be genuinely challenging and atmospheric to play. The causal chain, thematic unity, and mechanical design are all strong — this is one of the better levels in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serviceable gothic horror necromancer level with a clean pickup chain and appropriate easy-tier numbers. The triggers are mostly environmental puzzles disconnected from defeating the enemies, and the Shimmering Soul-Wisp pickup is never used as a combat weakness, leaving one encounter's pickup functionally orphaned.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc0 weakness = exact weapon 'Ossified Rib-Scythe.' Enc1 = exact pickup 'Vial of Grave-Sap.' Enc2 weakness = 'Ossified Rib-Scythe' (weapon reuse — valid). Boss = exact pickup 'Purified Essence.' The Shimmering Soul-Wisp from enc1 is not used as any enemy's weakness — it's a defensive item — but it doesn't create a reference gap since enc2 correctly uses the weapon. Boss victory_condition 'Shatter the glowing core in the Amalgam's chest' names no specific item."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0 trigger ('Opening the rusted iron gate reveals the path to the Altar Room') is generic traversal. Enc1 trigger ('Extinguishing the three ritual candles unlocks the Ossuary door') is an environmental puzzle not connected to defeating the weeping gargoyle. Enc2 trigger ('The Sentinel's defeat shatters the seal on the Master's Sarcophagus') is a direct combat consequence that releases the boss ✓. Two of three triggers are disconnected from the combat."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 40/50/60 and damage escalates 10/12/15, both monotonically. Boss HP 150 > 60 ✓. Boss damage 20 > 15 ✓. Player HP of 150 vs max encounter damage of 15 means the player can absorb 10 hits — trivially easy, correctly matching the easy label. All escalation is correct."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Gothic horror mysterious necromancer in sunken catacombs is fully realized: Hall of Echoes, Altar Room, Great Ossuary; restless ghoul, weeping gargoyle, skeletal sentinel, bone-amalgam. Vial of Grave-Sap and Ossified Rib-Scythe are perfectly class-appropriate. The setting and enemy roster are coherent and evocative."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Ossified Rib-Scythe vs restless ghoul — basic melee, functional. Grave-Sap (acidic rot) vs weeping gargoyle (stone) — acid on stone is reasonable ✓. Shimmering Soul-Wisp provides a shield — defensive, not used offensively (correctly). Purified Essence 'increases magic potency' as a boss weakness is vague — it's a buff item being used as a damage tool, with no specific mechanism for why it defeats the Bone-Amalgam. The connection is under-explained."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All encounter locations are distinct. Hazards are specific. The boss victory_condition 'Shatter the glowing core in the Amalgam's chest' is slightly generic — it doesn't reference any specific pickup or mechanic from the level, making it feel like a standard boss fight rather than a consequence of the level's item chain. One generic field in an otherwise complete level."
+        }
+      },
+      "best_element": "The setting progression — Hall of Echoes to Altar Room to Great Ossuary — creates a coherent spatial descent into increasingly sacred/forbidden necromantic territory that fits both the mysterious mood and the necromancer class.",
+      "worst_element": "The Purified Essence as boss weakness with the effect 'increases magic potency' is mechanically vague — it's a buff item with no clear offensive function; the boss victory_condition should specify how increased magic potency defeats the Bone-Amalgam.",
+      "overall": "A competent easy-tier gothic horror level with strong thematic identity that would serve its purpose for new players. The vague boss mechanic and disconnected triggers prevent it from feeling fully designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A visceral Lovecraftian gore-industrial berserker level with impressive enemy HP escalation and a strong causal chain. The primary flaw is a location name inconsistency in enc1's trigger (mentions 'Incinerator' but enc2 is the 'Bone Grinder Pit'), and the boss victory_condition references 'acid' rather than the 'Corrupted Bile Vial' by name.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc0 = exact weapon 'Jagged Bone-Saw Cleaver.' Enc1 = 'Adrenaline Injector speed bursts' (pickup is 'Adrenaline Injector' — descriptor added but name present ✓). Enc2 = exact pickup 'Phosphorus Flare.' Boss = exact pickup 'Corrupted Bile Vial.' Boss victory_condition says 'while the boss is melting from acid' instead of referencing 'Corrupted Bile Vial' by name — a paraphrase of the effect, not the item name."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger: pressure plate under corpse releases hydraulic locks — specific death-triggered mechanism ✓. Enc1 trigger: monster's death scream shatters reinforced glass 'leading to the Incinerator' — death consequence, but enc2 is labeled 'Bone Grinder Pit' not 'Incinerator,' creating a location name inconsistency. Enc2 trigger: creature's carcass falls into gears jamming the lift to the Apex — physical death consequence ✓. Two strong triggers, one location mismatch."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 300/500/750 and damage escalates 40/60/80, both monotonically. Boss at 2500 HP and 110 damage with player HP of 150 — one hit deals 73% of player health, brutal. Boss is clearly dominant over all encounter enemies. The escalation feels intentional and severe, matching brutal difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Lovecraftian gore-industrial horror for a berserker is excellently executed: gutting hall, flash-freezer vault, bone grinder pit, flesh-amalgam sovereign. Suture-wretch, frost-bitten abomination, marrow-eater centipede, flesh-amalgam sovereign — all grotesque and coherent. The Phosphorus Flare creating 'intense holy fire' in a slaughterhouse is a striking contrast that works."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Bone-Saw Cleaver vs Suture-Wretch (stitched flesh) ✓. Adrenaline Injector speed bursts allowing dodging of Frost-Bitten Abomination — this is a movement advantage, not a direct damage mechanic; the 'weakness' is about outmaneuvering rather than countering, which is a mechanical stretch. Phosphorus Flare's holy fire aura vs Marrow-Eater Centipede ✓. Corrupted Bile Vial coating in acid vs Flesh-Amalgam Sovereign ✓."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations are distinct and vivid. All hazards are unique and environment-specific. The enc1 trigger naming 'Incinerator' as the next location while enc2 is 'Bone Grinder Pit' is an internal inconsistency — either the level has an unnamed intermediate location or this is a naming error. All other fields are specific and non-redundant."
+        }
+      },
+      "best_element": "The enemy HP progression (300/500/750/2500) creates a genuine sense of escalating monstrosity — each enemy is significantly more durable than the last, making the berserker's grind through the slaughterhouse feel like a brutal war of attrition.",
+      "worst_element": "The enc1 trigger references 'the Incinerator' as the next destination while enc2 is set in 'The Bone Grinder Pit' — an internal location name conflict that suggests the level was revised without updating all references.",
+      "overall": "A brutal, visceral, and thematically committed berserker level that would be punishing and satisfying to play. The location name conflict is a copy error that mars an otherwise strong design."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "An elegantly designed serene horror level where pickup usage drives the progression as much as combat does — each pickup both defeats an enemy and enables the transition to the next area. The moonlit arboretum setting is distinctive and every element reinforces the tranquil decay aesthetic.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = exact weapon 'Sanctified Censer.' Enc1 = exact pickup 'Vial of Sun-Infused Water.' Enc2 = exact pickup 'Echoing Bell Jar.' Boss = exact pickup 'Purified Resin.' Boss victory_condition names 'Purified Resin' explicitly ✓. Zero deviations."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 trigger: picking the vial causes fog to clear revealing the path — acquiring the pickup drives movement, but this happens independently of defeating the Weeping Dryad, weakening the causal link. Enc1 trigger: placing the Bell Jar on a pedestal opens the stone gates — using the pickup as an environmental key ✓. Enc2 trigger: applying resin to the tower's lens focuses moonlight onto the Boss arena — direct setup for the final encounter ✓. Two strong triggers, one that detaches pickup acquisition from combat."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "HP escalates 60/80/100 and damage escalates 15/20/25, both monotonically. Boss HP 300 > 100 ✓. Boss damage 40 > 25 ✓. However, player HP of 150 vs maximum enemy damage of 40 means the player absorbs 3-4 boss hits and 6-10 encounter hits — very safe for 'medium' difficulty. The label suggests more danger than the numbers deliver."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Serene horror warden in a moonlit arboretum is beautifully realized: Silver Lily Pond, Wilted Orchard, Star-Watch Tower; weeping dryad, grave-tending specter, sightless sentinel, serene monarch of decay. Glowing glass dust and moonlit atmosphere create a distinctive visual identity. The Serene Monarch of Decay captures the serene-horror contrast perfectly."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Sun-Infused Water burning shadow entities (specter) ✓. Echoing Bell Jar amplifying sound waves against the Sightless Sentinel — targeting an enemy's remaining sensory input (hearing) when its sight is gone is an exceptionally clever mechanic ✓. Purified Resin sealing the Monarch in a crystalline cocoon ✓. Sanctified Censer vs Weeping Dryad ✓."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is specific, distinct, and additive. The Echoing Bell Jar having dual function — combat weapon AND environmental key (placed on pedestal) — is a sophisticated design choice. No repeated locations, hazards, or enemy types. All fields contribute unique information."
+        }
+      },
+      "best_element": "The Echoing Bell Jar used against the Sightless Sentinel is a superb design moment: an enemy with no sight is vulnerable to amplified sound, making the pickup-enemy connection both logically perfect and narratively poetic.",
+      "worst_element": "Player HP of 150 vs medium-difficulty enemies that deal at most 25-40 damage makes the level too lenient; reducing player HP to 100 or increasing enemy damage would make the 'medium' label accurate.",
+      "overall": "A beautifully crafted serene horror level with exceptional mechanical sense and thematic coherence. The numbers are too comfortable for 'medium,' but the design quality is high enough that it would be a memorable and atmospheric experience to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightful whimsical horror illusionist level where every mechanical connection is clever and the setting is fully committed to its absurdist premise. The causal chain has one generic trigger and the enc0 weakness is a description rather than an exact name, but the overall design is strong for its difficulty tier.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc0 weakness = 'Direct reflection from the Prismatic Mirror Staff' — paraphrase of exact weapon name 'Prismatic Mirror Staff.' Enc1 = exact pickup 'Bottle of Liquid Silence' ✓. Enc2 = 'Starlight Ribbon tethering its limbs' — 'Starlight Ribbon' is the exact pickup name, descriptor added. Boss = exact pickup 'The Ever-Glowing Polished Marble' ✓. Boss victory_condition shortens it to 'the Marble' — identifiable but inexact. One clear paraphrase (enc0) and one shortening (boss condition)."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0 trigger: 'Opening the velvet curtain at the end of the hall' — generic environmental action, no connection to defeating the Floating Grin Mask. Enc1 trigger: tying the garden gates with the Starlight Ribbon causes the floor to descend — creative use of the pickup as an environmental mechanism ✓. Enc2 trigger: placing the marble in the Jack-in-the-box socket releases the boss — specific narrative release ✓. Two good triggers, one generic."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "HP escalates 40/50/60 and damage escalates 5/10/12, both monotonically. Boss HP 120 > 60 ✓. Boss damage 15 > 12 ✓. Player HP of 150 vs max 15 boss damage — ten boss hits to kill — is very safe, correctly matching the easy label. The close damage escalation (10→12) is minimal but the direction is correct."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Whimsical horror illusionist in the Giggling Conservatory is fully realized: floating grin mask, howling topiary cat, stitched porcelain jester, shadow puppeteer. Bottle of Liquid Silence, Starlight Ribbon, Ever-Glowing Polished Marble — all fit the uncanny illusionist toolkit. Every element reinforces the whimsical-sinister aesthetic without contradiction."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Mirror Staff reflection damaging the Grin Mask (which presumably operates via illusion/reflection) ✓. Liquid Silence muting the Howling Topiary Cat (a sound-based threat) ✓. Starlight Ribbon tethering the Stitched Porcelain Jester's limbs (immobilizing an acrobatic enemy with light-tethers) ✓. Polished Marble emitting blinding white light to dissolve the Shadow Puppeteer (light destroys shadow) ✓. All four connections are elegant."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations are unique and evocative (Hall of Echoing Laughter, Garden of Screaming Lilies, Dollhouse Cellar). Every hazard is specific and whimsical. The Jack-in-the-box boss release is a memorable and specific mechanic. No repeated or generic fields anywhere in the level."
+        }
+      },
+      "best_element": "The Liquid Silence pickup muting the Howling Topiary Cat is a perfect mechanical counter — the item's entire function is negating the enemy's primary trait, and the whimsical framing ('liquid silence') makes it conceptually delightful.",
+      "worst_element": "The enc0 trigger ('Opening the velvet curtain at the end of the hall') is a generic traversal action with no connection to defeating the Floating Grin Mask — replacing it with a consequence of the mirror-reflection combat would close this gap.",
+      "overall": "An inventive and cohesive whimsical horror level where every pickup-enemy pair has genuine creative logic. The causal chain is the only meaningful weakness — this would be a memorable and enjoyable easy-tier experience."
+    }
+  }
+]

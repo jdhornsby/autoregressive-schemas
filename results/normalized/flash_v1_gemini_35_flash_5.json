@@ -1,0 +1,1138 @@
+[
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Sci-Fi",
+      "setting": "An abandoned, depressurizing deep-space research station orbiting a dying star.",
+      "player_weapon": "Industrial Arc Welder",
+      "player_weapon_damage": 15,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "Decontamination Airlock",
+          "enemy": {
+            "name": "Corrupted Maintenance Drone",
+            "health": 45,
+            "damage": 12,
+            "weakness": "Industrial Arc Welder"
+          },
+          "hazard": "Ruptured plasma line venting superheated gas across the main walkway.",
+          "pickup": {
+            "name": "Cryo-Coolant Canister",
+            "effect": "Modifies the welder to spray short-range liquid nitrogen, freezing structural elements and electronics."
+          },
+          "trigger": "Manually overriding the airlock door sparks a power surge, unlocking the adjacent Hydroponics Bay."
+        },
+        {
+          "location": "Hydroponics Bay",
+          "enemy": {
+            "name": "Mutated Bio-Mass Strangler",
+            "health": 60,
+            "damage": 18,
+            "weakness": "Cryo-Coolant Canister"
+          },
+          "hazard": "Spores in the air that drain player health over time unless moving quickly.",
+          "pickup": {
+            "name": "High-Frequency Sonic Resonator",
+            "effect": "Emits powerful acoustic pulses that shatter brittle materials and disrupt shielding."
+          },
+          "trigger": "Purging the mutated spores activates the emergency elevator, descending to the Reactor Core."
+        },
+        {
+          "location": "Reactor Core Sub-level",
+          "enemy": {
+            "name": "Crystalline Shard Guardian",
+            "health": 75,
+            "damage": 22,
+            "weakness": "High-Frequency Sonic Resonator"
+          },
+          "hazard": "Leaking radiation pools that severely damage the player upon contact.",
+          "pickup": {
+            "name": "Overcharged EMP Matrix",
+            "effect": "Recharges the welder to release a massive electromagnetic shockwave capable of shutting down heavy fusion cores."
+          },
+          "trigger": "Defeating the Guardian causes the main reactor shield to fail, exposing the rogue AI core."
+        }
+      ],
+      "boss": {
+        "name": "A.P.E.X. Rogue Station AI",
+        "health": 150,
+        "damage": 25,
+        "weakness": "Overcharged EMP Matrix",
+        "victory_condition": "Disrupt the central processing pillar with the Overcharged EMP Matrix and then seal the reactor containment door."
+      },
+      "objective": "Navigate the dying research station, bypass the rogue automated defense systems, and disable the rogue AI before the reactor goes supernova.",
+      "reward": "Unlocks the 'Master Specialist' exosuit skin and the 'Plasma Overload' weapon modification blueprint."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Sci-Fi Desolate Chronomancy",
+      "setting": "An abandoned, temporal-decay research facility orbiting a dying black hole, where gravity and time warp the rusted metal corridors.",
+      "player_weapon": "Chronal-Displacement Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The De-synchronized Hangar",
+          "enemy": {
+            "name": "Stasis Drone",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Chronal-Displacement Staff"
+          },
+          "hazard": "Flickering temporal anomalies that freeze anything touching them for 3 seconds",
+          "pickup": {
+            "name": "Entropy Battery",
+            "effect": "Increases staff damage to 35 for one turn or decays mechanical armor instantly"
+          },
+          "trigger": "Retrieving the Entropy Battery overloads the local power grid, blasting open the heavy blast doors to the Engine Room"
+        },
+        {
+          "location": "Decayed Warp Engine Room",
+          "enemy": {
+            "name": "Quantum Shifter",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Entropy Battery"
+          },
+          "hazard": "Exposed engine core leaking radiation pulses that reverse player health recovery",
+          "pickup": {
+            "name": "Void Phase-Module",
+            "effect": "Allows the player to bypass solid matter or energy shields for a short duration"
+          },
+          "trigger": "Slaying the Quantum Shifter collapses its gravity well, opening a spatial rift straight into the Observatory"
+        },
+        {
+          "location": "Shattered Observatory",
+          "enemy": {
+            "name": "Chronofage Scavenger",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Void Phase-Module"
+          },
+          "hazard": "Shattered glass ceiling venting oxygen into the vacuum of space every 4 turns",
+          "pickup": {
+            "name": "Singularity Core",
+            "effect": "Creates a localized black hole that disables shield-regeneration and gravity"
+          },
+          "trigger": "Inserting the Singularity Core into the central terminal activates the main elevator leading to the Singularity Chamber where the Warden waits"
+        }
+      ],
+      "boss": {
+        "name": "The Aeon Warden",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Singularity Core",
+        "victory_condition": "Detonate the Singularity Core inside the Warden's chest cavity while phasing through its outer shield"
+      },
+      "objective": "Navigate the collapsing temporal facility, collect the stabilizing elements, and neutralize the corrupted Aeon Warden to stop the timeline collapse.",
+      "reward": "The Ouroboros Key, granting the player permanent control over localized time-loops."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "sci-fi chaotic stormcaller",
+      "setting": "An overcharged fusion reactor core shattering under a gravity storm",
+      "player_weapon": "Volt-Scythe",
+      "player_weapon_damage": 35,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Reactor Cooling Conduit",
+          "enemy": {
+            "name": "Magnetic Shrapnel Swarm",
+            "health": 120,
+            "damage": 30,
+            "weakness": "Volt-Scythe"
+          },
+          "hazard": "Leaking liquid nitrogen geysers",
+          "pickup": {
+            "name": "Superconductor Core",
+            "effect": "Charges the player's weapon with lightning aura"
+          },
+          "trigger": "Inserting the Superconductor Core into the auxiliary panel overloads the security grid, unlocking the Gravity Lift to the main turbine."
+        },
+        {
+          "location": "Main Turbine Chamber",
+          "enemy": {
+            "name": "Overcharged Defense Drone",
+            "health": 200,
+            "damage": 45,
+            "weakness": "Superconductor Core"
+          },
+          "hazard": "Unstable gravity fluctuations throwing debris",
+          "pickup": {
+            "name": "Plasma Disrupter Cell",
+            "effect": "Emits short-range EMP blasts"
+          },
+          "trigger": "Ripping the Plasma Disrupter Cell from the drone's wreckage triggers an emergency lockdown, forcing open the ventilation shaft to the Command Deck."
+        },
+        {
+          "location": "Command Deck Atrium",
+          "enemy": {
+            "name": "Cybernetic Void Stalker",
+            "health": 300,
+            "damage": 55,
+            "weakness": "Plasma Disrupter Cell"
+          },
+          "hazard": "Decompressing hull breaches tearing at the room",
+          "pickup": {
+            "name": "Chronos-Drive Battery",
+            "effect": "Distorts temporal flow to slow down kinetic shields"
+          },
+          "trigger": "The death of the Void Stalker activates the automated self-destruct cycle, opening the blast doors to the Reactor Heart where the Boss awaits."
+        }
+      ],
+      "boss": {
+        "name": "The Singularity Engine",
+        "health": 600,
+        "damage": 75,
+        "weakness": "Chronos-Drive Battery",
+        "victory_condition": "Overload the Singularity Engine with the Chronos-Drive Battery to stabilize the timeline before the containment field completely collapses."
+      },
+      "objective": "Navigate the collapsing reactor to stabilize the core before total annihilation.",
+      "reward": "The Master Stormcaller Aegis and the Temporal Flux dash ability."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Sci-Fi",
+      "setting": "An abandoned orbital laboratory enveloped in a mysterious quantum mist.",
+      "player_weapon": "Electro-Magnetron Arc Pistol",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Sub-Level 1: Hydroponics Bay",
+          "enemy": {
+            "name": "Overcharged Maintainer Drone",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Electro-Magnetron Arc Pistol"
+          },
+          "hazard": "Leaking cryo-fluid pipes blocking the main pathway",
+          "pickup": {
+            "name": "Thermal Induction Core",
+            "effect": "Can be thrown to instantly melt frozen barriers or overheat silicon armor."
+          },
+          "trigger": "Inserting the Thermal Induction Core into the cargo elevator power console unlocks access to the server farm below."
+        },
+        {
+          "location": "Sub-Level 2: Mainframe Server Farm",
+          "enemy": {
+            "name": "Frost-Bitten Sentry Mech",
+            "health": 40,
+            "damage": 8,
+            "weakness": "Thermal Induction Core"
+          },
+          "hazard": "Exposed high-voltage electrical conduits",
+          "pickup": {
+            "name": "Quantum Disruption Field Generator",
+            "effect": "Creates a localized frequency wave that destabilizes hard-light shielding."
+          },
+          "trigger": "Disabling the security grid with the Quantum Disruption Field Generator overrides the blast doors leading to the Core Chamber."
+        },
+        {
+          "location": "Sub-Level 3: Power Distribution Core",
+          "enemy": {
+            "name": "Glitch-Phase Security Node",
+            "health": 45,
+            "damage": 10,
+            "weakness": "Quantum Disruption Field Generator"
+          },
+          "hazard": "Erratic phase-shifting energy fields",
+          "pickup": {
+            "name": "Overcharged Plasma Condenser",
+            "effect": "Channels raw reactor plasma to overload core heat sinks."
+          },
+          "trigger": "Using the Overcharged Plasma Condenser to bypass the quarantine protocols initiates the sequence to summon the central AI."
+        }
+      ],
+      "boss": {
+        "name": "System Archon AI",
+        "health": 120,
+        "damage": 15,
+        "weakness": "Overcharged Plasma Condenser",
+        "victory_condition": "Detonate the Overcharged Plasma Condenser within the central processor casing while avoiding its orbital laser grid."
+      },
+      "objective": "Retrieve the lost quantum research data and escape before the facility self-destructs.",
+      "reward": "Quantum Siphon Schematic and the legendary Starfarer's Crest."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Sci-Fi Ominous Shadowblade",
+      "setting": "An abandoned, derelict corporate research facility floating in deep space, illuminated only by emergency power and flickering starlight.",
+      "player_weapon": "Phase-Vibe Katana",
+      "player_weapon_damage": 35,
+      "player_health": 120,
+      "encounters": [
+        {
+          "location": "Decompression Airlook and Upper Catwalks",
+          "enemy": {
+            "name": "Sentry Drone Model ZX-9",
+            "health": 70,
+            "damage": 25,
+            "weakness": "Phase-Vibe Katana high-frequency strikes"
+          },
+          "hazard": "Exposed high-voltage electrical conduits",
+          "pickup": {
+            "name": "Overcharged EMP Battery",
+            "effect": "Discharges a localized electromagnetic pulse that disables shield matrices"
+          },
+          "trigger": "A terminal log reveals that the facility's containment core has failed, opening the elevator shafts leading down to the primary lab."
+        },
+        {
+          "location": "Sub-level 2 Cryogenic Storage Area",
+          "enemy": {
+            "name": "Crazed Synthetic Laborer",
+            "health": 110,
+            "damage": 35,
+            "weakness": "Overcharged EMP Battery used to short-circuit its neural link"
+          },
+          "hazard": "Fumes of liquid nitrogen leaking from ruptured coolant tanks",
+          "pickup": {
+            "name": "Corrosive Acid Vial",
+            "effect": "Dissolves organic and bio-mechanical reinforcement fibers on contact"
+          },
+          "trigger": "Defeating the synthetic causes its terminal to reboot, unlocking the heavy security doors that seal the experimental observation wing."
+        },
+        {
+          "location": "Bio-Synthesis Laboratory Core",
+          "enemy": {
+            "name": "Mutated Lab Specimen Beta",
+            "health": 150,
+            "damage": 45,
+            "weakness": "Corrosive Acid Vial poured into its open chest wounds"
+          },
+          "hazard": "Unstable chemical pools on the floor",
+          "pickup": {
+            "name": "Prototype Grav-Disruptor",
+            "effect": "Temporarily suspends gravity in a small area, rendering targets weightless and unstable"
+          },
+          "trigger": "The creature's death scream triggers an automated lockdown sequence, locking the player inside the main server room with the facility's rogue AI construct."
+        }
+      ],
+      "boss": {
+        "name": "The Architect AI Core",
+        "health": 300,
+        "damage": 55,
+        "weakness": "Prototype Grav-Disruptor which destabilizes its levitating defense shields and exposes its central processors",
+        "victory_condition": "Destroy the primary mainframe nodes while using shadows to evade the AI's sweep-lasers."
+      },
+      "objective": "Navigate the dark, hazard-filled corridors of the space station to download the classified research data and purge the rogue AI.",
+      "reward": "The Legendary Quantum Cloak module, granting permanent invisibility while remaining stationary."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Sci-Fi Eerie Alchemist",
+      "setting": "An abandoned orbital biolab orbiting a dying star, dripping with bio-luminescent ooze and cold mist.",
+      "player_weapon": "Aetheric Transmuter Pistol",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Hydroponics Decontamination Bay",
+          "enemy": {
+            "name": "Necrotic Spore-Walker",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Aetheric Transmuter Pistol"
+          },
+          "hazard": "Ruptured Nitrogen Pipes spraying freezing gas",
+          "pickup": {
+            "name": "Phlogistic Igniter Fluid",
+            "effect": "Imbues weapon with incendiary transmutations"
+          },
+          "trigger": "A sudden containment breach alarm unlocks the heavy blast doors to the Vivarium Corridor."
+        },
+        {
+          "location": "Vivarium Corridor",
+          "enemy": {
+            "name": "Chitinous Siphon-Leech",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Phlogistic Igniter Fluid"
+          },
+          "hazard": "Corrosive Acid Pools dripping from the ceiling",
+          "pickup": {
+            "name": "Concentrated Nitric Acid",
+            "effect": "Allows crafting of highly corrosive metal-dissolving vapors"
+          },
+          "trigger": "The death screech of the Leech causes a structural collapse, forcing the player through a ventilation shaft to the Cryo-Storage."
+        },
+        {
+          "location": "Cryo-Storage Facility",
+          "enemy": {
+            "name": "Gelatinous Glacial Golem",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Concentrated Nitric Acid"
+          },
+          "hazard": "Slippery Cryo-Ice floors and sub-zero atmospheric exposure",
+          "pickup": {
+            "name": "Hyper-Catalyst Serum",
+            "effect": "Overcharges chemical reactions, making the next attack explosive"
+          },
+          "trigger": "The shattered remains of the Golem slide into a pressure-plate elevator, sending the player down into the Core Reactor Chamber."
+        }
+      ],
+      "boss": {
+        "name": "Subject Alpha: The Amalgamated Amorphous",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Hyper-Catalyst Serum",
+        "victory_condition": "Inject the Hyper-Catalyst Serum into the central core reactor to trigger a thermal reaction that incinerates Subject Alpha."
+      },
+      "objective": "Navigate the derelict biolab, harvest chemical reagents, and neutralize the mutated bio-weapon containment breach.",
+      "reward": "The Chimera Core and the blueprint for the Legendary Philosopher's Railgun."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "whimsical",
+      "player_class": "rogue",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Sci-Fi",
+      "setting": "A whimsical, neon-soaked space-jungle greenhouse aboard a malfunctioning colony ship.",
+      "player_weapon": "Glittering Grav-Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 120,
+      "encounters": [
+        {
+          "location": "The Bubble-Flower Orchid",
+          "enemy": {
+            "name": "Bouncing Robo-Beetle",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Glittering Grav-Dagger"
+          },
+          "hazard": "Slippery nectar pools that invert movement controls.",
+          "pickup": {
+            "name": "Sticky Pollen Bomb",
+            "effect": "Slows targets and coats them in static electricity."
+          },
+          "trigger": "A mechanical vine whips open the gateway to the next biome, the Vapor Springs."
+        },
+        {
+          "location": "The Vapor Springs",
+          "enemy": {
+            "name": "Floating Hologram Jelly",
+            "health": 35,
+            "damage": 8,
+            "weakness": "Sticky Pollen Bomb"
+          },
+          "hazard": "Steam geysers that launch the player into the air.",
+          "pickup": {
+            "name": "Superheated Plasma Torch",
+            "effect": "Melts through solid barriers and inflicts fire damage."
+          },
+          "trigger": "Defeating the jelly activates an ancient teleportation pad leading deep into the central hive."
+        },
+        {
+          "location": "The Honeycomb Core",
+          "enemy": {
+            "name": "Wobbling Solder-Bee",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Superheated Plasma Torch"
+          },
+          "hazard": "Falling globs of electrified honey.",
+          "pickup": {
+            "name": "Prismatic Sonic Kazoo",
+            "effect": "Emits high-frequency vibrations that disrupt forcefields."
+          },
+          "trigger": "The hive-mind hatch door opens wide, revealing the grand greenhouse control room."
+        }
+      ],
+      "boss": {
+        "name": "Giggle-Tron 9000 (The Over-Caffeinated Sprinkler Mech)",
+        "health": 80,
+        "damage": 12,
+        "weakness": "Prismatic Sonic Kazoo",
+        "victory_condition": "Disrupt the mech's main shield using the Prismatic Sonic Kazoo, then disable its central power plug."
+      },
+      "objective": "De-escalate the rogue agricultural AI and restore peaceful, whimsical order to the greenhouse.",
+      "reward": "The Legendary Holographic Cloak of Pixels and a lifetime supply of space-honey."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "serene sci-fi geomancy",
+      "setting": "The Whispering Monoliths of Kepler-186f",
+      "player_weapon": "Seismic Tuning Fork",
+      "player_weapon_damage": 15,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "The Silent Quartz Meadow",
+          "enemy": {
+            "name": "Resonant Chime-Sentry",
+            "health": 110,
+            "damage": 35,
+            "weakness": "Seismic Tuning Fork"
+          },
+          "hazard": "Supersonic pollen drifts that cloud vision and disrupt energy barriers.",
+          "pickup": {
+            "name": "Pristine Quartz Shard",
+            "effect": "Enhances geo-harmonic vibration frequency."
+          },
+          "trigger": "Placing the Pristine Quartz Shard into the base of the First Monolith opens the pathway to the Whispering Ravine."
+        },
+        {
+          "location": "The Whispering Ravine",
+          "enemy": {
+            "name": "Lithic Dust-Stalker",
+            "health": 140,
+            "damage": 40,
+            "weakness": "Pristine Quartz Shard"
+          },
+          "hazard": "Zero-gravity spatial pockets that suspend movement unpredictably.",
+          "pickup": {
+            "name": "Humming Magnetite Core",
+            "effect": "Imparts localized gravity manipulation."
+          },
+          "trigger": "Using the Humming Magnetite Core to realign the floating debris forms a bridge to the Echoing Sanctuary."
+        },
+        {
+          "location": "The Echoing Sanctuary",
+          "enemy": {
+            "name": "Obsidian Mirror-Goliath",
+            "health": 180,
+            "damage": 45,
+            "weakness": "Humming Magnetite Core"
+          },
+          "hazard": "Blinding light refractions that reflect attacks back at the attacker.",
+          "pickup": {
+            "name": "Astral Resonance Lens",
+            "effect": "Amplifies geomantic vibrational beams tenfold."
+          },
+          "trigger": "Inserting the Astral Resonance Lens into the main altar summons the sleeping planetary guardian."
+        }
+      ],
+      "boss": {
+        "name": "Aethelgard, the Harmonious World-Singer",
+        "health": 350,
+        "damage": 60,
+        "weakness": "Astral Resonance Lens",
+        "victory_condition": "Refract the boss's cosmic energy beam back at its core using the Astral Resonance Lens, shattering its protective crystalline shell."
+      },
+      "objective": "Soothe the planet's agitated core by aligning the cosmic monoliths and pacifying the ancient guardian.",
+      "reward": "The Core Harmonic Siphon, a legendary geomantic relic that permits total geological assimilation."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "horror",
+      "setting": "An eerie, abandoned cathedral of alchemical heresies, filled with toxic mist and decaying specimens.",
+      "player_weapon": "Vitriolic Acid Catalyst",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Desecrated Baptistery",
+          "enemy": {
+            "name": "Corrupted Homunculus",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Vitriolic Acid Catalyst"
+          },
+          "hazard": "Sinking pools of quicksilver on the floor.",
+          "pickup": {
+            "name": "Calcified Salt Crystals",
+            "effect": "Temporarily neutralizes active bio-toxins when crushed."
+          },
+          "trigger": "Defeating the Homunculus causes the floor to collapse, dropping the player into the catacombs and triggering the awakening of the next abomination."
+        },
+        {
+          "location": "The Shadowed Crypts",
+          "enemy": {
+            "name": "Weeping Flesh-Pile",
+            "health": 120,
+            "damage": 30,
+            "weakness": "Calcified Salt Crystals"
+          },
+          "hazard": "Spores of suffocating black mold floating in the air.",
+          "pickup": {
+            "name": "Essence of Phosphor",
+            "effect": "Illuminates dark areas and ignites volatile gases upon impact."
+          },
+          "trigger": "The death rattle of the Flesh-Pile ignites nearby gas pockets, blowing open the sealed steel vault door ahead."
+        },
+        {
+          "location": "The Altar of Amalgamation",
+          "enemy": {
+            "name": "Chained Chimera",
+            "health": 150,
+            "damage": 35,
+            "weakness": "Essence of Phosphor"
+          },
+          "hazard": "Ruptured pipes spraying burning sulfur across the room.",
+          "pickup": {
+            "name": "Amalgamated Silver Elixir",
+            "effect": "Converts silver-based constructs back into fragile, liquid metals."
+          },
+          "trigger": "The Chimera crashes into the support columns as it dies, opening a secret hatch down into the Grand Sanctum where the Arch-Heretic resides."
+        }
+      ],
+      "boss": {
+        "name": "The Mercury Arch-Heretic",
+        "health": 300,
+        "damage": 45,
+        "weakness": "Amalgamated Silver Elixir",
+        "victory_condition": "Splash the boss with the Amalgamated Silver Elixir to liquefy its armor, then strike its exposed core with the Vitriolic Acid Catalyst."
+      },
+      "objective": "Navigate the haunted cathedral, survive the mutated abominations, and destroy the Arch-Heretic to purge the corruption.",
+      "reward": "The Philosopher's Stone Fragment and the title of Grandmaster Alchemist."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "horror",
+      "setting": "Ominous, ash-choked catacombs beneath a desecrated cathedral",
+      "player_weapon": "Obsidian Firestaff",
+      "player_weapon_damage": 35,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "The Hall of Whispers",
+          "enemy": {
+            "name": "Weeping Husk",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Obsidian Firestaff"
+          },
+          "hazard": "Suffocating soot clouds that drain stamina and obscure vision",
+          "pickup": {
+            "name": "Vial of Consecrated Oil",
+            "effect": "Coats weapons to temporarily add holy fire damage"
+          },
+          "trigger": "Burning the Husk's remains triggers a collapse, opening the path down to the Crypt of Perpetual Sighs"
+        },
+        {
+          "location": "Crypt of Perpetual Sighs",
+          "enemy": {
+            "name": "Desecrated Cenotaph",
+            "health": 180,
+            "damage": 30,
+            "weakness": "Vial of Consecrated Oil"
+          },
+          "hazard": "Screaming wall traps that disorient and deal psychic damage",
+          "pickup": {
+            "name": "Heart of the Pyre",
+            "effect": "A burning ember that doubles player fire damage for one attack"
+          },
+          "trigger": "Shattering the Cenotaph releases a flood of hot tar, forcing the player to flee into the Molten Ossuary"
+        },
+        {
+          "location": "The Molten Ossuary",
+          "enemy": {
+            "name": "Ash-Weaver Widow",
+            "health": 220,
+            "damage": 35,
+            "weakness": "Heart of the Pyre"
+          },
+          "hazard": "Spits of boiling liquid calcium rising from floor fissures",
+          "pickup": {
+            "name": "Singeing Reliquary of the Martyr",
+            "effect": "Emits a pulse of pure, searing white-hot light that blinds and melts heavy armor"
+          },
+          "trigger": "Slaying the Widow opens the heavy iron gate leading to the heart of the Cathedral's underbelly"
+        }
+      ],
+      "boss": {
+        "name": "Malakor the Flayed Arch-Inquisitor",
+        "health": 500,
+        "damage": 45,
+        "weakness": "Singeing Reliquary of the Martyr",
+        "victory_condition": "Blinding the boss with the Reliquary to expose his exposed ribcage, then incinerating his heart with the Obsidian Firestaff"
+      },
+      "objective": "Purge the corrupting influence from the catacombs and reclaim the spark of the First Flame.",
+      "reward": "The Master's Cinder-Brand, granting permanent fire immunity and access to high-tier pyromancy spells."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "horror",
+      "setting": "The Whispering Sewers beneath the Asylum",
+      "player_weapon": "Dusksteel Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Drainage Valve",
+          "enemy": {
+            "name": "Slithering Corpse",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Dusksteel Dagger"
+          },
+          "hazard": "Ruptured poison gas pipe",
+          "pickup": {
+            "name": "Phosphor Flare",
+            "effect": "Illuminates dark areas and burns flammable tissue"
+          },
+          "trigger": "Turning the rusted wheel unlocks the gate to the Sluice Chamber, where a low growl can be heard."
+        },
+        {
+          "location": "Sluice Chamber",
+          "enemy": {
+            "name": "Shadow Creeper",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Phosphor Flare"
+          },
+          "hazard": "Deep pools of acidic runoff",
+          "pickup": {
+            "name": "Vial of Holy Acid",
+            "effect": "Corrodes protective seals and skeletal structures"
+          },
+          "trigger": "Retrieving the old keycard triggers a loud klaxon, opening the heavy metal door to the Vault of the Damned."
+        },
+        {
+          "location": "Vault of the Damned",
+          "enemy": {
+            "name": "Stitched Abomination",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Vial of Holy Acid"
+          },
+          "hazard": "Swinging spiked meat hooks",
+          "pickup": {
+            "name": "Silver-Tipped Bolt",
+            "effect": "Shatters cursed relics and pierce absolute darkness"
+          },
+          "trigger": "Defeating the Abomination releases a pressure valve, blowing open the reinforced vault hatch leading down to the Sanitarium Well."
+        }
+      ],
+      "boss": {
+        "name": "The Blind Executioner",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Silver-Tipped Bolt",
+        "victory_condition": "Shoot the hanging bell with the Silver-Tipped Bolt to deafen the boss, then execute a backstab with your Dusksteel Dagger."
+      },
+      "objective": "Navigate the haunted sewers and purge the ancient evil lurking beneath the asylum floors.",
+      "reward": "The Master's Shadow Mask, which grants permanent invisibility in low-light environments."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "horror",
+      "setting": "A desolate, abandoned research station buried deep within a frozen, dark tundra.",
+      "player_weapon": "Composite Hunting Bow",
+      "player_weapon_damage": 25,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "The Frostbitten Atrium",
+          "enemy": {
+            "name": "Shivering Ghoul",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Composite Hunting Bow"
+          },
+          "hazard": "Unstable, collapsing ice stalactites",
+          "pickup": {
+            "name": "Phosphor Flare",
+            "effect": "Illuminates dark areas and burns away thick necrotic tissues"
+          },
+          "trigger": "Picking up the Phosphor Flare triggers a power surge, opening the heavy security doors leading to the Cryo-Labs."
+        },
+        {
+          "location": "The Sub-Zero Cryo-Labs",
+          "enemy": {
+            "name": "Frost-Weaved Abomination",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Phosphor Flare"
+          },
+          "hazard": "Leaking liquid nitrogen pipes that instantly freeze skin",
+          "pickup": {
+            "name": "Serrated Glass Arrowhead",
+            "effect": "Enables arrows to bypass hardened, frozen organic armor"
+          },
+          "trigger": "Extracting the Serrated Glass Arrowhead sounds a security alarm, sealing the labs and forcing open the escape shaft to the Geothermal Core."
+        },
+        {
+          "location": "The Geothermal Core Junction",
+          "enemy": {
+            "name": "The Lurker in the Steam",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Serrated Glass Arrowhead"
+          },
+          "hazard": "Superheated geyser vents blasting scalding steam periodically",
+          "pickup": {
+            "name": "Thermite Compound Vial",
+            "effect": "Can be attached to arrows to melt through super-hardened sub-zero biological defenses"
+          },
+          "trigger": "Defeating the Lurker causes its body to collapse onto a pressure plate, revealing the hidden hatch to the Deep Abyss where the anomaly resides."
+        }
+      ],
+      "boss": {
+        "name": "The Frost-Mother Anomaly",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Thermite Compound Vial",
+        "victory_condition": "Inject the Thermite Compound Vial into the core of the Anomaly using a well-placed bow shot, then shatter its frozen heart."
+      },
+      "objective": "Navigate through the frozen, desolate research station to locate and destroy the central source of the parasitic frost outbreak.",
+      "reward": "The Cryo-Ranger Crest, granting immunity to extreme cold temperatures, and the Frost-Mother's Bow Blueprint."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "horror",
+      "setting": "An ancient, subterranean crypt buried deep beneath a ruined cathedral, dimly lit by flickering soul-candles.",
+      "player_weapon": "Bone-Shard Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "The Whispering Ossuary",
+          "enemy": {
+            "name": "Restless Ghoul",
+            "health": 25,
+            "damage": 8,
+            "weakness": "Bone-Shard Dagger"
+          },
+          "hazard": "Crumbling stone sarcophagi that collapse if stepped on.",
+          "pickup": {
+            "name": "Vial of Holy Water",
+            "effect": "Deals high radiant damage when thrown at unholy creatures."
+          },
+          "trigger": "Plucking the Vial of Holy Water from the altar breaks the seals on the catacomb gate, unlocking the path to the Desecrated Vestry."
+        },
+        {
+          "location": "The Desecrated Vestry",
+          "enemy": {
+            "name": "Shadow Spectre",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Vial of Holy Water"
+          },
+          "hazard": "Slick pools of black bile that slow movement speed.",
+          "pickup": {
+            "name": "Scythe-Shaped Bone Charm",
+            "effect": "Imbues the player's weapon attacks with freezing frost energy."
+          },
+          "trigger": "Defeating the Spectre causes its dark essence to seep into the floorboards, rotting them away and dropping the player into the Pit of Penance."
+        },
+        {
+          "location": "The Pit of Penance",
+          "enemy": {
+            "name": "Frozen Skeletal Knight",
+            "health": 35,
+            "damage": 12,
+            "weakness": "Scythe-Shaped Bone Charm"
+          },
+          "hazard": "Scythe traps swinging from the vaulted ceiling.",
+          "pickup": {
+            "name": "Amulet of the Grave-Lord",
+            "effect": "Summons protective spectral barriers that absorb incoming damage."
+          },
+          "trigger": "Acquiring the Amulet of the Grave-Lord triggers a massive tremor, shattering the chamber wall to reveal the hidden Tomb of the Arch-Lich."
+        }
+      ],
+      "boss": {
+        "name": "Arch-Lich Malakor",
+        "health": 60,
+        "damage": 15,
+        "weakness": "Amulet of the Grave-Lord",
+        "victory_condition": "Defeat Arch-Lich Malakor to reclaim the stolen Crown of Whispers."
+      },
+      "objective": "Navigate the crypt, assemble powerful relics, and banish the Arch-Lich to claim your rightful place as the master of the dead.",
+      "reward": "Unlocks the 'Summon Wraith' spell and the 'Arch-Lich Robes' cosmetic armor set."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Chaotic Horror",
+      "setting": "The Sinking Flesh-Cathedral of the Flayed God",
+      "player_weapon": "Spine-Ripped Great Cleaver",
+      "player_weapon_damage": 75,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "The Vestibule of Chattering Teeth",
+          "enemy": {
+            "name": "Marrow-Sucker Ghoul",
+            "health": 200,
+            "damage": 50,
+            "weakness": "Spine-Ripped Great Cleaver"
+          },
+          "hazard": "Falling bone shrapnel from the collapsing ceiling",
+          "pickup": {
+            "name": "Vial of Acidic Bile",
+            "effect": "Corrodes protective armor plates"
+          },
+          "trigger": "Plucking the Vial of Acidic Bile triggers a localized earthquake, splitting the cathedral floor and dropping the player into the Blood-Sodden Crypts."
+        },
+        {
+          "location": "The Blood-Sodden Crypts",
+          "enemy": {
+            "name": "Chitin-Plated Gore-Beast",
+            "health": 350,
+            "damage": 65,
+            "weakness": "Vial of Acidic Bile"
+          },
+          "hazard": "Rising pools of boiling blood that drain health over time",
+          "pickup": {
+            "name": "Phosphorescent Wyrm-Sigil",
+            "effect": "Emits an intense, blinding flash of cold-fire"
+          },
+          "trigger": "Applying the Phosphorescent Wyrm-Sigil to the sealed vault door melts the iron locks, opening the pathway to the Altar of Despair."
+        },
+        {
+          "location": "The Altar of Despair",
+          "enemy": {
+            "name": "The Faceless Inquisitor",
+            "health": 400,
+            "damage": 80,
+            "weakness": "Phosphorescent Wyrm-Sigil"
+          },
+          "hazard": "Scything pendulum blades swinging randomly across the narrow altar catwalks",
+          "pickup": {
+            "name": "Relic of the Martyr's Heart",
+            "effect": "Increases damage by 200% when player health is under 20%"
+          },
+          "trigger": "Extracting the Relic of the Martyr's Heart triggers a violent structural collapse, forcing the player down a massive flesh-chute straight into the boss arena."
+        }
+      ],
+      "boss": {
+        "name": "The Amalgamated Abomination",
+        "health": 1200,
+        "damage": 110,
+        "weakness": "Relic of the Martyr's Heart",
+        "victory_condition": "Reduce the Amalgamated Abomination's health to 0 while maintaining enough health to survive its final self-destruct blast"
+      },
+      "objective": "Survive the brutal, shifting cathedral depths, slay the horrors within, and retrieve the Heart of the Flayed God to halt the chaotic corruption.",
+      "reward": "The 'Frenzy-Born' Berserker subclass unlock, doubling attack speed at low health."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "serene horror",
+      "setting": "An overgrown, silent sanctuary illuminated by eternal starlight, where peace masks a decaying cosmic rot.",
+      "player_weapon": "Purifying Scepter",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Whispering Cloister",
+          "enemy": {
+            "name": "Starlight Weeper",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Purifying Scepter"
+          },
+          "hazard": "Thick, choking silver pollen that obscures vision and slows movement.",
+          "pickup": {
+            "name": "Vial of Luminescent Sap",
+            "effect": "Cures blindness and coats weapon with a sticky, glowing residue."
+          },
+          "trigger": "A crystalline bell tolls in the distance, shattering the silence and unlocking the gate to the Moonlit Conservatory."
+        },
+        {
+          "location": "The Moonlit Conservatory",
+          "enemy": {
+            "name": "Sorrowbloom Stalker",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Vial of Luminescent Sap"
+          },
+          "hazard": "Shattering glass panes that rain down silently when stepped on.",
+          "pickup": {
+            "name": "Echoing Tuning Fork",
+            "effect": "Emits high-frequency vibrations that disrupt kinetic shields and sonic barriers."
+          },
+          "trigger": "The roots blocking the grand archway wither away, revealing the path to the Silent Reflecting Pool."
+        },
+        {
+          "location": "The Silent Reflecting Pool",
+          "enemy": {
+            "name": "Mirror Husk",
+            "health": 90,
+            "damage": 22,
+            "weakness": "Echoing Tuning Fork"
+          },
+          "hazard": "Phasing floor tiles that vanish into an endless starry abyss if stood on for too long.",
+          "pickup": {
+            "name": "Aegis Star Fragment",
+            "effect": "Surrounds the player with a brilliant shield that reflects dark energy back at its source."
+          },
+          "trigger": "The surface of the pool solidifies into a glassy staircase leading up to the Cathedral of Whispers."
+        }
+      ],
+      "boss": {
+        "name": "Astraea, the Star-Eaten Warden",
+        "health": 200,
+        "damage": 30,
+        "weakness": "Aegis Star Fragment",
+        "victory_condition": "Reflect Astraea's cosmic beam back at her core using the Aegis Star Fragment, then shatter her remains with the Purifying Scepter."
+      },
+      "objective": "Purify the defiled sanctuary and put the fallen warden, Astraea, to her eternal, peaceful rest.",
+      "reward": "The 'Celestial Halo' passive ability, which permanently shields the Warden player class from negative mental status effects."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical Horror",
+      "setting": "The Carousel of Lost Smiles, an abandoned carnival floating in a pastel void.",
+      "player_weapon": "Glittering Prismatic Wand",
+      "player_weapon_damage": 15,
+      "player_health": 120,
+      "encounters": [
+        {
+          "location": "The Ticket Booth of Terrors",
+          "enemy": {
+            "name": "Chattering Ticket-Teeth",
+            "health": 25,
+            "damage": 5,
+            "weakness": "Glittering Prismatic Wand"
+          },
+          "hazard": "Slick spilled cotton candy syrup that slows movement.",
+          "pickup": {
+            "name": "Mirror-Glass Marbles",
+            "effect": "Reflects and multiplies bright light sources."
+          },
+          "trigger": "Picking up the Mirror-Glass Marbles causes a neon-pink spotlight to shift, illuminating the pathway to the Mirror Maze."
+        },
+        {
+          "location": "The Neon Mirror Maze",
+          "enemy": {
+            "name": "The Giggling Reflection",
+            "health": 35,
+            "damage": 8,
+            "weakness": "Mirror-Glass Marbles"
+          },
+          "hazard": "Sudden wall-shattering sound waves.",
+          "pickup": {
+            "name": "Squeaky Balloon Scepter",
+            "effect": "Emits a high-pitched, disruptive frequency when squeezed."
+          },
+          "trigger": "Squeezing the Squeaky Balloon Scepter shatters the final mirror wall, revealing the path to the Funhouse."
+        },
+        {
+          "location": "The Funhouse Slide",
+          "enemy": {
+            "name": "Jack-in-the-Coffin",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Squeaky Balloon Scepter"
+          },
+          "hazard": "Swinging oversized polka-dot pendulum axes.",
+          "pickup": {
+            "name": "Bag of Sour Stardust Candy",
+            "effect": "Causes puckering, physical distortions, and breaks illusion-based magic."
+          },
+          "trigger": "Throwing the Bag of Sour Stardust Candy down the slide dissolves the shadowy barrier blocking the Big Top entrance."
+        }
+      ],
+      "boss": {
+        "name": "The Ringmaster of Regret",
+        "health": 80,
+        "damage": 15,
+        "weakness": "Bag of Sour Stardust Candy",
+        "victory_condition": "Feed the Bag of Sour Stardust Candy to the Ringmaster to collapse his physical illusion, then hit him with the Glittering Prismatic Wand."
+      },
+      "objective": "Traverse the nightmare carnival and break the whimsical illusion trapping the lost children's laughter.",
+      "reward": "The Carnival's Heart, transforming the illusionist's wand into the Cosmic Dreamweaver staff."
+    }
+  }
+]
