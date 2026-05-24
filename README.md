@@ -1,63 +1,39 @@
 # Autoregressive Schemas
 
-Does field ordering in a JSON tool-call schema affect what a small LLM actually generates? This repo tests that with Gemini's structured output: six schema variants, same prompt, same 39 fields, 64 input cases. A rubric-based judge scores each output; analysis scripts crunch the results.
+Does field ordering in a JSON tool-call schema affect what a small LLM generates?
 
-Companion repo to [the blog post](https://blog.nenyalabs.com/autoregressive-schemas/).
-
-## Prerequisites
-
-- Python 3.12+
-- [uv](https://docs.astral.sh/uv/)
-- A GCP project with the Vertex AI API enabled
-- Application Default Credentials configured: `gcloud auth application-default login`
+This repo tests that hypothesis using Gemini's structured output mode. Six schema variants — same 39 fields, same prompt, 64 input cases — are judged on a rubric by Claude and compared statistically. A second experiment compares Gemini 3 Flash Preview vs 3.5 Flash head-to-head.
 
 ## Setup
 
+Requires Python 3.12+, [uv](https://docs.astral.sh/uv/), and a GCP project with Vertex AI enabled.
+
 ```bash
-git clone <repo-url>
-cd autoregressive-schemas
 uv sync
-cp .env.example .env
-# Edit .env with your GCP project ID
-```
-
-## Running the eval
-
-The eval has three phases.
-
-### Phase 1: Generate
-
-Generate game levels for all 6 variants x 64 cases. This calls Vertex AI (Gemini) with forced structured output.
-
-```bash
+cp .env.example .env   # add your GCP project ID
 source .env
-
-# Full run (384 generations)
-uv run python -m src.run_eval my_run
-
-# First 10 cases only
-uv run python -m src.run_eval my_run --cases 10
-
-# Specific variants
-uv run python -m src.run_eval my_run --variants flat_alpha nested_narrative
-
-# With a specific thinking level
-uv run python -m src.run_eval my_run --thinking minimal
 ```
 
-Raw results are saved to `results/raw/` and normalized (judge-safe) versions to `results/normalized/`, both in batches of 16.
-
-### Phase 2: Judge
-
-Judging is performed by Claude Code sub-agents reading `judge_prompt.md`, not by the Python code. Each sub-agent evaluates normalized levels from `results/normalized/` and writes structured judgments to `results/judgments/`.
-
-### Phase 3: Score
-
-Aggregate the raw judgments into weighted scores.
+## Usage
 
 ```bash
-uv run python -m src.score my_run
+# Generate levels (calls Vertex AI)
+uv run ars generate my_run
+uv run ars generate my_run --cases 10 --variants flat_alpha --thinking minimal
+
+# Model head-to-head (nested_narrative only, two Gemini models)
+uv run ars compare my_run
+
+# Score judgments
+uv run ars score variants minimal
+uv run ars score models flash_v1_gemini_35_flash flash_v1_gemini_3_flash_preview
+
+# Analyze
+uv run ars analyze variants   # summary stats, paired comparisons, striking pairs, chart
+uv run ars analyze models flash_v1_gemini_35_flash flash_v1_gemini_3_flash_preview
 ```
+
+Judging is done out-of-band by Claude Code sub-agents using `judge_prompt.md`.
 
 ## The six variants
 
@@ -69,20 +45,6 @@ uv run python -m src.score my_run
 | ui_contract | nested | frontend render order | Shaped by the UI, not the model |
 | alpha_nested | nested | alphabetical within objects | Linter-sorted keys |
 | nested_narrative | nested | decision order | The way a designer would think |
-
-## Analysis
-
-The analysis scripts cover minimum-thinking results only and support the first blog post. Each script runs independently.
-
-```bash
-uv run python -m analysis.a01_summary_stats
-uv run python -m analysis.a02_paired_comparisons
-uv run python -m analysis.a03_striking_pairs
-```
-
-- `01_summary_stats` - mean, SD, SE, min, max weighted score per variant (CSV)
-- `02_paired_comparisons` - per-case score differences between nested_narrative and the three weakest variants (CSV)
-- `03_striking_pairs` - the 5 input cases where flat_alpha and nested_narrative diverge most, with full outputs for side-by-side review (markdown in `results/analysis/03_striking_pairs/`)
 
 ## Tests
 

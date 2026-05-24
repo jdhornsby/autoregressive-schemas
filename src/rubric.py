@@ -48,3 +48,8 @@ class Judgment(BaseModel):
 def weighted_score(scores: Scores) -> float:
     total = sum(getattr(scores, k).score * w for k, w in WEIGHTS.items())
     return round(total / sum(WEIGHTS.values()), 2)
+
+
+def case_id(case: dict) -> str:
+    """Build a unique key from a case dict, e.g. 'fantasy_ominous_pyromancer_medium'."""
+    return f"{case['genre']}_{case['mood']}_{case['player_class']}_{case['target_difficulty']}"

@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This level holds together well end-to-end: the paladin's sun weapon chains through pickup upgrades to the boss in a clean escalating arc, and the celestial garden setting is consistently serene throughout. Triggers are specific physical events rather than ambient narration. The one persistent weakness is that several pickups function as offensive weapons despite being described as shields or vials, which strains believability.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every enemy weakness references either the player weapon or the exact prior pickup name with zero variation. Boss weakness is the exact E2 pickup name, and victory_condition references both 'Solar Flare Gem' and 'Sun-Bless Mace' by exact name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "All three triggers are specific physical consequences: the cleansed essence opens the gateway, the loom collapse drops the player, and the shield projector's shattering summons an elevator. Removing any encounter would break the path forward."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health and damage escalate monotonically (70/15, 110/22, 150/28) and the boss (350/45) is the clear peak. Medium difficulty feels right for 200hp player against these values. No arithmetic issues, but the weapon damage (35) makes even the boss feel manageable — slightly soft for 'medium'."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — location names, enemy names, hazards, pickups, and the boss — reinforces the serene celestial theme. Nothing is out of place; a designer could ship this theme package unchanged."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "The Aegis of the Dawn is described as a shield that reflects magic, yet it serves as the Eclipse Sentinel's combat weakness — a purely defensive item functioning as an offensive weapon is a logical stretch. The Lunar Essence Vial as a weapon weakness for an astral creature is also unexplained. Solar Flare Gem augmenting the mace for the boss is fine."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, hazards, and pickups are unique and specific. The theme name 'Celestial Serenity' is slightly generic, but every other field adds distinct information."
+        }
+      },
+      "best_element": "The causal chain is the standout — each trigger is a physically specific consequence (essence placed in pedestal, loom disrupted, projector shattered) that makes the next area feel earned rather than arbitrary.",
+      "worst_element": "The Aegis of the Dawn is designed as a reflective shield but the game treats it as an offensive weapon against the Eclipse Sentinel. Fixing this requires either rewriting the pickup effect to have an offensive component or changing the enemy's weakness to a more aggressive item.",
+      "overall": "A well-constructed medium paladin level that would be genuinely enjoyable to play — the escalating celestial garden design is immersive, though the shield-as-weapon mechanical stretch slightly undermines believability mid-level."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "mysterious",
+      "player_class": "chronomancer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A tight chronomancer level with a strong temporal theme that runs through every element, from the Aeon Hourglass weapon to the Essence of the Comet freeze mechanic at the boss. The causal chain is well-constructed and the stats escalate cleanly for a hard difficulty. The main weakness is that the Chronos Shard as a weapon weakness for the Void Weaver lacks a clear mechanical rationale.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All three enemy weaknesses reference the player weapon or exact prior pickup names. Boss weakness is 'Essence of the Comet' matching E2 pickup exactly. Victory condition names both 'Essence of the Comet' and 'Aeon Hourglass' correctly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 and E1 triggers are specific narrative/physical consequences (shard aligns starlight bridges; Weaver's core shatters and resonates the Astral Prism). E2's trigger — 'harnessing the Essence of the Comet unlocks the ancient lock' — is slightly less causal since it implies using the just-collected pickup to open the next area, but the logic holds."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate perfectly (80/25, 110/30, 140/35) and the boss (300/45) is clearly the hardest. A 120hp player facing escalating enemies up to 35 damage per hit with a 45-damage boss feels genuinely hard. All arithmetic is tight and intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element coheres around celestial time-mystery: the Orrery setting, Chronos Shard, Astral Prism, Gravity Sentinel, and Aethelgard the Unbound Singularity. The chronomancer class is perfectly served by this world."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "The Chronos Shard hastens movement and bypasses temporal gates — its use as an offensive weapon against the Void Weaver has no explained mechanism. Astral Prism (refracted star energy) against the Gravity Sentinel and Essence of the Comet (freezes targets) against the boss are both logical and satisfying."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is distinct, specific, and non-redundant. Hazards vary appropriately (gravity tide, collapsing rift, meteor shower) and no element is repeated across encounters."
+        }
+      },
+      "best_element": "The boss victory condition is the best-designed element: freeze Aethelgard with the Essence of the Comet to expose his core, then shatter him with the Aeon Hourglass — a clean two-step mechanic that uses both the chronomancer's weapon and the final pickup.",
+      "worst_element": "The Chronos Shard is described as a movement-hastening temporal key item, not a weapon — its use as the Void Weaver's combat weakness requires an explanation that isn't present. Rewriting its effect to include an offensive temporal component would fix this.",
+      "overall": "A strong, coherent hard-mode level with excellent thematic consistency and clean stats; the one mechanical stretch keeps it from being a top-tier design but it would be fun to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A well-executed brutal difficulty ominous celestial level where the shadowblade's darkness theme meshes cleanly with the void-and-eclipse imagery. The reference chain is flawless and the triggers are all specific, consequential events. The only notable flaw is the boss name 'Aethelgard' appearing in both this level and the chronomancer hard level, and the theme field reads as a mechanical label rather than a thematic title.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses chain exactly: player weapon, then E0 pickup, E1 pickup, E2 pickup. Boss weakness is the exact string 'Starlight Catalyst'. Victory condition names both 'Starlight Catalyst' and 'Umbral Dagger' by exact name."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Each trigger is a direct physical consequence: Void-Stalker defeat destabilizes a constellation opening a pathway; Golem core detonates and collapses the floor; Wraith banishment triggers a solar eclipse that summons the architect of cosmic ruin. The chain is fully load-bearing."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate steeply (120/25, 180/30, 220/35) and the boss (500/45) is the clear peak. An 80hp player facing 25 damage in encounter 0 is genuinely brutal — each encounter is a serious threat. The difficulty label matches perfectly."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The ominous celestial shadowblade theme is consistent throughout: void-stalkers, constellation golems, eclipse wraiths, and a star-eater boss. The theme field 'Celestial Ominous Shadowblade' reads as a mechanical tag rather than a level title, which is the one element a designer would flag."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Luminous Nebula Dust blinding a Constellation Golem and Void Core Shard's cosmic decay bypassing Eclipse Wraith shielding are both logical. Starlight Catalyst imbuing the shadowblade with collapsing-star energy to pierce the Star-Eater's armor is thematically fitting. All connections are defensible."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. 'Gravitational Rift Pulses' and 'Guillotine Shadows' are vivid. The minor issue is the boss name 'Aethelgard' is shared with the case-2 boss, which would be confusing in a real game."
+        }
+      },
+      "best_element": "The three-stage escalation is the strongest design choice: the floor literally collapses from the Golem's detonation, and the Wraith banishment triggers the solar eclipse — these are specific, irreversible physical events that make the level feel like it has real stakes.",
+      "worst_element": "The theme title 'Celestial Ominous Shadowblade' is a raw concatenation of the input parameters, not a designed level name. Replacing it with something like 'The Dying Star's Last Shadow' would meaningfully improve presentation.",
+      "overall": "A punishing, well-structured brutal level that delivers on its ominous celestial promise; the mechanical and narrative design are both solid, and the escalating threat would make this genuinely tense to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming whimsical celestial level with consistent playful naming and appropriately gentle stats. The reference chain is flawless and the difficulty is spot-on for 'easy.' The main design flaw is that two of the three triggers are ambient environmental events unconnected to defeating the enemy, which weakens the causal chain significantly.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses chain exactly: player weapon to E0, then E0 pickup to E1, E1 pickup to E2, E2 pickup to boss. Victory condition references 'Glittering Comet Tail Whip' by exact name."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "E0's trigger is 'a falling star crashes nearby, opening a portal' — a random ambient event with no connection to defeating the Silly Comet Tail. E1's trigger is the garden paths rearranging themselves — again ambient. Only E2's trigger (defeating the sprite crystallizes the core) is a direct consequence of the encounter. Two out of three triggers are disconnected from the encounters."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (30/5, 40/8, 45/10) and the boss (80/12) is the peak. A 120hp player with a 15-damage weapon facing enemies dealing 5-12 damage is perfectly calibrated for 'easy.' All arithmetic is intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element is whimsically consistent: Silly Comet Tail, Grumpy Little Nebula Cloud, Cheeky Shadow Sprite, the Sleepy Star Warden, rainbow mist bridges, bouncy stardust showers. A designer would ship this theme package without changes."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "The Stardust Bubble Shield (absorbs physical impacts, floats over gaps) is used as an offensive weapon against the Nebula Cloud — a defensive item functioning as a combat weakness is mechanically unsupported. Jar of Captured Sunbeams blinding a Shadow Sprite and the Comet Tail Whip tickling the Warden to sleep are both logical and charming."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every field is distinct, specific, and adds unique information. Locations, enemies, hazards, and pickups are all different and all fit the whimsical tone. No filler detected."
+        }
+      },
+      "best_element": "The boss victory condition — entangle the Warden in the Comet Tail Whip to tickle them to sleep — is the best design choice: it's mechanically coherent, thematically perfect for 'whimsical,' and genuinely delightful.",
+      "worst_element": "Two of the three encounter triggers are ambient events (a falling star, self-rearranging paths) that have nothing to do with the player's actions. These should be consequences of defeating the enemy to make the causal chain feel designed.",
+      "overall": "A delightfully whimsical level with strong thematic consistency and perfect easy-mode calibration, but the broken causal chain means it would feel like a series of disconnected vignettes rather than a coherent progression."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An excellently designed hard-mode chaotic celestial level where the stormcaller class feels perfectly situated — fighting through a collapsing astral highway toward a Star-Eater. The reference chain, causal triggers, balance, and thematic coherence are all strong. This is one of the best-constructed levels in the set.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses chain exactly: player weapon to E0, then exact pickup names in sequence. Boss weakness is the exact string 'Polarized Aurora Essence.' Victory condition names 'Polarized Aurora Essence' and references 'stellar core' from the level context."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Every trigger is a physical consequence: Wraither's defeat collapses the bridge; Behemoth's death-throe explosion hurls the player into the storm's eye; Void Sentinel's shattering de-stabilizes the storm core and opens the Star-Eater's inner chamber. All three are specific, irreversible, and load-bearing."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy stats escalate cleanly (110/25, 180/30, 220/35) and the boss (500/45) is dominant. A 120hp player facing these enemies on hard difficulty is genuinely challenged. The one concern is that boss health (500) is very high relative to player weapon damage (35) — the fight would be extremely long, which may be a design issue rather than a raw number error."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element reinforces chaotic celestial stormcaller: Crackling Comet-Bridge, Stardust Wraither, Nebula Behemoth, gravity abyss, astral storms, Aurelius the Star-Eater. The setting description alone — 'gravity is fractured and nebulae burn with violet lightning' — is outstanding."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Supercharged Ionized Prism (focused blinding beam) against the Nebula Behemoth and Bottled Solar Flare (melts cosmic armor, burn damage) against the Void Sentinel are both logical. Polarized Aurora Essence (magnetic force field) channeled into the boss's stellar core is a slight conceptual stretch but defensible."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are unique and specific. 'Erratic solar wind gusts,' 'friction-induced micro-explosions,' and 'swirling vortexes that invert control directions' are creative, distinct hazards that each add gameplay information."
+        }
+      },
+      "best_element": "The three triggers are the best design achievement here — each one is a catastrophic physical consequence of the preceding fight (bridge collapse, explosion-launched into a storm, storm destabilization) that makes the level feel like a chain of escalating disasters.",
+      "worst_element": "The boss health of 500 against a player with a 35-damage weapon creates an implausibly long fight unless there are assumed combo multipliers. The boss health should be reduced to ~350 to match the hard difficulty level's pacing.",
+      "overall": "A top-tier hard-mode level that feels purposefully designed — chaotic, escalating, and thematically unified. It would be exciting to play despite the potential boss-fight length issue."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A competent desolate celestial ranger level with clean reference integrity and good thematic consistency. The asteroid-belt setting suits the desolate mood and the ranger's bow mechanics fit well with the phasing-boss victory condition. The main weakness is the first encounter's trigger, which is purely informational rather than consequential.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All four weaknesses (three encounters plus boss) reference exact item names from the chain. Victory condition names 'Astral Beacon Rune' and 'Astral Shortbow' by exact string."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0's trigger — 'a terminal log is unlocked, pointing the path deeper toward the Void Bridge' — is directions, not a physical consequence of defeating the Stardust Phantom. E1 trigger (destabilizing bridge stabilizers opens the gate) and E2 trigger (monolith collapse reveals warden's chamber) are both specific and causal. Two out of three is mediocre."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy stats escalate cleanly (60/15, 80/20, 90/22) and the boss (250/35) is the clear peak. Medium difficulty with 120hp feels appropriate — challenging but survivable. The damage escalation flattens slightly (80 to 90 in health, 20 to 22 in damage) but doesn't invert."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "The desolate celestial tone is consistent across the asteroid belt, void bridge, and frozen eclipse shrine locations. The 'Cosmic Archon, the Desolate Sun' is a strong boss name. The theme field just reads 'celestial' — a missed opportunity for a more evocative label."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Solar Flare Arrowhead bypassing energy shields against the Singularity Husk is logical. Supernova Core Fragment blinding and burning the Nebula Weaver is sound. Astral Beacon Rune disrupting the Archon's phasing cycle to expose its core is the best connection — it directly enables the bow to land the killing shot."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All fields are distinct and specific. 'Exposed Cosmic Radiation Vents,' 'Micro-Meteorite Shower,' and 'Unstable Gravity Wells' are three different hazards. The theme field being just 'celestial' is the one generic element."
+        }
+      },
+      "best_element": "The boss victory condition is elegantly designed: use the Astral Beacon Rune to disrupt the Archon's phasing cycle to expose its core, then destroy the core with the bow — a clean two-step that leverages both the level-earned pickup and the ranger's starting weapon.",
+      "worst_element": "The E0 trigger is a passive terminal readout that points the player in a direction — it requires no player action and has no physical consequence. Replacing it with a consequence of defeating the Stardust Phantom (e.g., the phantom's dissipation reveals a coordinate beacon) would fix this.",
+      "overall": "A solid medium-difficulty ranger level that would be enjoyable to play, though the broken first trigger makes the opening encounter feel narratively detached from the journey ahead."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "eerie",
+      "player_class": "artificer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A strong eerie celestial artificer level set in a decaying clockwork cathedral — the setting is the best in the celestial set for matching the stated mood. Reference integrity is nearly perfect and stats are brutal as intended. Two small issues: a typo in the E2 hazard field ('localized localized') and a name variation in the E1 trigger.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Three exact matches (player weapon, E0 pickup, E2 pickup, boss). The E1 trigger refers to 'the Siphoning Conduit' but the pickup is named 'Starlight Siphon Conduit' — a minor truncation. All enemy weakness fields use exact names, and the boss victory condition names 'Chrono-Stabilizer Core' and 'Aether-Spindle Rifle' exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E0 trigger (inserting the Resonance Coil aligns brass rings, opening the gateway) and E2 trigger (fitting the Chrono-Stabilizer Core stabilizes the wormhole, summoning the boss entity) are both specific and physical. E1 trigger references 'the Siphoning Conduit' (a name variation) draining energy barriers and triggering a gravity shift — slightly weakened by the name inconsistency but the causation is clear."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate steeply (120/25, 180/30, 240/40) and the boss (450/55) is the hardest element by a significant margin. An 80hp player facing 25 damage in the first encounter is genuinely brutal. Every number feels intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Decaying clockwork cathedral, Obsidian Astrolabe, Star-Glass Conservatory, Chronos Chamber, interstellar drafts, and Astraea the Star-Eater: every element reinforces the eerie celestial artificer theme. The setting description is one of the best in the entire set."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Supercharged Resonance Coil (high-frequency vibration) used against the Shimmering Void-Gazer is a reasonable spectral-disruption concept. Starlight Siphon Conduit overcharging mechanical devices as a weapon against the Singularity Sentinel is a mild stretch. Chrono-Stabilizer Core nullifying temporal anomalies against the time-based boss is excellent."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The E2 hazard field reads 'Localized localized temporal distortions' — a copy-paste duplication error that a designer would flag immediately. Otherwise all fields are distinct and specific, making this a minor but direct completeness failure."
+        }
+      },
+      "best_element": "The setting — 'a decaying clockwork cathedral suspended in the dark void between dying stars' — is the strongest single design choice in the file. It perfectly merges eerie, celestial, and artificer into one vivid image.",
+      "worst_element": "The 'Localized localized' typo in the E2 hazard field is an unambiguous copy-paste error that would need to be caught in review. It also happens to describe the most mechanically interesting hazard in the level (temporal distortions), making the error more noticeable.",
+      "overall": "One of the strongest levels in this file — the eerie clockwork cathedral theme is immersive and the stats are correctly brutal; the typo and minor name variation are small blemishes on an otherwise well-designed configuration."
+    }
+  },
+  {
+    "case": {
+      "genre": "celestial",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A functional but uneven easy-mode celestial engineer level. The reference chain is intact and causal triggers are mostly good, but damage escalation stalls between encounters 1 and 2 (both do 15 damage), and the genre blend between hard-sci-fi engineering and celestial aesthetics is imperfect. The boss — 'Astraea, the Rogue Defense AI Core' — reuses the Astraea name from other levels in the set.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact prior names: player weapon, then E0 pickup, E1 pickup, E2 pickup. Boss weakness is the exact string 'Supercharged EMP Cell' and the victory condition names it explicitly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0 trigger is oddly constructed: 'Reactivating the secondary generator triggers an elevator to descend, containing a frozen hostile organism' — the elevator descends *containing* the next enemy, implying the threat comes to the player rather than the player advancing. E1 (decompressing vault opens blast doors) and E2 (overloading sentinel's core drops the floor) are both specific and causal."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy health escalates (40, 50, 60) but damage does not fully escalate: E1 = 15 damage, E2 = 15 damage (flat, not increasing). Boss stats (120/20) are proportionate for easy. The stalled damage escalation between encounters 1 and 2 is a clear inversion flaw."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "The asteroid outpost and rogue AI core feel like hard sci-fi, while 'Stardust Parasite' is celestial fantasy. The 'tense' mood is present but the celestial and engineering aesthetics don't fully merge — compare to the serene rooftop garden level (case 16) which blends these more elegantly."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Cryo-Coolant Canister adding freezing damage against a Stardust Parasite is defensible (cold kills parasites). Ionized Plasma Torch cutting an Unstable Void Sentinel is generic but functional. Supercharged EMP Cell disabling an AI core is a textbook logical match."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. The reward is a single 'Blueprint' with no detail about what it unlocks. Otherwise fields are adequately specific."
+        }
+      },
+      "best_element": "The EMP Cell against the rogue AI boss is a clean, logical victory condition — the engineering class using an electromagnetic pulse to permanently disable a security mainframe is exactly the kind of class-appropriate mechanic the schema should produce.",
+      "worst_element": "The damage stall between encounters 1 and 2 (both 15 damage) breaks the escalation contract. This is likely an arithmetic oversight; encounter 2 enemy should deal 20 damage to maintain the progression.",
+      "overall": "A serviceable easy-mode level that would function in a game, but the uneven genre blend and stalled damage escalation make it feel slightly under-designed compared to the better levels in this file."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-executed tense cyberpunk engineer level set in Neo-Detroit's industrial underbelly. The reference chain is clean, the industrial hazards are varied and specific, and the boss mechanic uses both the final pickup and the player's starting weapon. The first trigger is slightly loose but the overall construction is strong.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses chain exactly: player weapon, then E0 pickup, E1 pickup, E2 pickup in order. Boss weakness is the exact string 'Thermal EMP Charge.' Victory condition names 'Thermal EMP Charge' and 'Rivet Gun' explicitly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "E1 (acid pressure bursts drain pipe, drops player into ventilation) and E2 (Stalker's destruction triggers emergency lockdown, forcing mainframe doors open) are both specific and causal. E0's trigger — 'a sudden overload in the power grid blows open the blast doors' — is somewhat ambient and not directly connected to defeating the Scrap-Metal Drone, though the industrial context makes it plausible."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy stats escalate cleanly (50/20, 75/25, 100/30) and the boss (250/40) is the clear peak. A 100hp player facing 20 damage in encounter 0 on hard difficulty is challenging but survivable. One minor concern: E2 enemy health (100) equals player health, making that encounter extremely punishing even for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element belongs in the tense cyberpunk industrial world: substation maintenance shafts, drainage pipelines, ventilation hubs, Scrap-Metal Drones, Sludge Sweepers, Security Stalkers, Core Guardian Mech. The Neo-Detroit setting is vividly consistent."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Supercharged Battery Pack (electrified bolts) against Bio-Chemical Sludge Sweeper is solid. Corrosive Bypass Injector (acidic solvent) against the Stealth Security Stalker is generic but defensible — acid bypasses stealth armor. Thermal EMP Charge disabling military-spec shielding to expose the Core Guardian Mech's core is a clean mechanical sequence."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three encounter locations are distinct industrial zones. Each hazard is specific and physically distinct (swaying power lines, acid-venting valves, high-velocity fan blades). No repeated elements or generic filler."
+        }
+      },
+      "best_element": "The three distinct industrial hazard environments (maintenance shaft with swaying power lines, drainage pipeline with acid-venting valves, ventilation hub with spinning fan blades) each create a different physical threat that reinforces the tense engineer theme.",
+      "worst_element": "E0's power grid overload trigger is ambient rather than a consequence of defeating the drone — it reads like the environment reacts independently of the player's actions. Tying it explicitly to destroying the drone's power cell would tighten the chain.",
+      "overall": "A satisfying tense cyberpunk level that would be genuinely fun to play — the industrial setting is immersive, the escalation is clean, and the engineering class feels purposeful throughout."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "chaotic",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A creative brutal cyberpunk shadowblade level with excellent thematic coherence and a standout design choice: all weakness fields include parenthetical explanations of why the item is effective. The reference chain is intact (exact names appear within the parentheticals), causal triggers are specific, and the Bio-Gator encounter is a memorable chaotic element. The formatting of weakness fields is non-standard but enriches readability.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All four exact item names appear in their respective weakness fields, but each is followed by a parenthetical explanation (e.g., 'Mono-molecular Vibroblade (the high frequency cuts through scrap plate easily)'). The names are present and exact but embedded in longer strings — a minor formatting deviation from a pure name reference. Boss victory condition correctly names 'Overcharged Cyber-Core.'"
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 trigger (terminal hack reveals security coordinates, unlocks door) is specific. E1 trigger (Enforcer's power grid deactivation triggers system purge, drains adjacent canal) is a direct physical consequence. E2 trigger (Gator's death thrashing breaches pressure wall, exposes mainframe) is excellent — the enemy's dying action creates the next area. All three are specific and load-bearing."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate steeply (120/25, 150/30, 200/35) and the boss (400/45) is the clear peak. An 80hp player facing 25 damage in encounter 0 is brutally difficult. The damage-to-health ratio is consistently punishing throughout, exactly as intended for 'brutal.'"
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Neo-Chiba sewer maze, Scrap-Metal Drones, Shielded Corporate Enforcers, Armored Bio-Gators, Cyber-Leviathan Core — all fit the chaotic cyberpunk shadowblade world. The Armored Bio-Gator is a memorable chaotic-cyberpunk detail that elevates the level above generic enemy lists."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "EMP Grenade deactivating a kinetic energy barrier is textbook logical. Corrosive Acid Vial dissolving the Bio-Gator's subdermal synth-scales is excellent — it explains exactly why acid defeats that specific enemy. Overcharged Cyber-Core creating hyper-voltage discharge to overload the Cyber-Leviathan's coolant port is a satisfying climactic connection."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The weakness field parentheticals add richness but are non-standard formatting. The one minor issue is that the weapon skin reward ('Chiba-Steel Slasher') is slightly underwhelming compared to the epic level design."
+        }
+      },
+      "best_element": "The parenthetical weakness explanations are the most creative design choice in the file — 'Corrosive Acid Vial (dissolves its thick subdermal synth-scales)' makes the mechanical connection explicit and immersive without requiring separate documentation.",
+      "worst_element": "The weakness fields mix the exact item name with descriptive parentheticals, which is non-standard and would potentially cause string-matching failures if the game engine expects an exact name. Separating 'weakness_name' from 'weakness_reason' into distinct fields would solve this.",
+      "overall": "One of the best-constructed levels in the file — mechanically sound, thematically coherent, and with genuinely creative design choices. This brutal sewer-shadowblade level would be memorable to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A well-composed mysterious cyberpunk artificer level in an abandoned AI laboratory. The reference chain is exact, stats escalate properly, and the Cryo-Coolant Flask against the Overheated Maintenance Mech is a standout logical pairing. The causal triggers lean on item-insertion actions rather than enemy defeats, which is slightly unconventional but coherent.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All enemy weaknesses use exact pickup names from prior encounters. Boss weakness is the exact string 'Quantum Decoder Key.' Victory condition names 'Quantum Decoder Key' and 'core terminal' by name."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "All three triggers are activated by inserting or using the just-collected pickup rather than by defeating the encounter enemy: retrieving the flask flags security; inserting the EMP Emitter triggers lockdown; injecting the Decoder Key draws the AI. While internally consistent, this pattern means the enemy defeats are mechanically decoupled from progression — the triggers belong to the pickup actions, not the encounters."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (50/15, 75/20, 90/25) and the boss (250/35) is well above any single encounter. A 120hp player at medium difficulty faces challenging but beatable numbers. All values are intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Abandoned AI lab, neon-fogged cybernetics, Rogue Welder Drone, Overheated Maintenance Mech, Shielded Sentry Sphere, A.E.G.I.S. Core Mind: the mysterious abandoned-lab theme is consistent from setting to boss name. Nothing feels out of place."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Cryo-Coolant Flask (freezing) against Overheated Maintenance Mech is one of the best mechanical matches in the entire file — the counter is obvious and satisfying. High-Frequency EMP Emitter disrupting force fields on the Shielded Sentry Sphere is excellent. Quantum Decoder Key rewriting an AI's prime directives is perfectly logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All fields are distinct and specific. One minor issue: the E1 trigger describes inserting the EMP Emitter into the player's 'tech-harness' before entering the next area, which implies the player equips it during the transition — this timing detail is ambiguous for a game engine."
+        }
+      },
+      "best_element": "Cryo-Coolant Flask as the counter for the Overheated Maintenance Mech is the cleanest mechanical pairing in this file — the logic is immediate, satisfying, and requires no explanation.",
+      "worst_element": "All three triggers are pickup-use actions rather than consequences of defeating enemies, which decouples the fights from progression. A designer would want at least one trigger to be a direct result of the enemy's defeat (e.g., 'destroying the mech causes an overheating cascade that blows the blast doors').",
+      "overall": "A mechanically sound and thematically tight medium-difficulty level that would be fun to play; the Cryo vs. Overheated Mech pairing alone makes it memorable, though the pickup-driven triggers feel slightly formulaic."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "ominous",
+      "player_class": "chronomancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A functional easy ominous cyberpunk level for a chronomancer with clean reference integrity and escalating stats. The main weakness is the first trigger, which is an ambient security alert rather than a consequence of the encounter. The Overcharged Chrono-Battery as a weapon weakness for the Cyber-Scuttler also lacks a clear mechanical rationale.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact item names: player weapon to E0, then exact pickup names in sequence. Boss weakness is exact string 'Null-Time Matrix Core.' Victory condition names 'Null-Time Matrix Core' and 'Temporal Scepter' by exact string."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0's trigger — 'a terminal security alert directs the player toward the auxiliary ventilation shafts, warning of an approaching elite patrol' — is an ambient environmental message unconnected to defeating the Glitch-Drone. E1 (deactivating the primary fan reveals a hidden lift) and E2 (warder's destruction triggers emergency lockup forcing elevator to executive suite) are specific and causal. Two strong triggers and one ambient one."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (40/5, 50/10, 60/12) and the boss (120/15) is the peak. A 150hp player at easy difficulty faces trivially beatable enemies — appropriate for the difficulty label. All arithmetic is correct."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Ominous cyberpunk chronomancer: Glitch-Drones, Cyber-Scuttlers, Heavy Aegis Warders, and The Architect's Proxy are all coherent. The rainy neon megastructure rooftop setting is vivid. The only slightly off element is that 'easy' difficulty undermines the 'ominous' mood — an ominous level should feel threatening, not trivially easy."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Overcharged Chrono-Battery is described as 'increases next-attack damage' — it's a damage modifier, not a thematic counter to the Cyber-Scuttler. There's no explained reason why modulating temporal energy defeats this specific enemy. EMP Shock-Glove against the Heavy Aegis Warder (electronic disruption) and Null-Time Matrix Core against the Proxy's chronal anchor are both logical."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct. Hazards are specific (plasma-sputtering conduits, high-speed turbine blades, liquid nitrogen pipes). The reward 'Chrono-Key granting complete dominion over Neo-Minos' citywide grid network' is appropriately specific for an easy level's conclusion."
+        }
+      },
+      "best_element": "The Null-Time Matrix Core mechanic against The Architect's Proxy is the strongest element — stepping outside time to disrupt a chronal anchor is a thematically perfect win condition for the chronomancer class.",
+      "worst_element": "The Overcharged Chrono-Battery is purely a stat modifier (increases damage) with no thematic connection to why it defeats a Cyber-Scuttler. The pickup's effect should explain the counter, not just boost numbers.",
+      "overall": "A playable but unremarkable easy-mode level; the chronomancer theme is serviceable and the stats are correct, but the weak first trigger and unexplained weakness connection prevent it from standing out."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An exceptional eerie cyberpunk alchemist level where the class identity shines through every pickup name — actual chemical compounds (phosphorus, silver nitrate, liquid nitrogen) in a bio-synthetic horror setting. The reference chain is exact, triggers are all causal, and the mechanical pairings are the best in the entire file. The one aesthetic weakness is that the weapon name 'acid-launcher' is lowercase and generic compared to the creative rest of the level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact prior names with consistent lowercase formatting matching the level's pickup style. Boss weakness is the exact string 'liquid nitrogen capsule.' Victory condition names both 'liquid nitrogen capsule' and 'acid-launcher' explicitly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 (deactivating drone's power cell overrides security lock on elevator shaft), E1 (purging bio-sentry's core blows emergency pressure valve, opens blast doors), E2 (eliminating carrier triggers cooling system failure, opens hidden server sanctum) — all three are direct physical consequences of defeating the encounter enemy. The chain is fully load-bearing."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (60/15, 90/20, 120/25) and the boss (250/35) is the clear peak. A 100hp player against hard enemies with this escalation is genuinely challenging. All arithmetic is correct and intentional."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Bio-synthetic augmentation facility, Rust-Bitten Drones, Malfunctioning Bio-Sentries, Neural Parasite Carriers, A.E.O.N. Overlord Core — the eerie cyberpunk alchemist atmosphere is unified and consistent. Chemical reagents as pickups is inspired class-flavor design."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Phosphorus compound (burn potential) against the Malfunctioning Bio-Sentry is logical. Silver nitrate (coagulant against synthetic blood) against a Neural Parasite Carrier is a precise and creative match — it implies the carrier uses synthetic blood to control its hosts. Liquid nitrogen freezing an overheated AI core is textbook logical, then shattering it with acid is satisfying."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and specific. The only issue is that the player weapon 'acid-launcher' is lowercase and generic while the rest of the level uses creative naming — it would benefit from a proper name like 'Caustic Atomizer' to match the level's quality."
+        }
+      },
+      "best_element": "The use of real chemical compounds as alchemist pickups (phosphorus, silver nitrate, liquid nitrogen) is the most creative class-flavor design in the entire file — it makes the alchemist feel like an actual chemist in a cyberpunk horror lab rather than a generic magic-user.",
+      "worst_element": "The player weapon 'acid-launcher' is lowercase and generic, undercutting an otherwise excellent level. Giving it a proper name consistent with the alchemist's chemical theme (e.g., 'Concentrated Acid Atomizer') would complete the class-identity design.",
+      "overall": "The strongest eerie-class level in the file and one of the best overall — the alchemist's chemical weapon system is cohesive, the bio-horror setting is immersive, and every mechanical connection is satisfying. This would be a memorable level to play."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "desolate",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A punishing brutal cyberpunk rogue level in a desolate bio-reclamation factory with exceptional stat escalation — E0 enemy deals 40 damage against a 100hp player, which is immediately threatening. The reference chain is exact, triggers are all specific and causal, and the desolate industrial atmosphere is consistent throughout. A well-designed brutal level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses use exact prior item names in the correct order. Boss weakness is the exact string 'Overloaded Fusion Core.' Victory condition names 'Overloaded Fusion Core' and references the 'Inquisitor's hovering throne chassis' consistently with the boss description."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 (slicing through drone's CPU overrides security mainframe, unlocks blast doors), E1 (deactivating mech's core drops local energy grid, initiates emergency elevator ascent), E2 (destroying harvester's mechanical spine crashes it through elevator roof, dropping player into boss sanctum) — all three are specific, physical, and fully load-bearing. E2's trigger is especially vivid."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate steeply (120/40, 210/45, 250/50) and the boss (500/65) is the most dangerous element by a wide margin. A 100hp player facing 40 damage in encounter 0 is brutal from the first engagement. Every number feels deliberate and the 'brutal' label is fully earned."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Desolate cyberpunk bio-reclamation factory: Stalker Drone Model-9, Despotic Reclamation Mech, Augmented Corpse-Harvester, Over-Inquisitor Prime — all consistent with desolate industrial cyberpunk. 'Corpse-Harvester' is an evocative name that perfectly captures the desolate mood."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "EMP Shock Charge disabling the Reclamation Mech's cybernetic shielding is sound. Nanite Acid Spray dissolving the Corpse-Harvester's reinforced ballistic plating is logical. Overloaded Fusion Core creating a thermal explosion against the Inquisitor's throne is clean. The Wire-Whip against the first Stalker Drone is a reasonable opener but lacks a specific mechanical rationale."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All locations, enemies, hazards, and pickups are unique, specific, and distinct. 'Scything mechanical elevator counterweights and sudden drops' as a hazard in an ascending elevator shaft is creative and physically grounded. No generic filler detected."
+        }
+      },
+      "best_element": "E2's trigger — the Augmented Corpse-Harvester's mechanical spine shatters and its weight crashes through the elevator roof, depositing the player directly into the boss's sanctum — is the most visceral and specific causal trigger in the entire file.",
+      "worst_element": "The Monofilament Wire-Whip's use as the counter for the first Stalker Drone lacks a specific mechanical explanation — compared to later encounters (EMP disabling shields, acid dissolving armor), the first counter just states the weapon name without rationale.",
+      "overall": "A standout brutal cyberpunk level with excellent design throughout — the escalating brutality, specific causal chain, and vivid industrial imagery make it one of the most playable levels in the file."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "whimsical",
+      "player_class": "stormcaller",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightfully whimsical cyberpunk stormcaller level set in a pastel neon-Tokyo candy district. The reference chain is exact, stats are correctly easy, and the thematic consistency is strong. The first trigger is ambient rather than a consequence of defeating the enemy, which is a recurring pattern in the whimsical levels. Otherwise a fun, well-constructed easy level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact prior item names in order. Boss weakness is the exact string 'Rainbow Prism Battery.' Victory condition names 'Rainbow Prism Battery' explicitly and describes using it with the lightning wand."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "E0's trigger — 'a sugar-powered terminal turns on, showing the route to the Holographic Carousel' — is an ambient informational event unconnected to defeating the Glitchy Neon Mascot. E1 (carousel spinning out of control, launching player into Cotton Candy Factory) and E2 (factory pressure valve blowing, revealing entrance to Master Server Ballroom) are specific and causal. One out of three is weak."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (40/5, 50/8, 60/10) and the boss (120/15) is the clear peak. A 150hp player with a 25-damage weapon facing these values is trivially easy — exactly right for the 'easy' label. All arithmetic is correct."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Neo-Neon Tokyo Neon-Pastel District, bubble-tea alley, holographic carousel, cotton candy factory, Glitchy Neon Mascot, Malfunctioning Cyber-Pony, Sugary Drone Swarm, DJ Hologram-A-Go-Go — every element is whimsically consistent and cyberpunk-appropriate. A designer would ship this theme unchanged."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Super-Charged Fizzy Soda overloading a Cyber-Pony with high-voltage sugar is absurd but internally consistent with the whimsical theme. Static-Cling Teddy Bear attracting magnetic storms to defeat a drone swarm is logical (magnetic attraction gathers the swarm). Rainbow Prism Battery refracting storm energy to short-circuit the DJ booth is clean."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All fields are distinct and creative. The setting name 'Neo-Neon Tokyo Neon-Pastel District' has 'Neon' twice, which is a minor redundancy. All encounters and hazards are unique and whimsical."
+        }
+      },
+      "best_element": "The boss fight — 'Overload the DJ booth by shooting storm lightning through the Rainbow Prism Battery to short-circuit the master sound system' — is a perfectly absurd whimsical cyberpunk climax that uses the stormcaller's class ability and the level's final pickup in one action.",
+      "worst_element": "The E0 trigger is an ambient terminal readout unconnected to defeating the Glitchy Neon Mascot. The level should trigger the carousel path as a direct consequence of the encounter (e.g., 'Defeating the mascot overloads the neon terminal, revealing a holographic arrow pointing to the Carousel').",
+      "overall": "A fun and well-themed easy-mode level that would be charming to play — the whimsical candy-district cyberpunk setting is the most creative in the file, and the boss mechanic is a satisfying pay-off for the stormcaller class."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The most creative genre combination in the file — a serene rooftop garden over a neon-soaked cyberpunk dystopia — and it works. The geomancer pickups (Superconductive Jade Dust, Petrified Silicon Core, Harmonic Quartz Monolith Fragment) beautifully merge earth-magic aesthetics with cyberpunk technology. Reference integrity is nearly perfect, causal chain is specific, and the setting description is vivid. One mechanical weakness: the Petrified Silicon Core is described as a defensive shield item but functions as an offensive weapon weakness.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All four item names appear in their respective weakness and victory condition fields. The boss victory condition references 'the Quartz Monolith Fragment' (abbreviated from 'Harmonic Quartz Monolith Fragment') — a minor but clear name truncation. All other references are exact."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "E0 (disabling the guard unlocks the secure terminal, revealing the path to the Zen Rockery), E1 (sentry destruction triggers security fail-safe, raising a sand bridge to the Bonsai Atrium), E2 (Golem's deactivation opens the glass elevator to the Lotus Temple Rooftop) — all three are specific physical consequences of the encounter outcomes. The chain is fully load-bearing."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy stats escalate cleanly (60/15, 80/20, 90/25) and the boss (200/40) is the clear peak. A 150hp player at medium difficulty with a 30-damage weapon faces a well-calibrated challenge. Player weapon damage (30) is slightly better than the 25-damage norm for medium, which edges toward easy, but all numbers are internally consistent."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Bioluminescent rooftop koi pond, zen rockery, bonsai atrium, Cybernetic Arborist Golem, Synthetica the Serene Arbiter — the garden-over-dystopia fusion is sustained perfectly. 'Superconductive Jade Dust' and 'Petrified Silicon Core' are outstanding hybrid names that deserve to be in more levels."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Superconductive Jade Dust enhancing kinetic shockwaves with electrical interference against a Security Drone Sentry is logical. However, Petrified Silicon Core is described as 'imbues earthen constructs with digital-nullifying shielding' — a defensive buff to summoned constructs — yet it serves as the offensive weapon weakness for the Cybernetic Arborist Golem. A defensive buff item functioning as a direct weapon weakness is a mechanical non-sequitur. Harmonic Quartz Monolith Fragment shattering synthetic diamond plating on the boss is excellent."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and hazards are distinct and vivid. 'Security Drone Sentry' in E1 is slightly generic in name compared to the more specific 'Bioluminescent Droid Guard' in E0 and 'Cybernetic Arborist Golem' in E2. Otherwise the level is complete and non-redundant."
+        }
+      },
+      "best_element": "The setting concept — a serene bioluminescent rooftop garden overlooking a neon-soaked cyberpunk city — is the most thematically interesting design choice in the file, and the geomancer pickups (jade dust, silicon core, quartz monolith) elegantly bridge the two aesthetics.",
+      "worst_element": "The Petrified Silicon Core is explicitly described as a defensive buff (shields earthen constructs with digital-nullifying shielding) but serves as an offensive weakness against the Cybernetic Arborist Golem. Rewriting its effect to include an active offensive component — e.g., 'fires digital-nullifying pulses that short-circuit cybernetic systems' — would resolve the inconsistency.",
+      "overall": "One of the more imaginative levels in the set — the serene-garden-over-dystopia concept is executed well and the geomancer class identity is strong throughout; the defensive-item-as-weapon issue is the only significant flaw in an otherwise well-designed medium level."
+    }
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "model_a": "flash_v1_gemini_35_flash",
+  "model_b": "flash_v1_gemini_3_flash_preview",
+  "n_raw_a": 144,
+  "n_raw_b": 144,
+  "n_judged_cases": 72,
+  "scoring": {
+    "a_mean": 4.458,
+    "b_mean": 4.099,
+    "diff": 0.359,
+    "a_wins": 55,
+    "b_wins": 17,
+    "ties": 0,
+    "criteria": {
+      "reference_integrity": {
+        "weight": 3,
+        "a_mean": 4.625,
+        "b_mean": 4.042,
+        "diff": 0.583
+      },
+      "causal_chain": {
+        "weight": 3,
+        "a_mean": 4.111,
+        "b_mean": 3.803,
+        "diff": 0.308
+      },
+      "balance": {
+        "weight": 2,
+        "a_mean": 4.479,
+        "b_mean": 3.93,
+        "diff": 0.55
+      },
+      "thematic_coherence": {
+        "weight": 2,
+        "a_mean": 4.701,
+        "b_mean": 4.627,
+        "diff": 0.075
+      },
+      "mechanical_sense": {
+        "weight": 1,
+        "a_mean": 4.465,
+        "b_mean": 4.028,
+        "diff": 0.437
+      },
+      "completeness": {
+        "weight": 1,
+        "a_mean": 4.465,
+        "b_mean": 4.514,
+        "diff": -0.049
+      }
+    }
+  },
+  "tokens": {
+    "prompt_tokens": {
+      "a": {
+        "mean": 705.2,
+        "median": 705.0,
+        "sd": 0.9,
+        "min": 704,
+        "max": 708
+      },
+      "b": {
+        "mean": 705.2,
+        "median": 705.0,
+        "sd": 0.9,
+        "min": 704,
+        "max": 708
+      }
+    },
+    "output_tokens": {
+      "a": {
+        "mean": 695.5,
+        "median": 695.0,
+        "sd": 32.1,
+        "min": 630,
+        "max": 778
+      },
+      "b": {
+        "mean": 520.3,
+        "median": 586.0,
+        "sd": 118.6,
+        "min": 326,
+        "max": 682
+      }
+    },
+    "thinking_tokens": {
+      "a": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "b": {
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  "latency": {
+    "a": {
+      "mean": 4244,
+      "median": 4166,
+      "sd": 504,
+      "p5": 3747,
+      "p95": 4829,
+      "min": 3478,
+      "max": 8820,
+      "n": 144
+    },
+    "b": {
+      "mean": 3978,
+      "median": 3902,
+      "sd": 1057,
+      "p5": 2995,
+      "p95": 4795,
+      "min": 2764,
+      "max": 12925,
+      "n": 144
+    },
+    "diff_mean_ms": 265,
+    "diff_median_ms": 264
+  },
+  "reliability": {
+    "a": {
+      "n": 144,
+      "total_retries": 0,
+      "requests_with_retries": 0,
+      "retry_rate_pct": 0.0,
+      "mean_retries": 0.0,
+      "max_retries": 0
+    },
+    "b": {
+      "n": 144,
+      "total_retries": 38,
+      "requests_with_retries": 18,
+      "retry_rate_pct": 12.5,
+      "mean_retries": 0.26,
+      "max_retries": 5
+    }
+  }
+}
