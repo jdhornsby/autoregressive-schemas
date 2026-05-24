@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 import os
 import time
 from typing import Any, Type
@@ -9,8 +10,7 @@ from typing import Any, Type
 from google import genai
 from google.genai.types import GenerateContentConfig, ThinkingConfig
 from pydantic import BaseModel
-from tenacity import retry, stop_after_attempt, wait_exponential, before_sleep_log
-import logging
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 logger = logging.getLogger(__name__)
 

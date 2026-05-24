@@ -1,19 +1,17 @@
 """Shared data loading for analysis scripts.
 
 Reads raw generation results and judgment files, joins them by
-(thinking_level, variant, case_id), and returns a DataFrame with
-one row per generation.
+(thinking_level, variant, case_id), and returns a DataFrame.
 """
 
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 import pandas as pd
 
-RAW_DIR = Path("results/raw")
-JUDGMENTS_DIR = Path("results/judgments")
+from ..paths import judgments_dir, raw_dir
+from ..rubric import WEIGHTS, case_id
 
 VARIANT_MAP: dict[str, str] = {
     "1": "flat_alpha",
@@ -25,30 +23,8 @@ VARIANT_MAP: dict[str, str] = {
 }
 
 THINKING_LEVELS = ["minimal", "low", "medium", "high"]
-
-CRITERIA = [
-    "reference_integrity",
-    "causal_chain",
-    "balance",
-    "thematic_coherence",
-    "mechanical_sense",
-    "completeness",
-]
-
-WEIGHTS: dict[str, int] = {
-    "reference_integrity": 3,
-    "causal_chain": 3,
-    "balance": 2,
-    "thematic_coherence": 2,
-    "mechanical_sense": 1,
-    "completeness": 1,
-}
-
+CRITERIA = list(WEIGHTS.keys())
 WEIGHT_SUM = sum(WEIGHTS.values())
-
-
-def case_id(case: dict) -> str:
-    return f"{case['genre']}_{case['mood']}_{case['player_class']}_{case['target_difficulty']}"
 
 
 def load_thinking_level(thinking: str) -> pd.DataFrame:
@@ -58,8 +34,8 @@ def load_thinking_level(thinking: str) -> pd.DataFrame:
     for suffix, variant in VARIANT_MAP.items():
         exec_id = f"{thinking}_{suffix}"
         for part in range(4):
-            raw_path = RAW_DIR / f"{exec_id}_{part}.json"
-            judge_path = JUDGMENTS_DIR / f"{exec_id}_{part}.json"
+            raw_path = raw_dir() / f"{exec_id}_{part}.json"
+            judge_path = judgments_dir() / f"{exec_id}_{part}.json"
 
             if not raw_path.exists():
                 raise FileNotFoundError(f"Missing raw file: {raw_path}")
@@ -92,7 +68,9 @@ def load_thinking_level(thinking: str) -> pd.DataFrame:
                 }
                 for c in CRITERIA:
                     row[c] = scores[c]["score"]
-                row["weighted_score"] = sum(row[c] * WEIGHTS[c] for c in CRITERIA) / WEIGHT_SUM
+                row["weighted_score"] = (
+                    sum(row[c] * WEIGHTS[c] for c in CRITERIA) / WEIGHT_SUM
+                )
                 rows.append(row)
 
     return pd.DataFrame(rows)
