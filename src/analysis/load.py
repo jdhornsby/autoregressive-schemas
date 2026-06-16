@@ -7,6 +7,7 @@ Reads raw generation results and judgment files, joins them by
 from __future__ import annotations
 
 import json
+from typing import Iterable
 
 import pandas as pd
 
@@ -22,26 +23,63 @@ VARIANT_MAP: dict[str, str] = {
     "6": "nested_narrative",
 }
 
+VARIANT_SUFFIX: dict[str, str] = {v: k for k, v in VARIANT_MAP.items()}
+
 THINKING_LEVELS = ["minimal", "low", "medium", "high"]
 CRITERIA = list(WEIGHTS.keys())
 WEIGHT_SUM = sum(WEIGHTS.values())
 
 
-def load_thinking_level(thinking: str) -> pd.DataFrame:
-    """Load all data for a single thinking level. Returns a DataFrame."""
+def _resolve_variants(variants: Iterable[str] | None) -> list[tuple[str, str]]:
+    """Return [(suffix, variant_name)] for the requested variants, preserving canonical order."""
+    if variants is None:
+        return list(VARIANT_MAP.items())
+    wanted = set(variants)
+    unknown = wanted - set(VARIANT_SUFFIX)
+    if unknown:
+        raise ValueError(f"Unknown variants: {sorted(unknown)}")
+    return [(VARIANT_SUFFIX[v], v) for v in VARIANT_MAP.values() if v in wanted]
+
+
+def load_thinking_level(
+    thinking: str,
+    variants: Iterable[str] | None = None,
+    *,
+    strict: bool = True,
+) -> pd.DataFrame:
+    """Load all data for a single thinking level.
+
+    Args:
+        thinking: thinking level (minimal/low/medium/high).
+        variants: variant names to load; None loads all six.
+        strict: if True (default), raise on any missing variant files.
+            If False, silently skip missing variant exec_ids — useful when
+            only a subset of variants was generated for this thinking level.
+
+    Returns a DataFrame with one row per (variant, case_id).
+    """
     rows: list[dict] = []
 
-    for suffix, variant in VARIANT_MAP.items():
+    for suffix, variant in _resolve_variants(variants):
         exec_id = f"{thinking}_{suffix}"
-        for part in range(4):
-            raw_path = raw_dir() / f"{exec_id}_{part}.json"
-            judge_path = judgments_dir() / f"{exec_id}_{part}.json"
+        raw_paths = sorted(raw_dir().glob(f"{exec_id}_*.json"))
+        judge_paths = sorted(judgments_dir().glob(f"{exec_id}_*.json"))
 
-            if not raw_path.exists():
-                raise FileNotFoundError(f"Missing raw file: {raw_path}")
-            if not judge_path.exists():
-                raise FileNotFoundError(f"Missing judgment file: {judge_path}")
+        if not raw_paths:
+            if strict:
+                raise FileNotFoundError(f"No raw files for exec_id {exec_id!r}")
+            continue
+        if not judge_paths:
+            if strict:
+                raise FileNotFoundError(f"No judgment files for exec_id {exec_id!r}")
+            continue
+        if len(raw_paths) != len(judge_paths):
+            raise ValueError(
+                f"File count mismatch for {exec_id}: "
+                f"{len(raw_paths)} raw vs {len(judge_paths)} judgments"
+            )
 
+        for raw_path, judge_path in zip(raw_paths, judge_paths):
             raw_entries = json.loads(raw_path.read_text())
             judge_entries = json.loads(judge_path.read_text())
 
@@ -77,5 +115,5 @@ def load_thinking_level(thinking: str) -> pd.DataFrame:
 
 
 def load_minimal() -> pd.DataFrame:
-    """Load all data for thinking_level=minimal."""
+    """Load all data for thinking_level=minimal (all six variants)."""
     return load_thinking_level("minimal")

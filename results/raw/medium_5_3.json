@@ -1,0 +1,2306 @@
+[
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "ominous",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 50,
+        "health": 500,
+        "name": "Molten Monarch",
+        "victory_condition": "Infuse the Glacial Shard into the core of the Monarch to stabilize the caldera.",
+        "weakness": "Glacial Shard"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 100,
+            "name": "Lava Stalker",
+            "weakness": "Crushing Geode Staff"
+          },
+          "hazard": "Lava geysers erupting at intervals",
+          "location": "Searing Entryway",
+          "pickup": {
+            "effect": "Provides immunity to heat-based movement penalties",
+            "name": "Magma Cooling Amulet"
+          },
+          "trigger": "Crossing the main lava bridge"
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 150,
+            "name": "Ash Wraith",
+            "weakness": "Magma Cooling Amulet"
+          },
+          "hazard": "Toxic ash clouds reducing visibility",
+          "location": "Cinder Basin",
+          "pickup": {
+            "effect": "Infuses weapons with sub-zero elemental energy",
+            "name": "Frozen Core"
+          },
+          "trigger": "Activating the volcanic ventilation shaft"
+        },
+        {
+          "enemy": {
+            "damage": 40,
+            "health": 250,
+            "name": "Obsidian Golem",
+            "weakness": "Frozen Core"
+          },
+          "hazard": "Collapsing stone pillars",
+          "location": "The Heart of the Mountain",
+          "pickup": {
+            "effect": "Deals massive damage to heat-shielded bosses",
+            "name": "Glacial Shard"
+          },
+          "trigger": "Unlocking the seal to the throne room"
+        }
+      ],
+      "objective": "Suppress the volcanic eruption before the caldera collapses.",
+      "player_health": 100,
+      "player_weapon": "Crushing Geode Staff",
+      "player_weapon_damage": 15,
+      "reward": "Heart of the Mountain relic",
+      "setting": "Volcanic Caldera of Omen",
+      "theme": "Ominous volcanic destruction"
+    },
+    "normalized": {
+      "theme": "Ominous volcanic destruction",
+      "setting": "Volcanic Caldera of Omen",
+      "player_weapon": "Crushing Geode Staff",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Searing Entryway",
+          "enemy": {
+            "name": "Lava Stalker",
+            "health": 100,
+            "damage": 20,
+            "weakness": "Crushing Geode Staff"
+          },
+          "hazard": "Lava geysers erupting at intervals",
+          "pickup": {
+            "name": "Magma Cooling Amulet",
+            "effect": "Provides immunity to heat-based movement penalties"
+          },
+          "trigger": "Crossing the main lava bridge"
+        },
+        {
+          "location": "Cinder Basin",
+          "enemy": {
+            "name": "Ash Wraith",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Magma Cooling Amulet"
+          },
+          "hazard": "Toxic ash clouds reducing visibility",
+          "pickup": {
+            "name": "Frozen Core",
+            "effect": "Infuses weapons with sub-zero elemental energy"
+          },
+          "trigger": "Activating the volcanic ventilation shaft"
+        },
+        {
+          "location": "The Heart of the Mountain",
+          "enemy": {
+            "name": "Obsidian Golem",
+            "health": 250,
+            "damage": 40,
+            "weakness": "Frozen Core"
+          },
+          "hazard": "Collapsing stone pillars",
+          "pickup": {
+            "name": "Glacial Shard",
+            "effect": "Deals massive damage to heat-shielded bosses"
+          },
+          "trigger": "Unlocking the seal to the throne room"
+        }
+      ],
+      "boss": {
+        "name": "Molten Monarch",
+        "health": 500,
+        "damage": 50,
+        "weakness": "Glacial Shard",
+        "victory_condition": "Infuse the Glacial Shard into the core of the Monarch to stabilize the caldera."
+      },
+      "objective": "Suppress the volcanic eruption before the caldera collapses.",
+      "reward": "Heart of the Mountain relic"
+    },
+    "stats": {
+      "latency_ms": 4723,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 637,
+      "output_tokens": 571,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 60,
+        "health": 300,
+        "name": "Volcanic Sentinel",
+        "victory_condition": "Destroy the exposed crystal core at the center of the chamber",
+        "weakness": "Essence Crystal"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 50,
+            "name": "Magma Hound",
+            "weakness": "Inferno Staff"
+          },
+          "hazard": "Falling lava boulders",
+          "location": "Outer Caldera",
+          "pickup": {
+            "effect": "Reduces incoming lava damage by 50 percent",
+            "name": "Cooling Amulet"
+          },
+          "trigger": "Defeating the hound retracts the gate to the bridge"
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 75,
+            "name": "Ash Wraith",
+            "weakness": "Cooling Amulet"
+          },
+          "hazard": "Toxic ash clouds",
+          "location": "Ash-choked Bridge",
+          "pickup": {
+            "effect": "Provides structural grounding against seismic instability",
+            "name": "Stability Core"
+          },
+          "trigger": "Defeating the wraith clears the path to the core chamber"
+        },
+        {
+          "enemy": {
+            "damage": 40,
+            "health": 100,
+            "name": "Obsidian Golem",
+            "weakness": "Stability Core"
+          },
+          "hazard": "Constant tremors",
+          "location": "Core Chamber Entrance",
+          "pickup": {
+            "effect": "Exposes the structural vulnerability of volcanic entities",
+            "name": "Essence Crystal"
+          },
+          "trigger": "Defeating the golem breaks the final seal to the boss arena"
+        }
+      ],
+      "objective": "Stabilize the volcanic core before it erupts",
+      "player_health": 100,
+      "player_weapon": "Inferno Staff",
+      "player_weapon_damage": 25,
+      "reward": "Eternal Flame Essence",
+      "setting": "Magma-flooded ruins of an ancient temple",
+      "theme": "Volcanic"
+    },
+    "normalized": {
+      "theme": "Volcanic",
+      "setting": "Magma-flooded ruins of an ancient temple",
+      "player_weapon": "Inferno Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Outer Caldera",
+          "enemy": {
+            "name": "Magma Hound",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Inferno Staff"
+          },
+          "hazard": "Falling lava boulders",
+          "pickup": {
+            "name": "Cooling Amulet",
+            "effect": "Reduces incoming lava damage by 50 percent"
+          },
+          "trigger": "Defeating the hound retracts the gate to the bridge"
+        },
+        {
+          "location": "Ash-choked Bridge",
+          "enemy": {
+            "name": "Ash Wraith",
+            "health": 75,
+            "damage": 30,
+            "weakness": "Cooling Amulet"
+          },
+          "hazard": "Toxic ash clouds",
+          "pickup": {
+            "name": "Stability Core",
+            "effect": "Provides structural grounding against seismic instability"
+          },
+          "trigger": "Defeating the wraith clears the path to the core chamber"
+        },
+        {
+          "location": "Core Chamber Entrance",
+          "enemy": {
+            "name": "Obsidian Golem",
+            "health": 100,
+            "damage": 40,
+            "weakness": "Stability Core"
+          },
+          "hazard": "Constant tremors",
+          "pickup": {
+            "name": "Essence Crystal",
+            "effect": "Exposes the structural vulnerability of volcanic entities"
+          },
+          "trigger": "Defeating the golem breaks the final seal to the boss arena"
+        }
+      ],
+      "boss": {
+        "name": "Volcanic Sentinel",
+        "health": 300,
+        "damage": 60,
+        "weakness": "Essence Crystal",
+        "victory_condition": "Destroy the exposed crystal core at the center of the chamber"
+      },
+      "objective": "Stabilize the volcanic core before it erupts",
+      "reward": "Eternal Flame Essence"
+    },
+    "stats": {
+      "latency_ms": 4037,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 499,
+      "output_tokens": 556,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 30,
+        "health": 150,
+        "name": "Ignis, the Ember Lord",
+        "victory_condition": "Use the Heart Key to stabilize the erupting core.",
+        "weakness": "Heart Key"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Lava Stalker",
+            "weakness": "Sun-Forged Greatsword"
+          },
+          "hazard": "Falling embers",
+          "location": "Smoldering Foothills",
+          "pickup": {
+            "effect": "Coats weapon in frost",
+            "name": "Frozen Core"
+          },
+          "trigger": "Defeating the stalker triggers a cooling mechanism in the cave entrance."
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 60,
+            "name": "Ash Revenant",
+            "weakness": "Frozen Core"
+          },
+          "hazard": "Toxic gas cloud",
+          "location": "Crystalline Tunnel",
+          "pickup": {
+            "effect": "Grants temporary immunity to molten lava",
+            "name": "Volcanic Seal"
+          },
+          "trigger": "Absorbing the revenant's energy opens the door to the magma chamber."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 80,
+            "name": "Magma Construct",
+            "weakness": "Volcanic Seal"
+          },
+          "hazard": "Floor tremors",
+          "location": "Magma Chamber Perimeter",
+          "pickup": {
+            "effect": "Opens the boss gateway",
+            "name": "Heart Key"
+          },
+          "trigger": "Dismantling the construct unlocks the inner sanctum where the boss resides."
+        }
+      ],
+      "objective": "Extinguish the Heart of the Mountain.",
+      "player_health": 100,
+      "player_weapon": "Sun-Forged Greatsword",
+      "player_weapon_damage": 20,
+      "reward": "Eternal Embers Shield",
+      "setting": "Obsidian Crags",
+      "theme": "Volcanic"
+    },
+    "normalized": {
+      "theme": "Volcanic",
+      "setting": "Obsidian Crags",
+      "player_weapon": "Sun-Forged Greatsword",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Smoldering Foothills",
+          "enemy": {
+            "name": "Lava Stalker",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Sun-Forged Greatsword"
+          },
+          "hazard": "Falling embers",
+          "pickup": {
+            "name": "Frozen Core",
+            "effect": "Coats weapon in frost"
+          },
+          "trigger": "Defeating the stalker triggers a cooling mechanism in the cave entrance."
+        },
+        {
+          "location": "Crystalline Tunnel",
+          "enemy": {
+            "name": "Ash Revenant",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Frozen Core"
+          },
+          "hazard": "Toxic gas cloud",
+          "pickup": {
+            "name": "Volcanic Seal",
+            "effect": "Grants temporary immunity to molten lava"
+          },
+          "trigger": "Absorbing the revenant's energy opens the door to the magma chamber."
+        },
+        {
+          "location": "Magma Chamber Perimeter",
+          "enemy": {
+            "name": "Magma Construct",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Volcanic Seal"
+          },
+          "hazard": "Floor tremors",
+          "pickup": {
+            "name": "Heart Key",
+            "effect": "Opens the boss gateway"
+          },
+          "trigger": "Dismantling the construct unlocks the inner sanctum where the boss resides."
+        }
+      ],
+      "boss": {
+        "name": "Ignis, the Ember Lord",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Heart Key",
+        "victory_condition": "Use the Heart Key to stabilize the erupting core."
+      },
+      "objective": "Extinguish the Heart of the Mountain.",
+      "reward": "Eternal Embers Shield"
+    },
+    "stats": {
+      "latency_ms": 4260,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 578,
+      "output_tokens": 551,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 300,
+        "name": "Obsidian Tyrant",
+        "victory_condition": "Reduce health to zero",
+        "weakness": "Magma Heart resonance"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 80,
+            "name": "Magma Crawler",
+            "weakness": "Obsidian Greatsword"
+          },
+          "hazard": "Lava jets",
+          "location": "Crater Rim",
+          "pickup": {
+            "effect": "Freezes enemies",
+            "name": "Frost Core"
+          },
+          "trigger": "Death of Crawler ignites the thermal vent leading to the Ash Field"
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 120,
+            "name": "Ashen Guardian",
+            "weakness": "Frost Core"
+          },
+          "hazard": "Suffocating soot",
+          "location": "Ash Field",
+          "pickup": {
+            "effect": "Reduces fire damage",
+            "name": "Heat-Shield Cloak"
+          },
+          "trigger": "Destruction of Guardian clears the path to the lava bridge"
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 150,
+            "name": "Volcanic Construct",
+            "weakness": "Heat-Shield Cloak"
+          },
+          "hazard": "Falling magma boulders",
+          "location": "Lava Bridge",
+          "pickup": {
+            "effect": "Causes explosive resonance",
+            "name": "Magma Heart"
+          },
+          "trigger": "Collapse of Construct triggers the opening of the inner sanctum door"
+        }
+      ],
+      "objective": "Slay the Obsidian Tyrant and reclaim the Eternal Flame",
+      "player_health": 100,
+      "player_weapon": "Obsidian Greatsword",
+      "player_weapon_damage": 25,
+      "reward": "Eternal Flame Amulet",
+      "setting": "The Burning Crag",
+      "theme": "Volcanic"
+    },
+    "normalized": {
+      "theme": "Volcanic",
+      "setting": "The Burning Crag",
+      "player_weapon": "Obsidian Greatsword",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Crater Rim",
+          "enemy": {
+            "name": "Magma Crawler",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Obsidian Greatsword"
+          },
+          "hazard": "Lava jets",
+          "pickup": {
+            "name": "Frost Core",
+            "effect": "Freezes enemies"
+          },
+          "trigger": "Death of Crawler ignites the thermal vent leading to the Ash Field"
+        },
+        {
+          "location": "Ash Field",
+          "enemy": {
+            "name": "Ashen Guardian",
+            "health": 120,
+            "damage": 20,
+            "weakness": "Frost Core"
+          },
+          "hazard": "Suffocating soot",
+          "pickup": {
+            "name": "Heat-Shield Cloak",
+            "effect": "Reduces fire damage"
+          },
+          "trigger": "Destruction of Guardian clears the path to the lava bridge"
+        },
+        {
+          "location": "Lava Bridge",
+          "enemy": {
+            "name": "Volcanic Construct",
+            "health": 150,
+            "damage": 25,
+            "weakness": "Heat-Shield Cloak"
+          },
+          "hazard": "Falling magma boulders",
+          "pickup": {
+            "name": "Magma Heart",
+            "effect": "Causes explosive resonance"
+          },
+          "trigger": "Collapse of Construct triggers the opening of the inner sanctum door"
+        }
+      ],
+      "boss": {
+        "name": "Obsidian Tyrant",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Magma Heart resonance",
+        "victory_condition": "Reduce health to zero"
+      },
+      "objective": "Slay the Obsidian Tyrant and reclaim the Eternal Flame",
+      "reward": "Eternal Flame Amulet"
+    },
+    "stats": {
+      "latency_ms": 3972,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 449,
+      "output_tokens": 537,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 25,
+        "health": 150,
+        "name": "Magma-Forged Titan",
+        "victory_condition": "Overload the titan's core to cause a safe shutdown.",
+        "weakness": "Ancient Ignition Key"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 30,
+            "name": "Molten Imp",
+            "weakness": "Aether-Charged Wrench"
+          },
+          "hazard": "Steam Vents",
+          "location": "Obsidian Bridge",
+          "pickup": {
+            "effect": "Freezes mechanical components",
+            "name": "Cryo-Coolant Vial"
+          },
+          "trigger": "Upon the imp's collapse, a magnetic sequence unlocks the heavy blast door leading deeper."
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Brass Scavenger",
+            "weakness": "Cryo-Coolant Vial"
+          },
+          "hazard": "Toxic Gas Cloud",
+          "location": "Sulfur Chambers",
+          "pickup": {
+            "effect": "Increases electrical output",
+            "name": "Conductive Core Shard"
+          },
+          "trigger": "Defeating the scavenger reveals a hidden console that powers up the lift to the boss lair."
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Obsidian Automaton",
+            "weakness": "Conductive Core Shard"
+          },
+          "hazard": "Falling Magma Drips",
+          "location": "The Forge Floor",
+          "pickup": {
+            "effect": "Opens the boss containment vault",
+            "name": "Ancient Ignition Key"
+          },
+          "trigger": "The automaton's core shatters, triggering a resonance signal that draws the boss from the inner sanctum."
+        }
+      ],
+      "objective": "Secure the Ancient Core",
+      "player_health": 100,
+      "player_weapon": "Aether-Charged Wrench",
+      "player_weapon_damage": 20,
+      "reward": "Master Artificer's Ember Gear",
+      "setting": "Ruins of Molten Peak",
+      "theme": "Subterranean Volcanic Forge"
+    },
+    "normalized": {
+      "theme": "Subterranean Volcanic Forge",
+      "setting": "Ruins of Molten Peak",
+      "player_weapon": "Aether-Charged Wrench",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Obsidian Bridge",
+          "enemy": {
+            "name": "Molten Imp",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Aether-Charged Wrench"
+          },
+          "hazard": "Steam Vents",
+          "pickup": {
+            "name": "Cryo-Coolant Vial",
+            "effect": "Freezes mechanical components"
+          },
+          "trigger": "Upon the imp's collapse, a magnetic sequence unlocks the heavy blast door leading deeper."
+        },
+        {
+          "location": "Sulfur Chambers",
+          "enemy": {
+            "name": "Brass Scavenger",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Cryo-Coolant Vial"
+          },
+          "hazard": "Toxic Gas Cloud",
+          "pickup": {
+            "name": "Conductive Core Shard",
+            "effect": "Increases electrical output"
+          },
+          "trigger": "Defeating the scavenger reveals a hidden console that powers up the lift to the boss lair."
+        },
+        {
+          "location": "The Forge Floor",
+          "enemy": {
+            "name": "Obsidian Automaton",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Conductive Core Shard"
+          },
+          "hazard": "Falling Magma Drips",
+          "pickup": {
+            "name": "Ancient Ignition Key",
+            "effect": "Opens the boss containment vault"
+          },
+          "trigger": "The automaton's core shatters, triggering a resonance signal that draws the boss from the inner sanctum."
+        }
+      ],
+      "boss": {
+        "name": "Magma-Forged Titan",
+        "health": 150,
+        "damage": 25,
+        "weakness": "Ancient Ignition Key",
+        "victory_condition": "Overload the titan's core to cause a safe shutdown."
+      },
+      "objective": "Secure the Ancient Core",
+      "reward": "Master Artificer's Ember Gear"
+    },
+    "stats": {
+      "latency_ms": 5018,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 716,
+      "output_tokens": 583,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "eerie",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 250,
+        "name": "Obsidian Colossus",
+        "victory_condition": "Shatter the core to cool the caldera",
+        "weakness": "Frost Core"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Magma Stalker",
+            "weakness": "Lightning Staff"
+          },
+          "hazard": "Sulfur vents",
+          "location": "Cavern of Ash",
+          "pickup": {
+            "effect": "Increases conductivity",
+            "name": "Static Oil"
+          },
+          "trigger": "Entering the Cavern of Ash activates the next encounter"
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 80,
+            "name": "Ash Golem",
+            "weakness": "Static Oil"
+          },
+          "hazard": "Lava pools",
+          "location": "Magma Channel",
+          "pickup": {
+            "effect": "Freezes surfaces",
+            "name": "Cooling Crystal"
+          },
+          "trigger": "Defeating the Golem triggers the lava flow shift towards the Boss Chamber"
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 100,
+            "name": "Volcanic Wraith",
+            "weakness": "Cooling Crystal"
+          },
+          "hazard": "Eerie embers",
+          "location": "Forbidden Forge",
+          "pickup": {
+            "effect": "Extremely low temperature",
+            "name": "Frost Core"
+          },
+          "trigger": "Capturing the Wraith's essence opens the Forbidden Forge entrance"
+        }
+      ],
+      "objective": "Quench the Heart of the Volcano",
+      "player_health": 100,
+      "player_weapon": "Lightning Staff",
+      "player_weapon_damage": 25,
+      "reward": "Stormcaller's Ascension",
+      "setting": "Mount Ember",
+      "theme": "Eerie Volcanic"
+    },
+    "normalized": {
+      "theme": "Eerie Volcanic",
+      "setting": "Mount Ember",
+      "player_weapon": "Lightning Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Cavern of Ash",
+          "enemy": {
+            "name": "Magma Stalker",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Lightning Staff"
+          },
+          "hazard": "Sulfur vents",
+          "pickup": {
+            "name": "Static Oil",
+            "effect": "Increases conductivity"
+          },
+          "trigger": "Entering the Cavern of Ash activates the next encounter"
+        },
+        {
+          "location": "Magma Channel",
+          "enemy": {
+            "name": "Ash Golem",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Static Oil"
+          },
+          "hazard": "Lava pools",
+          "pickup": {
+            "name": "Cooling Crystal",
+            "effect": "Freezes surfaces"
+          },
+          "trigger": "Defeating the Golem triggers the lava flow shift towards the Boss Chamber"
+        },
+        {
+          "location": "Forbidden Forge",
+          "enemy": {
+            "name": "Volcanic Wraith",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Cooling Crystal"
+          },
+          "hazard": "Eerie embers",
+          "pickup": {
+            "name": "Frost Core",
+            "effect": "Extremely low temperature"
+          },
+          "trigger": "Capturing the Wraith's essence opens the Forbidden Forge entrance"
+        }
+      ],
+      "boss": {
+        "name": "Obsidian Colossus",
+        "health": 250,
+        "damage": 40,
+        "weakness": "Frost Core",
+        "victory_condition": "Shatter the core to cool the caldera"
+      },
+      "objective": "Quench the Heart of the Volcano",
+      "reward": "Stormcaller's Ascension"
+    },
+    "stats": {
+      "latency_ms": 5474,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 915,
+      "output_tokens": 527,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 10,
+        "health": 20,
+        "name": "Molten Gummy Dragon",
+        "victory_condition": "Freeze the dragon into solid rock candy",
+        "weakness": "Cooling Ice Berry Syrup"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 2,
+            "health": 5,
+            "name": "Charred Caramel Crab",
+            "weakness": "Staff of Soothing Smoke"
+          },
+          "hazard": "Spicy steam vent",
+          "location": "Lava Beach",
+          "pickup": {
+            "effect": "Increases attack speed of beasts",
+            "name": "Magic Sprinkles"
+          },
+          "trigger": "Defeating the crab releases a hidden path to the inner crust"
+        },
+        {
+          "enemy": {
+            "damage": 3,
+            "health": 8,
+            "name": "Pebble Pop-Rock Golem",
+            "weakness": "Magic Sprinkles"
+          },
+          "hazard": "Exploding cinder patch",
+          "location": "Cinder Crater",
+          "pickup": {
+            "effect": "Freezes organic lava entities on contact",
+            "name": "Cooling Ice Berry Syrup"
+          },
+          "trigger": "The golem's collapse opens the gate to the Volcanic Core"
+        },
+        {
+          "enemy": {
+            "damage": 4,
+            "health": 10,
+            "name": "Flame-Touched Marshmallow Sprite",
+            "weakness": "Magic Sprinkles"
+          },
+          "hazard": "Liquid marshmallow whirlpool",
+          "location": "Magma Caldera",
+          "pickup": {
+            "effect": "Restores 15 player health",
+            "name": "Golden Honey Droplet"
+          },
+          "trigger": "The defeated sprite reveals the bridge to the Dragon's lair"
+        }
+      ],
+      "objective": "Calm the erupting Candy Volcano",
+      "player_health": 50,
+      "player_weapon": "Staff of Soothing Smoke",
+      "player_weapon_damage": 5,
+      "reward": "Eternal Sweet Tooth Aura",
+      "setting": "A bubbling landscape of magma pits and crystallized sugar rocks",
+      "theme": "Molten Marshmallow Mountain"
+    },
+    "normalized": {
+      "theme": "Molten Marshmallow Mountain",
+      "setting": "A bubbling landscape of magma pits and crystallized sugar rocks",
+      "player_weapon": "Staff of Soothing Smoke",
+      "player_weapon_damage": 5,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Lava Beach",
+          "enemy": {
+            "name": "Charred Caramel Crab",
+            "health": 5,
+            "damage": 2,
+            "weakness": "Staff of Soothing Smoke"
+          },
+          "hazard": "Spicy steam vent",
+          "pickup": {
+            "name": "Magic Sprinkles",
+            "effect": "Increases attack speed of beasts"
+          },
+          "trigger": "Defeating the crab releases a hidden path to the inner crust"
+        },
+        {
+          "location": "Cinder Crater",
+          "enemy": {
+            "name": "Pebble Pop-Rock Golem",
+            "health": 8,
+            "damage": 3,
+            "weakness": "Magic Sprinkles"
+          },
+          "hazard": "Exploding cinder patch",
+          "pickup": {
+            "name": "Cooling Ice Berry Syrup",
+            "effect": "Freezes organic lava entities on contact"
+          },
+          "trigger": "The golem's collapse opens the gate to the Volcanic Core"
+        },
+        {
+          "location": "Magma Caldera",
+          "enemy": {
+            "name": "Flame-Touched Marshmallow Sprite",
+            "health": 10,
+            "damage": 4,
+            "weakness": "Magic Sprinkles"
+          },
+          "hazard": "Liquid marshmallow whirlpool",
+          "pickup": {
+            "name": "Golden Honey Droplet",
+            "effect": "Restores 15 player health"
+          },
+          "trigger": "The defeated sprite reveals the bridge to the Dragon's lair"
+        }
+      ],
+      "boss": {
+        "name": "Molten Gummy Dragon",
+        "health": 20,
+        "damage": 10,
+        "weakness": "Cooling Ice Berry Syrup",
+        "victory_condition": "Freeze the dragon into solid rock candy"
+      },
+      "objective": "Calm the erupting Candy Volcano",
+      "reward": "Eternal Sweet Tooth Aura"
+    },
+    "stats": {
+      "latency_ms": 5977,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 789,
+      "output_tokens": 566,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "volcanic",
+      "mood": "serene",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 250,
+        "name": "Ignis, the Eternal Ember",
+        "victory_condition": "Use the Thermal Anchor to stabilize the core and dissipate the flame",
+        "weakness": "Thermal Anchor"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 50,
+            "name": "Ash Construct",
+            "weakness": "Chronos Dagger"
+          },
+          "hazard": "Cooling Lava Pools",
+          "location": "Outer Obsidian Courtyard",
+          "pickup": {
+            "effect": "Freezes enemy movement for 5 seconds",
+            "name": "Stasis Crystal"
+          },
+          "trigger": "Defeating the construct shatters its core, revealing the path to the inner caldera."
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 75,
+            "name": "Magma Spirit",
+            "weakness": "Stasis Crystal"
+          },
+          "hazard": "Steam Vents",
+          "location": "The Cooling Chamber",
+          "pickup": {
+            "effect": "Increases player weapon damage by 15",
+            "name": "Obsidian Lens"
+          },
+          "trigger": "Clearing the spirit unlocks the heavy seal leading to the Heart of the Volcano."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 100,
+            "name": "Molten Sentinel",
+            "weakness": "Obsidian Lens"
+          },
+          "hazard": "Shifting Tectonic Plates",
+          "location": "The Core Bridge",
+          "pickup": {
+            "effect": "Stabilizes intense heat zones",
+            "name": "Thermal Anchor"
+          },
+          "trigger": "The Sentinel's collapse triggers the final descent into the boss chamber."
+        }
+      ],
+      "objective": "Stabilize the volcano's core to prevent a catastrophic eruption.",
+      "player_health": 100,
+      "player_weapon": "Chronos Dagger",
+      "player_weapon_damage": 25,
+      "reward": "Temporal Key",
+      "setting": "Crystalline Volcano Temple",
+      "theme": "Serene Ethereal Magma"
+    },
+    "normalized": {
+      "theme": "Serene Ethereal Magma",
+      "setting": "Crystalline Volcano Temple",
+      "player_weapon": "Chronos Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Outer Obsidian Courtyard",
+          "enemy": {
+            "name": "Ash Construct",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Chronos Dagger"
+          },
+          "hazard": "Cooling Lava Pools",
+          "pickup": {
+            "name": "Stasis Crystal",
+            "effect": "Freezes enemy movement for 5 seconds"
+          },
+          "trigger": "Defeating the construct shatters its core, revealing the path to the inner caldera."
+        },
+        {
+          "location": "The Cooling Chamber",
+          "enemy": {
+            "name": "Magma Spirit",
+            "health": 75,
+            "damage": 15,
+            "weakness": "Stasis Crystal"
+          },
+          "hazard": "Steam Vents",
+          "pickup": {
+            "name": "Obsidian Lens",
+            "effect": "Increases player weapon damage by 15"
+          },
+          "trigger": "Clearing the spirit unlocks the heavy seal leading to the Heart of the Volcano."
+        },
+        {
+          "location": "The Core Bridge",
+          "enemy": {
+            "name": "Molten Sentinel",
+            "health": 100,
+            "damage": 20,
+            "weakness": "Obsidian Lens"
+          },
+          "hazard": "Shifting Tectonic Plates",
+          "pickup": {
+            "name": "Thermal Anchor",
+            "effect": "Stabilizes intense heat zones"
+          },
+          "trigger": "The Sentinel's collapse triggers the final descent into the boss chamber."
+        }
+      ],
+      "boss": {
+        "name": "Ignis, the Eternal Ember",
+        "health": 250,
+        "damage": 40,
+        "weakness": "Thermal Anchor",
+        "victory_condition": "Use the Thermal Anchor to stabilize the core and dissipate the flame"
+      },
+      "objective": "Stabilize the volcano's core to prevent a catastrophic eruption.",
+      "reward": "Temporal Key"
+    },
+    "stats": {
+      "latency_ms": 4347,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 593,
+      "output_tokens": 568,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 30,
+        "health": 150,
+        "name": "Archon of Stillness",
+        "victory_condition": "Use the Sacred Seal to stabilize the Archon's core",
+        "weakness": "Sacred Seal"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Cloud Shade",
+            "weakness": "Sun-Forged Blade"
+          },
+          "hazard": "Shifting floor plates",
+          "location": "The Whispering Bridge",
+          "pickup": {
+            "effect": "Adds holy radiance to the blade",
+            "name": "Star-Shard"
+          },
+          "trigger": "Defeating the Cloud Shade causes the gate to the Storm sanctum to materialize"
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 60,
+            "name": "Storm Golem",
+            "weakness": "Star-Shard"
+          },
+          "hazard": "Electrified floor tiles",
+          "location": "Sanctum of Currents",
+          "pickup": {
+            "effect": "Unlocks the path to the celestial heights",
+            "name": "Aether Key"
+          },
+          "trigger": "Defeating the Golem activates the gravity lift to the Sentinel Spire"
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 80,
+            "name": "Twilight Sentinel",
+            "weakness": "Aether Key"
+          },
+          "hazard": "Blinding light pulses",
+          "location": "Sentinel Spire",
+          "pickup": {
+            "effect": "Neutralizes the boss void-shroud",
+            "name": "Sacred Seal"
+          },
+          "trigger": "Defeating the Sentinel allows the player to ascend to the Archon's altar"
+        }
+      ],
+      "objective": "Restore the Light of the Heavens",
+      "player_health": 100,
+      "player_weapon": "Sun-Forged Blade",
+      "player_weapon_damage": 20,
+      "reward": "Divine Aegis",
+      "setting": "Floating celestial sanctuary",
+      "theme": "Ethereal serenity"
+    },
+    "normalized": {
+      "theme": "Ethereal serenity",
+      "setting": "Floating celestial sanctuary",
+      "player_weapon": "Sun-Forged Blade",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Whispering Bridge",
+          "enemy": {
+            "name": "Cloud Shade",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Sun-Forged Blade"
+          },
+          "hazard": "Shifting floor plates",
+          "pickup": {
+            "name": "Star-Shard",
+            "effect": "Adds holy radiance to the blade"
+          },
+          "trigger": "Defeating the Cloud Shade causes the gate to the Storm sanctum to materialize"
+        },
+        {
+          "location": "Sanctum of Currents",
+          "enemy": {
+            "name": "Storm Golem",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Star-Shard"
+          },
+          "hazard": "Electrified floor tiles",
+          "pickup": {
+            "name": "Aether Key",
+            "effect": "Unlocks the path to the celestial heights"
+          },
+          "trigger": "Defeating the Golem activates the gravity lift to the Sentinel Spire"
+        },
+        {
+          "location": "Sentinel Spire",
+          "enemy": {
+            "name": "Twilight Sentinel",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Aether Key"
+          },
+          "hazard": "Blinding light pulses",
+          "pickup": {
+            "name": "Sacred Seal",
+            "effect": "Neutralizes the boss void-shroud"
+          },
+          "trigger": "Defeating the Sentinel allows the player to ascend to the Archon's altar"
+        }
+      ],
+      "boss": {
+        "name": "Archon of Stillness",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Sacred Seal",
+        "victory_condition": "Use the Sacred Seal to stabilize the Archon's core"
+      },
+      "objective": "Restore the Light of the Heavens",
+      "reward": "Divine Aegis"
+    },
+    "stats": {
+      "latency_ms": 4106,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 630,
+      "output_tokens": 563,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "mysterious",
+      "player_class": "chronomancer",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 50,
+        "health": 200,
+        "name": "The Sun King",
+        "victory_condition": "Seal the Sun King within the rift using the Aether Core.",
+        "weakness": "Aether Core"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 50,
+            "name": "Void Sentinel",
+            "weakness": "Temporal Staff"
+          },
+          "hazard": "Time Dilation Field",
+          "location": "Nebula Gate",
+          "pickup": {
+            "effect": "Increases attack speed",
+            "name": "Stellar Shard"
+          },
+          "trigger": "Defeating the Sentinel activates the portal to the Star Vault."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 70,
+            "name": "Fractured Echo",
+            "weakness": "Stellar Shard"
+          },
+          "hazard": "Falling Asteroids",
+          "location": "Star Vault",
+          "pickup": {
+            "effect": "Reveals hidden enemy vulnerabilities",
+            "name": "Celestial Lens"
+          },
+          "trigger": "Shattering the Echo reveals the hidden path to the Celestial Core."
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 90,
+            "name": "Nebula Wraith",
+            "weakness": "Celestial Lens"
+          },
+          "hazard": "Vacuum Pulse",
+          "location": "Celestial Core",
+          "pickup": {
+            "effect": "Grants immunity to divine light",
+            "name": "Aether Core"
+          },
+          "trigger": "Absorbing the Aether Core provokes the Sun King into the arena."
+        }
+      ],
+      "objective": "Restore the equilibrium of the cosmos by defeating the corrupted Sun King.",
+      "player_health": 100,
+      "player_weapon": "Temporal Staff",
+      "player_weapon_damage": 15,
+      "reward": "Chronos Eternity Shard",
+      "setting": "The Silent Firmament",
+      "theme": "Celestial and Mysterious"
+    },
+    "normalized": {
+      "theme": "Celestial and Mysterious",
+      "setting": "The Silent Firmament",
+      "player_weapon": "Temporal Staff",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Nebula Gate",
+          "enemy": {
+            "name": "Void Sentinel",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Temporal Staff"
+          },
+          "hazard": "Time Dilation Field",
+          "pickup": {
+            "name": "Stellar Shard",
+            "effect": "Increases attack speed"
+          },
+          "trigger": "Defeating the Sentinel activates the portal to the Star Vault."
+        },
+        {
+          "location": "Star Vault",
+          "enemy": {
+            "name": "Fractured Echo",
+            "health": 70,
+            "damage": 25,
+            "weakness": "Stellar Shard"
+          },
+          "hazard": "Falling Asteroids",
+          "pickup": {
+            "name": "Celestial Lens",
+            "effect": "Reveals hidden enemy vulnerabilities"
+          },
+          "trigger": "Shattering the Echo reveals the hidden path to the Celestial Core."
+        },
+        {
+          "location": "Celestial Core",
+          "enemy": {
+            "name": "Nebula Wraith",
+            "health": 90,
+            "damage": 30,
+            "weakness": "Celestial Lens"
+          },
+          "hazard": "Vacuum Pulse",
+          "pickup": {
+            "name": "Aether Core",
+            "effect": "Grants immunity to divine light"
+          },
+          "trigger": "Absorbing the Aether Core provokes the Sun King into the arena."
+        }
+      ],
+      "boss": {
+        "name": "The Sun King",
+        "health": 200,
+        "damage": 50,
+        "weakness": "Aether Core",
+        "victory_condition": "Seal the Sun King within the rift using the Aether Core."
+      },
+      "objective": "Restore the equilibrium of the cosmos by defeating the corrupted Sun King.",
+      "reward": "Chronos Eternity Shard"
+    },
+    "stats": {
+      "latency_ms": 3889,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 588,
+      "output_tokens": 542,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 50,
+        "health": 500,
+        "name": "The Star-Eater",
+        "victory_condition": "Destroy the central core while time is frozen",
+        "weakness": "Chronos Keystone"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Solar Sentinel",
+            "weakness": "Void Dagger"
+          },
+          "hazard": "Collapsing Stellar Dust",
+          "location": "Astral Gates",
+          "pickup": {
+            "effect": "Increases damage against heavy celestial entities",
+            "name": "Essence of Gravity"
+          },
+          "trigger": "Defeating the Sentinel opens the Bridge of Sighs."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 60,
+            "name": "Lunar Wraith",
+            "weakness": "Essence of Gravity"
+          },
+          "hazard": "Moonlight Static",
+          "location": "Bridge of Sighs",
+          "pickup": {
+            "effect": "Blinds radiant entities",
+            "name": "Prism Shard"
+          },
+          "trigger": "Shattering the Wraith unlocks the path to the Core Chamber."
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 80,
+            "name": "Supernova Harbinger",
+            "weakness": "Prism Shard"
+          },
+          "hazard": "Pulsating Radiation",
+          "location": "Core Chamber",
+          "pickup": {
+            "effect": "Temporarily halts time for the final boss",
+            "name": "Chronos Keystone"
+          },
+          "trigger": "Slain Harbinger triggers the activation of the Star-Eater's barrier."
+        }
+      ],
+      "objective": "Purge the Star-Eater and restore darkness to the heavens",
+      "player_health": 100,
+      "player_weapon": "Void Dagger",
+      "player_weapon_damage": 25,
+      "reward": "Eternal Shadow Cloak",
+      "setting": "The Void Spire",
+      "theme": "Celestial Ominous"
+    },
+    "normalized": {
+      "theme": "Celestial Ominous",
+      "setting": "The Void Spire",
+      "player_weapon": "Void Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Astral Gates",
+          "enemy": {
+            "name": "Solar Sentinel",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Void Dagger"
+          },
+          "hazard": "Collapsing Stellar Dust",
+          "pickup": {
+            "name": "Essence of Gravity",
+            "effect": "Increases damage against heavy celestial entities"
+          },
+          "trigger": "Defeating the Sentinel opens the Bridge of Sighs."
+        },
+        {
+          "location": "Bridge of Sighs",
+          "enemy": {
+            "name": "Lunar Wraith",
+            "health": 60,
+            "damage": 20,
+            "weakness": "Essence of Gravity"
+          },
+          "hazard": "Moonlight Static",
+          "pickup": {
+            "name": "Prism Shard",
+            "effect": "Blinds radiant entities"
+          },
+          "trigger": "Shattering the Wraith unlocks the path to the Core Chamber."
+        },
+        {
+          "location": "Core Chamber",
+          "enemy": {
+            "name": "Supernova Harbinger",
+            "health": 80,
+            "damage": 30,
+            "weakness": "Prism Shard"
+          },
+          "hazard": "Pulsating Radiation",
+          "pickup": {
+            "name": "Chronos Keystone",
+            "effect": "Temporarily halts time for the final boss"
+          },
+          "trigger": "Slain Harbinger triggers the activation of the Star-Eater's barrier."
+        }
+      ],
+      "boss": {
+        "name": "The Star-Eater",
+        "health": 500,
+        "damage": 50,
+        "weakness": "Chronos Keystone",
+        "victory_condition": "Destroy the central core while time is frozen"
+      },
+      "objective": "Purge the Star-Eater and restore darkness to the heavens",
+      "reward": "Eternal Shadow Cloak"
+    },
+    "stats": {
+      "latency_ms": 4198,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 597,
+      "output_tokens": 554,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 5,
+        "health": 20,
+        "name": "Nebulous Jester",
+        "victory_condition": "Use the Moon-Dew to dispel the Jester's final shroud and strike the heart",
+        "weakness": "Moon-Dew"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 1,
+            "health": 5,
+            "name": "Star-Dust Bunny",
+            "weakness": "Prism Mirror"
+          },
+          "hazard": "Floating cosmic debris that slows movement",
+          "location": "Starlight Meadow",
+          "pickup": {
+            "effect": "Allows illusions to glow and distract enemies",
+            "name": "Star-Shard"
+          },
+          "trigger": "Defeating the bunny creates a bridge of light leading to the Cloud Spire"
+        },
+        {
+          "enemy": {
+            "damage": 2,
+            "health": 8,
+            "name": "Cloud-Puff Knight",
+            "weakness": "Star-Shard"
+          },
+          "hazard": "Breezy currents that push the player off ledges",
+          "location": "Cloud Spire",
+          "pickup": {
+            "effect": "Grants ability to phase through solid light walls",
+            "name": "Comet Feather"
+          },
+          "trigger": "Defeating the knight clears the thick fog, revealing the path to the Void Gate"
+        },
+        {
+          "enemy": {
+            "damage": 3,
+            "health": 10,
+            "name": "Echoing Raven",
+            "weakness": "Comet Feather"
+          },
+          "hazard": "Mirrored reflections that cause disorientation",
+          "location": "Void Gate",
+          "pickup": {
+            "effect": "Dissipates dark energy and illusions",
+            "name": "Moon-Dew"
+          },
+          "trigger": "Defeating the raven causes the Void Gate to shatter, summoning the boss"
+        }
+      ],
+      "objective": "Traverse the floating celestial isles to defeat the Nebulous Jester and restore harmony to the stars",
+      "player_health": 25,
+      "player_weapon": "Prism Mirror",
+      "player_weapon_damage": 4,
+      "reward": "The Astral Crown of Whimsy",
+      "setting": "Floating celestial isles connected by bridges of light",
+      "theme": "Whimsical Celestial Dreamscape"
+    },
+    "normalized": {
+      "theme": "Whimsical Celestial Dreamscape",
+      "setting": "Floating celestial isles connected by bridges of light",
+      "player_weapon": "Prism Mirror",
+      "player_weapon_damage": 4,
+      "player_health": 25,
+      "encounters": [
+        {
+          "location": "Starlight Meadow",
+          "enemy": {
+            "name": "Star-Dust Bunny",
+            "health": 5,
+            "damage": 1,
+            "weakness": "Prism Mirror"
+          },
+          "hazard": "Floating cosmic debris that slows movement",
+          "pickup": {
+            "name": "Star-Shard",
+            "effect": "Allows illusions to glow and distract enemies"
+          },
+          "trigger": "Defeating the bunny creates a bridge of light leading to the Cloud Spire"
+        },
+        {
+          "location": "Cloud Spire",
+          "enemy": {
+            "name": "Cloud-Puff Knight",
+            "health": 8,
+            "damage": 2,
+            "weakness": "Star-Shard"
+          },
+          "hazard": "Breezy currents that push the player off ledges",
+          "pickup": {
+            "name": "Comet Feather",
+            "effect": "Grants ability to phase through solid light walls"
+          },
+          "trigger": "Defeating the knight clears the thick fog, revealing the path to the Void Gate"
+        },
+        {
+          "location": "Void Gate",
+          "enemy": {
+            "name": "Echoing Raven",
+            "health": 10,
+            "damage": 3,
+            "weakness": "Comet Feather"
+          },
+          "hazard": "Mirrored reflections that cause disorientation",
+          "pickup": {
+            "name": "Moon-Dew",
+            "effect": "Dissipates dark energy and illusions"
+          },
+          "trigger": "Defeating the raven causes the Void Gate to shatter, summoning the boss"
+        }
+      ],
+      "boss": {
+        "name": "Nebulous Jester",
+        "health": 20,
+        "damage": 5,
+        "weakness": "Moon-Dew",
+        "victory_condition": "Use the Moon-Dew to dispel the Jester's final shroud and strike the heart"
+      },
+      "objective": "Traverse the floating celestial isles to defeat the Nebulous Jester and restore harmony to the stars",
+      "reward": "The Astral Crown of Whimsy"
+    },
+    "stats": {
+      "latency_ms": 4023,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 427,
+      "output_tokens": 592,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 100,
+        "health": 500,
+        "name": "The Singularity Archon",
+        "victory_condition": "Seal the celestial rift using the Chaos Resonance Orb",
+        "weakness": "Chaos Resonance Orb"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 100,
+            "name": "Void Wisp",
+            "weakness": "Lightning Scepter"
+          },
+          "hazard": "Gravitational Fluctuation",
+          "location": "Edge of the Rift",
+          "pickup": {
+            "effect": "Increases electric damage",
+            "name": "Star-Core Shard"
+          },
+          "trigger": "Defeating the Wisp reveals a shimmering path to the inner nebula."
+        },
+        {
+          "enemy": {
+            "damage": 40,
+            "health": 150,
+            "name": "Nebula Sentinel",
+            "weakness": "Star-Core Shard"
+          },
+          "hazard": "Ionic Turbulence",
+          "location": "Floating Spire",
+          "pickup": {
+            "effect": "Grants brief invulnerability",
+            "name": "Void Prism"
+          },
+          "trigger": "The Sentinel's collapse triggers the activation of the final gateway to the core."
+        },
+        {
+          "enemy": {
+            "damage": 60,
+            "health": 200,
+            "name": "Echo of Entropy",
+            "weakness": "Void Prism"
+          },
+          "hazard": "Chronal Instability",
+          "location": "Singularity Core",
+          "pickup": {
+            "effect": "Bypasses energy shields",
+            "name": "Chaos Resonance Orb"
+          },
+          "trigger": "Destroying the Echo forces the Singularity Archon to materialize."
+        }
+      ],
+      "objective": "Stabilize the collapsing singularity before the celestial collapse consumes the realm.",
+      "player_health": 200,
+      "player_weapon": "Lightning Scepter",
+      "player_weapon_damage": 50,
+      "reward": "Mastery over the Celestial Storm",
+      "setting": "Fractured Nebula",
+      "theme": "Astral Chaos"
+    },
+    "normalized": {
+      "theme": "Astral Chaos",
+      "setting": "Fractured Nebula",
+      "player_weapon": "Lightning Scepter",
+      "player_weapon_damage": 50,
+      "player_health": 200,
+      "encounters": [
+        {
+          "location": "Edge of the Rift",
+          "enemy": {
+            "name": "Void Wisp",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Lightning Scepter"
+          },
+          "hazard": "Gravitational Fluctuation",
+          "pickup": {
+            "name": "Star-Core Shard",
+            "effect": "Increases electric damage"
+          },
+          "trigger": "Defeating the Wisp reveals a shimmering path to the inner nebula."
+        },
+        {
+          "location": "Floating Spire",
+          "enemy": {
+            "name": "Nebula Sentinel",
+            "health": 150,
+            "damage": 40,
+            "weakness": "Star-Core Shard"
+          },
+          "hazard": "Ionic Turbulence",
+          "pickup": {
+            "name": "Void Prism",
+            "effect": "Grants brief invulnerability"
+          },
+          "trigger": "The Sentinel's collapse triggers the activation of the final gateway to the core."
+        },
+        {
+          "location": "Singularity Core",
+          "enemy": {
+            "name": "Echo of Entropy",
+            "health": 200,
+            "damage": 60,
+            "weakness": "Void Prism"
+          },
+          "hazard": "Chronal Instability",
+          "pickup": {
+            "name": "Chaos Resonance Orb",
+            "effect": "Bypasses energy shields"
+          },
+          "trigger": "Destroying the Echo forces the Singularity Archon to materialize."
+        }
+      ],
+      "boss": {
+        "name": "The Singularity Archon",
+        "health": 500,
+        "damage": 100,
+        "weakness": "Chaos Resonance Orb",
+        "victory_condition": "Seal the celestial rift using the Chaos Resonance Orb"
+      },
+      "objective": "Stabilize the collapsing singularity before the celestial collapse consumes the realm.",
+      "reward": "Mastery over the Celestial Storm"
+    },
+    "stats": {
+      "latency_ms": 4444,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 691,
+      "output_tokens": 555,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 30,
+        "health": 150,
+        "name": "Eclipse Archon",
+        "victory_condition": "Destroy the archon's shield core after neutralizing its phase-shifting ability.",
+        "weakness": "Void-Stabilizer Core"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 30,
+            "name": "Void Scout",
+            "weakness": "Star-Piercing Bow"
+          },
+          "hazard": "Gravitational instability",
+          "location": "Whispering Crater",
+          "pickup": {
+            "effect": "Adds fire damage to arrows",
+            "name": "Sun-Spark Shard"
+          },
+          "trigger": "Defeating the scout clears the path to the Pillar of Echoes."
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 45,
+            "name": "Nebula Stalker",
+            "weakness": "Sun-Spark Shard"
+          },
+          "hazard": "Freezing vacuum",
+          "location": "Pillar of Echoes",
+          "pickup": {
+            "effect": "Nullifies boss phase shifting",
+            "name": "Void-Stabilizer Core"
+          },
+          "trigger": "Destroying the stalker activates the elevator to the core chamber."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 60,
+            "name": "Astral Sentinel",
+            "weakness": "Sun-Spark Shard"
+          },
+          "hazard": "Radiance leaks",
+          "location": "Core Corridor",
+          "pickup": {
+            "effect": "Permanent 20 percent increase in damage output",
+            "name": "Stellar Essence"
+          },
+          "trigger": "Overcoming the sentinel unlocks the gate to the Void Throne."
+        }
+      ],
+      "objective": "Extinguish the corrupted core of the dying star.",
+      "player_health": 100,
+      "player_weapon": "Star-Piercing Bow",
+      "player_weapon_damage": 15,
+      "reward": "Celestial Chronosphere",
+      "setting": "A decaying asteroid belt orbiting a dying star.",
+      "theme": "Stardust and Silence"
+    },
+    "normalized": {
+      "theme": "Stardust and Silence",
+      "setting": "A decaying asteroid belt orbiting a dying star.",
+      "player_weapon": "Star-Piercing Bow",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Whispering Crater",
+          "enemy": {
+            "name": "Void Scout",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Star-Piercing Bow"
+          },
+          "hazard": "Gravitational instability",
+          "pickup": {
+            "name": "Sun-Spark Shard",
+            "effect": "Adds fire damage to arrows"
+          },
+          "trigger": "Defeating the scout clears the path to the Pillar of Echoes."
+        },
+        {
+          "location": "Pillar of Echoes",
+          "enemy": {
+            "name": "Nebula Stalker",
+            "health": 45,
+            "damage": 15,
+            "weakness": "Sun-Spark Shard"
+          },
+          "hazard": "Freezing vacuum",
+          "pickup": {
+            "name": "Void-Stabilizer Core",
+            "effect": "Nullifies boss phase shifting"
+          },
+          "trigger": "Destroying the stalker activates the elevator to the core chamber."
+        },
+        {
+          "location": "Core Corridor",
+          "enemy": {
+            "name": "Astral Sentinel",
+            "health": 60,
+            "damage": 20,
+            "weakness": "Sun-Spark Shard"
+          },
+          "hazard": "Radiance leaks",
+          "pickup": {
+            "name": "Stellar Essence",
+            "effect": "Permanent 20 percent increase in damage output"
+          },
+          "trigger": "Overcoming the sentinel unlocks the gate to the Void Throne."
+        }
+      ],
+      "boss": {
+        "name": "Eclipse Archon",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Void-Stabilizer Core",
+        "victory_condition": "Destroy the archon's shield core after neutralizing its phase-shifting ability."
+      },
+      "objective": "Extinguish the corrupted core of the dying star.",
+      "reward": "Celestial Chronosphere"
+    },
+    "stats": {
+      "latency_ms": 4564,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 773,
+      "output_tokens": 566,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "eerie",
+      "player_class": "artificer",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 200,
+        "name": "The Ascendant Weaver",
+        "victory_condition": "Overload the Weaver's core using the Singularity Core while its celestial shielding is disabled.",
+        "weakness": "Singularity Core"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 60,
+            "name": "Star-Eater Construct",
+            "weakness": "Aether-Infused Wrench"
+          },
+          "hazard": "Shifting Gravity Wells",
+          "location": "Collapsed Astral Observatory",
+          "pickup": {
+            "effect": "Reveals hidden energy signatures",
+            "name": "Nebula Lens"
+          },
+          "trigger": "Overloading the Construct's chassis breaches the central bulkhead."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 80,
+            "name": "Void Wraith",
+            "weakness": "Nebula Lens"
+          },
+          "hazard": "Whispering Echoes that drain sanity",
+          "location": "The Hollow Expanse",
+          "pickup": {
+            "effect": "Increases kinetic energy output",
+            "name": "Pulsar Capacitor"
+          },
+          "trigger": "Banishing the Wraith initiates the main core sequence."
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 100,
+            "name": "Celestial Sentry",
+            "weakness": "Pulsar Capacitor"
+          },
+          "hazard": "Supernova Fallout",
+          "location": "The Forge of Stars",
+          "pickup": {
+            "effect": "Stabilizes unstable temporal rifts",
+            "name": "Singularity Core"
+          },
+          "trigger": "Destroying the Sentry creates a bridge to the Weaver's sanctum."
+        }
+      ],
+      "objective": "Traverse the fractured nebula observatory to silence the Ascendant Weaver.",
+      "player_health": 50,
+      "player_weapon": "Aether-Infused Wrench",
+      "player_weapon_damage": 25,
+      "reward": "Ascension Schematic",
+      "setting": "Fractured Nebula Observatory",
+      "theme": "Celestial Horror"
+    },
+    "normalized": {
+      "theme": "Celestial Horror",
+      "setting": "Fractured Nebula Observatory",
+      "player_weapon": "Aether-Infused Wrench",
+      "player_weapon_damage": 25,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Collapsed Astral Observatory",
+          "enemy": {
+            "name": "Star-Eater Construct",
+            "health": 60,
+            "damage": 20,
+            "weakness": "Aether-Infused Wrench"
+          },
+          "hazard": "Shifting Gravity Wells",
+          "pickup": {
+            "name": "Nebula Lens",
+            "effect": "Reveals hidden energy signatures"
+          },
+          "trigger": "Overloading the Construct's chassis breaches the central bulkhead."
+        },
+        {
+          "location": "The Hollow Expanse",
+          "enemy": {
+            "name": "Void Wraith",
+            "health": 80,
+            "damage": 25,
+            "weakness": "Nebula Lens"
+          },
+          "hazard": "Whispering Echoes that drain sanity",
+          "pickup": {
+            "name": "Pulsar Capacitor",
+            "effect": "Increases kinetic energy output"
+          },
+          "trigger": "Banishing the Wraith initiates the main core sequence."
+        },
+        {
+          "location": "The Forge of Stars",
+          "enemy": {
+            "name": "Celestial Sentry",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Pulsar Capacitor"
+          },
+          "hazard": "Supernova Fallout",
+          "pickup": {
+            "name": "Singularity Core",
+            "effect": "Stabilizes unstable temporal rifts"
+          },
+          "trigger": "Destroying the Sentry creates a bridge to the Weaver's sanctum."
+        }
+      ],
+      "boss": {
+        "name": "The Ascendant Weaver",
+        "health": 200,
+        "damage": 40,
+        "weakness": "Singularity Core",
+        "victory_condition": "Overload the Weaver's core using the Singularity Core while its celestial shielding is disabled."
+      },
+      "objective": "Traverse the fractured nebula observatory to silence the Ascendant Weaver.",
+      "reward": "Ascension Schematic"
+    },
+    "stats": {
+      "latency_ms": 4227,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 513,
+      "output_tokens": 568,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "celestial",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 20,
+        "health": 150,
+        "name": "Singularity Sovereign",
+        "victory_condition": "Seal the breach using the Core Access Key",
+        "weakness": "Core Access Key"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 20,
+            "name": "Void Scuttler",
+            "weakness": "Plasma Wrench"
+          },
+          "hazard": "Zero-gravity float",
+          "location": "Observation Deck",
+          "pickup": {
+            "effect": "Overcharges weapon damage",
+            "name": "Ion Capacitor"
+          },
+          "trigger": "Clearing the debris reveals the maintenance hatch"
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 30,
+            "name": "Nebula Wraith",
+            "weakness": "Ion Capacitor"
+          },
+          "hazard": "Temporal flicker",
+          "location": "Engineering Corridor",
+          "pickup": {
+            "effect": "Anchors unstable space",
+            "name": "Grav-Field Stabilizer"
+          },
+          "trigger": "Defeating the Wraith opens the bridge to the core"
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 40,
+            "name": "Star-Bleed Drone",
+            "weakness": "Grav-Field Stabilizer"
+          },
+          "hazard": "Supernova radiation",
+          "location": "Singularity Hub Access",
+          "pickup": {
+            "effect": "Unlocks the central singularity core",
+            "name": "Core Access Key"
+          },
+          "trigger": "Destroying the drone activates the final boss lock"
+        }
+      ],
+      "objective": "Stabilize the collapsing singularity",
+      "player_health": 100,
+      "player_weapon": "Plasma Wrench",
+      "player_weapon_damage": 15,
+      "reward": "Galactic Core Shard",
+      "setting": "Astral Observatory",
+      "theme": "Celestial"
+    },
+    "normalized": {
+      "theme": "Celestial",
+      "setting": "Astral Observatory",
+      "player_weapon": "Plasma Wrench",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Observation Deck",
+          "enemy": {
+            "name": "Void Scuttler",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Plasma Wrench"
+          },
+          "hazard": "Zero-gravity float",
+          "pickup": {
+            "name": "Ion Capacitor",
+            "effect": "Overcharges weapon damage"
+          },
+          "trigger": "Clearing the debris reveals the maintenance hatch"
+        },
+        {
+          "location": "Engineering Corridor",
+          "enemy": {
+            "name": "Nebula Wraith",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Ion Capacitor"
+          },
+          "hazard": "Temporal flicker",
+          "pickup": {
+            "name": "Grav-Field Stabilizer",
+            "effect": "Anchors unstable space"
+          },
+          "trigger": "Defeating the Wraith opens the bridge to the core"
+        },
+        {
+          "location": "Singularity Hub Access",
+          "enemy": {
+            "name": "Star-Bleed Drone",
+            "health": 40,
+            "damage": 15,
+            "weakness": "Grav-Field Stabilizer"
+          },
+          "hazard": "Supernova radiation",
+          "pickup": {
+            "name": "Core Access Key",
+            "effect": "Unlocks the central singularity core"
+          },
+          "trigger": "Destroying the drone activates the final boss lock"
+        }
+      ],
+      "boss": {
+        "name": "Singularity Sovereign",
+        "health": 150,
+        "damage": 20,
+        "weakness": "Core Access Key",
+        "victory_condition": "Seal the breach using the Core Access Key"
+      },
+      "objective": "Stabilize the collapsing singularity",
+      "reward": "Galactic Core Shard"
+    },
+    "stats": {
+      "latency_ms": 3526,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 449,
+      "output_tokens": 523,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  }
+]

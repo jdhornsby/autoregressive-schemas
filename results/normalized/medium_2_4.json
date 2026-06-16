@@ -1,0 +1,570 @@
+[
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "High-tech decay and neon-drenched claustrophobia",
+      "setting": "Abandoned Neural-Link Server Farm",
+      "player_weapon": "EMP Emitter",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Server Entrance",
+          "enemy": {
+            "name": "Security Drone",
+            "health": 50,
+            "damage": 15,
+            "weakness": "EMP Emitter"
+          },
+          "hazard": "High voltage electric arcs",
+          "pickup": {
+            "name": "Overclock Chip",
+            "effect": "Increases processing speed for engineering tools"
+          },
+          "trigger": "Defeating the drone causes the cooling vent system to cycle, revealing the next zone"
+        },
+        {
+          "location": "Darkened Data Hall",
+          "enemy": {
+            "name": "Cyber-stalker",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Overclock Chip"
+          },
+          "hazard": "Thermal shifting floors",
+          "pickup": {
+            "name": "Firewall Bypass Key",
+            "effect": "Disables advanced security locks"
+          },
+          "trigger": "Retrieving the key triggers the facility master alarm, drawing out the final guard"
+        },
+        {
+          "location": "Main Processor Hub",
+          "enemy": {
+            "name": "Elite Mercenary",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Firewall Bypass Key"
+          },
+          "hazard": "Toxic coolant gas",
+          "pickup": {
+            "name": "Liquid Nitrogen Canister",
+            "effect": "Super-cools sensitive machinery"
+          },
+          "trigger": "Defeating the mercenary forces the blast doors to the Neural Core to slide open"
+        }
+      ],
+      "boss": {
+        "name": "Neural Core Construct",
+        "health": 250,
+        "damage": 50,
+        "weakness": "Liquid Nitrogen Canister",
+        "victory_condition": "Freeze the overheated core using the canister to shatter the armor plating"
+      },
+      "objective": "Infiltrate the server farm and purge the corrupted Neural Core before the facility self-destructs.",
+      "reward": "Unlimited access to city encrypted data banks and a high-tier cybernetic augmentation."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "chaotic",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Cyberpunk",
+      "setting": "Neon-drenched sub-level 9 industrial sector",
+      "player_weapon": "Nano-Blade",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Rain-slicked alleyway",
+          "enemy": {
+            "name": "Street Scanner Drone",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Nano-Blade physical strikes to its exposed sensors"
+          },
+          "hazard": "Exposed high-voltage power lines",
+          "pickup": {
+            "name": "EMP Charge",
+            "effect": "Disables cybernetic enhancements and shields"
+          },
+          "trigger": "Deactivating the drone unlocks the heavy security gate to the warehouse district"
+        },
+        {
+          "location": "Neon-lit warehouse district",
+          "enemy": {
+            "name": "Augmented Street Enforcer",
+            "health": 75,
+            "damage": 20,
+            "weakness": "EMP Charge to overload his internal cyber-armor"
+          },
+          "hazard": "Toxic chemical fog dispensers",
+          "pickup": {
+            "name": "Corrosive Acid Vial",
+            "effect": "Melts through reinforced metal shielding"
+          },
+          "trigger": "Defeating the enforcer triggers the facility alarm and grants access to the server farm"
+        },
+        {
+          "location": "Server Farm Control Room",
+          "enemy": {
+            "name": "Cyber-Assassin",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Corrosive Acid Vial to destroy his stealth-camo plating"
+          },
+          "hazard": "Spinning industrial coolant fans",
+          "pickup": {
+            "name": "Override Keycard",
+            "effect": "Removes the Boss's external energy barrier"
+          },
+          "trigger": "Downloading the override protocols from the control node opens the main reactor hatch"
+        }
+      ],
+      "boss": {
+        "name": "Overseer Prime",
+        "health": 300,
+        "damage": 50,
+        "weakness": "Override Keycard to disable his invulnerability barrier",
+        "victory_condition": "Overload the reactor core while the boss is vulnerable"
+      },
+      "objective": "Disable the central mainframe and assassinate the Overseer Prime",
+      "reward": "Prototype Shadow-Cloak cybernetic upgrade"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Cyberpunk Noir",
+      "setting": "Neon-drenched back alleys and decaying high-tech districts of Sector 4",
+      "player_weapon": "EMP-Wrench",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Loading Dock 9",
+          "enemy": {
+            "name": "Security Drone Type-B",
+            "health": 30,
+            "damage": 10,
+            "weakness": "EMP-Wrench"
+          },
+          "hazard": "Leaking coolant pipe",
+          "pickup": {
+            "name": "Access Card A",
+            "effect": "Grants entry to the subterranean levels"
+          },
+          "trigger": "Defeating the drone drops an access card required for the warehouse door"
+        },
+        {
+          "location": "Power Substation",
+          "enemy": {
+            "name": "Rogue Maintenance Bot",
+            "health": 45,
+            "damage": 15,
+            "weakness": "Access Card A short-circuit bypass"
+          },
+          "hazard": "Intermittent electrical floor arcs",
+          "pickup": {
+            "name": "High-Voltage Coil",
+            "effect": "Charges the EMP-Wrench with static discharge"
+          },
+          "trigger": "Disabling the bot unlocks the maintenance panel leading to the mainframe"
+        },
+        {
+          "location": "Mainframe Vault Lobby",
+          "enemy": {
+            "name": "Holographic Decoy Assassin",
+            "health": 60,
+            "damage": 20,
+            "weakness": "High-Voltage Coil interference"
+          },
+          "hazard": "Fluctuating gravity field",
+          "pickup": {
+            "name": "Master Override Key",
+            "effect": "Forces the system architecture to reveal hidden vulnerabilities"
+          },
+          "trigger": "Defeating the hologram clears the security lock protecting the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "The Glitch Architect",
+        "health": 150,
+        "damage": 25,
+        "weakness": "Master Override Key",
+        "victory_condition": "Use the Master Override Key to force-reboot the architect's mainframe connection"
+      },
+      "objective": "Retrieve the encrypted data core from the central mainframe vault",
+      "reward": "Hyper-conductive capacitor upgrade"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "ominous",
+      "player_class": "chronomancer",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Cyberpunk",
+      "setting": "Dystopian Neon-Noir Megacity",
+      "player_weapon": "Chronos Blade",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Alleyway 42",
+          "enemy": {
+            "name": "Neon Stalker",
+            "health": 40,
+            "damage": 5,
+            "weakness": "Chronos Blade"
+          },
+          "hazard": "Glitchy holographic advertisements",
+          "pickup": {
+            "name": "Stasis Battery",
+            "effect": "Slows enemy time flow by 50 percent"
+          },
+          "trigger": "Defeating the Stalker opens the locked access panel to the server sublevel"
+        },
+        {
+          "location": "Sublevel Mainframe Hub",
+          "enemy": {
+            "name": "Data Sentry",
+            "health": 50,
+            "damage": 7,
+            "weakness": "Stasis Battery"
+          },
+          "hazard": "Exposed high-voltage electrical wires",
+          "pickup": {
+            "name": "Phase Capacitor",
+            "effect": "Grants temporary invulnerability through temporal phasing"
+          },
+          "trigger": "Disabling the Sentry triggers the building-wide lockdown alarm"
+        },
+        {
+          "location": "Observation Deck",
+          "enemy": {
+            "name": "Security Drone",
+            "health": 60,
+            "damage": 10,
+            "weakness": "Phase Capacitor"
+          },
+          "hazard": "Toxic liquid cooling gas leak",
+          "pickup": {
+            "name": "Overclock Core",
+            "effect": "Triples damage output for the final confrontation"
+          },
+          "trigger": "Destroying the Drone forces the final security gate to open into the Prime Server chamber"
+        }
+      ],
+      "boss": {
+        "name": "The Temporal Warden",
+        "health": 150,
+        "damage": 15,
+        "weakness": "Overclock Core",
+        "victory_condition": "Absorb the Warden's essence to reset the corrupted city mainframe"
+      },
+      "objective": "Disable the corrupt mainframe to liberate the city's data streams",
+      "reward": "Temporal Aegis chip"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Cyberpunk Eerie",
+      "setting": "Sub-level 9 chemical processing facility",
+      "player_weapon": "Corrosive Acid Sprayer",
+      "player_weapon_damage": 15,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "Condenser Room",
+          "enemy": {
+            "name": "Neon Stalker",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Corrosive Acid Sprayer"
+          },
+          "hazard": "Leaking cryo-coolant mist",
+          "pickup": {
+            "name": "Stabilized Catalyst",
+            "effect": "Enhances chemical acidity"
+          },
+          "trigger": "Defeating the Stalker depressurizes the emergency hatch to the data corridor"
+        },
+        {
+          "location": "Flickering Data Corridor",
+          "enemy": {
+            "name": "Glitch Drone",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Stabilized Catalyst"
+          },
+          "hazard": "Strobe-light induced vertigo",
+          "pickup": {
+            "name": "Null-Field Emitter",
+            "effect": "Disables electronic shielding"
+          },
+          "trigger": "Destroying the drone triggers a system override granting access to the Turbine Core"
+        },
+        {
+          "location": "Turbine Core",
+          "enemy": {
+            "name": "Augmented Sentry",
+            "health": 60,
+            "damage": 20,
+            "weakness": "Null-Field Emitter"
+          },
+          "hazard": "High-pressure steam bursts",
+          "pickup": {
+            "name": "Experimental Solvent",
+            "effect": "Dissolves hardened synthetic armor"
+          },
+          "trigger": "Clearing the sentry forces the blast door open to the CEO sanctum"
+        }
+      ],
+      "boss": {
+        "name": "The Alchemist Prime",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Experimental Solvent",
+        "victory_condition": "Inject the solvent into the boss's filtration system to overload his bio-rig"
+      },
+      "objective": "Retrieve the rogue AI core sample from the facility",
+      "reward": "Master Alchemist Formula and 5000 Credits"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "desolate",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "cyberpunk",
+      "setting": "Abandoned Neon Sprawl",
+      "player_weapon": "High-Frequency Monofilament Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Rain-slicked alley",
+          "enemy": {
+            "name": "Security Drone",
+            "health": 20,
+            "damage": 10,
+            "weakness": "High-Frequency Monofilament Dagger"
+          },
+          "hazard": "Live exposed wiring",
+          "pickup": {
+            "name": "EMP Grenade",
+            "effect": "Stuns electronic systems"
+          },
+          "trigger": "Destroying the drone triggers the gate lock to the main server hub"
+        },
+        {
+          "location": "Abandoned server farm",
+          "enemy": {
+            "name": "Corporate Enforcer",
+            "health": 30,
+            "damage": 15,
+            "weakness": "EMP Grenade"
+          },
+          "hazard": "Corrosive fog",
+          "pickup": {
+            "name": "Access Keycard",
+            "effect": "Overrides local security systems"
+          },
+          "trigger": "Retrieving the keycard activates the security laser grid guarding the internal archive vault"
+        },
+        {
+          "location": "Data archive vault",
+          "enemy": {
+            "name": "Glitch-Husk",
+            "health": 25,
+            "damage": 20,
+            "weakness": "Access Keycard"
+          },
+          "hazard": "Falling steel debris",
+          "pickup": {
+            "name": "System Override Module",
+            "effect": "Disables boss shielding"
+          },
+          "trigger": "Defeating the Glitch-Husk causes the blast doors to retract, revealing the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "Net-Sentinel Prime",
+        "health": 100,
+        "damage": 30,
+        "weakness": "System Override Module",
+        "victory_condition": "Upload the virus while the boss is shielded-down via the System Override Module"
+      },
+      "objective": "Infiltrate the mainframe and wipe the central corporate database",
+      "reward": "Experimental stealth cloaking prototype"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "whimsical",
+      "player_class": "stormcaller",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical Cyberpunk",
+      "setting": "Floating Ramen District of Neo-Tokyo",
+      "player_weapon": "Neon Lightning Rod",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Ramen Alley",
+          "enemy": {
+            "name": "Glitchy Toaster",
+            "health": 50,
+            "damage": 5,
+            "weakness": "Neon Lightning Rod"
+          },
+          "hazard": "Steam vents",
+          "pickup": {
+            "name": "Overflowing Ramen Bowl",
+            "effect": "Increases attack speed"
+          },
+          "trigger": "Toaster explosion unlocks the sector server hatch"
+        },
+        {
+          "location": "Abandoned Toy Warehouse",
+          "enemy": {
+            "name": "Surveillance Teddy Bear",
+            "health": 60,
+            "damage": 8,
+            "weakness": "Overflowing Ramen Bowl"
+          },
+          "hazard": "Falling crane hooks",
+          "pickup": {
+            "name": "Digital Salt Shaker",
+            "effect": "Temporarily disables enemy shields"
+          },
+          "trigger": "Defeated bear drops the Plaza Security Keycard"
+        },
+        {
+          "location": "Neon Dance Floor",
+          "enemy": {
+            "name": "Disco Ball Drone",
+            "health": 70,
+            "damage": 10,
+            "weakness": "Digital Salt Shaker"
+          },
+          "hazard": "Blinding strobe lights",
+          "pickup": {
+            "name": "Infinite Battery Pack",
+            "effect": "Permanent damage boost"
+          },
+          "trigger": "Crashed drone reveals the Mainframe Core portal"
+        }
+      ],
+      "boss": {
+        "name": "The Mega-Chef CPU",
+        "health": 150,
+        "damage": 15,
+        "weakness": "Infinite Battery Pack",
+        "victory_condition": "Overload the central processor by inserting the battery"
+      },
+      "objective": "Restore electricity to the ramen stalls by defeating the corrupted CPU",
+      "reward": "The legendary Ramen Master's Holographic Apron"
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Cyberpunk Serenity",
+      "setting": "Neon-Drenched Sky Gardens",
+      "player_weapon": "Nanite-Infused Seismic Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Lower Observation Deck",
+          "enemy": {
+            "name": "Data-Leech Drone",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Seismic Staff shockwave"
+          },
+          "hazard": "Conductive Puddles",
+          "pickup": {
+            "name": "Phase-Shifter Core",
+            "effect": "Allows passing through energy barriers"
+          },
+          "trigger": "Destruction of the drone yields the elevator keycard to the High Terrace."
+        },
+        {
+          "location": "High Terrace Plaza",
+          "enemy": {
+            "name": "Static Guardian",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Phase-Shifter Core interference"
+          },
+          "hazard": "Falling glass debris",
+          "pickup": {
+            "name": "Resonance Amplifier",
+            "effect": "Boosts geomancy vibrational power"
+          },
+          "trigger": "Defeating the guardian unseals the heavy security door to the Central Core."
+        },
+        {
+          "location": "Central Server Core",
+          "enemy": {
+            "name": "Logic Corruptor",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Resonance Amplifier output"
+          },
+          "hazard": "Flickering laser grids",
+          "pickup": {
+            "name": "Master Override Key",
+            "effect": "Final authentication key for the server core"
+          },
+          "trigger": "Deleting the corruptor allows the player to insert the Master Override Key, awakening the boss."
+        }
+      ],
+      "boss": {
+        "name": "Prime System Sovereign",
+        "health": 200,
+        "damage": 30,
+        "weakness": "Master Override Key",
+        "victory_condition": "Input the Master Override Key to purge the corrupted system code."
+      },
+      "objective": "Purify the corrupted data-nodes within the Zen sector.",
+      "reward": "Digital Zen Protocol"
+    }
+  }
+]
