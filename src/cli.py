@@ -467,6 +467,34 @@ def analyze_reachability():
     console.print(f"Chart:    {report['_paths']['chart']}")
 
 
+@analyze.command("tokens")
+def analyze_tokens():
+    """Mean thinking tokens per generation × condition (uses raw/*.json stats)."""
+    import pandas as pd
+
+    from .analysis.tokens import run as run_tokens
+
+    report = run_tokens()
+    wide = report["wide"]
+
+    table = Table(title="Mean thinking tokens per level by variant × condition")
+    table.add_column("variant")
+    for col in wide.columns:
+        table.add_column(col, justify="right")
+    for variant, row in wide.iterrows():
+        cells = [variant]
+        for col in wide.columns:
+            v = row[col]
+            cells.append("—" if pd.isna(v) else f"{int(round(v))}")
+        table.add_row(*cells)
+
+    console.print(table)
+    console.print()
+    console.print(f"Wide CSV: {report['_paths']['wide']}")
+    console.print(f"Long CSV: {report['_paths']['long']}")
+    console.print(f"Chart:    {report['_paths']['chart']}")
+
+
 @analyze.command("models")
 @click.argument("model_a")
 @click.argument("model_b")
