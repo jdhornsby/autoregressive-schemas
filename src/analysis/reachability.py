@@ -108,12 +108,12 @@ def _make_chart(wide: pd.DataFrame, out_path: str) -> None:
     ax.set_ylim(0, ymax)
     ax.set_ylabel("Encounter break rate (%)  ↓ lower is better", fontsize=10)
     fig.suptitle(
-        "Logical game completability error rate",
+        "Logical game break rate",
         fontsize=13, fontweight="bold", color="#333333", y=0.985,
     )
     ax.set_title(
         "Gemini 3.1 Flash Lite  ·  summer 2026\n"
-        "preview release at minimal thinking; GA release at minimal → high",
+        "preview release at minimal thinking; stable release at minimal → high",
         fontsize=9, color="#666666", style="italic", pad=10,
     )
     fig.text(
