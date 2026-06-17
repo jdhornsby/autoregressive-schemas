@@ -1,0 +1,1138 @@
+[
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Ominous",
+      "setting": "Sunken Catacombs",
+      "player_weapon": "Flame Staff",
+      "player_weapon_damage": 25,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Catacomb Entrance",
+          "enemy": {
+            "name": "Shadow Creeper",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Fire (Flame Staff)"
+          },
+          "hazard": "Erupting steam vents",
+          "pickup": {
+            "name": "Rime Stone",
+            "effect": "Temporarily grants Frost Ward"
+          },
+          "trigger": "Killing the creature causes the heavy stone doors to the inner sanctum to grind open"
+        },
+        {
+          "location": "Altar Chamber",
+          "enemy": {
+            "name": "Obsidian Golem",
+            "health": 75,
+            "damage": 15,
+            "weakness": "Frost (Rime Stone effect)"
+          },
+          "hazard": "Collapsing ceiling pillars",
+          "pickup": {
+            "name": "Frozen Heart",
+            "effect": "Freezes target solid"
+          },
+          "trigger": "Shattering the Golem releases a magical barrier revealing the path to the throne room"
+        },
+        {
+          "location": "Throne Room Antechamber",
+          "enemy": {
+            "name": "Void Specter",
+            "health": 100,
+            "damage": 20,
+            "weakness": "Fire (Flame Staff)"
+          },
+          "hazard": "Diminishing torchlight",
+          "pickup": {
+            "name": "Essence of Ember",
+            "effect": "Restores 50 health"
+          },
+          "trigger": "Defeating the Specter extinguishes the final barrier protecting the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "Ashen Sentinel",
+        "health": 200,
+        "damage": 35,
+        "weakness": "Frozen Heart",
+        "victory_condition": "Purify the Sentinel using the Frozen Heart pickup"
+      },
+      "objective": "Cleanse the corrupted Catacombs",
+      "reward": "Staff of Eternal Inferno"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical",
+      "setting": "Fairy Tale Forest",
+      "player_weapon": "Beastmaster Whip",
+      "player_weapon_damage": 8,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Whispering Woods",
+          "enemy": {
+            "name": "Grumpy Hedge-Hog",
+            "health": 15,
+            "damage": 2,
+            "weakness": "Beastmaster Whip"
+          },
+          "hazard": "Thorn Bushes",
+          "pickup": {
+            "name": "Sparkling Berries",
+            "effect": "Attracts local wildlife"
+          },
+          "trigger": "Defeating the hedgehog causes a trail of crumbs leading to the riverbank"
+        },
+        {
+          "location": "Singing Riverbank",
+          "enemy": {
+            "name": "Drenched River Sprite",
+            "health": 20,
+            "damage": 3,
+            "weakness": "Sparkling Berries"
+          },
+          "hazard": "Slippery Mud",
+          "pickup": {
+            "name": "Honey-Glazed Acorn",
+            "effect": "Slows enemy movement"
+          },
+          "trigger": "The Sprite's defeat reveals a hollow log shortcut to the Goblin Cave"
+        },
+        {
+          "location": "Giggling Goblin Cave",
+          "enemy": {
+            "name": "Grinning Cave Bat",
+            "health": 25,
+            "damage": 4,
+            "weakness": "Honey-Glazed Acorn"
+          },
+          "hazard": "Falling Stalactites",
+          "pickup": {
+            "name": "None",
+            "effect": "None"
+          },
+          "trigger": "The Bat drops the key to the King's throne room"
+        }
+      ],
+      "boss": {
+        "name": "Gloom-Giggler Goblin King",
+        "health": 50,
+        "damage": 10,
+        "weakness": "Sticky Honey-Glazed Acorn",
+        "victory_condition": "Defeat the King using the Honey-Glazed Acorn"
+      },
+      "objective": "Retrieve the stolen Golden Whistle from the Giggling Goblin King",
+      "reward": "Golden Whistle"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Dark Fantasy Tense Survival",
+      "setting": "The Ruined Temple of Aethelgard",
+      "player_weapon": "Holy Warhammer",
+      "player_weapon_damage": 45,
+      "player_health": 300,
+      "encounters": [
+        {
+          "location": "Cathedral Entrance Hall",
+          "enemy": {
+            "name": "Shadowed Skeleton Guard",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Holy Warhammer"
+          },
+          "hazard": "Spiked pressure plates",
+          "pickup": {
+            "name": "Fleet-Footed Boots",
+            "effect": "Increases movement speed"
+          },
+          "trigger": "Walking over the dead guard's keycard activates the inner gate"
+        },
+        {
+          "location": "Collapsed Cloister",
+          "enemy": {
+            "name": "Phantom Knight",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Fleet-Footed Boots (Dodging allows flanking)"
+          },
+          "hazard": "Falling debris",
+          "pickup": {
+            "name": "Blessed Sun-Censer",
+            "effect": "Releases blinding holy light"
+          },
+          "trigger": "Defeating the knight breaks the seal on the Altar of Truth"
+        },
+        {
+          "location": "Belfry Ascent",
+          "enemy": {
+            "name": "Abyssal Gargoyle",
+            "health": 200,
+            "damage": 40,
+            "weakness": "Blessed Sun-Censer"
+          },
+          "hazard": "Ethereal fog slowing health regen",
+          "pickup": {
+            "name": "Light-Blessed Elixir",
+            "effect": "Restores 50 health"
+          },
+          "trigger": "Slaying the gargoyle clears the path to the bell tower where the High Priest waits"
+        }
+      ],
+      "boss": {
+        "name": "Void-Corrupted High Priest",
+        "health": 400,
+        "damage": 50,
+        "weakness": "Blessed Sun-Censer",
+        "victory_condition": "Seal the rift with the Blessed Sun-Censer"
+      },
+      "objective": "Purify the defiled cathedral before the lunar eclipse is complete",
+      "reward": "The Relic of Eternal Dawn"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "mysterious",
+      "player_class": "illusionist",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Mysterious",
+      "setting": "The Void Spire",
+      "player_weapon": "Glass Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Forgotten Library",
+          "enemy": {
+            "name": "Shadow Stalker",
+            "health": 120,
+            "damage": 30,
+            "weakness": "Glass Dagger"
+          },
+          "hazard": "Whispering fog that silences spellcasting",
+          "pickup": {
+            "name": "Lens of True Sight",
+            "effect": "Reveals hidden runes in the environment"
+          },
+          "trigger": "Killing the Stalker reveals a portal to the Obsidian Grotto"
+        },
+        {
+          "location": "Obsidian Grotto",
+          "enemy": {
+            "name": "Void Sentinel",
+            "health": 200,
+            "damage": 45,
+            "weakness": "Lens of True Sight"
+          },
+          "hazard": "Spikes that retract based on rhythm",
+          "pickup": {
+            "name": "Siphon of Starlight",
+            "effect": "Allows the user to absorb and store magical energy"
+          },
+          "trigger": "Destroying the Sentinel unlocks the sealed gate to the Inner Sanctum"
+        },
+        {
+          "location": "Inner Sanctum",
+          "enemy": {
+            "name": "Doppelganger Construct",
+            "health": 300,
+            "damage": 60,
+            "weakness": "Siphon of Starlight"
+          },
+          "hazard": "Illusionary floors that cause damage upon contact",
+          "pickup": {
+            "name": "Cloak of Serenity",
+            "effect": "Grants immunity to psychological fear effects"
+          },
+          "trigger": "Defeating the Construct dissolves the final barrier guarding the Archon"
+        }
+      ],
+      "boss": {
+        "name": "Umbral Archon",
+        "health": 500,
+        "damage": 85,
+        "weakness": "Siphon of Starlight pickup",
+        "victory_condition": "Channel the Siphon of Starlight to shatter the Archon's armor."
+      },
+      "objective": "Infiltrate the Void Spire and neutralize the Umbral Archon before it consumes the realm.",
+      "reward": "The Archon's Staff of Infinite Night"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Fantasy Serenity",
+      "setting": "The Tranquil Highlands",
+      "player_weapon": "Heavy Oak Staff",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Whispering Grove",
+          "enemy": {
+            "name": "Mossy Spriggan",
+            "health": 20,
+            "damage": 5,
+            "weakness": "The Warden's Heavy Oak Staff"
+          },
+          "hazard": "Thick mist obscuring vision",
+          "pickup": {
+            "name": "Dew-Kissed Petal",
+            "effect": "Increases health regeneration"
+          },
+          "trigger": "Defeating the Spriggan clears the path to the River Bank"
+        },
+        {
+          "location": "Silver River Bank",
+          "enemy": {
+            "name": "River Sprite",
+            "health": 25,
+            "damage": 6,
+            "weakness": "The Dew-Kissed Petal"
+          },
+          "hazard": "Slippery river stones",
+          "pickup": {
+            "name": "Crystal Shard",
+            "effect": "Grants temporary shielding"
+          },
+          "trigger": "Subduing the Sprite reveals the gate to the High Plateau"
+        },
+        {
+          "location": "High Plateau",
+          "enemy": {
+            "name": "Cloud Golem",
+            "health": 30,
+            "damage": 7,
+            "weakness": "The Crystal Shard"
+          },
+          "hazard": "Gusts of wind pushing player back",
+          "pickup": {
+            "name": "Essence of Stillness",
+            "effect": "Allows interaction with the boss mechanism"
+          },
+          "trigger": "Pacifying the Golem unlocks the Boss arena entrance"
+        }
+      ],
+      "boss": {
+        "name": "Ancient Stone Sentinel",
+        "health": 80,
+        "damage": 10,
+        "weakness": "Requires the Essence of Stillness collected from the forest clearing",
+        "victory_condition": "Channel the Essence of Stillness to deactivate the sentinel"
+      },
+      "objective": "Restore balance to the ancient sanctuary",
+      "reward": "Guardian's Mantle"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Chaotic Fantasy",
+      "setting": "The Ruined Spire of Aethelgard",
+      "player_weapon": "Iron Greataxe",
+      "player_weapon_damage": 25,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Shattered Bridge",
+          "enemy": {
+            "name": "Unstable Fire Elemental",
+            "health": 60,
+            "damage": 10,
+            "weakness": "Iron Greataxe"
+          },
+          "hazard": "Exploding steam vents",
+          "pickup": {
+            "name": "Vial of Starlight",
+            "effect": "Increases health regeneration"
+          },
+          "trigger": "Killing the Elemental collapses the bridge leading to the Catacombs"
+        },
+        {
+          "location": "Sunken Catacombs",
+          "enemy": {
+            "name": "Shadow Construct",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Vial of Starlight"
+          },
+          "hazard": "Erratic gravity shifts",
+          "pickup": {
+            "name": "Holy Amulet",
+            "effect": "Grants temporary invulnerability"
+          },
+          "trigger": "Defeating the Construct opens the sealed gate to the Lich's sanctum"
+        },
+        {
+          "location": "Lich's Sanctum Antechamber",
+          "enemy": {
+            "name": "Chaotic Warp Hound",
+            "health": 100,
+            "damage": 20,
+            "weakness": "Holy Amulet"
+          },
+          "hazard": "Acid rain clouds",
+          "pickup": {
+            "name": "Berserker's Token",
+            "effect": "Increases melee critical damage"
+          },
+          "trigger": "Slaying the hound summons the Void-Crazed Lich"
+        }
+      ],
+      "boss": {
+        "name": "Void-Crazed Lich",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Holy Amulet",
+        "victory_condition": "Shatter his phylactery with the Holy Amulet"
+      },
+      "objective": "Purify the chaotic energy bleeding into the realm",
+      "reward": "Blade of Eternal Order"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "eerie",
+      "player_class": "necromancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Eerie Fantasy",
+      "setting": "The Abyssal Mausoleum",
+      "player_weapon": "Bone Scythe",
+      "player_weapon_damage": 25,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Crypt Entrance",
+          "enemy": {
+            "name": "Decaying Grave Walker",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Bone Scythe"
+          },
+          "hazard": "Toxic Fog",
+          "pickup": {
+            "name": "Spirit Shard",
+            "effect": "Increases spell casting speed"
+          },
+          "trigger": "Killing the Walker opens the inner sanctum gates"
+        },
+        {
+          "location": "Hall of Echoes",
+          "enemy": {
+            "name": "Possessed Armor",
+            "health": 70,
+            "damage": 15,
+            "weakness": "Spirit Shard"
+          },
+          "hazard": "Falling Masonry",
+          "pickup": {
+            "name": "Siphon Stone",
+            "effect": "Absorbs soul energy to heal wounds"
+          },
+          "trigger": "Defeating the Armor raises the bridge to the throne room"
+        },
+        {
+          "location": "Throne Antechamber",
+          "enemy": {
+            "name": "Spectral Sentinel",
+            "health": 90,
+            "damage": 20,
+            "weakness": "Siphon Stone"
+          },
+          "hazard": "Floor Spikes",
+          "pickup": {
+            "name": "Void Essence",
+            "effect": "Boosts maximum mana"
+          },
+          "trigger": "Eliminating the Sentinel summons the Weeping Lich"
+        }
+      ],
+      "boss": {
+        "name": "The Weeping Lich",
+        "health": 200,
+        "damage": 35,
+        "weakness": "Siphon Stone",
+        "victory_condition": "Purify the lich's heart with the Siphon Stone"
+      },
+      "objective": "Cleanse the haunted crypt",
+      "reward": "Necromantic Grimoire"
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Fantasy desolation",
+      "setting": "The Desolate Ruins of Eldoria",
+      "player_weapon": "Longbow",
+      "player_weapon_damage": 30,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Ash-Choked Thicket",
+          "enemy": {
+            "name": "Rotting Scout",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Longbow piercing"
+          },
+          "hazard": "Thick acidic fog",
+          "pickup": {
+            "name": "Obsidian Arrowhead",
+            "effect": "Increases critical hit chance"
+          },
+          "trigger": "Killing the scout reveals a hidden altar path"
+        },
+        {
+          "location": "The Ruined Cathedral",
+          "enemy": {
+            "name": "Cursed Sentinel",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Obsidian Arrowhead (from Encounter 0)"
+          },
+          "hazard": "Collapsing stone pillars",
+          "pickup": {
+            "name": "Sun-Touched Amulet",
+            "effect": "Grants immunity to negative status effects"
+          },
+          "trigger": "Defeating the sentinel opens the sealed mausoleum gates"
+        },
+        {
+          "location": "The Crypt of Whispers",
+          "enemy": {
+            "name": "Bone-Husk Archer",
+            "health": 180,
+            "damage": 35,
+            "weakness": "Longbow piercing"
+          },
+          "hazard": "Rising necrotic tide",
+          "pickup": {
+            "name": "Ethereal Salve",
+            "effect": "Restores 25 percent health"
+          },
+          "trigger": "Killing the archer unlocks the inner sanctum doors"
+        }
+      ],
+      "boss": {
+        "name": "Grave-Warden Malakor",
+        "health": 400,
+        "damage": 50,
+        "weakness": "Sun-Touched Amulet found in Encounter 2",
+        "victory_condition": "Purify the corruption source in his chest cavity"
+      },
+      "objective": "Cleanse the desolation from the corrupted crypts",
+      "reward": "Ancient Ranger Mantle"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Industrial horror",
+      "setting": "Derelict Space Station Upsilon-9",
+      "player_weapon": "Plasma Cutter",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Engineering Bay",
+          "enemy": {
+            "name": "Corrupted Security Drone",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Plasma Cutter"
+          },
+          "hazard": "Electrified floor grid",
+          "pickup": {
+            "name": "System Override Key",
+            "effect": "Deactivates proximity turrets"
+          },
+          "trigger": "Drone destruction initiates the lockdown of the adjacent Airlock Corridor"
+        },
+        {
+          "location": "Airlock Corridor",
+          "enemy": {
+            "name": "Stalking Cyborg",
+            "health": 120,
+            "damage": 25,
+            "weakness": "System Override Key"
+          },
+          "hazard": "Low-oxygen depressurization",
+          "pickup": {
+            "name": "EMP Capacitor",
+            "effect": "Disables electrical shields"
+          },
+          "trigger": "Cyborg death opens the blast door to the Main Reactor Room"
+        },
+        {
+          "location": "Main Reactor Room",
+          "enemy": {
+            "name": "Heavy Security Mech",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Plasma Cutter overload"
+          },
+          "hazard": "Radiation leakage",
+          "pickup": {
+            "name": "Nanite Repair Gel",
+            "effect": "Increases armor integrity"
+          },
+          "trigger": "Mech destruction releases the safety locks on the Boss Core"
+        }
+      ],
+      "boss": {
+        "name": "Sentient Maintenance Core",
+        "health": 250,
+        "damage": 35,
+        "weakness": "EMP Capacitor",
+        "victory_condition": "Overload the central logic unit using the EMP Capacitor"
+      },
+      "objective": "Restore station power and neutralize the corrupted AI core",
+      "reward": "Station Command Override Codes"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Sci-fi Desolation",
+      "setting": "Abandoned orbital research station",
+      "player_weapon": "Chronal Phase Blade",
+      "player_weapon_damage": 25,
+      "player_health": 200,
+      "encounters": [
+        {
+          "location": "Derelict Cargo Bay",
+          "enemy": {
+            "name": "Rust-Locked Drone",
+            "health": 80,
+            "damage": 10,
+            "weakness": "Chronal Phase Blade"
+          },
+          "hazard": "Corrosive gas clouds",
+          "pickup": {
+            "name": "Field Expander",
+            "effect": "Increases time-dilation field radius"
+          },
+          "trigger": "Destruction of drone triggers the pressure door to the observation deck"
+        },
+        {
+          "location": "Observation Deck",
+          "enemy": {
+            "name": "Phase-Shifting Stalker",
+            "health": 120,
+            "damage": 15,
+            "weakness": "Field Expander"
+          },
+          "hazard": "Gravity fluctuations",
+          "pickup": {
+            "name": "Temporal Anchor Module",
+            "effect": "Stabilizes temporal fractures, allowing for permanent object anchoring"
+          },
+          "trigger": "Defeating the stalker deactivates the security grid blocking the core chamber"
+        },
+        {
+          "location": "Core Access Corridor",
+          "enemy": {
+            "name": "Void Reaver",
+            "health": 150,
+            "damage": 20,
+            "weakness": "Temporal Anchor Module"
+          },
+          "hazard": "Freezing vacuum exposure",
+          "pickup": {
+            "name": "Nanite Medkit",
+            "effect": "Restores 50 health points"
+          },
+          "trigger": "Clearing the corridor activates the boss encounter sequence"
+        }
+      ],
+      "boss": {
+        "name": "Entropy Core Sentinel",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Temporal Anchor Module",
+        "victory_condition": "Stabilize the core by overwriting its sequence."
+      },
+      "objective": "Restart the stasis drive to prevent station collapse",
+      "reward": "Temporal Prototype Core"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Chaotic Tech-Collapse",
+      "setting": "Drifting Space Station in a nebula",
+      "player_weapon": "Stormcaller Gauntlet",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Reactor Corridor A",
+          "enemy": {
+            "name": "Arc-Shield Sentinel",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Stormcaller Gauntlet"
+          },
+          "hazard": "Electrified Floor Grids",
+          "pickup": {
+            "name": "Kinetic Booster",
+            "effect": "Increases movement speed"
+          },
+          "trigger": "Destruction of the sentinel unlocks the bulkhead to the containment chamber"
+        },
+        {
+          "location": "Containment Chamber",
+          "enemy": {
+            "name": "Plasma-Gorged Drone",
+            "health": 300,
+            "damage": 45,
+            "weakness": "Kinetic Booster"
+          },
+          "hazard": "Unstable Gravity Wells",
+          "pickup": {
+            "name": "Stabilized Singularity Shard",
+            "effect": "Allows interaction with void-energy containers"
+          },
+          "trigger": "Elimination of the drone causes a reactor vent failure, opening the path to the bridge"
+        },
+        {
+          "location": "Bridge Access Tunnel",
+          "enemy": {
+            "name": "Data-Corrupted Enforcer",
+            "health": 500,
+            "damage": 60,
+            "weakness": "Stormcaller Gauntlet"
+          },
+          "hazard": "Flash-freezing Cryo-Leaks",
+          "pickup": {
+            "name": "Nano-Repair Matrix",
+            "effect": "Restores critical shield integrity"
+          },
+          "trigger": "The death of the enforcer overrides the bridge lock, activating the boss arena"
+        }
+      ],
+      "boss": {
+        "name": "Void Capacitor Prime",
+        "health": 1200,
+        "damage": 80,
+        "weakness": "Stabilized Singularity Shard",
+        "victory_condition": "Overload the core using the Stabilized Singularity Shard"
+      },
+      "objective": "Initiate the emergency purge sequence before the station collapses",
+      "reward": "Quantum Singularity Core"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Sci-fi mystery",
+      "setting": "Abandoned orbital research station",
+      "player_weapon": "Arc Welder",
+      "player_weapon_damage": 10,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Engineering Bay",
+          "enemy": {
+            "name": "Broken Sentry Bot",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Arc Welder"
+          },
+          "hazard": "Steam vents",
+          "pickup": {
+            "name": "Frequency Modulator",
+            "effect": "Boosts mechanical damage"
+          },
+          "trigger": "Leaking oil trail leads to the ventilation shaft"
+        },
+        {
+          "location": "Data Processing Hub",
+          "enemy": {
+            "name": "Corrupted Drone",
+            "health": 30,
+            "damage": 7,
+            "weakness": "Frequency Modulator"
+          },
+          "hazard": "Magnetic floor plating",
+          "pickup": {
+            "name": "Thermal Scanner",
+            "effect": "Reveals enemy weak points"
+          },
+          "trigger": "Signal transmission reveals the path to the Core Room"
+        },
+        {
+          "location": "Server Access Tunnel",
+          "enemy": {
+            "name": "Security Guardian",
+            "health": 40,
+            "damage": 8,
+            "weakness": "Thermal Scanner"
+          },
+          "hazard": "Laser tripwires",
+          "pickup": {
+            "name": "Energy Cell",
+            "effect": "Grants temporary shield"
+          },
+          "trigger": "The Guardian drops an encryption key for the Mainframe"
+        }
+      ],
+      "boss": {
+        "name": "The Sentient Mainframe",
+        "health": 80,
+        "damage": 15,
+        "weakness": "Frequency Modulator",
+        "victory_condition": "Overload the core using the Frequency Modulator"
+      },
+      "objective": "Deactivate the rogue AI core",
+      "reward": "Ancient AI schematic"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Ominous Sci-Fi",
+      "setting": "Abandoned orbital research station",
+      "player_weapon": "Phase Blade",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Data Processing Hub",
+          "enemy": {
+            "name": "Security Drone Mark IV",
+            "health": 80,
+            "damage": 10,
+            "weakness": "Phase Blade"
+          },
+          "hazard": "Laser Tripwires",
+          "pickup": {
+            "name": "Voltage Dampener",
+            "effect": "Increases damage against electronic shielding"
+          },
+          "trigger": "Accessing the main server unlocks the Maintenance Tunnel"
+        },
+        {
+          "location": "Maintenance Tunnel",
+          "enemy": {
+            "name": "Cyber-Stalker",
+            "health": 120,
+            "damage": 15,
+            "weakness": "Voltage Dampener"
+          },
+          "hazard": "Flickering Lights",
+          "pickup": {
+            "name": "EMP Charge",
+            "effect": "Disables advanced machinery in a small radius"
+          },
+          "trigger": "Defeating the Stalker opens the Reactor Core doors"
+        },
+        {
+          "location": "Reactor Core",
+          "enemy": {
+            "name": "Heavy Enforcement Bot",
+            "health": 180,
+            "damage": 20,
+            "weakness": "EMP Charge"
+          },
+          "hazard": "Toxic Gas Leak",
+          "pickup": {
+            "name": "Kinetic Boots",
+            "effect": "Boosts movement speed"
+          },
+          "trigger": "Overloading the core exposes the Boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "Void Sentinel X-9",
+        "health": 400,
+        "damage": 35,
+        "weakness": "EMP Charge",
+        "victory_condition": "Disable the gravity stabilizer using the EMP Charge"
+      },
+      "objective": "Infiltrate the derelict station and destroy the Void Sentinel",
+      "reward": "Prototype Cloaking Device"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Eerie isolation",
+      "setting": "Derelict space station 'Vesper-9'",
+      "player_weapon": "Acid Vial Launcher",
+      "player_weapon_damage": 25,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Decontamination Airlock",
+          "enemy": {
+            "name": "Rust-Infested Security Drone",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Acid Vial Launcher"
+          },
+          "hazard": "Corrosive gas leak",
+          "pickup": {
+            "name": "Refined Solvent",
+            "effect": "Increases elemental damage by 10%"
+          },
+          "trigger": "Walking into the central laser grid activates the drone"
+        },
+        {
+          "location": "Cryo-Storage Bay",
+          "enemy": {
+            "name": "Crystallized Void Wraith",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Refined Solvent"
+          },
+          "hazard": "Zero-gravity fluctuations",
+          "pickup": {
+            "name": "Catalyst Vial",
+            "effect": "Allows transmutation of liquid matter"
+          },
+          "trigger": "Breaking the cryo-seal triggers the emergence of the wraith"
+        },
+        {
+          "location": "Main Engineering Deck",
+          "enemy": {
+            "name": "Corrupted Fabrication Bot",
+            "health": 120,
+            "damage": 20,
+            "weakness": "Transmuted Shrapnel"
+          },
+          "hazard": "Electrical sparking floor panels",
+          "pickup": {
+            "name": "Repair Nanites",
+            "effect": "Restores 50 health points"
+          },
+          "trigger": "Accessing the main terminal unlocks the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "Sentient Containment Core",
+        "health": 250,
+        "damage": 35,
+        "weakness": "Catalyst Vial",
+        "victory_condition": "Stabilize the core using the Catalyst Vial"
+      },
+      "objective": "Purify the derelict space station",
+      "reward": "Ancient Alchemy schematics"
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "whimsical",
+      "player_class": "rogue",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical Sci-Fi",
+      "setting": "The orbiting space station 'Stellar Academy'.",
+      "player_weapon": "Sonic Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Cafeteria of the Starship 'Nebula Nosh'",
+          "enemy": {
+            "name": "Clumsy Repair Bot",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Vulnerable to the 'Sonic Dagger' starting weapon."
+          },
+          "hazard": "Floating zero-gravity coffee cups",
+          "pickup": {
+            "name": "Turbo-Slippers",
+            "effect": "Increases movement speed by 20%"
+          },
+          "trigger": "Defeating the bot activates the mess hall airlock leading to the Maintenance Tunnels."
+        },
+        {
+          "location": "Maintenance Tunnels",
+          "enemy": {
+            "name": "Over-eager Janitor Unit",
+            "health": 25,
+            "damage": 5,
+            "weakness": "Slowed down significantly by the slippery 'Turbo-Slippers' oil spill."
+          },
+          "hazard": "Loose power cables sparking whimsical disco lights",
+          "pickup": {
+            "name": "Silence Bubble",
+            "effect": "Creates a 5-second zone of total silence"
+          },
+          "trigger": "The Janitor drops the keycard to the Central Archive."
+        },
+        {
+          "location": "Central Archive",
+          "enemy": {
+            "name": "Stubborn Security Sentry",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Disoriented by the 'Sonic Dagger' and the distracting lights of the Maintenance Tunnels."
+          },
+          "hazard": "High-velocity paper airplane launcher",
+          "pickup": {
+            "name": "Anti-Gravity Boots",
+            "effect": "Double jump capability"
+          },
+          "trigger": "The Sentry crashes into the main console, opening the door to the Librarian's Office."
+        }
+      ],
+      "boss": {
+        "name": "The Galactic Librarian",
+        "health": 50,
+        "damage": 10,
+        "weakness": "Requires the 'Silence Bubble' from Encounter 2 to sneak past his hovering book-drones.",
+        "victory_condition": "Return all overdue holographic scrolls to their pedestals."
+      },
+      "objective": "Retrieve the stolen star-map before the cosmic tea party begins.",
+      "reward": "A golden space-badge and a lifetime supply of asteroid marshmallows."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Serene sci-fi",
+      "setting": "Drifting orbital garden station",
+      "player_weapon": "Seismic Hammer",
+      "player_weapon_damage": 30,
+      "player_health": 150,
+      "encounters": [
+        {
+          "location": "Crystalized Arboretum",
+          "enemy": {
+            "name": "Glass Drone",
+            "health": 200,
+            "damage": 40,
+            "weakness": "Seismic Hammer"
+          },
+          "hazard": "Fragmenting Floor",
+          "pickup": {
+            "name": "Resonance Tuner",
+            "effect": "Increases vibration damage"
+          },
+          "trigger": "Drone death activates the bridge to the Quantum Mine"
+        },
+        {
+          "location": "Quantum Mine",
+          "enemy": {
+            "name": "Litho-Construct",
+            "health": 450,
+            "damage": 55,
+            "weakness": "Resonance Tuner"
+          },
+          "hazard": "Gravity Well",
+          "pickup": {
+            "name": "Resonance Crystal",
+            "effect": "Stabilizes energy frequencies"
+          },
+          "trigger": "Construct defeat unlocks the Vault Gate"
+        },
+        {
+          "location": "The Vault Gate",
+          "enemy": {
+            "name": "Void Phase-Walker",
+            "health": 800,
+            "damage": 70,
+            "weakness": "Quantum Anchoring Field"
+          },
+          "hazard": "Atmospheric Pressure Drop",
+          "pickup": {
+            "name": "Quantum Anchoring Field",
+            "effect": "Creates a localized dampening field"
+          },
+          "trigger": "Walker death deactivates the Boss seal"
+        }
+      ],
+      "boss": {
+        "name": "The Obsidian Sentinel",
+        "health": 2500,
+        "damage": 85,
+        "weakness": "Resonance Crystal",
+        "victory_condition": "Shatter the Sentinel's core using the Resonance Crystal"
+      },
+      "objective": "Decommission the ancient terraforming engine before it destabilizes the planet",
+      "reward": "Ancient Geomancy Blueprint"
+    }
+  }
+]

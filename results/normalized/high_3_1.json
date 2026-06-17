@@ -1,0 +1,1138 @@
+[
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "The Abandoned Alchemist's Laboratory",
+      "setting": "A derelict subterranean laboratory dripping with green sludge and echoing with whispers.",
+      "player_weapon": "Corrosive Acid Vial",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Entrance Hallway",
+          "enemy": {
+            "name": "Putrid Stalker",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Corrosive Acid Vial"
+          },
+          "hazard": "Leaking steam pipes",
+          "pickup": {
+            "name": "Crystalized Sulfur",
+            "effect": "Increases flame damage temporarily"
+          },
+          "trigger": "Entering the main hall alerts the nearby infected, revealing the path to the containment wing."
+        },
+        {
+          "location": "Containment Wing",
+          "enemy": {
+            "name": "Corrupted Homunculus",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Crystalized Sulfur"
+          },
+          "hazard": "Unstable floorboards",
+          "pickup": {
+            "name": "Essence of Void",
+            "effect": "Allows temporary invulnerability"
+          },
+          "trigger": "Defeating the creature unseals the blast door leading to the reactor chamber."
+        },
+        {
+          "location": "Reactor Chamber",
+          "enemy": {
+            "name": "Spectral Alchemist Ghost",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Essence of Void"
+          },
+          "hazard": "Spreading toxic mold",
+          "pickup": {
+            "name": "Stabilizing Catalyst",
+            "effect": "Binds unstable energy, required for boss defeat"
+          },
+          "trigger": "Vanquishing the ghost triggers the final lockdown release, awakening the Heart of the Lab."
+        }
+      ],
+      "boss": {
+        "name": "The Heart of the Lab",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Stabilizing Catalyst",
+        "victory_condition": "Infuse the catalyst into the exposed core while dodging pulsating energy waves."
+      },
+      "objective": "Purify the laboratory's core before the corruption consumes the region.",
+      "reward": "Philosopher's Stone Fragment"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Corrupted Temple of Ash",
+      "setting": "A crumbling, obsidian cathedral submerged in toxic smog.",
+      "player_weapon": "Cursed Flame Staff",
+      "player_weapon_damage": 25,
+      "player_health": 80,
+      "encounters": [
+        {
+          "location": "The Foyer of Whispers",
+          "enemy": {
+            "name": "Shadow Lurker",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Cursed Flame Staff"
+          },
+          "hazard": "Spikes on the floor",
+          "pickup": {
+            "name": "Frostfire Essence",
+            "effect": "Freezes necrotic flesh"
+          },
+          "trigger": "Reaching the altar awakens the guardian and opens the path to the Hall of Veins."
+        },
+        {
+          "location": "The Hall of Veins",
+          "enemy": {
+            "name": "Blood Golem",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Frostfire Essence"
+          },
+          "hazard": "Toxic gas clouds",
+          "pickup": {
+            "name": "Ancient Ash Key",
+            "effect": "Unlocks the inner sanctum"
+          },
+          "trigger": "Stepping on the pressure plate releases the golem and unlocks the passage to the Chancel of Silence."
+        },
+        {
+          "location": "The Chancel of Silence",
+          "enemy": {
+            "name": "Soul Scythe Cultist",
+            "health": 75,
+            "damage": 35,
+            "weakness": "Ancient Ash Key"
+          },
+          "hazard": "Collapsing ceiling",
+          "pickup": {
+            "name": "Obsidian Seal",
+            "effect": "Dissipates shadow energy"
+          },
+          "trigger": "Defeating the cultist shatters the barrier to the Inner Sanctum."
+        }
+      ],
+      "boss": {
+        "name": "Eternal Void Entity",
+        "health": 300,
+        "damage": 50,
+        "weakness": "Obsidian Seal",
+        "victory_condition": "Shatter the Obsidian Seal within the entity's core to banish it."
+      },
+      "objective": "Purge the temple of the Eternal Void Entity.",
+      "reward": "The Flame of Rebirth"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "tense",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Horror",
+      "setting": "Abandoned Victorian Sanitarium",
+      "player_weapon": "Shadow Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Dilapidated Lobby",
+          "enemy": {
+            "name": "Hollowed Caretaker",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Shadow Dagger"
+          },
+          "hazard": "Floor spikes",
+          "pickup": {
+            "name": "Glow-stone",
+            "effect": "Emit light to reveal invisible threats"
+          },
+          "trigger": "Defeating the caretaker reveals a keycard to the basement."
+        },
+        {
+          "location": "Damp Basement",
+          "enemy": {
+            "name": "Shadow Stalker",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Glow-stone"
+          },
+          "hazard": "Corrosive gas",
+          "pickup": {
+            "name": "Altar Offering",
+            "effect": "Exposes the boss's physical form"
+          },
+          "trigger": "Killing the stalker unlocks the heavy iron door leading to the morgue."
+        },
+        {
+          "location": "Morgue",
+          "enemy": {
+            "name": "Wraith Attendant",
+            "health": 70,
+            "damage": 20,
+            "weakness": "Shadow Dagger"
+          },
+          "hazard": "Unstable floorboards",
+          "pickup": {
+            "name": "Sacred Relic",
+            "effect": "Increases defense against necrotic damage"
+          },
+          "trigger": "Dispatching the attendant opens the path to the Curator's sanctum."
+        }
+      ],
+      "boss": {
+        "name": "The Curator",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Altar Offering",
+        "victory_condition": "Use the Altar Offering to make the Curator vulnerable to the Shadow Dagger."
+      },
+      "objective": "Escape the Sanitarium by defeating the Curator.",
+      "reward": "Ancient Soul Crystal"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Cursed Victorian Forest",
+      "setting": "Fog-shrouded, desolate ruins of a forgotten sanctuary.",
+      "player_weapon": "Silver-tipped Crossbow",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Overgrown Courtyard",
+          "enemy": {
+            "name": "Shadow Stalker",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Silver-tipped Crossbow"
+          },
+          "hazard": "Spiked vines that drain 10 health upon contact.",
+          "pickup": {
+            "name": "Crypt Key",
+            "effect": "Allows access to the subterranean vaults and deals bonus damage to spectral undead."
+          },
+          "trigger": "Defeating the Shadow Stalker unlocks the heavy iron gate leading to the crypt."
+        },
+        {
+          "location": "Abandoned Crypt",
+          "enemy": {
+            "name": "Wailing Ghoul",
+            "health": 75,
+            "damage": 30,
+            "weakness": "Crypt Key"
+          },
+          "hazard": "Toxic gas clouds that inflict 15 damage over time.",
+          "pickup": {
+            "name": "Sunlight Amulet",
+            "effect": "Radiates blinding light, burning cursed plant matter and organic enemies."
+          },
+          "trigger": "Banishing the Wailing Ghoul dissolves the ethereal barrier blocking the path to the Altar."
+        },
+        {
+          "location": "The Altar",
+          "enemy": {
+            "name": "Cursed Tree Guardian",
+            "health": 100,
+            "damage": 40,
+            "weakness": "Sunlight Amulet"
+          },
+          "hazard": "Falling stone debris dealing 20 damage.",
+          "pickup": {
+            "name": "Ancient Ritual Dagger",
+            "effect": "A ceremonial blade capable of piercing the incorporeal heart of the Monarch."
+          },
+          "trigger": "Slaying the Guardian lowers the bridge to the Monarch's Sanctum."
+        }
+      ],
+      "boss": {
+        "name": "The Hollow Monarch",
+        "health": 300,
+        "damage": 50,
+        "weakness": "Ancient Ritual Dagger",
+        "victory_condition": "Weaken the boss with ranged attacks and land a final strike using the Ancient Ritual Dagger."
+      },
+      "objective": "Purify the sanctuary by defeating the Hollow Monarch.",
+      "reward": "Eternal silence in the forest and the title of Grave Warden."
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "mysterious",
+      "player_class": "necromancer",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Gothic Crypt",
+      "setting": "An ancient, decaying necropolis drowning in fog.",
+      "player_weapon": "Bone Scythe",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Entrance Hall",
+          "enemy": {
+            "name": "Skeleton Guard",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Bone Scythe"
+          },
+          "hazard": "Crumbling stone floor",
+          "pickup": {
+            "name": "Corpse Lantern",
+            "effect": "Illuminates and stuns ethereal enemies."
+          },
+          "trigger": "Opening the main gate summons the guard, clearing the path to the library."
+        },
+        {
+          "location": "Library of Souls",
+          "enemy": {
+            "name": "Spirit Sentinel",
+            "health": 60,
+            "damage": 12,
+            "weakness": "Corpse Lantern"
+          },
+          "hazard": "Swinging scythe traps",
+          "pickup": {
+            "name": "Cursed Oil",
+            "effect": "Burns through shadows and physical barriers."
+          },
+          "trigger": "The sentinel guards the staircase leading down to the Inner Sanctum."
+        },
+        {
+          "location": "Inner Sanctum",
+          "enemy": {
+            "name": "Shadow Ghoul",
+            "health": 70,
+            "damage": 15,
+            "weakness": "Cursed Oil"
+          },
+          "hazard": "Toxic spectral vapors",
+          "pickup": {
+            "name": "Crypt Key",
+            "effect": "Grants access to the inner altar chamber."
+          },
+          "trigger": "The death of the ghoul lowers the magical seal on the Altar door, revealing the boss."
+        }
+      ],
+      "boss": {
+        "name": "Wraith Warden",
+        "health": 200,
+        "damage": 20,
+        "weakness": "Corpse Lantern",
+        "victory_condition": "Use the Corpse Lantern to banish the wraith permanently."
+      },
+      "objective": "Cleanse the Altar of Shadows to appease the undead spirits.",
+      "reward": "Amulet of Eternal Necromancy"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Haunted Industrial Abattoir",
+      "setting": "The Gore-Slicked Slaughterhouse",
+      "player_weapon": "Rusted Meat Cleaver",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Basement Corridor",
+          "enemy": {
+            "name": "Flesh-Construct",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Rusted Meat Cleaver"
+          },
+          "hazard": "Steam Pipe Bursts",
+          "pickup": {
+            "name": "Stabilizing Serum",
+            "effect": "Heals 30 HP and increases combat reflexes."
+          },
+          "trigger": "The death of the Flesh-Construct triggers the release of the heavy basement gate."
+        },
+        {
+          "location": "Packing Room",
+          "enemy": {
+            "name": "Agile Scavenger",
+            "health": 60,
+            "damage": 25,
+            "weakness": "Stabilizing Serum"
+          },
+          "hazard": "Swinging Chains",
+          "pickup": {
+            "name": "Corrosive Acid Vial",
+            "effect": "Dissolves metal plating and hardened barriers."
+          },
+          "trigger": "Killing the Scavenger triggers the lock mechanism to unlock the final assembly hall."
+        },
+        {
+          "location": "Assembly Hall",
+          "enemy": {
+            "name": "Heavy Guard",
+            "health": 80,
+            "damage": 30,
+            "weakness": "Corrosive Acid Vial"
+          },
+          "hazard": "Rotting Floorboards",
+          "pickup": {
+            "name": "Ancient Incense",
+            "effect": "Temporarily blinds the senses of entities in the immediate area."
+          },
+          "trigger": "Defeating the Heavy Guard triggers the boss chamber door lock."
+        }
+      ],
+      "boss": {
+        "name": "Butcher King",
+        "health": 200,
+        "damage": 50,
+        "weakness": "Ancient Incense",
+        "victory_condition": "Use the Rusted Meat Cleaver to sever the chains after distracting him with the Ancient Incense."
+      },
+      "objective": "Escape the Abattoir before the chaos consumes you.",
+      "reward": "The Key to the Outside World"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Haunted Monastery Garden",
+      "setting": "An ancient, tranquil monastery plagued by silent, eerie apparitions",
+      "player_weapon": "Warden's Lantern",
+      "player_weapon_damage": 5,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Sunken Cloister",
+          "enemy": {
+            "name": "Whispering Shade",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Warden's Lantern"
+          },
+          "hazard": "Crumbly floor tiles",
+          "pickup": {
+            "name": "Silver Amulet",
+            "effect": "Lowers ambient fear"
+          },
+          "trigger": "Defeating the shade unlocks the path to the Moonlit Pond"
+        },
+        {
+          "location": "Moonlit Pond",
+          "enemy": {
+            "name": "Weeping Statue",
+            "health": 30,
+            "damage": 8,
+            "weakness": "Silver Amulet"
+          },
+          "hazard": "Rising thick fog",
+          "pickup": {
+            "name": "Sacred Oil",
+            "effect": "Ignites cold embers"
+          },
+          "trigger": "Breaking the statue lowers water levels to reveal the path to the Altar"
+        },
+        {
+          "location": "Altar of Echoes",
+          "enemy": {
+            "name": "Phantom Monk",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Sacred Oil"
+          },
+          "hazard": "Iron maiden trap",
+          "pickup": {
+            "name": "Ritual Bell",
+            "effect": "Resonates with spectral entities"
+          },
+          "trigger": "Banishing the monk opens the iron gates of the Inner Sanctum"
+        }
+      ],
+      "boss": {
+        "name": "Silent Abyssal Guardian",
+        "health": 100,
+        "damage": 20,
+        "weakness": "Ritual Bell",
+        "victory_condition": "Ring the bell to silence the Guardian permanently"
+      },
+      "objective": "Sanctify the Monastery",
+      "reward": "Eternal Peace"
+    }
+  },
+  {
+    "case": {
+      "genre": "horror",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical Carnival of Nightmares",
+      "setting": "A decaying, whimsical carnival at twilight",
+      "player_weapon": "Mirror Shard",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Mirror Maze",
+          "enemy": {
+            "name": "Puppet Ghost",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Mirror Shard"
+          },
+          "hazard": "Collapsing mirrored walls",
+          "pickup": {
+            "name": "Glow Paint",
+            "effect": "Reveals invisible spirits and platforms"
+          },
+          "trigger": "The ghost dissolves, revealing a golden key to the Carousel"
+        },
+        {
+          "location": "Broken Carousel",
+          "enemy": {
+            "name": "Dismembered Clown",
+            "health": 40,
+            "damage": 8,
+            "weakness": "Glow Paint"
+          },
+          "hazard": "Sticky Taffy Tar",
+          "pickup": {
+            "name": "Invisible Ink",
+            "effect": "Stuns magical enemies"
+          },
+          "trigger": "The clown falls apart, granting passage to the Backstage Hallway"
+        },
+        {
+          "location": "Backstage Hallway",
+          "enemy": {
+            "name": "Shadow Jester",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Invisible Ink"
+          },
+          "hazard": "Swinging trapdoors",
+          "pickup": {
+            "name": "Eternal Spotlight",
+            "effect": "Forces the boss into a tangible state"
+          },
+          "trigger": "The jester fades away, opening the curtains to the Main Stage boss arena"
+        }
+      ],
+      "boss": {
+        "name": "Ringmaster of Gloom",
+        "health": 100,
+        "damage": 20,
+        "weakness": "Eternal Spotlight",
+        "victory_condition": "Use the spotlight to strip away his illusion and reveal his true form"
+      },
+      "objective": "Escape the cursed circus by defeating the Ringmaster",
+      "reward": "A golden ticket to a peaceful dream"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "chaotic",
+      "player_class": "engineer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Steampunk",
+      "setting": "The Great Cogworks of Aetheria",
+      "player_weapon": "Wrench Multi-Tool",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Steam Pipe Junction",
+          "enemy": {
+            "name": "Clockwork Spider",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Wrench Multi-Tool"
+          },
+          "hazard": "High-pressure steam vents that periodically burst.",
+          "pickup": {
+            "name": "Heavy Lubricant",
+            "effect": "Can be applied to joints to reduce enemy movement speed and defense."
+          },
+          "trigger": "Defeating the spider releases a pressure valve that opens the sealed door to the Gear Grinder Room."
+        },
+        {
+          "location": "Gear Grinder Room",
+          "enemy": {
+            "name": "Brass Automaton",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Heavy Lubricant"
+          },
+          "hazard": "Spinning brass gears that crush anything in their path.",
+          "pickup": {
+            "name": "Static Battery",
+            "effect": "Discharges electricity to short-circuit mechanical logic systems."
+          },
+          "trigger": "The automaton falls into the primary gear assembly, forcing the path to the Maintenance Conduit to open."
+        },
+        {
+          "location": "Maintenance Conduit",
+          "enemy": {
+            "name": "Faulty Sentry Bot",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Static Battery"
+          },
+          "hazard": "Unstable electrical arcs jumping across the floor.",
+          "pickup": {
+            "name": "Master Overdrive Key",
+            "effect": "A specialized tool designed to halt the core rotation of ancient clockwork machines."
+          },
+          "trigger": "The Sentry Bot's explosive collapse triggers the activation of the bridge leading to the Boss Arena."
+        }
+      ],
+      "boss": {
+        "name": "The Clockwork Overlord",
+        "health": 200,
+        "damage": 30,
+        "weakness": "Master Overdrive Key",
+        "victory_condition": "Jam the Master Overdrive Key into the boss's exhaust port to initiate a system shutdown."
+      },
+      "objective": "Repair the Core Regulator before the city collapses.",
+      "reward": "Golden Spanner of Creation"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Steampunk",
+      "setting": "The Brass Labyrinth, a decaying clockwork automaton factory",
+      "player_weapon": "Pneumatic Wrench",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Entrance Hallway",
+          "enemy": {
+            "name": "Clockwork Sentry",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Pneumatic Wrench"
+          },
+          "hazard": "High-pressure steam jets",
+          "pickup": {
+            "name": "Copper Fuse",
+            "effect": "Used to bypass electrical locks."
+          },
+          "trigger": "Defeating the sentry reveals the hidden keypad access code to the processing core."
+        },
+        {
+          "location": "Processing Core",
+          "enemy": {
+            "name": "Rust-Infested Scrapper",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Copper Fuse"
+          },
+          "hazard": "Crushing moving gears",
+          "pickup": {
+            "name": "Stabilized Aether Core",
+            "effect": "Used to overload unstable machinery."
+          },
+          "trigger": "The scrapper drops the industrial keycard required to enter the cooling chamber."
+        },
+        {
+          "location": "Cooling Chamber",
+          "enemy": {
+            "name": "Arc-Discharge Drone",
+            "health": 100,
+            "damage": 30,
+            "weakness": "Stabilized Aether Core"
+          },
+          "hazard": "Electrified floor plating",
+          "pickup": {
+            "name": "Titan's Gearbox",
+            "effect": "Heavy-duty component used for structural disruption."
+          },
+          "trigger": "Overloading the drone\u2019s core causes the blast door to the Boss chamber to unlock."
+        }
+      ],
+      "boss": {
+        "name": "The Prime Engine Sentinel",
+        "health": 250,
+        "damage": 50,
+        "weakness": "Titan's Gearbox",
+        "victory_condition": "Jam the main rotation gear using the Titan's Gearbox while the Sentinel is venting steam."
+      },
+      "objective": "Disable the Prime Engine to stop the city from overheating",
+      "reward": "Prototype blueprints for a clockwork guardian"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Whimsical Steampunk",
+      "setting": "A clockwork laboratory floating in the clouds.",
+      "player_weapon": "Brass Acid Sprayer",
+      "player_weapon_damage": 10,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Steam-Pipe Hallway",
+          "enemy": {
+            "name": "Steam Rat",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Brass Acid Sprayer"
+          },
+          "hazard": "Exploding steam vents",
+          "pickup": {
+            "name": "Concentrated Cooling Mist",
+            "effect": "Freezes mechanical joints"
+          },
+          "trigger": "Defeating the rat releases a gear, unlocking the door to the Pressure Chamber."
+        },
+        {
+          "location": "Pressure Chamber",
+          "enemy": {
+            "name": "Clockwork Spider",
+            "health": 30,
+            "damage": 8,
+            "weakness": "Concentrated Cooling Mist"
+          },
+          "hazard": "High-pressure pistons",
+          "pickup": {
+            "name": "Bottled Lightning",
+            "effect": "Overcharges and shorts out metallic components"
+          },
+          "trigger": "The spider's defeat vents the steam from the Boiler Room, revealing the way to the Control Core."
+        },
+        {
+          "location": "Control Core Entrance",
+          "enemy": {
+            "name": "Brass Sentinel",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Bottled Lightning"
+          },
+          "hazard": "Gears grinding the floor",
+          "pickup": {
+            "name": "Stabilizing Serum",
+            "effect": "Neutralizes unstable clockwork corruption"
+          },
+          "trigger": "Defeating the Sentinel unlocks the final mechanical lock to the Inner Sanctum where the boss awaits."
+        }
+      ],
+      "boss": {
+        "name": "Rogue Cogwork Curator",
+        "health": 100,
+        "damage": 15,
+        "weakness": "Stabilizing Serum",
+        "victory_condition": "Inject the serum into the main drive to stop the curator."
+      },
+      "objective": "Defeat the Rogue Cogwork Curator and reclaim the Chrono-Key.",
+      "reward": "The Golden Chrono-Key, granting control over time."
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Steampunk",
+      "setting": "The Great Gear-Works Factory",
+      "player_weapon": "Clockwork Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Steam-Pipe Corridor",
+          "enemy": {
+            "name": "Brass Automaton",
+            "health": 40,
+            "damage": 25,
+            "weakness": "Clockwork Dagger"
+          },
+          "hazard": "High-pressure steam jets",
+          "pickup": {
+            "name": "Lubricant Oil",
+            "effect": "Corrodes mechanical joints"
+          },
+          "trigger": "Defeating the automaton releases a valve that clears the steam blocking the path to the Furnace Room."
+        },
+        {
+          "location": "Furnace Room",
+          "enemy": {
+            "name": "Coal Stoker Construct",
+            "health": 60,
+            "damage": 30,
+            "weakness": "Lubricant Oil"
+          },
+          "hazard": "Extreme ambient heat",
+          "pickup": {
+            "name": "High-Grade Capacitor",
+            "effect": "Disrupts electrical systems"
+          },
+          "trigger": "The construct's collapse triggers the factory's emergency shutdown, revealing the entrance to the Assembly Line."
+        },
+        {
+          "location": "Assembly Line Catwalk",
+          "enemy": {
+            "name": "Clockwork Sentry",
+            "health": 50,
+            "damage": 35,
+            "weakness": "High-Grade Capacitor"
+          },
+          "hazard": "Moving conveyor belts",
+          "pickup": {
+            "name": "Overclocking Schematic",
+            "effect": "Reveals vulnerability in mechanical cores"
+          },
+          "trigger": "The sentry drops a key-card, opening the heavy bulkhead door to the Boss fight."
+        }
+      ],
+      "boss": {
+        "name": "Master Gear-Smith",
+        "health": 200,
+        "damage": 50,
+        "weakness": "Overclocking Schematic",
+        "victory_condition": "Short-circuit the boss's central core using the schematic."
+      },
+      "objective": "Sabotage the Master Gear-Smith's assembly line.",
+      "reward": "Master Thief's Chrono-Cloak"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "ominous",
+      "player_class": "stormcaller",
+      "target_difficulty": "hard"
+    },
+    "level": {
+      "theme": "Ominous Steampunk",
+      "setting": "Abandoned Brass-Gear Refinery",
+      "player_weapon": "Static Arc-Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Refinery Entrance",
+          "enemy": {
+            "name": "Clockwork Sentry",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Static Arc-Staff"
+          },
+          "hazard": "High-pressure Steam Vents",
+          "pickup": {
+            "name": "High-Voltage Capacitor",
+            "effect": "Increases electric discharge damage."
+          },
+          "trigger": "Approaching the valve controls activates the sentry and forces the blast door open."
+        },
+        {
+          "location": "Ventilation Shaft",
+          "enemy": {
+            "name": "Steam-Powered Sentinel",
+            "health": 120,
+            "damage": 20,
+            "weakness": "High-Voltage Capacitor"
+          },
+          "hazard": "Electrified Grating",
+          "pickup": {
+            "name": "Superconducting Coolant",
+            "effect": "Negates mechanical friction."
+          },
+          "trigger": "Defeating the sentry disables the containment field, allowing entry to the mainframe."
+        },
+        {
+          "location": "Mainframe Core",
+          "enemy": {
+            "name": "Automated Piston-Crusher",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Superconducting Coolant"
+          },
+          "hazard": "Falling Debris",
+          "pickup": {
+            "name": "Overdrive Core",
+            "effect": "Disrupts mechanical shielding."
+          },
+          "trigger": "The crash of the machine shatters the floor, revealing the path to the Control Tower."
+        }
+      ],
+      "boss": {
+        "name": "Grand Brass Automaton",
+        "health": 500,
+        "damage": 50,
+        "weakness": "Overdrive Core",
+        "victory_condition": "Use the Overdrive Core to destabilize the automaton while its shield is lowered."
+      },
+      "objective": "Deactivate the Grand Brass Automaton to stop the refinery meltdown.",
+      "reward": "Eternal Lightning Battery"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "level": {
+      "theme": "Steampunk Chronomancer",
+      "setting": "The Clockwork Ruins",
+      "player_weapon": "Temporal Rapier",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Gear-Grinding Bridge",
+          "enemy": {
+            "name": "Steam Automaton",
+            "health": 50,
+            "damage": 10,
+            "weakness": "Temporal Rapier"
+          },
+          "hazard": "Bursting steam pipes",
+          "pickup": {
+            "name": "Flux Capacitor",
+            "effect": "Freezes local time"
+          },
+          "trigger": "The bridge control console activates allowing passage to the boiler room"
+        },
+        {
+          "location": "Corroded Boiler Room",
+          "enemy": {
+            "name": "Brass Scavenger",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Flux Capacitor"
+          },
+          "hazard": "Acid pools",
+          "pickup": {
+            "name": "Overcharged Piston",
+            "effect": "Shatters heavy armor"
+          },
+          "trigger": "The blast door unseals revealing the path to the Spire"
+        },
+        {
+          "location": "The Ticking Spire",
+          "enemy": {
+            "name": "Clockwork Guardian",
+            "health": 80,
+            "damage": 20,
+            "weakness": "Overcharged Piston"
+          },
+          "hazard": "Falling debris",
+          "pickup": {
+            "name": "Chronos Key",
+            "effect": "Disables temporal shields"
+          },
+          "trigger": "The Guardian collapses revealing the key to the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "Baron Iron-Heart",
+        "health": 200,
+        "damage": 30,
+        "weakness": "Chronos Key",
+        "victory_condition": "Use the Chronos Key to disable the shield before attacking"
+      },
+      "objective": "Reclaim the Chronos Engine",
+      "reward": "Restored Timeline"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "eerie",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "level": {
+      "theme": "Steampunk Eerie",
+      "setting": "Fog-choked brass-plated clockwork city",
+      "player_weapon": "Seismic Gauntlet",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Steam-Vent Alley",
+          "enemy": {
+            "name": "Brass Automaton",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Seismic Gauntlet"
+          },
+          "hazard": "Leaking scalding steam",
+          "pickup": {
+            "name": "Lubricant Oil",
+            "effect": "Allows for silencing mechanical traps"
+          },
+          "trigger": "Defeating the automaton releases a valve that clears the steam blocking the path to the Boiler Room"
+        },
+        {
+          "location": "Boiler Room",
+          "enemy": {
+            "name": "Clockwork Spider",
+            "health": 75,
+            "damage": 30,
+            "weakness": "Lubricant Oil"
+          },
+          "hazard": "Pressurized steam pipes",
+          "pickup": {
+            "name": "Ancient Gear Shard",
+            "effect": "Essential component to destabilize central mechanisms"
+          },
+          "trigger": "Destroying the spider exposes a maintenance hatch leading to the inner shaft"
+        },
+        {
+          "location": "Maintenance Shaft",
+          "enemy": {
+            "name": "Corrupted Cog-Knight",
+            "health": 100,
+            "damage": 40,
+            "weakness": "Ancient Gear Shard"
+          },
+          "hazard": "Collapsing floor tiles",
+          "pickup": {
+            "name": "Core Stabilizer Tool",
+            "effect": "Capable of neutralizing the central furnace core"
+          },
+          "trigger": "Shattering the knight grants access to the high-security entrance of the Boss Chamber"
+        }
+      ],
+      "boss": {
+        "name": "The Clockwork Overlord",
+        "health": 300,
+        "damage": 60,
+        "weakness": "Core Stabilizer Tool",
+        "victory_condition": "Overload the central furnace core using the tool"
+      },
+      "objective": "Disable the corrupted clockwork core of the city",
+      "reward": "Mastery over tectonic shifting"
+    }
+  },
+  {
+    "case": {
+      "genre": "steampunk",
+      "mood": "serene",
+      "player_class": "paladin",
+      "target_difficulty": "easy"
+    },
+    "level": {
+      "theme": "Serene Steampunk",
+      "setting": "The Aetherial Clocktower Gardens",
+      "player_weapon": "Steam-infused Mace",
+      "player_weapon_damage": 10,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Copper Conservatory",
+          "enemy": {
+            "name": "Brass Automaton Scout",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Steam-infused Mace"
+          },
+          "hazard": "Steam jets",
+          "pickup": {
+            "name": "Pressure Valve",
+            "effect": "Allows access to the Boiler Room"
+          },
+          "trigger": "Defeating the scout activates the garden steam vents, clearing the path to the main atrium."
+        },
+        {
+          "location": "The Brass Boiler Room",
+          "enemy": {
+            "name": "Clockwork Tick",
+            "health": 25,
+            "damage": 8,
+            "weakness": "Pressure Valve"
+          },
+          "hazard": "Boiling pipes",
+          "pickup": {
+            "name": "Lubricant Oil",
+            "effect": "Used to slow down the Boss"
+          },
+          "trigger": "Removing the Pressure Valve from the boiler engages the elevator to the Clock Face."
+        },
+        {
+          "location": "The Grand Clock Face",
+          "enemy": {
+            "name": "Piston Guardian",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Steam-infused Mace"
+          },
+          "hazard": "Swinging clock hands",
+          "pickup": {
+            "name": "Ancient Cog",
+            "effect": "Required to defeat the Boss"
+          },
+          "trigger": "Defeating the Guardian halts the clock, allowing the boss fight to begin."
+        }
+      ],
+      "boss": {
+        "name": "The Temporal Sovereign",
+        "health": 50,
+        "damage": 15,
+        "weakness": "Ancient Cog",
+        "victory_condition": "Jam the temporal engine with the Ancient Cog"
+      },
+      "objective": "Restore power to the Celestial Cog",
+      "reward": "Chronos Chronometer"
+    }
+  }
+]

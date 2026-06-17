@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 from pathlib import Path
+from typing import Iterable
 
 import matplotlib
 
@@ -14,27 +15,18 @@ import matplotlib.ticker as ticker  # noqa: E402
 
 from ..paths import analysis_dir, judgments_dir
 from ..rubric import WEIGHTS
+from .load import VARIANT_MAP
 
 CRITERIA = list(WEIGHTS.keys())
 TOTAL_WEIGHT = sum(WEIGHTS.values())
-EXPECTED_N = 64
-
-VARIANT_MAP = {
-    "1": "flat_alpha",
-    "2": "grouped_by_type",
-    "3": "append_order",
-    "4": "ui_contract",
-    "5": "alpha_nested",
-    "6": "nested_narrative",
-}
 
 CRITERION_LABELS = {
-    "reference_integrity": "Reference Integrity (\u00d73)",
-    "causal_chain": "Causal Chain (\u00d73)",
-    "balance": "Balance (\u00d72)",
-    "thematic_coherence": "Thematic Coherence (\u00d72)",
-    "mechanical_sense": "Mechanical Sense (\u00d71)",
-    "completeness": "Completeness (\u00d71)",
+    "reference_integrity": "Reference Integrity (×3)",
+    "causal_chain": "Causal Chain (×3)",
+    "balance": "Balance (×2)",
+    "thematic_coherence": "Thematic Coherence (×2)",
+    "mechanical_sense": "Mechanical Sense (×1)",
+    "completeness": "Completeness (×1)",
 }
 
 COLORS = {
@@ -50,13 +42,24 @@ COLORS = {
 STACK_ORDER = list(WEIGHTS.keys())
 
 
-def load_scores() -> dict[str, list[dict[str, int]]]:
+def load_scores(
+    thinking: str = "minimal",
+    variants: Iterable[str] | None = None,
+    *,
+    expected_n: int | None = 64,
+) -> dict[str, list[dict[str, int]]]:
     """Load per-case criterion scores grouped by variant."""
+    wanted = set(variants) if variants is not None else set(VARIANT_MAP.values())
     scores: dict[str, list[dict[str, int]]] = defaultdict(list)
 
-    for f in sorted(judgments_dir().glob("minimal_*.json")):
+    for f in sorted(judgments_dir().glob(f"{thinking}_*.json")):
         parts = Path(f).stem.split("_")
-        variant = VARIANT_MAP[parts[1]]
+        suffix = parts[1]
+        if suffix not in VARIANT_MAP:
+            continue
+        variant = VARIANT_MAP[suffix]
+        if variant not in wanted:
+            continue
 
         with open(f) as fh:
             records = json.load(fh)
@@ -65,9 +68,18 @@ def load_scores() -> dict[str, list[dict[str, int]]]:
             criterion_scores = {c: rec["judgment"]["scores"][c]["score"] for c in CRITERIA}
             scores[variant].append(criterion_scores)
 
-    for variant, case_scores in scores.items():
-        if len(case_scores) != EXPECTED_N:
-            raise ValueError(f"{variant}: expected {EXPECTED_N} cases, got {len(case_scores)}")
+    if expected_n is not None:
+        for variant, case_scores in scores.items():
+            if len(case_scores) != expected_n:
+                raise ValueError(
+                    f"{variant}: expected {expected_n} cases, got {len(case_scores)}"
+                )
+
+    missing = wanted - set(scores)
+    if missing and variants is not None:
+        raise FileNotFoundError(
+            f"No judgments at thinking={thinking!r} for variants: {sorted(missing)}"
+        )
 
     return dict(scores)
 
@@ -90,7 +102,12 @@ def compute_contributions(
     return contributions
 
 
-def make_chart(contributions: dict[str, dict[str, float]], out_path: str) -> None:
+def make_chart(
+    contributions: dict[str, dict[str, float]],
+    out_path: str,
+    *,
+    title: str = "Weighted Score by Schema Variant",
+) -> None:
     """Render stacked bar chart and save to out_path."""
     variant_totals = {v: sum(contributions[v].values()) for v in contributions}
     sorted_variants = sorted(variant_totals, key=lambda v: variant_totals[v], reverse=True)
@@ -115,7 +132,7 @@ def make_chart(contributions: dict[str, dict[str, float]], out_path: str) -> Non
 
     ax.set_xticks(list(x))
     ax.set_xticklabels(sorted_variants, fontsize=9, rotation=20, ha="right")
-    ax.set_ylabel("Weighted Score (1\u20135 scale)", fontsize=10)
+    ax.set_ylabel("Weighted Score (1–5 scale)", fontsize=10)
     ax.set_ylim(0, 5.0)
     ax.yaxis.set_major_locator(ticker.MultipleLocator(0.5))
     ax.yaxis.set_minor_locator(ticker.MultipleLocator(0.25))
@@ -135,10 +152,7 @@ def make_chart(contributions: dict[str, dict[str, float]], out_path: str) -> Non
         fontsize=8, frameon=True, framealpha=0.9, edgecolor="#cccccc",
     )
 
-    ax.set_title(
-        "Weighted Score by Schema Variant",
-        fontsize=12, fontweight="bold", pad=12, color="#333333",
-    )
+    ax.set_title(title, fontsize=12, fontweight="bold", pad=12, color="#333333")
 
     fig.tight_layout()
     fig.subplots_adjust(right=0.78)
@@ -146,10 +160,16 @@ def make_chart(contributions: dict[str, dict[str, float]], out_path: str) -> Non
     plt.close(fig)
 
 
-def run() -> str:
+def run(
+    thinking: str = "minimal",
+    variants: Iterable[str] | None = None,
+    *,
+    expected_n: int | None = 64,
+) -> str:
     """Generate the chart. Returns the output path."""
-    scores = load_scores()
+    scores = load_scores(thinking, variants, expected_n=expected_n)
     contributions = compute_contributions(scores)
-    out_path = str(analysis_dir() / "stacked_bar_scores.png")
-    make_chart(contributions, out_path)
+    out_path = str(analysis_dir() / f"stacked_bar_scores_{thinking}.png")
+    title = f"Weighted Score by Schema Variant ({thinking} thinking)"
+    make_chart(contributions, out_path, title=title)
     return out_path

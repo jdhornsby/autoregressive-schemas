@@ -8,7 +8,7 @@ import time
 from typing import Any, Type
 
 from google import genai
-from google.genai.types import GenerateContentConfig, ThinkingConfig
+from google.genai.types import GenerateContentConfig, HttpOptions, ThinkingConfig
 from pydantic import BaseModel
 from tenacity import retry, stop_after_attempt, wait_exponential
 
@@ -16,7 +16,12 @@ logger = logging.getLogger(__name__)
 
 THINKING_LEVELS = ("minimal", "low", "medium", "high")
 
-DEFAULT_MODEL = "gemini-3.1-flash-lite-preview"
+DEFAULT_MODEL = "gemini-3.1-flash-lite"
+
+# Hard ceiling on a single Vertex call. Worst observed at medium thinking is ~31s;
+# 180s leaves headroom for high thinking while preventing the indefinite hang
+# we hit on medium_1 (no timeout → connection wedged → tenacity never invoked).
+REQUEST_TIMEOUT_MS = 180_000
 
 _client: genai.Client | None = None
 
@@ -28,6 +33,7 @@ def _get_client() -> genai.Client:
             vertexai=True,
             project=os.environ["GCP_PROJECT"],
             location=os.environ.get("GCP_LOCATION", "global"),
+            http_options=HttpOptions(timeout=REQUEST_TIMEOUT_MS),
         )
     return _client
 

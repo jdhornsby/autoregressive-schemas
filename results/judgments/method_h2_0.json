@@ -1,0 +1,642 @@
+[
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "ominous",
+      "player_class": "pyromancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This level holds together well as a designed experience: a pyromancer descending through a decaying necropolis toward an Abyssal Lord, with each encounter gating the next through a specific item or key. The pickup chain is clean and the boss fight extends the chain logically. It feels intentionally authored rather than assembled.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Most references are exact: 'Alchemical Vials,' 'Ancient Sun Amulet,' 'Molten Core' all match prior pickups precisely. The Frost Wisp weakness is 'flame burst' (lowercase) vs player weapon 'Flame Burst' — identifiable but a minor casing variation."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Each trigger is a specific consequence of the encounter: melting the wisp opens a hidden passage, the knight drops a charred iron key, the stalker's scream shatters a seal. Removing any encounter would break the chain."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy stats escalate cleanly (50/10 → 80/15 → 120/20) and the boss (300/40) is clearly harder. With player health 200, cumulative encounter damage of 45 is manageable for medium difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — Frost Wisp, Drowned Knight, Shadow Stalker, Abyssal Lord, the Whispering Crypt, decayed kingdom in eternal night — reinforces ominous dark fantasy without a single out-of-place element."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Fire against ice (Frost Wisp), alchemical acids against a waterlogged knight, sunlight against a shadow creature, and volcanic heat against an abyssal lord all have clear logic. The Alchemical Vials as a combat weakness for a Drowned Knight is slightly abstract but defensible."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location, enemy, hazard, and pickup is distinct and specific. No two encounters share descriptors and each field adds unique information not guessable from the others."
+        }
+      },
+      "best_element": "The causal chain — the wisp's cold essence melts to reveal a passage, a charred iron key drops from a knight, a scream shatters a seal — each trigger is a precise physical consequence that makes the sequence feel inevitable.",
+      "worst_element": "The Frost Wisp weakness 'flame burst' uses lowercase, breaking exact-match expectations; it should read 'Flame Burst' to be unambiguous in a game engine context.",
+      "overall": "This is a tight, well-designed level that a player would enjoy: escalating threats, coherent theme, and satisfying pickup payoffs leading to a climactic boss confrontation."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "whimsical",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A charming whimsical forest level where the beastmaster moves from a floating meadow to a crystal grove chasing a lost crown. The pickup chain resolves correctly and the theme is consistently playful, but one damage inversion and a slightly vague victory condition pull it slightly below excellent.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enemy weaknesses and boss weakness all match exact pickup or weapon names. The boss victory condition says 'use the whistle to distract the King' rather than 'Royal Whistle' by full name — a minor but identifiable variation."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "The petal bridge (enc 0) and Silver Key (enc 1) are specific causal triggers. The Mirror Slime dissolving to 'reveal an entrance' (enc 2) is slightly weaker — it's a location reveal rather than a distinct physical consequence — but still connected."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy damage inverts at encounter 2: the Mirror Slime deals 8, lower than the Grumpy Moss-Bear's 10. Boss health 100 ties with player health 100, making the boss the hardest single enemy but with zero margin. For easy this is still playable."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Giggly Sprite, Grumpy Moss-Bear, Mirror Slime, Ancient Owl King — every enemy and location fits a whimsical forest fantasy world. Bioluminescent flora, petal bridges, and a crown quest are fully coherent."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Levitation versus a moss-bear (hovering out of reach), moonlight illuminating a reflective slime, and a Royal Whistle distracting a regal owl king all have defensible logic. Nectar of Flight against a bear is a stretch but workable."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations and enemies are distinct. 'Foggy mist' as a hazard in a whispering woods is slightly generic compared to the specificity of the other hazards, but all other fields add unique information."
+        }
+      },
+      "best_element": "The thematic consistency is excellent — every single named element from the Giggly Sprite to the Ancient Owl King feels like it belongs in the same enchanted forest world.",
+      "worst_element": "The Mirror Slime damage (8) is lower than the Moss-Bear's (10), breaking the escalation pattern; bumping it to 12-15 would fix the inversion without disrupting the easy-difficulty feel.",
+      "overall": "A pleasant easy-difficulty level with a clear objective and charming whimsy; the damage inversion is a minor design flaw but wouldn't significantly harm the play experience."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "tense",
+      "player_class": "paladin",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A hard paladin level set in a floating cathedral with three distinct supernatural enemies. The thematic execution is strong and the stat progression is solid, but every single enemy and boss weakness uses a paraphrase or appends extra words rather than the exact pickup or weapon name, which would break clean game-engine lookups.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "All four weaknesses are paraphrases or appended descriptions: 'Blunt Force from Blessed Mace' (not 'Blessed Mace'), 'Sun-Touched Amulet radiance' (not 'Sun-Touched Amulet'), 'Vial of Holy Oil combustion' (not 'Vial of Holy Oil'), 'Ancient Keystone activation' (not 'Ancient Keystone'). Every single reference has a broken exact match."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Unlocking the iron gate (enc 0), a spectral bridge manifesting across the void (enc 1), and shattering protective wards around the boss arena (enc 2) are specific physical consequences. Enc 0 trigger is functional but somewhat generic ('unlocks the heavy iron gate')."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate cleanly (50/15 → 80/25 → 120/35) and the boss (500/60) is dramatically harder. With player health 200, cumulative encounter damage of 75 is tough but survivable on hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Skeleton Archer, Shadow Knight, Gargoyle Sentinel, Arch-Demon Malphas in a floating crumbling cathedral in a dark dimension — every element is tonally consistent with tense dark fantasy. Nothing feels out of place."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Blunt blessed weapon against skeletons, radiant amulet against shadow creatures, holy oil igniting a stone gargoyle, and a keystone draining demonic shields all have clear logical bases. Holy oil combustion on stone is a slight stretch."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations and enemies are all distinct. The Ancient Keystone's effect 'Allows access to the Arch-Demon chamber' is borderline — it's a gate key, not a combat item — but it functions as a unique level element."
+        }
+      },
+      "best_element": "The stat escalation is excellent: 50/15 → 80/25 → 120/35 → 500/60 creates a clear and intentional difficulty ramp that matches the hard difficulty label.",
+      "worst_element": "Every weakness uses a paraphrase or appended modifier ('Blunt Force from,' 'radiance,' 'combustion,' 'activation') rather than exact names — this would break reference lookups in any game engine and must be fixed.",
+      "overall": "Thematically strong and well-balanced, but the pervasive reference integrity failures are a systemic flaw that would require a pass through all weakness fields before this level could ship."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "mysterious",
+      "player_class": "illusionist",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "An atmospheric illusionist level climbing a decaying spire through mirror realms and an altar of truth. The encounter chain escalates dramatically in stats and the theme is evocative, but the first enemy's weakness references something that doesn't exist in the level, and the first trigger doesn't follow from defeating that enemy.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Void Sentinel weakness 'Mental Discordance' exists nowhere in the level — it is neither the player weapon nor any pickup. Glass Construct weakness 'Phantasm Staff' and Echo Knight weakness 'Prismatic Lens' are exact matches. Boss weakness 'Essence of Clarity' is an exact match. One fully broken reference at enc 0."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Opening the dusty tome reveals the location of the Shadow Key' is a player action, not a consequence of defeating the Void Sentinel — the enemy is disconnected from the progression. Enc 1 and enc 2 triggers are specific and causal. One meaningfully broken link."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate steeply (200/50 → 350/75 → 500/100) and the boss (1500/200) dwarfs all encounters. Player health 400 vs cumulative encounter damage of 225 is extremely tight, fitting brutal. Boss 200 damage in one hit is nearly half the player's HP."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Void Sentinel, Glass Construct, Echo Knight, the Faceless Archmage in a Spire of Lost Illusions — every element is mysterious, illusory, and reality-bending in a consistent way. The Phantasm Staff, Prismatic Lens, and Essence of Clarity all fit the illusionist's toolkit."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "The Phantasm Staff creating illusions to confuse a Glass Construct, a Prismatic Lens revealing vulnerabilities in an Echo Knight, and Essence of Clarity stabilizing a fractured archmage all have coherent logic. 'Mental Discordance' against a Void Sentinel would also make sense if it existed."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location, enemy, hazard, and pickup is distinct and specific. The gravity-shifting hazard at the Altar of Truth, glass shards in the Mirror Realm, and flickering darkness in the Archives are all unique and evocative."
+        }
+      },
+      "best_element": "The thematic atmosphere is the level's strongest asset — the Spire of Lost Illusions, Mirror Realm Corridor, and Altar of Truth create a coherent mysterious world that a player would want to explore.",
+      "worst_element": "The Void Sentinel's weakness 'Mental Discordance' references a nonexistent item, and enc 0's trigger is a player action rather than a defeat consequence — both flaws concentrate in encounter 0 and undermine the level's foundation.",
+      "overall": "A visually striking brutal-difficulty level that would be genuinely memorable if the enc 0 weakness and trigger were corrected; as written, it has structural flaws that would break gameplay at the very first encounter."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A serene forest sanctuary level with a clean pickup chain and an appropriate easy difficulty feel. The reference integrity is largely solid, but a health inversion at encounter 3 and some tonal inconsistencies — a Shadow Stalker and 'defiled shrine' in a supposedly serene level — pull the theme slightly.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Every weakness references an exact name: 'Silver-Tipped Spear' (player weapon), 'Essence of Clarity' (enc 0 pickup), 'Ancient Sun-Shard' (enc 1 pickup), 'Chronos Dial' (enc 2 pickup). Victory condition names both 'Chronos Dial' and 'Silver-Tipped Spear' exactly."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Clearing fog (enc 0) and a Moonlight Key drop (enc 1) are specific causal triggers. The enc 2 trigger 'The Stalker disintegrates, triggering the final chamber seal to open' is a bit generic — disintegrating as a mechanic is thin — but the chain still holds together."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Enemy health inverts at encounter 3: Shadow Stalker has 25 HP, lower than Mist Guardian's 30 HP. Damage escalates normally (5→8→10). Boss health 60 is higher than all encounter enemies but with player health 100 and total encounter damage of 23, this is well within easy range."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "The serene forest sanctuary setting is established well, but 'Shadow Stalker' is a tonally dark name for a serene level, the objective involves purifying a 'defiled shrine,' and 'Flickering magical torches that dim intermittently' adds unease. Several elements clash with the serene mood."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Clarity perception against a mist-based guardian, sunlight against a shadow creature, and time-slowing to expose a spirit's core are all logically impeccable. The Silver-Tipped Spear vs a plant spirit is a classic fae weakness. Every connection makes sense."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct. 'Ancient Shrine Threshold' is slightly generic as a location name, but every other field adds specific information."
+        }
+      },
+      "best_element": "The reference integrity is flawless — every weakness traces exactly to the named weapon or a prior pickup, and the victory condition references both the dial and the spear, creating a satisfying culmination.",
+      "worst_element": "Shadow Stalker as the encounter 3 enemy clashes with the serene mood; a name like 'Fading Shade' or 'Twilight Wisp' would preserve the spooky twilight element without breaking the serene tone.",
+      "overall": "A playable and coherent easy level with solid mechanical design, undermined by a thematic inconsistency that would cause a designer to send the level back for a mood pass."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "chaotic",
+      "player_class": "berserker",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A kinetic, chaos-themed berserker level that delivers on its premise: a shattering bridge collapses into a void pit, a rift tears open to a forbidden spire, and a time-slowing shard enables the final strike. The design is internally consistent and well-assembled.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses reference exact names: 'Iron Greataxe' (player weapon), 'Essence of Stability' (enc 0 pickup), 'Celestial Ember' (enc 1 pickup), 'Chronos Shard' (enc 2 pickup). Victory condition names 'Chronos Shard' exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Defeating the Warlord shatters the floor forcing a jump into the Void Pit, defeating the Construct opens a rift, slaying the Zealot releases a key — each trigger is a specific physical or narrative consequence making the sequence inevitable."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate cleanly (150/25 → 200/35 → 250/40) and boss (800/60) is clearly the hardest. Player health 500 with cumulative encounter damage of 100 makes hard feel comfortable — perhaps slightly generous for 'hard,' but not wrong."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Chaos Warlord, Shadow Construct, Corrupted Zealot, Chaos Archon in a reality-bending fortress are all coherent chaotic fantasy elements. 'Celestial Ember' is slightly at odds with the chaotic-corrupted theme — it reads as a holy element — but it's defensible."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Stability essence against a void construct (grounding it), celestial holy fire against a corrupted zealot, and time-slowing shard during a teleporting boss are all logical. An iron greataxe's brute force against an armored warlord is self-evidently sound."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Every location, enemy, hazard, and pickup is distinct and adds unique information. The Essence of Stability's timed defensive effect, Chronos Shard's freeze mechanic, and specific boss vulnerability window all feel designed rather than filled in."
+        }
+      },
+      "best_element": "The causal chain is the strongest aspect — the bridge shattering and forcing the player into a void pit is a memorable, physical consequence that makes the level structure feel inevitable and exciting.",
+      "worst_element": "Player health 500 vs hard difficulty with only 100 cumulative encounter damage makes the level feel underpowered for the difficulty label; the berserker is barely threatened before the boss.",
+      "overall": "A well-designed, thematically consistent chaos level that would be genuinely fun to play; the berserker's outsized health pool is the only notable imbalance."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "eerie",
+      "player_class": "necromancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A solid necromancer level set in a twilit necropolis with a clean pickup chain and good thematic consistency. The Lich King as a final boss is an obvious but fitting choice for an eerie necromancer level, and the escalating stats match medium difficulty well.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses are exact matches: 'Soul-Scythe' (player weapon), 'Essence Vial' (enc 0 pickup), 'Void Crystal' (enc 1 pickup), 'Ancient Rune' (enc 2 pickup). Victory condition names 'Ancient Rune' and describes its mechanic precisely."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "A hidden key revealed by the archer (enc 0) and a seal dropped by the sentinel (enc 1) are specific item-based triggers. The enc 2 trigger 'Clearing the knight summons the boss through the altar' is slightly generic — 'clearing' is a soft word, but the altar summoning mechanism is at least thematically specific."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (50/10 → 80/15 → 100/20) and the boss (300/35) is clearly the hardest. Player health 150 vs medium difficulty with cumulative encounter damage of 45 is appropriately challenging without being punishing."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Bone Archer, Cursed Sentinel, Spectral Knight, Lich King in an eternal-twilight necropolis are all eerie fantasy staples that cohere. 'Essence Vial' and 'Void Crystal' are slightly generic names but fit the necromancer's toolkit."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Soul energy against skeletal enemies, an alchemical vial disrupting a cursed sentinel, void crystal shielding against dark magic to counter a spectral knight, and an ancient rune breaking a lich's magical shield all have defensible logic."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The Whispering Crypt location from enc 0 is a near-generic necropolis name, and 'Ancient Rune' is a placeholder-sounding pickup name that could belong to any fantasy level. The Essence Vial's effect is also somewhat generic."
+        }
+      },
+      "best_element": "The numerical balance is the standout — a perfectly ascending stat ladder (50/10 → 80/15 → 100/20) capped by a boss that is clearly 3x as tough, calibrated precisely to medium difficulty.",
+      "worst_element": "'Ancient Rune' as a pickup name is too generic; a specific rune name (e.g., 'Rune of Unbinding') would add flavor without changing the mechanics.",
+      "overall": "A competent, well-balanced eerie necromancer level that would be enjoyable to play; it lacks the standout design moments of the best levels but has no critical flaws."
+    }
+  },
+  {
+    "case": {
+      "genre": "fantasy",
+      "mood": "desolate",
+      "player_class": "ranger",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A desolate wasteland ranger level with a clean pickup chain and escalating threats that match the brutal difficulty label. The player's 100 HP is under immense pressure from the start, which is appropriate for brutal but borders on unplayable — the enc 2 enemy alone can two-shot the player.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weaknesses are exact matches for 'Iron Piercing Arrows,' 'Moonlight Phial,' 'Bottled Sunflare,' and 'Ancient Heartstone.' Victory condition says 'Heartstone' rather than 'Ancient Heartstone' — a minor but identifiable truncation."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "A bridge key (enc 0) and a gate-lowering mechanism guarded by the stalker (enc 1) are specific triggers. Enc 2 trigger 'Opening the gate triggers the boss's awakening' is thin — the player opens the gate, not a consequence of defeating the enemy. Two strong triggers, one weak."
+        },
+        "balance": {
+          "score": 3,
+          "reason": "Stats escalate properly (50/20 → 75/35 → 120/50) and the boss (500/80) is hardest. However, with player health only 100, enc 1 alone deals 35 per hit, enc 2 deals 50, and the boss deals 80 — the player is nearly one-shot by the boss and two-shot by enc 2, making survival feel less like skill and more like luck for brutal."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Cursed Sentinel on a whispering bridge, Shadow Stalker in sunken ruins, Corrupted Warden at the void threshold, and the Eldritch Blight as boss — all fit a desolate ash-covered wasteland with void corruption. The Bottled Sunflare and Moonlight Phial are tonally appropriate."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Moonlight blinding a shadow stalker, sunlight-coated arrows against void entities, and a heartstone stabilizing an eldritch creature's energy are all logical connections. Iron arrows penetrating a sentinel's armor is self-evident."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct. The Whispering Bridge and Sunken Ruins are specific and evocative. The Void Threshold is slightly generic, but most fields add unique information."
+        }
+      },
+      "best_element": "Mechanical sense is flawless — every pickup-weakness pair has an obvious logical basis rooted in light vs. darkness and stability vs. void corruption, giving the ranger's toolkit thematic coherence.",
+      "worst_element": "The balance creates a near-impossible survivability problem: with 100 HP, the player faces 50-damage hits in enc 2 and an 80-damage boss strike that nearly one-shots them; even for brutal, this needs either higher player health or lower per-hit damage.",
+      "overall": "A thematically strong and mechanically coherent brutal level that would be punishing in a satisfying way if the player health were raised to at least 150 to make enc 2 and the boss survivable with skill rather than luck."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "A well-constructed sci-fi horror level set on a derelict station, with an engineer systematically dismantling rogue machines to reach the AI overseer. The pickup chain is clean, the technical theme is consistent, and the stat escalation fits hard difficulty. A minor victory condition truncation is the only notable flaw.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weaknesses are exact: 'Plasma Welder,' 'Coolant Canister,' 'Data Encryption Key,' 'AI Logic Virus.' Victory condition says 'upload the virus' rather than 'AI Logic Virus' — a minor truncation but the item is clearly identifiable."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Destroying the bot causes a power surge unlocking the cooling vent (enc 0), deactivating the drone opens blast doors (enc 1), bypassing the unit's logic board triggers the override sequence (enc 2) — all are specific technical consequences of each encounter."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate (50/15 → 75/20 → 100/25) and boss (300/40) is clearly harder. With player health 100 and hard difficulty, cumulative encounter damage of 60 is threatening, and the 40-damage boss hit leaves very little margin. Appropriate for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Scrap-Bot, Corrupted Security Drone, Aggressive Maintenance Unit, The Core Overseer in an oxygen-depleted orbital station — every element is consistent sci-fi horror engineering. Coolant, encryption keys, and logic viruses are all thematically grounded."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Plasma welding cuts apart a scrap-bot, coolant corrodes robotic armor, an encryption key bypasses a maintenance unit's security, and a logic virus causes system failure in an AI overseer — every connection is technically logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Maintenance Tunnel Alpha, Central Reactor Core, Navigation Bridge Access are all distinct locations. Every hazard — live wires, radiation leaks, low gravity — is specific to its setting and adds unique information."
+        }
+      },
+      "best_element": "The causal chain is technically precise and satisfying: each defeat triggers a specific engineering consequence (power surge, blast doors, override sequence) that makes the station feel like a real system being dismantled.",
+      "worst_element": "The victory condition drops the item's full name, referring only to 'the virus' — a minor fix that would improve reference integrity to a clean 5.",
+      "overall": "A polished, technically coherent hard sci-fi level that would be genuinely tense and satisfying to play; it is one of the stronger entries in this set."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "desolate",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "A desolate space station level for a chronomancer, with a clean pickup chain and good sci-fi theme execution. The enc 0 trigger is disconnected from defeating the enemy, which is the main structural weakness in an otherwise well-assembled level.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses are exact: 'Temporal Phase Blade,' 'Entropy Stabilizer,' 'Quantum Singularity Core,' 'Chrono-Key.' Victory condition names 'Chrono-Key' exactly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Opening the main containment gate restores power to the facility' is a player action, not a consequence of defeating the Stasis Glitcher — the enemy is irrelevant to the progression mechanic. Enc 1 (mainframe decryption code) and enc 2 (unlocking path to central processor) are specific consequences. One broken link at the start."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (50/10 → 80/15 → 120/20) with the boss (300/35) clearly harder. Player health 200 for medium difficulty with cumulative encounter damage of 45 is well-calibrated."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Stasis Glitcher, Void Echo, Sentinel Mark IV, Architect of Desolation on derelict station Aegis-9 — every element fits the desolate sci-fi chronomancer theme. Entropy Stabilizer, Quantum Singularity Core, and Chrono-Key are all thematically apt."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "A temporal blade against a stasis-glitching entity, an entropy stabilizer against a void echo, a quantum singularity core disrupting a sentinel's machinery, and a chrono-key trapping an AI in a feedback loop are all logically sound temporal/sci-fi connections."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct and evocative. 'Corridor of Whispers' is slightly generic compared to the specificity of 'Abandoned Cryo-Lab' and 'Reactor Core Antechamber,' but all enemies, hazards, and pickups are specific and add unique information."
+        }
+      },
+      "best_element": "The stat balance is exemplary — a perfect ascending ladder (50/10 → 80/15 → 120/20 → 300/35) that feels calibrated rather than generated.",
+      "worst_element": "The enc 0 trigger describes the player opening a gate, not a consequence of defeating the Stasis Glitcher — the enemy could be skipped entirely based on the trigger logic, which breaks the causal chain.",
+      "overall": "A well-designed desolate sci-fi level with excellent balance and coherent theme; fixing the enc 0 trigger to flow from the enemy defeat would make this a near-flawless level."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "chaotic",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A chaotic sci-fi stormcaller level set on a station falling into a black hole, with dramatic stat escalation and an imposing boss. However, every weakness after encounter 0 appends extra descriptors to the pickup names rather than using exact names, and a location name is internally doubled ('Reactor Core Core').",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Enc 0: 'Stormcaller Lightning Lance' exact match. Enc 1: 'Ionic Capacitor overload' — appends 'overload' to 'Ionic Capacitor.' Enc 2: 'Overclocked Heat Sink discharge' — appends 'discharge.' Boss: 'Singularity Core instability' — appends 'instability.' Three of four references have broken exact-name matching."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Destroying the drone triggers a gravity collapse revealing a path (enc 0), defeating the Warden vents the core opening a bulkhead (enc 1), shattering the construct deactivates shield generators (enc 2) — all are specific consequences. Enc 1 is slightly generic (core venting) but connected."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate (150/40 → 250/60 → 350/80) and boss (1000/150) is massively harder. Player health 200 with brutal difficulty means cumulative encounter damage of 180 nearly kills the player before the boss — fitting for brutal, though the boss's 150 damage nearly one-shots the player."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Phase-Shifting Drone, Void Warden, Glitch Construct, Entropy Sovereign are all chaotic sci-fi elements fitting the black-hole-collapse premise. 'Reactor Core Core' is a typographical duplication that breaks immersion. Theme is otherwise strong."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Lightning against a phase-shifting drone, ionic overload against a void warden, heat sink discharge against a glitch construct, and singularity instability against an entropy sovereign all have functional sci-fi logic, even if the appended words aren't exact item names."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "'Reactor Core Core' is a typographical error and a redundant location name. The level otherwise has distinct locations and enemies, but this error is a clear quality failure that would be caught in a design review."
+        }
+      },
+      "best_element": "The boss stat scaling is dramatic and appropriate for brutal difficulty — the Entropy Sovereign at 1000 HP and 150 damage creates a genuinely imposing climax that feels earned after the escalating encounters.",
+      "worst_element": "The systematic addition of 'overload,' 'discharge,' and 'instability' to every pickup name in the weakness field is a pervasive reference integrity failure that would break the entire level's weakness system in a game engine.",
+      "overall": "A high-energy brutal level with a great climactic boss, but the weakness reference failures and location name typo would need correction before this could function as a shipped game level."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A compact, well-structured easy sci-fi level for an artificer navigating an abandoned research station. The pickup chain is clean, the stat escalation is precise, and the mysterious mood is maintained throughout. The victory condition truncates the key name, which is a minor issue in an otherwise solid design.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weaknesses are exact: 'Plasma Wrench,' 'Conductive Fluid,' 'Phase Emitter,' 'Encrypted Core Key.' Victory condition says 'Input the key into the mainframe' rather than naming 'Encrypted Core Key' exactly — a minor truncation that is still identifiable."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger 'Opening the main circuit breaker reveals the path to the laboratory' is a player action, not a consequence of defeating the Scrap Drone. Enc 1 trigger 'Deactivating the sentry grants access' is similarly player-action-focused. Enc 2 trigger 'Destroying the automaton triggers the final security lock sequence' is a defeat consequence. Two triggers lack causal connection to the enemy defeat."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (20/5 → 30/8 → 40/10) and boss (100/15) matches player health. For easy with player health 100, total encounter damage of 23 is trivially survivable, and the boss is manageable."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Scrap Drone, Corrupted Sentry, Security Automaton, The Architect AI on an abandoned orbital station — all fit the mysterious sci-fi theme. The 'Dark Laboratory' location name is slightly generic but fits. Overall the theme is consistent."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Plasma wrench as a cutting tool against a scrap drone, conductive fluid shorting a sentry's circuits, a phase emitter bypassing energy shields on an automaton, and an encrypted key overriding an AI — all are technically logical and internally consistent."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "Locations are distinct. 'Dark Laboratory' is slightly generic. All enemies, hazards, and pickups are unique and specific. The overall level doesn't have filler fields."
+        }
+      },
+      "best_element": "The mechanical sense is flawless — every pickup-weakness pair has a grounded technical logic (conductive fluid shorts circuits, phase emitter bypasses shields) that makes the artificer's toolkit feel purposeful.",
+      "worst_element": "Two of three encounter triggers describe player actions (opening a circuit breaker, deactivating a sentry) rather than consequences of defeating the enemy, meaning encounters 0 and 1 are structurally optional based on trigger logic.",
+      "overall": "A clean, beginner-friendly sci-fi level with excellent balance and mechanics; the causal chain issues prevent it from being a standout design, but it would still be a pleasant easy experience."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "ominous",
+      "player_class": "shadowblade",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "An ominous sci-fi shadowblade level aboard a derelict research vessel, with a coherent pickup chain and escalating mechanical threats. The level holds together well, but the enc 0 trigger — an airlock alarm alerting drones — is a consequence of the player's action rather than defeating the enemy, creating a minor causal break.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses are exact: 'Shadowblade,' 'EMP Grenade,' 'Thermal Bypass Module,' 'Void Keycard.' Victory condition names 'Void Keycard' exactly."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0: 'Opening the airlock sounds an alarm that alerts the security drones' — this is a player action, not a consequence of defeating the Cyborg Scavenger. The defeat itself has no stated consequence. Enc 1 trigger (encrypted data core download triggering lockdown) and enc 2 trigger (reactor stability field releasing the boss) are specific and causal."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Stats escalate (50/15 → 80/20 → 120/30) and boss (300/40) is clearly harder. With player health 100 and hard difficulty, cumulative encounter damage of 65 is threatening. Boss 40 damage per hit is dangerous but survivable — tight and appropriate for hard."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Cyborg Scavenger, Security Drone Mk-IV, Prototype War-Bot, The Core Architect on a derelict research vessel — every element is tonally consistent with ominous sci-fi. EMP Grenade, Thermal Bypass Module, and Void Keycard all fit the shadowblade's infiltration toolkit."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Shadow-cutting past a scavenger's defenses, EMP disabling a drone's mechanical shielding, a thermal module neutralizing heat-based armor on a war-bot, and a keycard collapsing a synthetic core — all have clear, functional sci-fi logic."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All three locations are distinct (maintenance corridor, data hub, reactor core) and all enemies are unique. The setting description has a minor formatting issue (missing 'A' at the start of 'derelict research vessel'), but otherwise fields are specific."
+        }
+      },
+      "best_element": "The mechanical sense is impeccable — the shadowblade's kit (EMP, thermal bypass, void keycard) forms a coherent infiltration toolkit that makes thematic sense for the class navigating a technological threat.",
+      "worst_element": "The enc 0 trigger describes an alarm from opening an airlock, not a consequence of defeating the Cyborg Scavenger — the enemy's death is mechanically irrelevant to progression at that encounter.",
+      "overall": "A solid ominous sci-fi level with excellent theme and mechanics that would be satisfying to play; the enc 0 trigger needs to be tied to the enemy defeat to complete the causal chain."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "An eerie bio-mechanical station level with an interesting alchemist-themed toolkit and a botanical greenhouse encounter that stands out. However, the pickup chain is structurally inverted: each enemy is weak to the pickup found in the same encounter rather than a prior one, which breaks the forward-flowing reference model.",
+      "scores": {
+        "reference_integrity": {
+          "score": 2,
+          "reason": "Malformed Drone weakness 'Alchemical Acid Vial' — the vial is found in enc 0 (same encounter, not prior). Corrupted Security Bot weakness 'Corrosive Vapors' — found in enc 1 (same encounter). Mutated Vines weakness 'Incendiary Catalyst' — found in enc 2 (same encounter). The rubric requires prior-encounter pickups; all three enemy weaknesses reference same-encounter items. Boss weakness 'Incendiary Catalyst' correctly references an enc 2 pickup."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc 0 trigger (opening a door releases spores alerting security) is a player action. Enc 1 trigger (scanning a terminal clears the path) is also a player action. Enc 2 trigger (harvesting a rare sample locks down the room) is a consequence of a player action. None are direct consequences of defeating the encounter enemy."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (50/10 → 80/15 → 100/20) and boss (300/30) is clearly harder. Player health 150 for medium with cumulative encounter damage of 45 is well-calibrated."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Malformed Drone in a cryo-bay, Corrupted Security Bot in a research corridor, Mutated Vines in a botanical greenhouse, and a Central AI Hive-Mind as the boss — the level's progression from mechanical to biological to hybrid corruption is thematically excellent."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "Acid vial dissolving metal drones, corrosive vapors melting reinforced plating, incendiary catalyst igniting mutated organic vines, and the same catalyst injected into a mainframe — all connections are chemically and mechanically logical."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "Each encounter is set in a distinct, evocative location with a unique hazard and enemy type. The progression from cryo-storage to research corridor to greenhouse shows intentional level design rather than generic placeholder content."
+        }
+      },
+      "best_element": "The thematic progression — mechanical drones, corrupted bots, mutated vines — creates a coherent arc of increasing bio-mechanical corruption that makes the level feel designed as a narrative whole.",
+      "worst_element": "The entire pickup-weakness chain is inverted: every enemy is weak to the pickup found in their own encounter rather than a prior one, meaning the player must find the weapon and defeat the enemy simultaneously rather than earning the advantage first.",
+      "overall": "A thematically imaginative level with excellent mechanics and balance, but the structural inversion of the pickup chain is a fundamental design flaw that would require reworking the entire enemy-weakness system to fix."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "whimsical",
+      "player_class": "rogue",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "A delightfully whimsical sci-fi level set in a bubble-gum factory on a distant moon, with standout names like Glitter-Bot, Disco Sentinel, and Mega-Computer Overlord. The reference chain is clean, but the pickup effects have weak mechanical connections to the enemies they defeat, and the Super-Slippery Lubricant as a weakness for a data slime is particularly illogical.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Weaknesses are exact: 'Plasma Dagger,' 'Super-Slippery Lubricant,' 'Antique Copper Wrench,' 'Golden Circuitry Key.' Victory condition says 'use the key' rather than 'Golden Circuitry Key' — a minor truncation but identifiable."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Defeating the bot activates a bridge (enc 0) and absorbing slime data unlocks a blast door (enc 1) are specific consequences. Destroying the Sentinel 'initiates the boss override sequence' (enc 2) is somewhat generic but still causally connected."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (20/5 → 30/8 → 40/10) and boss (100/15) is harder than any encounter enemy. Player health 100 with total encounter damage of 23 is safely within easy range."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Glitter-Bot, Bubbling Data-Slime, Disco Sentinel, and Mega-Computer Overlord in a bubble-gum themed robotic assembly plant — the whimsy is fully committed and every element belongs in this absurd, charming world."
+        },
+        "mechanical_sense": {
+          "score": 2,
+          "reason": "Super-Slippery Lubricant 'reduces friction for boss movement' — the effect description is about the boss, not the Bubbling Data-Slime that the lubricant supposedly defeats. Antique Copper Wrench as a weakness for the Disco Sentinel has unclear logic (wrenches vs. disco?). Two connections are nonsensical or misdescribed."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct and specific. The Antique Copper Wrench effect 'Essential for boss structural failure' is vague rather than describing a specific mechanical effect, but other fields add unique information."
+        }
+      },
+      "best_element": "The thematic commitment is outstanding — a bubble-gum themed robotic factory with a Glitter-Bot, Disco Sentinel, and Mega-Computer Overlord is a fully realized whimsical world that a player would want to spend time in.",
+      "worst_element": "The Super-Slippery Lubricant's effect description says it 'reduces friction for boss movement,' which makes no sense as a weakness mechanic for the Bubbling Data-Slime in encounter 1 — the pickup description and its use case are disconnected.",
+      "overall": "An imaginative and charming easy level that would be fun for its tone alone, but the mechanical incoherence in the pickup effects needs to be resolved before it would function correctly as a game config."
+    }
+  },
+  {
+    "case": {
+      "genre": "sci-fi",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "A geomancer level on a dying space station with a clean pickup chain and perfect stat escalation. The brutal difficulty is fully realized, but 'serene' as a mood sits in stark tension with brutal combat, Gravity Wardens, and zero-gravity fluctuations — the level's feel is imposing and dangerous, not serene.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "All weaknesses are exact: 'Geomantic Impact Hammer,' 'Resonance Crystal,' 'Molecular Stabilizer,' 'Singularity Core.' Victory condition names 'Singularity Core' exactly."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Destroying the sentry activates a gravity lift (enc 0), deactivating the drone opens blast doors (enc 1), and defeating the warden initiates a final lockdown sequence (enc 2) — all are specific, physical consequences of each encounter that make the chain feel engineered."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Stats escalate perfectly (150/40 → 200/60 → 300/80) and the boss (1000/150) is dramatically harder than any encounter. With player health 200, cumulative encounter damage of 180 means the player arrives at the boss nearly dead — precisely what brutal difficulty should feel like."
+        },
+        "thematic_coherence": {
+          "score": 3,
+          "reason": "Crystalline Sentry, Sonic Drone, Gravity Warden, Prime Architect are all coherent sci-fi geomancer antagonists. However, the 'serene' mood label is contradicted by every element of the level: Obsidian Garden, brutal mechanical combat, zero-gravity fluctuations, and a boss called Prime Architect on a 'dying star' station. Nothing reads as serene."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "A geomantic hammer shattering a crystalline sentry, a resonance crystal disrupting sonic armor, a molecular stabilizer neutralizing a gravity warden, and a singularity core overloading the architect — all are geophysically logical connections."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The Obsidian Garden, Azure Spire, and Core Chamber are distinct, specific locations. Every hazard is unique to its setting. No field is repeated or generic. The level is fully specified."
+        }
+      },
+      "best_element": "The causal chain and stat escalation work together perfectly: each defeat triggers a specific mechanical transition (gravity lift, blast doors, lockdown), and the stats create a perfectly calibrated survival crisis for brutal difficulty.",
+      "worst_element": "The 'serene' mood label is completely contradicted by the level's content — there is nothing peaceful about the Obsidian Garden, zero-gravity combat, and a boss dealing 150 damage; the mood either needs to be 'ominous' or the level needs a thematic rework.",
+      "overall": "Mechanically one of the strongest levels in the set — perfect balance, perfect causal chain, perfect reference integrity — but the mood label mismatch means it would require either a reskin or a relabeling before it could ship as a 'serene' level."
+    }
+  }
+]

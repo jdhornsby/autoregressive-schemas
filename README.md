@@ -2,7 +2,7 @@
 
 Does field ordering in a JSON tool-call schema affect what a small LLM generates?
 
-This repo tests that hypothesis using Gemini's structured output mode. Six schema variants — same 39 fields, same prompt, 64 input cases — are judged on a rubric by Claude and compared statistically. A second experiment compares Gemini 3 Flash Preview vs 3.5 Flash head-to-head.
+This repo tests that hypothesis using Gemini's structured output mode. Six schema variants — same 39 fields, same prompt, 64 input cases — are judged on a Likert rubric by Claude and compared statistically. A follow-up experiment sweeps the model's thinking budget across five conditions and measures completability errors via a narrower per-encounter weakness-reachability judge. A third experiment compares Gemini 3 Flash Preview vs 3.5 Flash head-to-head.
 
 ## Setup
 
@@ -30,10 +30,18 @@ uv run ars score models flash_v1_gemini_35_flash flash_v1_gemini_3_flash_preview
 
 # Analyze
 uv run ars analyze variants   # summary stats, paired comparisons, striking pairs, chart
+uv run ars analyze thinking   # cross-thinking-level deltas, cost-per-quality, failure-mode pull
 uv run ars analyze models flash_v1_gemini_35_flash flash_v1_gemini_3_flash_preview
+
+# Completability + cost charts (condition × variant)
+uv run ars analyze reachability   # per-encounter weakness-reachability break rate
+uv run ars analyze tokens         # mean thinking tokens per generation
 ```
 
-Judging is done out-of-band by Claude Code sub-agents using `judge_prompt.md`.
+Judging is done out-of-band by Claude Code sub-agents. `judge_prompt.md` is the
+Likert rubric; `judge_prompt_reachability.md` is the narrower binary judge that
+checks whether each encounter's named weakness is satisfiable by the player's
+inventory at that point.
 
 ## The six variants
 

@@ -59,6 +59,106 @@ def generate(exec_id: str, cases: int | None, variants: tuple[str, ...], thinkin
     console.print(f"\n[green]{n} generations[/] saved to {paths.raw_dir()}")
 
 
+# generate-suite
+
+@cli.command("generate-suite")
+@click.option(
+    "--thinking", "thinking_levels", multiple=True,
+    type=click.Choice(["minimal", "low", "medium", "high"]),
+    default=("low", "medium", "high"),
+    help="Thinking levels to run (repeatable). Default: low, medium, high.",
+)
+@click.option(
+    "--variants", multiple=True,
+    help="Variant names (default: all six).",
+)
+@click.option("--cases", type=int, default=None, help="Limit to first N cases.")
+@click.option(
+    "--force", is_flag=True, default=False,
+    help="Re-run pairs whose output files already exist (default: skip).",
+)
+def generate_suite(
+    thinking_levels: tuple[str, ...],
+    variants: tuple[str, ...],
+    cases: int | None,
+    force: bool,
+):
+    """Loop generate over (thinking_level, variant) pairs.
+
+    Names each exec_id as f"{thinking}_{suffix}" where suffix is the
+    canonical variant index (1=flat_alpha .. 6=nested_narrative). This is
+    the file naming the analyzer expects. Idempotent by default: pairs
+    whose raw output already exists are skipped unless --force is passed.
+    """
+    from .analysis.load import VARIANT_MAP, VARIANT_SUFFIX
+    from .run import run_variants
+
+    all_cases = json.loads(paths.cases_path().read_text())
+    if cases:
+        all_cases = all_cases[:cases]
+
+    if variants:
+        unknown = set(variants) - set(VARIANT_SUFFIX)
+        if unknown:
+            raise click.BadParameter(f"Unknown variants: {sorted(unknown)}")
+        selected_variants = [v for v in VARIANT_MAP.values() if v in set(variants)]
+    else:
+        selected_variants = list(VARIANT_MAP.values())
+
+    pairs: list[tuple[str, str, str]] = []  # (thinking, suffix, variant)
+    for thinking in thinking_levels:
+        for variant in selected_variants:
+            suffix = VARIANT_SUFFIX[variant]
+            pairs.append((thinking, suffix, variant))
+
+    skipped: list[str] = []
+    to_run: list[tuple[str, str, str]] = []
+    for thinking, suffix, variant in pairs:
+        exec_id = f"{thinking}_{suffix}"
+        existing = list(paths.raw_dir().glob(f"{exec_id}_*.json"))
+        if existing and not force:
+            skipped.append(f"{exec_id} ({variant})")
+        else:
+            to_run.append((thinking, suffix, variant))
+
+    if skipped:
+        console.print(f"[yellow]Skipping {len(skipped)} existing pair(s):[/] "
+                      + ", ".join(skipped))
+
+    if not to_run:
+        console.print("[green]Nothing to do.[/]")
+        return
+
+    total_calls = len(to_run) * len(all_cases)
+    console.print(
+        f"[bold]Running {len(to_run)} pair(s), {total_calls} generations[/]"
+    )
+
+    grand_total = 0
+    for i, (thinking, suffix, variant) in enumerate(to_run, 1):
+        exec_id = f"{thinking}_{suffix}"
+        console.print(
+            f"\n[bold cyan]({i}/{len(to_run)}) {exec_id}[/] — "
+            f"{variant} @ thinking={thinking}"
+        )
+
+        with Progress(
+            SpinnerColumn(), TextColumn("[bold]{task.description}"),
+            BarColumn(), MofNCompleteColumn(), console=console,
+        ) as progress:
+            task = progress.add_task(exec_id, total=0)
+
+            def on_progress(current: int, total: int, label: str) -> None:
+                progress.update(task, total=total, completed=current, description=label)
+
+            n = run_variants(exec_id, all_cases, [variant], thinking, on_progress)
+            grand_total += n
+
+    console.print(
+        f"\n[green]{grand_total} total generations[/] saved to {paths.raw_dir()}"
+    )
+
+
 # compare
 
 @cli.command()
@@ -161,45 +261,238 @@ def analyze():
     """Run analysis and produce reports."""
 
 
+THINKING_CHOICES = ["minimal", "low", "medium", "high"]
+
+
 @analyze.command("variants")
-def analyze_variants():
-    """Full analysis of the schema variant experiment."""
+@click.option(
+    "--thinking", type=click.Choice(THINKING_CHOICES), default="minimal",
+    help="Thinking level to analyze.",
+)
+@click.option("--variants", multiple=True, help="Variant names (default: all six).")
+@click.option(
+    "--reference", default="nested_narrative",
+    help="Reference variant for paired comparisons.",
+)
+@click.option(
+    "--comparator", multiple=True,
+    help="Comparator variants for paired comparisons (default: flat_alpha, ui_contract, "
+         "alpha_nested).",
+)
+@click.option(
+    "--striking-pair", nargs=2, default=("nested_narrative", "flat_alpha"),
+    metavar="VARIANT_A VARIANT_B",
+    help="Two variants to dump striking-case diffs for.",
+)
+@click.option(
+    "--expected-n", type=int, default=64,
+    help="Expected case count per variant. Pass 0 to skip the check.",
+)
+def analyze_variants(
+    thinking: str, variants: tuple[str, ...], reference: str,
+    comparator: tuple[str, ...], striking_pair: tuple[str, str], expected_n: int,
+):
+    """Full analysis of the schema variant experiment at one thinking level."""
     from .analysis.chart import run as run_chart
+    from .analysis.paired import DEFAULT_COMPARATORS
     from .analysis.paired import run as run_paired
     from .analysis.striking import run as run_striking
     from .analysis.summary import run as run_summary
 
-    console.print("[bold]Summary statistics[/]")
-    df = run_summary()
+    variant_list = list(variants) if variants else None
+    comparators = list(comparator) if comparator else list(DEFAULT_COMPARATORS)
+    expected = expected_n if expected_n > 0 else None
+
+    console.print(f"[bold]Summary statistics[/] (thinking={thinking})")
+    df = run_summary(thinking, variant_list, expected_n=expected)
     table = Table()
     for col in df.columns:
         table.add_column(col, justify="right" if col != "variant" else "left")
     for _, row in df.iterrows():
         table.add_row(*[str(v) for v in row])
     console.print(table)
-    console.print(f"  -> {paths.analysis_dir() / '01_summary_stats.csv'}")
+    console.print(f"  -> {paths.analysis_dir() / f'01_summary_stats_{thinking}.csv'}")
     console.print()
 
     console.print("[bold]Paired comparisons[/]")
-    summaries = run_paired()
+    summaries = run_paired(thinking, reference, comparators)
     for s in summaries:
         console.print(
             f"  {s['pair']}: {s['mean_diff']:+.4f} "
-            f"({s['narrative_wins']}-{s['comparator_wins']}-{s['ties']})"
+            f"({s['reference_wins']}-{s['comparator_wins']}-{s['ties']})"
         )
     console.print()
 
     console.print("[bold]Striking pairs[/]")
-    top = run_striking()
+    a, b = striking_pair
+    top = run_striking(thinking, a, b)
     for cid, diff in top:
         console.print(f"  {cid}: {diff:+.2f}")
     console.print()
 
     console.print("[bold]Chart[/]")
-    out_path = run_chart()
+    out_path = run_chart(thinking, variant_list, expected_n=expected)
     console.print(f"  -> {out_path}")
 
     console.print(f"\n[green]All outputs written to {paths.analysis_dir()}[/]")
+
+
+@analyze.command("thinking")
+@click.option(
+    "--level", "levels", multiple=True, type=click.Choice(THINKING_CHOICES),
+    default=("minimal", "low", "medium"),
+    help="Thinking levels to compare (repeatable).",
+)
+@click.option(
+    "--variants", multiple=True,
+    default=("flat_alpha", "nested_narrative"),
+    help="Variants to compare across thinking levels (repeatable).",
+)
+@click.option(
+    "--baseline", type=click.Choice(THINKING_CHOICES), default="minimal",
+    help="Baseline thinking level for per-case deltas.",
+)
+@click.option(
+    "--failure-mode-report", is_flag=True, default=False,
+    help="Also generate 04_failure_mode_{level}.md for each non-baseline level.",
+)
+@click.option(
+    "--failure-target", default="flat_alpha", show_default=True,
+    help="Variant whose baseline failures to track for --failure-mode-report.",
+)
+@click.option(
+    "--failure-reference", default="nested_narrative", show_default=True,
+    help="Variant shown for context in failure-mode markdown.",
+)
+@click.option(
+    "--failure-baseline-threshold", type=float, default=3.5, show_default=True,
+    help="Cases scoring below this at baseline count as 'failing'.",
+)
+@click.option(
+    "--failure-fixed-threshold", type=float, default=4.0, show_default=True,
+    help="Failing cases that reach this at a new level count as 'fixed'.",
+)
+def analyze_thinking(
+    levels: tuple[str, ...], variants: tuple[str, ...], baseline: str,
+    failure_mode_report: bool, failure_target: str, failure_reference: str,
+    failure_baseline_threshold: float, failure_fixed_threshold: float,
+):
+    """Compare variant(s) across thinking levels.
+
+    The core follow-up: does turning on thinking compensate for poor schema order?
+    """
+    from .analysis import thinking as thinking_mod
+
+    report = thinking_mod.run(list(levels), list(variants), baseline=baseline)
+
+    summary = report["summary"]
+    table = Table(title="Per-variant × thinking-level summary")
+    for col in ["variant", "thinking_level", "n", "weighted_mean",
+                "weighted_sd", "mean_latency_ms", "mean_thinking_tokens"]:
+        table.add_column(col, justify="right" if col != "variant" else "left")
+    for _, row in summary.iterrows():
+        table.add_row(
+            row["variant"], row["thinking_level"], str(row["n"]),
+            f"{row['weighted_mean']:.3f}", f"{row['weighted_sd']:.3f}",
+            str(row["mean_latency_ms"]), str(row["mean_thinking_tokens"]),
+        )
+    console.print(table)
+    console.print()
+
+    if report["deltas"]:
+        console.print(f"[bold]Per-case deltas vs {baseline}[/]")
+        for d in report["deltas"]:
+            console.print(
+                f"  {d['variant']} {d['comparison']}: "
+                f"mean {d['mean_diff']:+.4f} "
+                f"({d['level_wins']}-{d['baseline_wins']}-{d['ties']})"
+            )
+        console.print()
+
+    console.print(f"Summary:          {report['_paths']['summary']}")
+    console.print(f"Deltas:           {report['_paths']['deltas']}")
+    console.print(f"Chart:            {report['_paths']['chart']}")
+    console.print(f"Cost-per-quality: {report['_paths']['cost_per_quality']}")
+    console.print(f"Criterion lift:   {report['_paths']['criterion_lift']}")
+
+    if failure_mode_report:
+        non_baseline = [lvl for lvl in levels if lvl != baseline]
+        console.print()
+        console.print(f"[bold]Failure-mode pull[/] ({failure_target} @ {baseline} → new levels)")
+        fm = thinking_mod.failure_mode_report(
+            target_variant=failure_target,
+            reference_variant=failure_reference,
+            new_levels=non_baseline,
+            baseline=baseline,
+            baseline_threshold=failure_baseline_threshold,
+            fixed_threshold=failure_fixed_threshold,
+        )
+        for level, counts in fm["counts"].items():
+            console.print(
+                f"  {level}: fixed={counts['fixed']} "
+                f"improved={counts['improved']} "
+                f"still_broken={counts['still_broken']} "
+                f"(of {counts['matched']} matched / "
+                f"{counts['total_failing_at_baseline']} failing at baseline)"
+            )
+        for level, path in fm["paths"].items():
+            console.print(f"  {level} report: {path}")
+
+
+@analyze.command("reachability")
+def analyze_reachability():
+    """Per-encounter weakness-reachability rates × condition (uses reachability_*.json)."""
+    import pandas as pd
+
+    from .analysis.reachability import run as run_reachability
+
+    report = run_reachability()
+    wide = report["wide"]
+
+    table = Table(title="Encounter break rate (%) by variant × condition")
+    table.add_column("variant")
+    for col in wide.columns:
+        table.add_column(col, justify="right")
+    for variant, row in wide.iterrows():
+        cells = [variant]
+        for col in wide.columns:
+            v = row[col]
+            cells.append("—" if pd.isna(v) else f"{v:.1f}")
+        table.add_row(*cells)
+
+    console.print(table)
+    console.print()
+    console.print(f"Wide CSV: {report['_paths']['wide']}")
+    console.print(f"Long CSV: {report['_paths']['long']}")
+    console.print(f"Chart:    {report['_paths']['chart']}")
+
+
+@analyze.command("tokens")
+def analyze_tokens():
+    """Mean thinking tokens per generation × condition (uses raw/*.json stats)."""
+    import pandas as pd
+
+    from .analysis.tokens import run as run_tokens
+
+    report = run_tokens()
+    wide = report["wide"]
+
+    table = Table(title="Mean thinking tokens per level by variant × condition")
+    table.add_column("variant")
+    for col in wide.columns:
+        table.add_column(col, justify="right")
+    for variant, row in wide.iterrows():
+        cells = [variant]
+        for col in wide.columns:
+            v = row[col]
+            cells.append("—" if pd.isna(v) else f"{int(round(v))}")
+        table.add_row(*cells)
+
+    console.print(table)
+    console.print()
+    console.print(f"Wide CSV: {report['_paths']['wide']}")
+    console.print(f"Long CSV: {report['_paths']['long']}")
+    console.print(f"Chart:    {report['_paths']['chart']}")
 
 
 @analyze.command("models")

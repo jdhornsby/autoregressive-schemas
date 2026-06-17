@@ -1,0 +1,322 @@
+[
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "tense",
+      "player_class": "engineer",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "This level holds together well as a corporate infiltration sequence: maintenance vent to server room to data core is a coherent spatial progression, and the engineer's tools feel purposeful against electronic enemies. The boss victory condition is slightly underspecified (no named virus or device), but the overall design reads as intentional rather than field-filled.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All enemy weaknesses reference exact names (Plasma Wrench twice, Conductive Gel, Pulse Emitter) and the boss weakness matches the enc2 pickup exactly; however, the boss victory_condition ('upload the virus while the boss is stunned') names no specific item or event from the level."
+        },
+        "causal_chain": {
+          "score": 4,
+          "reason": "Enc0 destroying the drone unlocking the security gate to the server room is direct; enc2's sentinel shutdown dropping a bridge to the boss arena is strong; enc1's trigger ('overloading the server terminal triggers the lockdown alarm') doesn't specifically explain why the lockdown routes the player to 'data core access,' making it the weakest link."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health escalates 50/120/180 and damage 15/30/45 monotonically; boss at 500 HP and 60 damage is clearly the hardest; cumulative enemy damage of 90 is survivable on 100 HP with care, fitting hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every element — Patrol Drone Mark I, Security Sentinel, Corporate Enforcer, Security Mainframe AI, Plasma Wrench, Conductive Gel, Data Encryption Key, Pulse Emitter — belongs to the same cyberpunk corporate-infiltration world with no out-of-place elements."
+        },
+        "mechanical_sense": {
+          "score": 4,
+          "reason": "Conductive Gel shorting out electronics and the Pulse Emitter overriding heavy armor are both well-reasoned; using the Plasma Wrench as the weakness of the enc2 Corporate Enforcer (a human-adjacent enemy) is a slight stretch compared to the more elegant pickup-chain connections."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and pickups are distinct and specific; the only generic element is the boss victory_condition, which references an unnamed 'virus' rather than any item established in the level."
+        }
+      },
+      "best_element": "The Conductive Gel pickup in enc0 — its effect ('temporarily shorts out high-voltage machinery') directly explains why it defeats the Security Sentinel in enc1, creating an elegant mechanical reason for the pickup chain.",
+      "worst_element": "The boss victory_condition ('successfully upload the virus while the boss is stunned') references a virus that was never established in the level; naming a specific data artifact from the objective would close this gap.",
+      "overall": "This is a clean, functional cyberpunk infiltration level with tight escalation and a coherent pickup chain; it would be satisfying to play once the boss condition is grounded in a named item."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "chaotic",
+      "player_class": "shadowblade",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The level presents a plausible chaotic cyberpunk arc — street alley to maintenance tunnel to data center to CEO penthouse — and the pickup chain is well-constructed. The enc0 enemy weakness is a paraphrase of the weapon name rather than an exact match, and the causal triggers are loosely connected to the specific next locations, but the level reads as designed rather than random.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 weakness is 'Shadowblade Precision Strike,' which is a paraphrase/move name rather than the exact weapon name 'Shadowblade'; the remaining three weaknesses (EMP Pulse Emitter, Overclocked Logic Key, Neural Bypass Chip) are all exact pickup names, and the boss weakness is exact."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0's 'sector lockdown' doesn't specifically explain why the player heads to the Maintenance Tunnel; enc1's ventilation purge 'opening the path to the server room' is a reasonable spatial cue but enc2's location is 'Data Center Lobby,' not server room; enc2's elevator to the CEO penthouse is clear but the boss's name/title isn't explicitly tied to the penthouse."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health 150/200/250 and damage 30/40/50 escalate cleanly; boss at 800 HP and 100 damage is a clear step up; player has 300 HP against cumulative enemy damage of 120, leaving plenty of room for a brutal-difficulty boss fight."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Corrupt conglomerate city, Corporate Enforcer, Security Sentinel Drone, Rogue Android, and Cyber-Tyrant Arasaka are all solidly in the same cyberpunk-chaotic register; EMP Pulse Emitter, Overclocked Logic Key, and Neural Bypass Chip all fit the tech-heist flavor."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "EMP Pulse Emitter disabling electronic defenses on a Security Sentinel Drone is a perfect match; Overclocked Logic Key decoding security overrides on a Rogue Android is logical; Neural Bypass Chip allowing interaction with the boss's internal firewall is thematically precise."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and pickups are distinct and specific; the boss victory_condition ('Disable the firewall and land a final strike before the building self-destructs') is vivid but names no specific item, slightly weakening the precision."
+        }
+      },
+      "best_element": "The Neural Bypass Chip — its effect ('Allows interaction with the boss's internal firewall') is perfectly matched to both the boss's weakness and the victory condition, making the pickup feel genuinely necessary rather than incidental.",
+      "worst_element": "The enc0 enemy weakness 'Shadowblade Precision Strike' is a move description rather than the weapon name 'Shadowblade'; correcting it to the exact weapon name would fix the reference integrity without changing any other design.",
+      "overall": "This is a high-energy brutal-difficulty level with a strong pickup chain and coherent theme; fixing the enc0 weakness reference and tightening the causal triggers would make it feel fully designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "mysterious",
+      "player_class": "artificer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "This is the most tightly constructed level in the set: every enemy weakness is an exact prior pickup name, every trigger directly explains the path to the next encounter, and the boss victory_condition names the specific pickup. The mysterious mood is expressed through a decaying Spire District and an encroaching sentient virus, giving the level genuine atmospheric consistency.",
+      "scores": {
+        "reference_integrity": {
+          "score": 5,
+          "reason": "Enc0 weakness = Plasma Wrench (exact weapon), enc1 = EMP Module (exact enc0 pickup), enc2 = Cryo-Gel Canister (exact enc1 pickup), boss = Master Override Key (exact enc2 pickup); victory_condition explicitly names 'the override key,' resolving to the established item."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0 trigger reveals a data packet directing the player to the mainframe entrance (enc1 location); enc1 trigger unlocks the path to the Core Terminal (enc2 location); enc2 trigger has the enemy physically drop the Master Override Key needed to engage the boss — each is a direct, specific consequence."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Health escalates 50/80/100 and damage 10/15/20 monotonically; boss at 300 HP and 30 damage is clearly harder; cumulative enemy damage of 45 against 150 HP is comfortable for medium difficulty — perhaps slightly too forgiving, but not a design flaw."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Decaying Spire District, Corrupt Drone, Security Sentinel, Rogue Cyborg, and Central AI Prime all inhabit the same cyberpunk-mystery world; EMP Module, Cryo-Gel Canister, and Master Override Key each feel like artifacts an artificer would carry."
+        },
+        "mechanical_sense": {
+          "score": 5,
+          "reason": "EMP Module disabling electronic shields on a Security Sentinel is exact; Cryo-Gel Canister freezing mechanical joints on a Rogue Cyborg is precise; Master Override Key exposing the Core AI's cooling system is logically grounded in the victory_condition."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "All three encounter locations, enemy names, hazards, and pickups are distinct; every field adds unique information; the victory_condition specifies both the item and the mechanical action (lowering heat shields, striking the cooling core)."
+        }
+      },
+      "best_element": "The enc2 trigger — 'The Cyborg collapses, dropping the master override key needed to engage the Central AI' — is the cleanest pickup-to-boss-gate connection in the file; the item, its source, and its purpose are all named in one sentence.",
+      "worst_element": "The cumulative enemy damage (45 against 150 HP) leaves medium difficulty feeling slightly easy; raising individual enemy damage values by 10-15 each would better match the medium label.",
+      "overall": "This level is functionally complete and would be genuinely enjoyable to play; it demonstrates that all rubric criteria can be satisfied simultaneously without sacrificing theme or creativity."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "ominous",
+      "player_class": "chronomancer",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "The level blends chronomancer time powers with a cyberpunk ominous setting effectively — glitch drones and malfunctioning AI fit the temporal theme. The causal chain is strong, with each encounter consequence physically advancing the player; however, some pickup effects describe buffs against generic enemy types rather than explaining why a specific enemy is vulnerable.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "Enc0 = Time Stasis Dagger (exact weapon), enc1 = Chronal Stabilizer (exact enc0 pickup), enc2 = Temporal Battery (exact enc1 pickup), boss = Feedback Loop Module (exact enc2 pickup); victory_condition refers to 'the module' without the exact name, a minor variation that is clearly identifiable."
+        },
+        "causal_chain": {
+          "score": 5,
+          "reason": "Enc0 drone destruction triggers system override unlocking the server room access port; enc1 guard's neural link maps the path to the processor core; enc2 sentinel shutdown initiates the lift to the boss arena — all three are specific physical consequences that make the next encounter inevitable."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health 20/30/40 and damage 5/10/15 escalate cleanly; boss at 150 HP and 20 damage is clearly the hardest; cumulative enemy damage of 30 against 100 HP is very survivable, appropriate for easy difficulty."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Rain-slicked megacity, Glitch Drone, Cyber-Hulk Guard, Security Sentinel, and Aion the Corrupt all work within cyberpunk-ominous; the chronomancer's temporal arsenal (Chronal Stabilizer, Temporal Battery, Feedback Loop Module) fits the class flavor, though the blend of time-magic and cyberpunk is slightly jarring — one element that's off-tone for a pure cyberpunk setting."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Time Stasis Dagger freezing a Glitch Drone is logical; Feedback Loop Module parrying boss energy attacks is clear; but Chronal Stabilizer 'increases damage against reality-warping entities' vs a Cyber-Hulk Guard (not described as reality-warping) is a mismatch, and Temporal Battery 'weakens boss armor integrity' vs a Security Sentinel has no explained mechanism."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations and enemies are distinct; pickups are specific; one minor inconsistency is that the enc2 trigger sends the player to 'the CEO's observation deck' but the boss is 'Aion the Corrupt' — a corruption AI that doesn't obviously inhabit a CEO's space, creating a small naming gap."
+        }
+      },
+      "best_element": "The three-step causal chain is the cleanest in the set alongside level 3 — each encounter ends with a specific physical event (system override, neural link path-mapping, lift activation) that makes the next location inevitable.",
+      "worst_element": "The Chronal Stabilizer's effect ('increases damage against reality-warping entities') doesn't explain its use against a Cyber-Hulk Guard, which is described as a straightforward combat enemy; the effect and the target need to be aligned.",
+      "overall": "A well-paced easy-difficulty level with an excellent causal chain; tightening two pickup-weakness connections would make it feel fully designed rather than mostly designed."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "eerie",
+      "player_class": "alchemist",
+      "target_difficulty": "hard"
+    },
+    "judgment": {
+      "summary": "The cyberpunk horror theme is well-realized — Sector 7, Glitch-Husks, Data-Wraiths, and the Synthesized Horror create a genuinely eerie atmosphere, and the alchemist's chemical toolkit maps naturally onto these biological-mechanical enemies. However, the three encounter triggers are the weakest in the file: they describe player actions that cause the encounters rather than consequences of defeating enemies that advance to the next location.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All four weaknesses reference exact names (corrosive chemical vials, catalytic reagent, stasis gas grenade, overclocked neural link); boss victory_condition refers to 'the neural link' rather than the full name 'overclocked neural link,' a minor variation that is clearly identifiable."
+        },
+        "causal_chain": {
+          "score": 1,
+          "reason": "All three triggers ('stepping on a leaking data-conduit,' 'downloading corrupted log files,' 'interacting with the central reactor terminal') describe what initiates each encounter, not what happens after defeating the enemy; none explains why the player proceeds to the next location, and they could be reordered without breaking any logic."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health 50/80/120 and damage 15/20/30 escalate monotonically; boss at 300 HP and 45 damage is clearly the hardest; cumulative enemy damage of 65 against 100 HP is tight but survivable for hard difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Sector 7, neon-drenched alleyway, abandoned server farm, underground laboratory, Glitch-Husk, Data-Wraith, Synthesized Horror, and The Architect are all coherent within the cyberpunk-eerie-horror register; corrosive chemical vials, catalytic reagent, stasis gas grenade, and overclocked neural link all feel like an alchemist's field kit."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Stasis gas grenade freezing bio-mechanical enemies is a perfect match for the Synthesized Horror; corrosive vials against a Glitch-Husk are logical; but the catalytic reagent 'enhances chemical vial damage output' is a buff item rather than a targeted weakness — it works as a tool but not as a specific enemy vulnerability — and the overclocked neural link granting 'immunity to static shock' doesn't obviously connect to shorting a circuit (though the victory condition bridges this)."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations, enemies, and pickups are distinct and specific; however, the three trigger fields are effectively placeholder actions (generic interaction verbs) rather than encounter-outcome descriptions, reducing the information density of the level's causal structure."
+        }
+      },
+      "best_element": "The stasis gas grenade explicitly 'freezes bio-mechanical enemies,' and the enc2 enemy is the Synthesized Horror — a bio-mechanical entity by implication; the pickup effect and target are perfectly aligned.",
+      "worst_element": "All three encounter triggers describe how encounters start rather than how they end and advance the player; replacing each with a consequence of defeating the encounter enemy would fix the causal chain entirely.",
+      "overall": "The theme and numbers are strong, and the level would be atmospheric to play; the broken causal chain means the level feels like three disconnected rooms rather than a designed sequence."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "desolate",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "judgment": {
+      "summary": "The desolate abandoned-city setting and the rogue's monofilament toolkit produce a coherent and atmospheric level; the pickup chain is clean and the boss fight is memorable. The causal chain has the same structural flaw as level 5 — triggers describe what starts each fight rather than what the player does after winning, weakening the sense of designed progression.",
+      "scores": {
+        "reference_integrity": {
+          "score": 4,
+          "reason": "All weaknesses reference exact names (Monofilament Dagger, EMP Pulse Module, Corrosive Solvent, Access Override Key); the boss victory_condition uses 'the key' rather than the full name 'Access Override Key,' a minor variation clearly identifiable in context."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "All three triggers describe what activates each encounter (terminal overload draws the Synth-Stalker, server rack destruction triggers the Sentinel, pressure plate triggers the Enforcer) rather than what happens after the player wins and advances to the next location; enc1's trigger ('destroying the server rack causes a security lockdown, triggering the Sentinel') contradicts a logical progression since a lockdown should impede movement."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health 150/250/300 and damage 40/60/80 escalate cleanly; boss at 800 HP and 150 damage is a significant step up; player has 200 HP against cumulative enemy damage of 180, leaving only 20 HP — extremely tight for brutal difficulty and intentional, though one unlucky hit from the boss ends the run."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Abandoned metropolis, Synth-Stalker, Security Sentinel, Cyber-Ninja Enforcer, Chrome Titan, and Monofilament Dagger are all fixtures of classic cyberpunk-desolate aesthetics; every element belongs to the same world."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "EMP Pulse Module disabling targeting systems on a Security Sentinel is precise; Corrosive Solvent melting titanium plating on the Cyber-Ninja Enforcer is logical; but the Access Override Key as a boss 'weakness' is conceptually odd — a key is a tool, not a weapon, and while the victory_condition resolves this cleverly (insert into spinal port), the framing of a key as a combat weakness is a stretch."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "All locations, enemies, and pickups are distinct and specific; the trigger fields are action-initiating rather than outcome-describing but are written with enough detail to be informative; the objective and reward are precise."
+        }
+      },
+      "best_element": "The Chrome Titan's victory condition — 'Insert the key into the Titan's spinal port to trigger a system shutdown' — is one of the most evocative boss-defeat moments in the file, turning a mundane key into a cinematic finishing move.",
+      "worst_element": "The causal triggers describe encounter activation rather than encounter completion; rewriting each to describe what the player finds/unlocks after defeating the enemy would give the level a proper forward momentum.",
+      "overall": "A visually coherent and mechanically brutal level with a memorable boss; the trigger structure prevents it from feeling like a designed sequence rather than three independent combat rooms."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "whimsical",
+      "player_class": "stormcaller",
+      "target_difficulty": "easy"
+    },
+    "judgment": {
+      "summary": "This level succeeds brilliantly on theme — Neo-Toyko Cloud Districts, Rubber Duck Drone, Bubblegum Bot, Crying Cloud Sprite, and the Glitch-Witch of Silicon Valley create a genuinely whimsical cyberpunk world that feels cohesive and playful. The enc0 enemy weakness ('Electric Surge') is not the weapon name or any pickup, which is the level's main structural flaw; the causal chain is functional but loose.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 weakness is 'Electric Surge,' which is neither the weapon name ('Storm-Caller Rod') nor any pickup in the level — it's a description of an electrical attack type; enc1 = Conductive Jelly (exact), enc2 = Frequency Tuner (exact), boss = Master Override Chip (exact); one broken reference lowers the score to 3."
+        },
+        "causal_chain": {
+          "score": 3,
+          "reason": "Enc0's static charge unlocking the data gate is a reasonable spatial cue; enc1's trigger ('reveals a frequency key for the main spire') names an item but enc2's location is 'Binary Rain Forest,' not the spire, creating a mismatch; enc2's trigger drops the Master Override Chip but doesn't describe a path to the boss — the chip itself is the only connection."
+        },
+        "balance": {
+          "score": 5,
+          "reason": "Enemy health 20/30/40 and damage 5/8/10 escalate cleanly; boss at 150 HP and 15 damage is clearly the hardest; cumulative enemy damage of 23 against 100 HP is very forgiving, perfectly appropriate for easy difficulty."
+        },
+        "thematic_coherence": {
+          "score": 5,
+          "reason": "Every single element — from Glitchy Arcade Alley and Hover-Skate Plaza to Rubber Duck Drone and Bubblegum Bot — belongs to a carefully maintained cyberpunk-whimsy register; the Glitch-Witch of Silicon Valley as a final boss is a perfect thematic capstone."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Conductive Jelly increasing conductivity against a Bubblegum Bot (implicitly metallic) is logical; Master Override Chip forcing a factory reset on the Glitch-Witch is thematically precise; but 'Electric Surge' as a rubber duck's weakness inverts real-world conductivity (rubber insulates), and Frequency Tuner resonating with 'heavy metallic shields' on a Crying Cloud Sprite is a poor match for an entity described as a sprite."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations, enemies, and pickups are distinct and creative; however, 'Electric Surge' as a weakness references nothing in the level, and the boss victory_condition ('force a factory reset on her mainframe') names no specific item despite the Master Override Chip being the designated boss-defeat tool."
+        }
+      },
+      "best_element": "The enemy roster — Rubber Duck Drone, Bubblegum Bot, Crying Cloud Sprite — is the most committed and successful thematic execution in the file; a designer could ship this theme package without changing a single name.",
+      "worst_element": "The enc0 weakness 'Electric Surge' must be replaced with the exact weapon name 'Storm-Caller Rod' (or an established pickup name); this single fix would raise reference integrity from 3 to 4 without any other change.",
+      "overall": "Delightful to inhabit as a world, with numbers that make for a relaxed easy-mode experience; two reference and mechanical fixes would make it structurally sound to match its creative quality."
+    }
+  },
+  {
+    "case": {
+      "genre": "cyberpunk",
+      "mood": "serene",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "judgment": {
+      "summary": "The level makes a genuine attempt to marry geomancer earth-powers with cyberpunk serenity — Neon Garden Terrace and Synthetic Rain Plaza are evocative locations, and the Zenith AI Architect is a fitting serene-mood boss. However, the enc0 enemy weakness ('Geomantic Impact') is not the weapon name or any pickup, and all three causal triggers describe what initiates encounters rather than what happens after the player wins, leaving the level's structure fragmented.",
+      "scores": {
+        "reference_integrity": {
+          "score": 3,
+          "reason": "Enc0 weakness is 'Geomantic Impact,' a description of the player's attack style rather than the exact weapon name 'Earthshatter Gauntlet'; enc1 = Conductive Silicon Shard (exact), enc2 = Gravity Anchor (exact), boss = Core Data Key (exact); one broken reference at enc0 and a minor name variation in the victory_condition ('the key') keep this at 3."
+        },
+        "causal_chain": {
+          "score": 2,
+          "reason": "All three triggers describe what activates each encounter rather than the outcome of defeating the enemy: enc0 'approaching the holographic flowerbed triggers the drone,' enc1 'stepping onto the central platform causes the guard to materialize,' enc2 'accessing the main terminal initiates the defense protocol' — none explains why the player advances to the next location after winning."
+        },
+        "balance": {
+          "score": 4,
+          "reason": "Enemy health 50/80/120 and damage 10/15/25 escalate cleanly; boss at 250 HP and 40 damage is clearly the hardest; cumulative enemy damage of 50 against 200 HP is very survivable — perhaps slightly easy for medium difficulty, but not a significant flaw."
+        },
+        "thematic_coherence": {
+          "score": 4,
+          "reason": "Neon Garden Terrace, Synthetic Rain Plaza, and Server Core Spire evoke a genuinely serene cyberpunk aesthetic; Data-Scrub Drone, Glitch-Husk Guard, Titan-Class Security Mech, and Zenith AI Architect all fit; however, the geomancer's earth powers (rock density, tectonic weight) feel slightly incongruous in a digital setting, creating one off-tone element."
+        },
+        "mechanical_sense": {
+          "score": 3,
+          "reason": "Conductive Silicon Shard manipulating electrical currents against a Glitch-Husk Guard is logical; Gravity Anchor increasing weight against a Titan-Class Security Mech is reasonable (crushing a heavy mech); but Geomantic Impact against a Data-Scrub Drone has no explained mechanism — earth-based attacks against a digital drone lack a functional bridge — and Core Data Key 'neutralizing the boss's internal firewall' is logical."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "All locations, enemies, and pickups are distinct; however, the three trigger fields are activation-describing rather than outcome-describing, reducing their information value; two fields (enc0 and enc1 hazards) are specific, but the 'serene' mood is asserted in the setting description yet the encounter content (defeat/destroy) doesn't reinforce it."
+        }
+      },
+      "best_element": "The Zenith AI Architect's victory_condition — 'Insert the key to freeze the AI and force a peaceful system reboot' — is the most on-mood boss defeat in the file, converting a combat win into a non-destructive resolution that fits 'serene' perfectly.",
+      "worst_element": "The enc0 weakness 'Geomantic Impact' references nothing established in the level; changing it to 'Earthshatter Gauntlet' (the exact weapon name) would fix reference integrity with a one-word change.",
+      "overall": "A thematically ambitious level that almost works — the serene mood and geomancer flavor are novel choices — but the broken enc0 reference and non-causal triggers prevent it from functioning as a coherent designed sequence."
+    }
+  }
+]

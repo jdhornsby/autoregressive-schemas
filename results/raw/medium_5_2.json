@@ -1,0 +1,2306 @@
+[
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "mysterious",
+      "player_class": "geomancer",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 30,
+        "health": 150,
+        "name": "Abyssal Leviathan",
+        "victory_condition": "Seal the rift within the chamber",
+        "weakness": "Ancient Keystone"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Abyssal Prowler",
+            "weakness": "Seismic Gauntlet"
+          },
+          "hazard": "Crushing pressure vents",
+          "location": "Outer Ruins",
+          "pickup": {
+            "effect": "Enhances sensory range",
+            "name": "Echoing Shell"
+          },
+          "trigger": "Defeating the Prowler clears the path to the inner gate"
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Bioluminescent Eel",
+            "weakness": "Echoing Shell"
+          },
+          "hazard": "Murky fog",
+          "location": "Sunken Gallery",
+          "pickup": {
+            "effect": "Provides thermal energy",
+            "name": "Solidified Magma Shard"
+          },
+          "trigger": "Clearing the eel causes the coral walls to retract for entry"
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 60,
+            "name": "Trench Sentinel",
+            "weakness": "Solidified Magma Shard"
+          },
+          "hazard": "Rapid whirlpool",
+          "location": "Inner Sanctum",
+          "pickup": {
+            "effect": "Unlocks the Leviathan Chamber",
+            "name": "Ancient Keystone"
+          },
+          "trigger": "Obtaining the Keystone allows the player to breach the boss area"
+        }
+      ],
+      "objective": "Recover the relic of the deep",
+      "player_health": 100,
+      "player_weapon": "Seismic Gauntlet",
+      "player_weapon_damage": 25,
+      "reward": "Ancient Tide-Caller Staff",
+      "setting": "Sunken City of Aethelgard",
+      "theme": "Underwater mystery and earthen power"
+    },
+    "normalized": {
+      "theme": "Underwater mystery and earthen power",
+      "setting": "Sunken City of Aethelgard",
+      "player_weapon": "Seismic Gauntlet",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Outer Ruins",
+          "enemy": {
+            "name": "Abyssal Prowler",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Seismic Gauntlet"
+          },
+          "hazard": "Crushing pressure vents",
+          "pickup": {
+            "name": "Echoing Shell",
+            "effect": "Enhances sensory range"
+          },
+          "trigger": "Defeating the Prowler clears the path to the inner gate"
+        },
+        {
+          "location": "Sunken Gallery",
+          "enemy": {
+            "name": "Bioluminescent Eel",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Echoing Shell"
+          },
+          "hazard": "Murky fog",
+          "pickup": {
+            "name": "Solidified Magma Shard",
+            "effect": "Provides thermal energy"
+          },
+          "trigger": "Clearing the eel causes the coral walls to retract for entry"
+        },
+        {
+          "location": "Inner Sanctum",
+          "enemy": {
+            "name": "Trench Sentinel",
+            "health": 60,
+            "damage": 20,
+            "weakness": "Solidified Magma Shard"
+          },
+          "hazard": "Rapid whirlpool",
+          "pickup": {
+            "name": "Ancient Keystone",
+            "effect": "Unlocks the Leviathan Chamber"
+          },
+          "trigger": "Obtaining the Keystone allows the player to breach the boss area"
+        }
+      ],
+      "boss": {
+        "name": "Abyssal Leviathan",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Ancient Keystone",
+        "victory_condition": "Seal the rift within the chamber"
+      },
+      "objective": "Recover the relic of the deep",
+      "reward": "Ancient Tide-Caller Staff"
+    },
+    "stats": {
+      "latency_ms": 4229,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 539,
+      "output_tokens": 548,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "serene",
+      "player_class": "beastmaster",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 15,
+        "health": 50,
+        "name": "The Abyssal Guardian",
+        "victory_condition": "Use the Essence of Calm to restore the guardian to its serene state.",
+        "weakness": "Essence of Calm"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 20,
+            "name": "Corrupted Crab",
+            "weakness": "Taming Conch"
+          },
+          "hazard": "Bubbling thermal vent",
+          "location": "Shallow Kelp Forest",
+          "pickup": {
+            "effect": "Heals pet by 20 health",
+            "name": "Tranquil Kelp"
+          },
+          "trigger": "Defeating the crab clears the path to the Deep Trench."
+        },
+        {
+          "enemy": {
+            "damage": 8,
+            "health": 25,
+            "name": "Shadow Eel",
+            "weakness": "Tranquil Kelp"
+          },
+          "hazard": "Strong current",
+          "location": "The Deep Trench",
+          "pickup": {
+            "effect": "Pacifies aggressive spirits",
+            "name": "Siren Pearl"
+          },
+          "trigger": "Calming the eel reveals the entrance to the Abyssal Grotto."
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 30,
+            "name": "Corrupted Stingray",
+            "weakness": "Siren Pearl"
+          },
+          "hazard": "Razor-sharp sea glass",
+          "location": "Entrance to the Abyssal Grotto",
+          "pickup": {
+            "effect": "Essential for purifying the guardian",
+            "name": "Essence of Calm"
+          },
+          "trigger": "Soothing the ray unlocks the boss gate."
+        }
+      ],
+      "objective": "Calm the corrupted Guardian of the Trench to restore peace to the reef.",
+      "player_health": 100,
+      "player_weapon": "Taming Conch",
+      "player_weapon_damage": 10,
+      "reward": "Mastery of the Tide",
+      "setting": "Bioluminescent coral reef",
+      "theme": "Oceanic tranquility"
+    },
+    "normalized": {
+      "theme": "Oceanic tranquility",
+      "setting": "Bioluminescent coral reef",
+      "player_weapon": "Taming Conch",
+      "player_weapon_damage": 10,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Shallow Kelp Forest",
+          "enemy": {
+            "name": "Corrupted Crab",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Taming Conch"
+          },
+          "hazard": "Bubbling thermal vent",
+          "pickup": {
+            "name": "Tranquil Kelp",
+            "effect": "Heals pet by 20 health"
+          },
+          "trigger": "Defeating the crab clears the path to the Deep Trench."
+        },
+        {
+          "location": "The Deep Trench",
+          "enemy": {
+            "name": "Shadow Eel",
+            "health": 25,
+            "damage": 8,
+            "weakness": "Tranquil Kelp"
+          },
+          "hazard": "Strong current",
+          "pickup": {
+            "name": "Siren Pearl",
+            "effect": "Pacifies aggressive spirits"
+          },
+          "trigger": "Calming the eel reveals the entrance to the Abyssal Grotto."
+        },
+        {
+          "location": "Entrance to the Abyssal Grotto",
+          "enemy": {
+            "name": "Corrupted Stingray",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Siren Pearl"
+          },
+          "hazard": "Razor-sharp sea glass",
+          "pickup": {
+            "name": "Essence of Calm",
+            "effect": "Essential for purifying the guardian"
+          },
+          "trigger": "Soothing the ray unlocks the boss gate."
+        }
+      ],
+      "boss": {
+        "name": "The Abyssal Guardian",
+        "health": 50,
+        "damage": 15,
+        "weakness": "Essence of Calm",
+        "victory_condition": "Use the Essence of Calm to restore the guardian to its serene state."
+      },
+      "objective": "Calm the corrupted Guardian of the Trench to restore peace to the reef.",
+      "reward": "Mastery of the Tide"
+    },
+    "stats": {
+      "latency_ms": 4507,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 629,
+      "output_tokens": 561,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 50,
+        "health": 500,
+        "name": "Ancient Leviathan",
+        "victory_condition": "Drain the Leviathan's life-force using the Essence of the Abyss to claim the throne.",
+        "weakness": "Essence of the Abyss"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 100,
+            "name": "Drowned Thrall",
+            "weakness": "Shadow Scythe"
+          },
+          "hazard": "Crushing pressure vents",
+          "location": "Sunken Gate",
+          "pickup": {
+            "effect": "Reveals hidden weaknesses in spectral creatures.",
+            "name": "Soul Lantern"
+          },
+          "trigger": "Opening the gate releases the Soul Lantern energy which signals the arrival of the next guardian."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 150,
+            "name": "Bioluminescent Maw",
+            "weakness": "Soul Lantern"
+          },
+          "hazard": "Blinding darkness currents",
+          "location": "Kelp Forest",
+          "pickup": {
+            "effect": "Stuns aquatic entities through vibrations.",
+            "name": "Corrupted Pearl"
+          },
+          "trigger": "Defeating the Maw creates a siren song that draws the player to the deeper trench floor."
+        },
+        {
+          "enemy": {
+            "damage": 35,
+            "health": 200,
+            "name": "Abyssal Sentinel",
+            "weakness": "Corrupted Pearl"
+          },
+          "hazard": "Razor-sharp coral spikes",
+          "location": "Trench Floor",
+          "pickup": {
+            "effect": "Empowers necromantic strikes to sever ancient bonds.",
+            "name": "Essence of the Abyss"
+          },
+          "trigger": "Absorbing the Essence of the Abyss awakens the slumbering Ancient Leviathan."
+        }
+      ],
+      "objective": "Resurrect the sunken city king by defeating the Abyssal guardians.",
+      "player_health": 100,
+      "player_weapon": "Shadow Scythe",
+      "player_weapon_damage": 25,
+      "reward": "Mastery over the Tides of the Damned",
+      "setting": "Abyssal Trench",
+      "theme": "Ominous underwater necromancy"
+    },
+    "normalized": {
+      "theme": "Ominous underwater necromancy",
+      "setting": "Abyssal Trench",
+      "player_weapon": "Shadow Scythe",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Sunken Gate",
+          "enemy": {
+            "name": "Drowned Thrall",
+            "health": 100,
+            "damage": 15,
+            "weakness": "Shadow Scythe"
+          },
+          "hazard": "Crushing pressure vents",
+          "pickup": {
+            "name": "Soul Lantern",
+            "effect": "Reveals hidden weaknesses in spectral creatures."
+          },
+          "trigger": "Opening the gate releases the Soul Lantern energy which signals the arrival of the next guardian."
+        },
+        {
+          "location": "Kelp Forest",
+          "enemy": {
+            "name": "Bioluminescent Maw",
+            "health": 150,
+            "damage": 25,
+            "weakness": "Soul Lantern"
+          },
+          "hazard": "Blinding darkness currents",
+          "pickup": {
+            "name": "Corrupted Pearl",
+            "effect": "Stuns aquatic entities through vibrations."
+          },
+          "trigger": "Defeating the Maw creates a siren song that draws the player to the deeper trench floor."
+        },
+        {
+          "location": "Trench Floor",
+          "enemy": {
+            "name": "Abyssal Sentinel",
+            "health": 200,
+            "damage": 35,
+            "weakness": "Corrupted Pearl"
+          },
+          "hazard": "Razor-sharp coral spikes",
+          "pickup": {
+            "name": "Essence of the Abyss",
+            "effect": "Empowers necromantic strikes to sever ancient bonds."
+          },
+          "trigger": "Absorbing the Essence of the Abyss awakens the slumbering Ancient Leviathan."
+        }
+      ],
+      "boss": {
+        "name": "Ancient Leviathan",
+        "health": 500,
+        "damage": 50,
+        "weakness": "Essence of the Abyss",
+        "victory_condition": "Drain the Leviathan's life-force using the Essence of the Abyss to claim the throne."
+      },
+      "objective": "Resurrect the sunken city king by defeating the Abyssal guardians.",
+      "reward": "Mastery over the Tides of the Damned"
+    },
+    "stats": {
+      "latency_ms": 8678,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 597,
+      "output_tokens": 593,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "tense",
+      "player_class": "stormcaller",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 50,
+        "health": 500,
+        "name": "Leviathan of the Trench",
+        "victory_condition": "Deplete boss health after applying the Abyssal Core to its protective field",
+        "weakness": "Abyssal Core"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 60,
+            "name": "Abyssal Eel",
+            "weakness": "Thunder Spear"
+          },
+          "hazard": "High pressure current",
+          "location": "Entrance of the Ancient Ruins",
+          "pickup": {
+            "effect": "Increases shock radius of electric attacks",
+            "name": "Voltaic Battery"
+          },
+          "trigger": "Activating the pressure sensor opens the path to the second sector"
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 120,
+            "name": "Corroded Sentinel",
+            "weakness": "Voltaic Battery"
+          },
+          "hazard": "Toxic sludge vents",
+          "location": "Reactor Core Room",
+          "pickup": {
+            "effect": "Increases damage by 50 percent",
+            "name": "Conductive Fluid"
+          },
+          "trigger": "Destruction of the coolant pipes signals the arrival of the next guardian"
+        },
+        {
+          "enemy": {
+            "damage": 35,
+            "health": 200,
+            "name": "Pressure Crawler",
+            "weakness": "Conductive Fluid"
+          },
+          "hazard": "Falling debris",
+          "location": "Central Plaza",
+          "pickup": {
+            "effect": "Stabilizes energy fields for massive damage",
+            "name": "Abyssal Core"
+          },
+          "trigger": "Reaching the center of the ruins awakens the Leviathan"
+        }
+      ],
+      "objective": "Navigate the flooded abyss and defeat the Leviathan to reclaim the lost temple",
+      "player_health": 100,
+      "player_weapon": "Thunder Spear",
+      "player_weapon_damage": 25,
+      "reward": "Stormcaller's Amulet",
+      "setting": "Submerged Ancient Ruins",
+      "theme": "Deep Sea Trench"
+    },
+    "normalized": {
+      "theme": "Deep Sea Trench",
+      "setting": "Submerged Ancient Ruins",
+      "player_weapon": "Thunder Spear",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Entrance of the Ancient Ruins",
+          "enemy": {
+            "name": "Abyssal Eel",
+            "health": 60,
+            "damage": 15,
+            "weakness": "Thunder Spear"
+          },
+          "hazard": "High pressure current",
+          "pickup": {
+            "name": "Voltaic Battery",
+            "effect": "Increases shock radius of electric attacks"
+          },
+          "trigger": "Activating the pressure sensor opens the path to the second sector"
+        },
+        {
+          "location": "Reactor Core Room",
+          "enemy": {
+            "name": "Corroded Sentinel",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Voltaic Battery"
+          },
+          "hazard": "Toxic sludge vents",
+          "pickup": {
+            "name": "Conductive Fluid",
+            "effect": "Increases damage by 50 percent"
+          },
+          "trigger": "Destruction of the coolant pipes signals the arrival of the next guardian"
+        },
+        {
+          "location": "Central Plaza",
+          "enemy": {
+            "name": "Pressure Crawler",
+            "health": 200,
+            "damage": 35,
+            "weakness": "Conductive Fluid"
+          },
+          "hazard": "Falling debris",
+          "pickup": {
+            "name": "Abyssal Core",
+            "effect": "Stabilizes energy fields for massive damage"
+          },
+          "trigger": "Reaching the center of the ruins awakens the Leviathan"
+        }
+      ],
+      "boss": {
+        "name": "Leviathan of the Trench",
+        "health": 500,
+        "damage": 50,
+        "weakness": "Abyssal Core",
+        "victory_condition": "Deplete boss health after applying the Abyssal Core to its protective field"
+      },
+      "objective": "Navigate the flooded abyss and defeat the Leviathan to reclaim the lost temple",
+      "reward": "Stormcaller's Amulet"
+    },
+    "stats": {
+      "latency_ms": 3925,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 419,
+      "output_tokens": 565,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "eerie",
+      "player_class": "shadowblade",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 20,
+        "health": 100,
+        "name": "The Deep Dweller",
+        "victory_condition": "Destroy the bioluminescent core while it's exposed",
+        "weakness": "Kraken Eye"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 20,
+            "name": "Abyssal Crab",
+            "weakness": "Void Blade"
+          },
+          "hazard": "Crushing pressure field",
+          "location": "Submerged Ruins Entrance",
+          "pickup": {
+            "effect": "Reveals hidden energy signatures",
+            "name": "Light Essence"
+          },
+          "trigger": "Defeating the crab clears the debris blocking the temple entrance."
+        },
+        {
+          "enemy": {
+            "damage": 8,
+            "health": 30,
+            "name": "Bioluminescent Eel",
+            "weakness": "Light Essence"
+          },
+          "hazard": "Chilling currents",
+          "location": "Inner Temple",
+          "pickup": {
+            "effect": "Disrupts sensory organs of aquatic creatures",
+            "name": "Sonic Emitter"
+          },
+          "trigger": "Eel's demise triggers a seismic shift, opening the passage to the Forbidden Vault."
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Corrupted Guardian",
+            "weakness": "Sonic Emitter"
+          },
+          "hazard": "Falling stone debris",
+          "location": "Forbidden Vault",
+          "pickup": {
+            "effect": "Reveals boss critical weak points",
+            "name": "Kraken Eye"
+          },
+          "trigger": "Guardian's collapse causes the floor to crumble, dropping the player into the Boss lair."
+        }
+      ],
+      "objective": "Infiltrate the sunken ruins to deactivate the ancient abyssal beacon.",
+      "player_health": 50,
+      "player_weapon": "Void Blade",
+      "player_weapon_damage": 15,
+      "reward": "Abyssal Shadow Cloak",
+      "setting": "Submerged bioluminescent ruins",
+      "theme": "Eerie"
+    },
+    "normalized": {
+      "theme": "Eerie",
+      "setting": "Submerged bioluminescent ruins",
+      "player_weapon": "Void Blade",
+      "player_weapon_damage": 15,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Submerged Ruins Entrance",
+          "enemy": {
+            "name": "Abyssal Crab",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Void Blade"
+          },
+          "hazard": "Crushing pressure field",
+          "pickup": {
+            "name": "Light Essence",
+            "effect": "Reveals hidden energy signatures"
+          },
+          "trigger": "Defeating the crab clears the debris blocking the temple entrance."
+        },
+        {
+          "location": "Inner Temple",
+          "enemy": {
+            "name": "Bioluminescent Eel",
+            "health": 30,
+            "damage": 8,
+            "weakness": "Light Essence"
+          },
+          "hazard": "Chilling currents",
+          "pickup": {
+            "name": "Sonic Emitter",
+            "effect": "Disrupts sensory organs of aquatic creatures"
+          },
+          "trigger": "Eel's demise triggers a seismic shift, opening the passage to the Forbidden Vault."
+        },
+        {
+          "location": "Forbidden Vault",
+          "enemy": {
+            "name": "Corrupted Guardian",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Sonic Emitter"
+          },
+          "hazard": "Falling stone debris",
+          "pickup": {
+            "name": "Kraken Eye",
+            "effect": "Reveals boss critical weak points"
+          },
+          "trigger": "Guardian's collapse causes the floor to crumble, dropping the player into the Boss lair."
+        }
+      ],
+      "boss": {
+        "name": "The Deep Dweller",
+        "health": 100,
+        "damage": 20,
+        "weakness": "Kraken Eye",
+        "victory_condition": "Destroy the bioluminescent core while it's exposed"
+      },
+      "objective": "Infiltrate the sunken ruins to deactivate the ancient abyssal beacon.",
+      "reward": "Abyssal Shadow Cloak"
+    },
+    "stats": {
+      "latency_ms": 4605,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 812,
+      "output_tokens": 553,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "chaotic",
+      "player_class": "pyromancer",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 300,
+        "name": "Leviathan Prime",
+        "victory_condition": "Use the Ancient Seal to disable the boss's hydro-shield and strike with the Thermal Flame Staff.",
+        "weakness": "Ancient Seal"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Hydro-Crab",
+            "weakness": "Thermal Flame Staff"
+          },
+          "hazard": "Crushing pressure jets",
+          "location": "Flooded Hallway",
+          "pickup": {
+            "effect": "Increases breath duration for deep water traversal",
+            "name": "Oxygen Tank"
+          },
+          "trigger": "Activating the emergency airlock alarm draws out the next defensive unit."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 70,
+            "name": "Sea-Reaver",
+            "weakness": "Oxygen Tank"
+          },
+          "hazard": "Leaking radiation bubbles",
+          "location": "Reactor Core",
+          "pickup": {
+            "effect": "Grants 5 seconds of total damage immunity",
+            "name": "Deep-Sea Core"
+          },
+          "trigger": "Defeating the Sea-Reaver causes a containment breach that leads to the Command Deck."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 90,
+            "name": "Tidal Construct",
+            "weakness": "Deep-Sea Core"
+          },
+          "hazard": "Unstable gravitational shifts",
+          "location": "Command Deck",
+          "pickup": {
+            "effect": "Used to negate the final boss's invulnerability shield",
+            "name": "Ancient Seal"
+          },
+          "trigger": "Reaching the command terminal forces the main security override to awaken the boss."
+        }
+      ],
+      "objective": "Navigate the collapsing abyssal station and eliminate the Leviathan Prime.",
+      "player_health": 100,
+      "player_weapon": "Thermal Flame Staff",
+      "player_weapon_damage": 25,
+      "reward": "Abyssal Ember Core relic",
+      "setting": "Submerged Research Base",
+      "theme": "Chaotic underwater survival"
+    },
+    "normalized": {
+      "theme": "Chaotic underwater survival",
+      "setting": "Submerged Research Base",
+      "player_weapon": "Thermal Flame Staff",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Flooded Hallway",
+          "enemy": {
+            "name": "Hydro-Crab",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Thermal Flame Staff"
+          },
+          "hazard": "Crushing pressure jets",
+          "pickup": {
+            "name": "Oxygen Tank",
+            "effect": "Increases breath duration for deep water traversal"
+          },
+          "trigger": "Activating the emergency airlock alarm draws out the next defensive unit."
+        },
+        {
+          "location": "Reactor Core",
+          "enemy": {
+            "name": "Sea-Reaver",
+            "health": 70,
+            "damage": 20,
+            "weakness": "Oxygen Tank"
+          },
+          "hazard": "Leaking radiation bubbles",
+          "pickup": {
+            "name": "Deep-Sea Core",
+            "effect": "Grants 5 seconds of total damage immunity"
+          },
+          "trigger": "Defeating the Sea-Reaver causes a containment breach that leads to the Command Deck."
+        },
+        {
+          "location": "Command Deck",
+          "enemy": {
+            "name": "Tidal Construct",
+            "health": 90,
+            "damage": 25,
+            "weakness": "Deep-Sea Core"
+          },
+          "hazard": "Unstable gravitational shifts",
+          "pickup": {
+            "name": "Ancient Seal",
+            "effect": "Used to negate the final boss's invulnerability shield"
+          },
+          "trigger": "Reaching the command terminal forces the main security override to awaken the boss."
+        }
+      ],
+      "boss": {
+        "name": "Leviathan Prime",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Ancient Seal",
+        "victory_condition": "Use the Ancient Seal to disable the boss's hydro-shield and strike with the Thermal Flame Staff."
+      },
+      "objective": "Navigate the collapsing abyssal station and eliminate the Leviathan Prime.",
+      "reward": "Abyssal Ember Core relic"
+    },
+    "stats": {
+      "latency_ms": 4641,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 605,
+      "output_tokens": 577,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "desolate",
+      "player_class": "warden",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 80,
+        "health": 200,
+        "name": "Abyssal Leviathan",
+        "victory_condition": "Overload the heart while holding the Core Controller",
+        "weakness": "Core Controller"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 50,
+            "name": "Void Eel",
+            "weakness": "Harpoon Launcher"
+          },
+          "hazard": "High Pressure Vent",
+          "location": "Observation Deck",
+          "pickup": {
+            "effect": "Increase defense against pressure",
+            "name": "Titanium Plating"
+          },
+          "trigger": "Defeating the eel activates the emergency airlock to the laboratory."
+        },
+        {
+          "enemy": {
+            "damage": 40,
+            "health": 70,
+            "name": "Feral Splicer",
+            "weakness": "Titanium Plating"
+          },
+          "hazard": "Debris Field",
+          "location": "Research Laboratory",
+          "pickup": {
+            "effect": "Extreme heat output",
+            "name": "Thermal Flare"
+          },
+          "trigger": "Retrieving the flare powers up the lift to the boss containment zone."
+        },
+        {
+          "enemy": {
+            "damage": 50,
+            "health": 90,
+            "name": "Pressure Guardian",
+            "weakness": "Thermal Flare"
+          },
+          "hazard": "Rising Tide",
+          "location": "Containment Chamber",
+          "pickup": {
+            "effect": "Allows interaction with the boss",
+            "name": "Core Controller"
+          },
+          "trigger": "Inserting the controller unlocks the heavy blast doors to the central reactor."
+        }
+      ],
+      "objective": "Secure the Abyssal Core",
+      "player_health": 100,
+      "player_weapon": "Harpoon Launcher",
+      "player_weapon_damage": 20,
+      "reward": "Ancient Ocean Key",
+      "setting": "Sunken Abyssal Research Station",
+      "theme": "Desolate Underwater Survival"
+    },
+    "normalized": {
+      "theme": "Desolate Underwater Survival",
+      "setting": "Sunken Abyssal Research Station",
+      "player_weapon": "Harpoon Launcher",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Observation Deck",
+          "enemy": {
+            "name": "Void Eel",
+            "health": 50,
+            "damage": 30,
+            "weakness": "Harpoon Launcher"
+          },
+          "hazard": "High Pressure Vent",
+          "pickup": {
+            "name": "Titanium Plating",
+            "effect": "Increase defense against pressure"
+          },
+          "trigger": "Defeating the eel activates the emergency airlock to the laboratory."
+        },
+        {
+          "location": "Research Laboratory",
+          "enemy": {
+            "name": "Feral Splicer",
+            "health": 70,
+            "damage": 40,
+            "weakness": "Titanium Plating"
+          },
+          "hazard": "Debris Field",
+          "pickup": {
+            "name": "Thermal Flare",
+            "effect": "Extreme heat output"
+          },
+          "trigger": "Retrieving the flare powers up the lift to the boss containment zone."
+        },
+        {
+          "location": "Containment Chamber",
+          "enemy": {
+            "name": "Pressure Guardian",
+            "health": 90,
+            "damage": 50,
+            "weakness": "Thermal Flare"
+          },
+          "hazard": "Rising Tide",
+          "pickup": {
+            "name": "Core Controller",
+            "effect": "Allows interaction with the boss"
+          },
+          "trigger": "Inserting the controller unlocks the heavy blast doors to the central reactor."
+        }
+      ],
+      "boss": {
+        "name": "Abyssal Leviathan",
+        "health": 200,
+        "damage": 80,
+        "weakness": "Core Controller",
+        "victory_condition": "Overload the heart while holding the Core Controller"
+      },
+      "objective": "Secure the Abyssal Core",
+      "reward": "Ancient Ocean Key"
+    },
+    "stats": {
+      "latency_ms": 4665,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 699,
+      "output_tokens": 532,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "underwater",
+      "mood": "whimsical",
+      "player_class": "illusionist",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 5,
+        "health": 25,
+        "name": "The Bubble Monarch",
+        "victory_condition": "Pop all magical bubbles surrounding the crown",
+        "weakness": "Focusing Prism"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 2,
+            "health": 10,
+            "name": "Bubble Crab",
+            "weakness": "Chromatic Staff"
+          },
+          "hazard": "Sticky Seaweed",
+          "location": "Coral Reef Entrance",
+          "pickup": {
+            "effect": "Reflects enemy spells",
+            "name": "Light Shard"
+          },
+          "trigger": "Defeating the crab clears the pathway to the Sunken Grotto"
+        },
+        {
+          "enemy": {
+            "damage": 2,
+            "health": 12,
+            "name": "Salty Siren",
+            "weakness": "Light Shard"
+          },
+          "hazard": "Whirlpool Current",
+          "location": "Sunken Grotto",
+          "pickup": {
+            "effect": "Blinds enemies temporarily",
+            "name": "Magic Dust"
+          },
+          "trigger": "Capturing the siren allows passage to the Crystal Chamber"
+        },
+        {
+          "enemy": {
+            "damage": 3,
+            "health": 15,
+            "name": "Drifting Jelly",
+            "weakness": "Magic Dust"
+          },
+          "hazard": "Low visibility mist",
+          "location": "Crystal Chamber",
+          "pickup": {
+            "effect": "Focuses magical beams",
+            "name": "Focusing Prism"
+          },
+          "trigger": "Clearing the jelly unveils the Throne of Tides"
+        }
+      ],
+      "objective": "Retrieve the Lost Pearl from the Bubble Monarch",
+      "player_health": 50,
+      "player_weapon": "Chromatic Staff",
+      "player_weapon_damage": 10,
+      "reward": "Royal Trident of Illusions",
+      "setting": "Submerged Underwater Kingdom",
+      "theme": "Whimsical Fantasy"
+    },
+    "normalized": {
+      "theme": "Whimsical Fantasy",
+      "setting": "Submerged Underwater Kingdom",
+      "player_weapon": "Chromatic Staff",
+      "player_weapon_damage": 10,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Coral Reef Entrance",
+          "enemy": {
+            "name": "Bubble Crab",
+            "health": 10,
+            "damage": 2,
+            "weakness": "Chromatic Staff"
+          },
+          "hazard": "Sticky Seaweed",
+          "pickup": {
+            "name": "Light Shard",
+            "effect": "Reflects enemy spells"
+          },
+          "trigger": "Defeating the crab clears the pathway to the Sunken Grotto"
+        },
+        {
+          "location": "Sunken Grotto",
+          "enemy": {
+            "name": "Salty Siren",
+            "health": 12,
+            "damage": 2,
+            "weakness": "Light Shard"
+          },
+          "hazard": "Whirlpool Current",
+          "pickup": {
+            "name": "Magic Dust",
+            "effect": "Blinds enemies temporarily"
+          },
+          "trigger": "Capturing the siren allows passage to the Crystal Chamber"
+        },
+        {
+          "location": "Crystal Chamber",
+          "enemy": {
+            "name": "Drifting Jelly",
+            "health": 15,
+            "damage": 3,
+            "weakness": "Magic Dust"
+          },
+          "hazard": "Low visibility mist",
+          "pickup": {
+            "name": "Focusing Prism",
+            "effect": "Focuses magical beams"
+          },
+          "trigger": "Clearing the jelly unveils the Throne of Tides"
+        }
+      ],
+      "boss": {
+        "name": "The Bubble Monarch",
+        "health": 25,
+        "damage": 5,
+        "weakness": "Focusing Prism",
+        "victory_condition": "Pop all magical bubbles surrounding the crown"
+      },
+      "objective": "Retrieve the Lost Pearl from the Bubble Monarch",
+      "reward": "Royal Trident of Illusions"
+    },
+    "stats": {
+      "latency_ms": 4366,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 675,
+      "output_tokens": 521,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "chaotic",
+      "player_class": "beastmaster",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 300,
+        "name": "Avatar of Chaos",
+        "victory_condition": "Use the Heart of the Jungle to bind the spirit and end the chaos.",
+        "weakness": "Heart of the Jungle"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Jaguar",
+            "weakness": "Taming Whip"
+          },
+          "hazard": "Falling Vines",
+          "location": "Canopy Walkway",
+          "pickup": {
+            "effect": "Stuns large beasts for 10 seconds",
+            "name": "Sacred Musk"
+          },
+          "trigger": "Defeating the Jaguar snaps the vines, dropping the player to the temple entrance."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 80,
+            "name": "Giant Python",
+            "weakness": "Sacred Musk"
+          },
+          "hazard": "Toxic Spores",
+          "location": "Flooded Chamber",
+          "pickup": {
+            "effect": "Calms aggressive flora and beasts",
+            "name": "Ancient Whistle"
+          },
+          "trigger": "The Python's collapse unplugs the drainage pipes, opening the path to the inner sanctum."
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 120,
+            "name": "Corrupted Gorilla",
+            "weakness": "Ancient Whistle"
+          },
+          "hazard": "Crumbling Pillars",
+          "location": "Altar of Spirits",
+          "pickup": {
+            "effect": "Grants control over the forest and nullifies the Avatar's shield",
+            "name": "Heart of the Jungle"
+          },
+          "trigger": "The Gorilla's defeat activates the stone elevator leading directly to the boss chamber."
+        }
+      ],
+      "objective": "Retrieve the Heart of the Jungle and stop the chaotic expansion of the forest.",
+      "player_health": 100,
+      "player_weapon": "Taming Whip",
+      "player_weapon_damage": 20,
+      "reward": "Mastery of Apex Predators",
+      "setting": "Overgrown Ancient Ruins",
+      "theme": "Chaotic Jungle Survival"
+    },
+    "normalized": {
+      "theme": "Chaotic Jungle Survival",
+      "setting": "Overgrown Ancient Ruins",
+      "player_weapon": "Taming Whip",
+      "player_weapon_damage": 20,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Canopy Walkway",
+          "enemy": {
+            "name": "Jaguar",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Taming Whip"
+          },
+          "hazard": "Falling Vines",
+          "pickup": {
+            "name": "Sacred Musk",
+            "effect": "Stuns large beasts for 10 seconds"
+          },
+          "trigger": "Defeating the Jaguar snaps the vines, dropping the player to the temple entrance."
+        },
+        {
+          "location": "Flooded Chamber",
+          "enemy": {
+            "name": "Giant Python",
+            "health": 80,
+            "damage": 25,
+            "weakness": "Sacred Musk"
+          },
+          "hazard": "Toxic Spores",
+          "pickup": {
+            "name": "Ancient Whistle",
+            "effect": "Calms aggressive flora and beasts"
+          },
+          "trigger": "The Python's collapse unplugs the drainage pipes, opening the path to the inner sanctum."
+        },
+        {
+          "location": "Altar of Spirits",
+          "enemy": {
+            "name": "Corrupted Gorilla",
+            "health": 120,
+            "damage": 30,
+            "weakness": "Ancient Whistle"
+          },
+          "hazard": "Crumbling Pillars",
+          "pickup": {
+            "name": "Heart of the Jungle",
+            "effect": "Grants control over the forest and nullifies the Avatar's shield"
+          },
+          "trigger": "The Gorilla's defeat activates the stone elevator leading directly to the boss chamber."
+        }
+      ],
+      "boss": {
+        "name": "Avatar of Chaos",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Heart of the Jungle",
+        "victory_condition": "Use the Heart of the Jungle to bind the spirit and end the chaos."
+      },
+      "objective": "Retrieve the Heart of the Jungle and stop the chaotic expansion of the forest.",
+      "reward": "Mastery of Apex Predators"
+    },
+    "stats": {
+      "latency_ms": 4653,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 671,
+      "output_tokens": 580,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "mysterious",
+      "player_class": "ranger",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 25,
+        "health": 120,
+        "name": "The Jade Guardian",
+        "victory_condition": "Expose and shatter the core crystal using the Sacred Torch",
+        "weakness": "Sacred Torch"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 30,
+            "name": "Forest Viper",
+            "weakness": "Longbow"
+          },
+          "hazard": "Poison vines",
+          "location": "Overgrown entrance",
+          "pickup": {
+            "effect": "Restores 20 health",
+            "name": "Herb Pouch"
+          },
+          "trigger": "Pressure plate releases the viper and unseals the temple gate"
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 40,
+            "name": "Shadow Jaguar",
+            "weakness": "Herb Pouch distraction"
+          },
+          "hazard": "Shifting ruins",
+          "location": "Ceremonial courtyard",
+          "pickup": {
+            "effect": "Enchants arrows with blinding light",
+            "name": "Sun-Infused Crystal"
+          },
+          "trigger": "Defeating the Jaguar triggers the retraction of the barrier blocking the inner chamber"
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Stone Sentinel",
+            "weakness": "Sun-Infused Crystal"
+          },
+          "hazard": "Gas traps",
+          "location": "Inner sanctuary",
+          "pickup": {
+            "effect": "Reveals invisible mystical entities",
+            "name": "Sacred Torch"
+          },
+          "trigger": "Defeating the Sentinel illuminates the pedestal leading to the boss chamber"
+        }
+      ],
+      "objective": "Retrieve the Jade Idol from the heart of the temple",
+      "player_health": 100,
+      "player_weapon": "Longbow",
+      "player_weapon_damage": 15,
+      "reward": "Ancient Jungle Artifact",
+      "setting": "Ancient Mayan jungle ruins",
+      "theme": "Mysterious exploration"
+    },
+    "normalized": {
+      "theme": "Mysterious exploration",
+      "setting": "Ancient Mayan jungle ruins",
+      "player_weapon": "Longbow",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Overgrown entrance",
+          "enemy": {
+            "name": "Forest Viper",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Longbow"
+          },
+          "hazard": "Poison vines",
+          "pickup": {
+            "name": "Herb Pouch",
+            "effect": "Restores 20 health"
+          },
+          "trigger": "Pressure plate releases the viper and unseals the temple gate"
+        },
+        {
+          "location": "Ceremonial courtyard",
+          "enemy": {
+            "name": "Shadow Jaguar",
+            "health": 40,
+            "damage": 10,
+            "weakness": "Herb Pouch distraction"
+          },
+          "hazard": "Shifting ruins",
+          "pickup": {
+            "name": "Sun-Infused Crystal",
+            "effect": "Enchants arrows with blinding light"
+          },
+          "trigger": "Defeating the Jaguar triggers the retraction of the barrier blocking the inner chamber"
+        },
+        {
+          "location": "Inner sanctuary",
+          "enemy": {
+            "name": "Stone Sentinel",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Sun-Infused Crystal"
+          },
+          "hazard": "Gas traps",
+          "pickup": {
+            "name": "Sacred Torch",
+            "effect": "Reveals invisible mystical entities"
+          },
+          "trigger": "Defeating the Sentinel illuminates the pedestal leading to the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "The Jade Guardian",
+        "health": 120,
+        "damage": 25,
+        "weakness": "Sacred Torch",
+        "victory_condition": "Expose and shatter the core crystal using the Sacred Torch"
+      },
+      "objective": "Retrieve the Jade Idol from the heart of the temple",
+      "reward": "Ancient Jungle Artifact"
+    },
+    "stats": {
+      "latency_ms": 4338,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 674,
+      "output_tokens": 541,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "tense",
+      "player_class": "rogue",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 30,
+        "health": 150,
+        "name": "The Verdant Overlord",
+        "victory_condition": "Use the Ancient Key of Life to disable the barrier, then deliver the finishing blow",
+        "weakness": "Ancient Key of Life"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 30,
+            "name": "Forest Stalker",
+            "weakness": "Serrated Dagger"
+          },
+          "hazard": "Poison Spores",
+          "location": "Overgrown Path",
+          "pickup": {
+            "effect": "Increases evasion significantly",
+            "name": "Silent Step Boots"
+          },
+          "trigger": "Stealth killing the stalker uncovers the entrance to the inner ruins"
+        },
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 40,
+            "name": "Stone Guardian",
+            "weakness": "Silent Step Boots"
+          },
+          "hazard": "Quicksand",
+          "location": "Sunken Temple Gate",
+          "pickup": {
+            "effect": "Coats blades to deal increased corrosive damage",
+            "name": "Volatile Spore Oil"
+          },
+          "trigger": "Shattering the Guardian forces the heavy stone gate to grind open"
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 50,
+            "name": "Canopy Cobra",
+            "weakness": "Volatile Spore Oil"
+          },
+          "hazard": "Falling Debris",
+          "location": "Inner Sanctum",
+          "pickup": {
+            "effect": "Used to negate the boss's defensive aura",
+            "name": "Ancient Key of Life"
+          },
+          "trigger": "Slaying the cobra triggers the hidden mechanism to release the boss"
+        }
+      ],
+      "objective": "Retrieve the Heart of the Canopy",
+      "player_health": 50,
+      "player_weapon": "Serrated Dagger",
+      "player_weapon_damage": 15,
+      "reward": "Cloak of Shadows",
+      "setting": "Ancient Ruined Jungle",
+      "theme": "Tense exploration and survival"
+    },
+    "normalized": {
+      "theme": "Tense exploration and survival",
+      "setting": "Ancient Ruined Jungle",
+      "player_weapon": "Serrated Dagger",
+      "player_weapon_damage": 15,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Overgrown Path",
+          "enemy": {
+            "name": "Forest Stalker",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Serrated Dagger"
+          },
+          "hazard": "Poison Spores",
+          "pickup": {
+            "name": "Silent Step Boots",
+            "effect": "Increases evasion significantly"
+          },
+          "trigger": "Stealth killing the stalker uncovers the entrance to the inner ruins"
+        },
+        {
+          "location": "Sunken Temple Gate",
+          "enemy": {
+            "name": "Stone Guardian",
+            "health": 40,
+            "damage": 15,
+            "weakness": "Silent Step Boots"
+          },
+          "hazard": "Quicksand",
+          "pickup": {
+            "name": "Volatile Spore Oil",
+            "effect": "Coats blades to deal increased corrosive damage"
+          },
+          "trigger": "Shattering the Guardian forces the heavy stone gate to grind open"
+        },
+        {
+          "location": "Inner Sanctum",
+          "enemy": {
+            "name": "Canopy Cobra",
+            "health": 50,
+            "damage": 20,
+            "weakness": "Volatile Spore Oil"
+          },
+          "hazard": "Falling Debris",
+          "pickup": {
+            "name": "Ancient Key of Life",
+            "effect": "Used to negate the boss's defensive aura"
+          },
+          "trigger": "Slaying the cobra triggers the hidden mechanism to release the boss"
+        }
+      ],
+      "boss": {
+        "name": "The Verdant Overlord",
+        "health": 150,
+        "damage": 30,
+        "weakness": "Ancient Key of Life",
+        "victory_condition": "Use the Ancient Key of Life to disable the barrier, then deliver the finishing blow"
+      },
+      "objective": "Retrieve the Heart of the Canopy",
+      "reward": "Cloak of Shadows"
+    },
+    "stats": {
+      "latency_ms": 4223,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 549,
+      "output_tokens": 562,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "serene",
+      "player_class": "warden",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 10,
+        "health": 100,
+        "name": "The Blighted Elder",
+        "victory_condition": "Use the Essence of Growth to cleanse the Elder and restore its purity",
+        "weakness": "Essence of Growth"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 20,
+            "name": "Mossy Crawler",
+            "weakness": "Staff of Roots"
+          },
+          "hazard": "Slow-moving mist",
+          "location": "Riverbank",
+          "pickup": {
+            "effect": "Heals light wounds",
+            "name": "Sunlight Dew"
+          },
+          "trigger": "Stepping on a glowing stone reveals the path to the ruins"
+        },
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 30,
+            "name": "Stone Sentinel",
+            "weakness": "Sunlight Dew"
+          },
+          "hazard": "Overgrown vines",
+          "location": "Crumbling Ruins",
+          "pickup": {
+            "effect": "Unlocks the inner sanctum gates",
+            "name": "Ancient Key of Leaves"
+          },
+          "trigger": "Retrieving the key illuminates the path to the sanctum"
+        },
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 40,
+            "name": "Corrupted Ocelot",
+            "weakness": "Ancient Key of Leaves"
+          },
+          "hazard": "Thorny thickets",
+          "location": "Sanctum Entrance",
+          "pickup": {
+            "effect": "Strengthens life force",
+            "name": "Essence of Growth"
+          },
+          "trigger": "Using the key draws out the Elder boss"
+        }
+      ],
+      "objective": "Restore the heart of the sacred grove",
+      "player_health": 50,
+      "player_weapon": "Staff of Roots",
+      "player_weapon_damage": 10,
+      "reward": "Guardian of the Canopy Title",
+      "setting": "Lush sun-dappled jungle",
+      "theme": "Ancient Canopy"
+    },
+    "normalized": {
+      "theme": "Ancient Canopy",
+      "setting": "Lush sun-dappled jungle",
+      "player_weapon": "Staff of Roots",
+      "player_weapon_damage": 10,
+      "player_health": 50,
+      "encounters": [
+        {
+          "location": "Riverbank",
+          "enemy": {
+            "name": "Mossy Crawler",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Staff of Roots"
+          },
+          "hazard": "Slow-moving mist",
+          "pickup": {
+            "name": "Sunlight Dew",
+            "effect": "Heals light wounds"
+          },
+          "trigger": "Stepping on a glowing stone reveals the path to the ruins"
+        },
+        {
+          "location": "Crumbling Ruins",
+          "enemy": {
+            "name": "Stone Sentinel",
+            "health": 30,
+            "damage": 5,
+            "weakness": "Sunlight Dew"
+          },
+          "hazard": "Overgrown vines",
+          "pickup": {
+            "name": "Ancient Key of Leaves",
+            "effect": "Unlocks the inner sanctum gates"
+          },
+          "trigger": "Retrieving the key illuminates the path to the sanctum"
+        },
+        {
+          "location": "Sanctum Entrance",
+          "enemy": {
+            "name": "Corrupted Ocelot",
+            "health": 40,
+            "damage": 5,
+            "weakness": "Ancient Key of Leaves"
+          },
+          "hazard": "Thorny thickets",
+          "pickup": {
+            "name": "Essence of Growth",
+            "effect": "Strengthens life force"
+          },
+          "trigger": "Using the key draws out the Elder boss"
+        }
+      ],
+      "boss": {
+        "name": "The Blighted Elder",
+        "health": 100,
+        "damage": 10,
+        "weakness": "Essence of Growth",
+        "victory_condition": "Use the Essence of Growth to cleanse the Elder and restore its purity"
+      },
+      "objective": "Restore the heart of the sacred grove",
+      "reward": "Guardian of the Canopy Title"
+    },
+    "stats": {
+      "latency_ms": 5880,
+      "thinking_level": "medium",
+      "prompt_tokens": 704,
+      "thinking_tokens": 751,
+      "output_tokens": 321,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "ominous",
+      "player_class": "necromancer",
+      "target_difficulty": "hard"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 300,
+        "name": "The Cursed Matriarch",
+        "victory_condition": "Purify the Mother Tree using the Heart of the Jungle",
+        "weakness": "Heart of the Jungle"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 80,
+            "name": "Jungle Crawler",
+            "weakness": "Soul-Reaping Scythe"
+          },
+          "hazard": "Thick fog that drains necromantic energy",
+          "location": "Overgrown Entrance",
+          "pickup": {
+            "effect": "Increases necrotic damage against stone enemies",
+            "name": "Spirit-Infused Vine"
+          },
+          "trigger": "Approaching the altar activates the guardian of the ruins"
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 120,
+            "name": "Stone Guardian",
+            "weakness": "Spirit-Infused Vine"
+          },
+          "hazard": "Falling rubble that deals heavy physical damage",
+          "location": "Crumbling Ziggurat Base",
+          "pickup": {
+            "effect": "Allows the player to see through dark magical illusions",
+            "name": "Obsidian Amulet"
+          },
+          "trigger": "Destroying the guardian clears the debris blocking the path to the shadows"
+        },
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 150,
+            "name": "Shadow Stalker",
+            "weakness": "Obsidian Amulet"
+          },
+          "hazard": "Poisonous spores that lower the player's max health",
+          "location": "Inner Sanctum",
+          "pickup": {
+            "effect": "Weakens the boss's regenerative armor",
+            "name": "Heart of the Jungle"
+          },
+          "trigger": "Slaying the stalker unlocks the seal to the boss chamber"
+        }
+      ],
+      "objective": "Traverse the cursed jungle and cleanse the Matriarch to stop the spread of decay.",
+      "player_health": 100,
+      "player_weapon": "Soul-Reaping Scythe",
+      "player_weapon_damage": 25,
+      "reward": "Necromantic Mastery Tome",
+      "setting": "Ruins of the Forgotten Ziggurat",
+      "theme": "Ominous jungle ruins filled with decaying spirits"
+    },
+    "normalized": {
+      "theme": "Ominous jungle ruins filled with decaying spirits",
+      "setting": "Ruins of the Forgotten Ziggurat",
+      "player_weapon": "Soul-Reaping Scythe",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Overgrown Entrance",
+          "enemy": {
+            "name": "Jungle Crawler",
+            "health": 80,
+            "damage": 15,
+            "weakness": "Soul-Reaping Scythe"
+          },
+          "hazard": "Thick fog that drains necromantic energy",
+          "pickup": {
+            "name": "Spirit-Infused Vine",
+            "effect": "Increases necrotic damage against stone enemies"
+          },
+          "trigger": "Approaching the altar activates the guardian of the ruins"
+        },
+        {
+          "location": "Crumbling Ziggurat Base",
+          "enemy": {
+            "name": "Stone Guardian",
+            "health": 120,
+            "damage": 25,
+            "weakness": "Spirit-Infused Vine"
+          },
+          "hazard": "Falling rubble that deals heavy physical damage",
+          "pickup": {
+            "name": "Obsidian Amulet",
+            "effect": "Allows the player to see through dark magical illusions"
+          },
+          "trigger": "Destroying the guardian clears the debris blocking the path to the shadows"
+        },
+        {
+          "location": "Inner Sanctum",
+          "enemy": {
+            "name": "Shadow Stalker",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Obsidian Amulet"
+          },
+          "hazard": "Poisonous spores that lower the player's max health",
+          "pickup": {
+            "name": "Heart of the Jungle",
+            "effect": "Weakens the boss's regenerative armor"
+          },
+          "trigger": "Slaying the stalker unlocks the seal to the boss chamber"
+        }
+      ],
+      "boss": {
+        "name": "The Cursed Matriarch",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Heart of the Jungle",
+        "victory_condition": "Purify the Mother Tree using the Heart of the Jungle"
+      },
+      "objective": "Traverse the cursed jungle and cleanse the Matriarch to stop the spread of decay.",
+      "reward": "Necromantic Mastery Tome"
+    },
+    "stats": {
+      "latency_ms": 2257,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 475,
+      "output_tokens": 607,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "whimsical",
+      "player_class": "alchemist",
+      "target_difficulty": "easy"
+    },
+    "output": {
+      "boss": {
+        "damage": 15,
+        "health": 60,
+        "name": "Bubble-Blowing Toad King",
+        "victory_condition": "Pop all magical protective bubbles to render the King vulnerable",
+        "weakness": "Prismatic Crystal"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 5,
+            "health": 20,
+            "name": "Leafy Sprig",
+            "weakness": "Fizzing Solvent Vial"
+          },
+          "hazard": "Sticky Pollen",
+          "location": "The Whispering Canopy",
+          "pickup": {
+            "effect": "Increases acid damage potency",
+            "name": "Glowing Nectar"
+          },
+          "trigger": "Defeating the Sprig clears the thick brush leading to the vine bridge"
+        },
+        {
+          "enemy": {
+            "damage": 8,
+            "health": 25,
+            "name": "Mossy Pebble-Thrower",
+            "weakness": "Glowing Nectar"
+          },
+          "hazard": "Slippery Vines",
+          "location": "The Sun-Dappled Clearing",
+          "pickup": {
+            "effect": "Adds fire element to attacks",
+            "name": "Sun-Dried Petal"
+          },
+          "trigger": "Clearing the path reveals the ancient entrance to the hidden temple"
+        },
+        {
+          "enemy": {
+            "damage": 10,
+            "health": 30,
+            "name": "Singing Fern-Snake",
+            "weakness": "Sun-Dried Petal"
+          },
+          "hazard": "Toxic Spore Cloud",
+          "location": "The Temple Threshold",
+          "pickup": {
+            "effect": "Refracts light to create a bridge",
+            "name": "Prismatic Crystal"
+          },
+          "trigger": "Using the crystal to bridge the gap provides direct access to the Toad King"
+        }
+      ],
+      "objective": "Defeat the Bubble-Blowing Toad King to retrieve the legendary nectar",
+      "player_health": 100,
+      "player_weapon": "Fizzing Solvent Vial",
+      "player_weapon_damage": 15,
+      "reward": "Golden Elixir of Eternal Youth",
+      "setting": "Whispering Jungle Canopy",
+      "theme": "Whimsical"
+    },
+    "normalized": {
+      "theme": "Whimsical",
+      "setting": "Whispering Jungle Canopy",
+      "player_weapon": "Fizzing Solvent Vial",
+      "player_weapon_damage": 15,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "The Whispering Canopy",
+          "enemy": {
+            "name": "Leafy Sprig",
+            "health": 20,
+            "damage": 5,
+            "weakness": "Fizzing Solvent Vial"
+          },
+          "hazard": "Sticky Pollen",
+          "pickup": {
+            "name": "Glowing Nectar",
+            "effect": "Increases acid damage potency"
+          },
+          "trigger": "Defeating the Sprig clears the thick brush leading to the vine bridge"
+        },
+        {
+          "location": "The Sun-Dappled Clearing",
+          "enemy": {
+            "name": "Mossy Pebble-Thrower",
+            "health": 25,
+            "damage": 8,
+            "weakness": "Glowing Nectar"
+          },
+          "hazard": "Slippery Vines",
+          "pickup": {
+            "name": "Sun-Dried Petal",
+            "effect": "Adds fire element to attacks"
+          },
+          "trigger": "Clearing the path reveals the ancient entrance to the hidden temple"
+        },
+        {
+          "location": "The Temple Threshold",
+          "enemy": {
+            "name": "Singing Fern-Snake",
+            "health": 30,
+            "damage": 10,
+            "weakness": "Sun-Dried Petal"
+          },
+          "hazard": "Toxic Spore Cloud",
+          "pickup": {
+            "name": "Prismatic Crystal",
+            "effect": "Refracts light to create a bridge"
+          },
+          "trigger": "Using the crystal to bridge the gap provides direct access to the Toad King"
+        }
+      ],
+      "boss": {
+        "name": "Bubble-Blowing Toad King",
+        "health": 60,
+        "damage": 15,
+        "weakness": "Prismatic Crystal",
+        "victory_condition": "Pop all magical protective bubbles to render the King vulnerable"
+      },
+      "objective": "Defeat the Bubble-Blowing Toad King to retrieve the legendary nectar",
+      "reward": "Golden Elixir of Eternal Youth"
+    },
+    "stats": {
+      "latency_ms": 4128,
+      "thinking_level": "medium",
+      "prompt_tokens": 705,
+      "thinking_tokens": 506,
+      "output_tokens": 571,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "eerie",
+      "player_class": "chronomancer",
+      "target_difficulty": "medium"
+    },
+    "output": {
+      "boss": {
+        "damage": 40,
+        "health": 300,
+        "name": "The Time-Warped Serpent",
+        "victory_condition": "Use the Solar Key to disrupt the serpent's time loops.",
+        "weakness": "Solar Key"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 15,
+            "health": 50,
+            "name": "Shadow Jaguar",
+            "weakness": "Time Dagger"
+          },
+          "hazard": "Miasma fog",
+          "location": "Overgrown Altar",
+          "pickup": {
+            "effect": "Reveals hidden temporal paths",
+            "name": "Ancient Hourglass"
+          },
+          "trigger": "Stepping on the altar triggers a temporal shift that reveals the path to the swamp."
+        },
+        {
+          "enemy": {
+            "damage": 20,
+            "health": 75,
+            "name": "Vine Construct",
+            "weakness": "Ancient Hourglass"
+          },
+          "hazard": "Spiky flora",
+          "location": "Sunken Swamp",
+          "pickup": {
+            "effect": "Freezes incoming projectiles in place",
+            "name": "Chrono-Stabilizer"
+          },
+          "trigger": "Defeating the construct causes the vines to retract, unlocking the gate to the Stone Temple."
+        },
+        {
+          "enemy": {
+            "damage": 25,
+            "health": 100,
+            "name": "Phantom Scout",
+            "weakness": "Chrono-Stabilizer"
+          },
+          "hazard": "Falling debris",
+          "location": "Stone Temple Courtyard",
+          "pickup": {
+            "effect": "Charges the Time Dagger to deal intense solar damage",
+            "name": "Solar Key"
+          },
+          "trigger": "Using the Solar Key on the inner seal awakens the temple boss."
+        }
+      ],
+      "objective": "Retrieve the Chrono-Heart from the heart of the cursed ruins.",
+      "player_health": 100,
+      "player_weapon": "Time Dagger",
+      "player_weapon_damage": 25,
+      "reward": "Chronos Chronometer",
+      "setting": "Whispering Canopy Ruins",
+      "theme": "Eerie jungle"
+    },
+    "normalized": {
+      "theme": "Eerie jungle",
+      "setting": "Whispering Canopy Ruins",
+      "player_weapon": "Time Dagger",
+      "player_weapon_damage": 25,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Overgrown Altar",
+          "enemy": {
+            "name": "Shadow Jaguar",
+            "health": 50,
+            "damage": 15,
+            "weakness": "Time Dagger"
+          },
+          "hazard": "Miasma fog",
+          "pickup": {
+            "name": "Ancient Hourglass",
+            "effect": "Reveals hidden temporal paths"
+          },
+          "trigger": "Stepping on the altar triggers a temporal shift that reveals the path to the swamp."
+        },
+        {
+          "location": "Sunken Swamp",
+          "enemy": {
+            "name": "Vine Construct",
+            "health": 75,
+            "damage": 20,
+            "weakness": "Ancient Hourglass"
+          },
+          "hazard": "Spiky flora",
+          "pickup": {
+            "name": "Chrono-Stabilizer",
+            "effect": "Freezes incoming projectiles in place"
+          },
+          "trigger": "Defeating the construct causes the vines to retract, unlocking the gate to the Stone Temple."
+        },
+        {
+          "location": "Stone Temple Courtyard",
+          "enemy": {
+            "name": "Phantom Scout",
+            "health": 100,
+            "damage": 25,
+            "weakness": "Chrono-Stabilizer"
+          },
+          "hazard": "Falling debris",
+          "pickup": {
+            "name": "Solar Key",
+            "effect": "Charges the Time Dagger to deal intense solar damage"
+          },
+          "trigger": "Using the Solar Key on the inner seal awakens the temple boss."
+        }
+      ],
+      "boss": {
+        "name": "The Time-Warped Serpent",
+        "health": 300,
+        "damage": 40,
+        "weakness": "Solar Key",
+        "victory_condition": "Use the Solar Key to disrupt the serpent's time loops."
+      },
+      "objective": "Retrieve the Chrono-Heart from the heart of the cursed ruins.",
+      "reward": "Chronos Chronometer"
+    },
+    "stats": {
+      "latency_ms": 4608,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 780,
+      "output_tokens": 565,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  },
+  {
+    "variant": "alpha_nested",
+    "case": {
+      "genre": "jungle",
+      "mood": "desolate",
+      "player_class": "berserker",
+      "target_difficulty": "brutal"
+    },
+    "output": {
+      "boss": {
+        "damage": 80,
+        "health": 500,
+        "name": "The Verdant Husk",
+        "victory_condition": "Sever the pulsing heart-root at the center of the altar",
+        "weakness": "Ancient Sunstone"
+      },
+      "encounters": [
+        {
+          "enemy": {
+            "damage": 30,
+            "health": 150,
+            "name": "Bloated Leech-Beast",
+            "weakness": "Jagged Obsidian Cleaver"
+          },
+          "hazard": "Toxic spores",
+          "location": "Sunken Path",
+          "pickup": {
+            "effect": "Corrosive agent that melts thick armor",
+            "name": "Concentrated Venom Vial"
+          },
+          "trigger": "Touching the altar opens the gate to the inner sanctuary"
+        },
+        {
+          "enemy": {
+            "damage": 45,
+            "health": 250,
+            "name": "Stone-skinned Ape",
+            "weakness": "Concentrated Venom Vial"
+          },
+          "hazard": "Falling debris",
+          "location": "Collapsed Bridge",
+          "pickup": {
+            "effect": "Strong solvent that dissolves shadow-infused materials",
+            "name": "Acidic Sap"
+          },
+          "trigger": "Killing the beast clears the path leading to the high spires"
+        },
+        {
+          "enemy": {
+            "damage": 60,
+            "health": 350,
+            "name": "Shadow Prowler",
+            "weakness": "Acidic Sap"
+          },
+          "hazard": "Choking vines",
+          "location": "Overgrown Spire",
+          "pickup": {
+            "effect": "Emits searing light that blinds primordial entities",
+            "name": "Ancient Sunstone"
+          },
+          "trigger": "Defeating the shadow unlocks the seal to the boss's inner sanctum"
+        }
+      ],
+      "objective": "Purify the defiled heart of the jungle by destroying the Verdant Husk",
+      "player_health": 100,
+      "player_weapon": "Jagged Obsidian Cleaver",
+      "player_weapon_damage": 50,
+      "reward": "The Soul of the Overgrowth",
+      "setting": "Decaying Jungle Ruins",
+      "theme": "Desolate and hostile wilderness"
+    },
+    "normalized": {
+      "theme": "Desolate and hostile wilderness",
+      "setting": "Decaying Jungle Ruins",
+      "player_weapon": "Jagged Obsidian Cleaver",
+      "player_weapon_damage": 50,
+      "player_health": 100,
+      "encounters": [
+        {
+          "location": "Sunken Path",
+          "enemy": {
+            "name": "Bloated Leech-Beast",
+            "health": 150,
+            "damage": 30,
+            "weakness": "Jagged Obsidian Cleaver"
+          },
+          "hazard": "Toxic spores",
+          "pickup": {
+            "name": "Concentrated Venom Vial",
+            "effect": "Corrosive agent that melts thick armor"
+          },
+          "trigger": "Touching the altar opens the gate to the inner sanctuary"
+        },
+        {
+          "location": "Collapsed Bridge",
+          "enemy": {
+            "name": "Stone-skinned Ape",
+            "health": 250,
+            "damage": 45,
+            "weakness": "Concentrated Venom Vial"
+          },
+          "hazard": "Falling debris",
+          "pickup": {
+            "name": "Acidic Sap",
+            "effect": "Strong solvent that dissolves shadow-infused materials"
+          },
+          "trigger": "Killing the beast clears the path leading to the high spires"
+        },
+        {
+          "location": "Overgrown Spire",
+          "enemy": {
+            "name": "Shadow Prowler",
+            "health": 350,
+            "damage": 60,
+            "weakness": "Acidic Sap"
+          },
+          "hazard": "Choking vines",
+          "pickup": {
+            "name": "Ancient Sunstone",
+            "effect": "Emits searing light that blinds primordial entities"
+          },
+          "trigger": "Defeating the shadow unlocks the seal to the boss's inner sanctum"
+        }
+      ],
+      "boss": {
+        "name": "The Verdant Husk",
+        "health": 500,
+        "damage": 80,
+        "weakness": "Ancient Sunstone",
+        "victory_condition": "Sever the pulsing heart-root at the center of the altar"
+      },
+      "objective": "Purify the defiled heart of the jungle by destroying the Verdant Husk",
+      "reward": "The Soul of the Overgrowth"
+    },
+    "stats": {
+      "latency_ms": 4606,
+      "thinking_level": "medium",
+      "prompt_tokens": 706,
+      "thinking_tokens": 664,
+      "output_tokens": 574,
+      "retries": 0,
+      "model": "gemini-3.1-flash-lite"
+    }
+  }
+]
